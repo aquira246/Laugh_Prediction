@@ -1,0 +1,974 @@
+Number of files: 973 minus broken files
+
+"Black Men Ski"     Stew    ['Funny', 'Ingenious']    Word Count: 456    Laugh Count: 0    First Laugh At: -1
+"Clonie"     Nellie McKay    ['Funny', 'Beautiful']    Word Count: 347    Laugh Count: 0    First Laugh At: -1
+"Mother of Pearl," "If I Had You"     Nellie McKay    ['Funny', 'Beautiful']    Word Count: 550    Laugh Count: 1    First Laugh At: 397
+"The Dog Song"     Nellie McKay    ['Beautiful', 'Funny']    Word Count: 620    Laugh Count: 0    First Laugh At: -1
+"True Colors"     John Legend    ['Beautiful', 'Inspiring']    Word Count: 360    Laugh Count: 0    First Laugh At: -1
+(Re)touching lives through photos     Becci Manson    ['Inspiring', 'Beautiful']    Word Count: 1728    Laugh Count: 0    First Laugh At: -1
+10 myths about psychology, debunked     Ben Ambridge    ['Informative', 'Fascinating']    Word Count: 3312    Laugh Count: 0    First Laugh At: -1
+10 top time-saving tech tips     David Pogue    ['Informative', 'Funny']    Word Count: 1243    Laugh Count: 7    First Laugh At: 36
+3 new ways to kill mosquitoes     Bart Knols    ['Ingenious', 'Fascinating']    Word Count: 1727    Laugh Count: 3    First Laugh At: 532
+3 reasons we still haven’t gotten rid of malaria     Sonia Shah    ['Informative', 'Persuasive']    Word Count: 2985    Laugh Count: 0    First Laugh At: -1
+3 rules to spark learning     Ramsey Musallam    ['Inspiring', 'Informative']    Word Count: 1026    Laugh Count: 0    First Laugh At: -1
+3 ways to (usefully) lose control of your brand     Tim Leberecht    ['Inspiring', 'Informative']    Word Count: 978    Laugh Count: 2    First Laugh At: 28
+3 ways to speak English     Jamila Lyiscott    ['Inspiring', 'Beautiful']    Word Count: 701    Laugh Count: 0    First Laugh At: -1
+4 lessons I learned from taking a stand against drugs and gun violence     Ilona Szabó de Carvalho    ['Inspiring', 'Informative']    Word Count: 1972    Laugh Count: 0    First Laugh At: -1
+4 lessons from robots about being human     Ken Goldberg    ['Inspiring', 'Informative']    Word Count: 2899    Laugh Count: 7    First Laugh At: 197
+4 lessons in creativity     Julie Burstein    ['Inspiring', 'Beautiful']    Word Count: 3095    Laugh Count: 1    First Laugh At: 500
+4 pillars of college success in science     Freeman Hrabowski    ['Inspiring', 'Persuasive']    Word Count: 3237    Laugh Count: 1    First Laugh At: 425
+4 powerful poems about Parkinson's and growing older     Robin Morgan    ['Beautiful', 'Inspiring']    Word Count: 1645    Laugh Count: 4    First Laugh At: 132
+404, the story of a page not found     Renny Gleeson    ['Funny', 'Informative']    Word Count: 803    Laugh Count: 3    First Laugh At: 215
+5 dangerous things you should let your kids do     Gever Tulley    ['Persuasive', 'Funny']    Word Count: 1548    Laugh Count: 9    First Laugh At: 31
+5 ways to kill your dreams     Bel Pesce    ['Inspiring', 'Beautiful']    Word Count: 1185    Laugh Count: 4    First Laugh At: 60
+A "self-healing" asphalt     Erik Schlangen    ['Ingenious', 'Informative']    Word Count: 1048    Laugh Count: 3    First Laugh At: 5
+A 30-year history of the future     Nicholas Negroponte    ['Inspiring', 'Informative']    Word Count: 3471    Laugh Count: 3    First Laugh At: 172
+A 3D-printed jumbo jet?     Bastian Schaefer    ['Fascinating', 'Inspiring']    Word Count: 1098    Laugh Count: 0    First Laugh At: -1
+A 40-year plan for energy     Amory Lovins    ['Informative', 'Persuasive']    Word Count: 4286    Laugh Count: 1    First Laugh At: 1240
+A 50-cent microscope that folds like origami     Manu Prakash    ['Ingenious', 'Inspiring']    Word Count: 1634    Laugh Count: 1    First Laugh At: 1124
+A Magna Carta for the web     Tim Berners-Lee    ['Informative', 'Inspiring']    Word Count: 1289    Laugh Count: 0    First Laugh At: -1
+A Navy Admiral's thoughts on global security     James Stavridis    ['Inspiring', 'Informative']    Word Count: 2517    Laugh Count: 6    First Laugh At: 765
+A Saudi woman who dared to drive     Manal al-Sharif    ['Courageous', 'Inspiring']    Word Count: 2437    Laugh Count: 3    First Laugh At: 1157
+A Saudi, an Indian and an Iranian walk into a Qatari bar ...     Maz Jobrani    ['Funny', 'Informative']    Word Count: 1674    Laugh Count: 32    First Laugh At: 134
+A bath without water     Ludwick Marishane    ['Inspiring', 'Ingenious']    Word Count: 999    Laugh Count: 4    First Laugh At: 333
+A better way to talk about abortion     Aspen Baker    ['Inspiring', 'Courageous']    Word Count: 1782    Laugh Count: 1    First Laugh At: 1641
+A bold new way to fund drug research     Roger Stein    ['Ingenious', 'Persuasive']    Word Count: 2714    Laugh Count: 1    First Laugh At: 2211
+A broken body isn't a broken person     Janine Shepherd    ['Inspiring', 'Courageous']    Word Count: 3627    Laugh Count: 6    First Laugh At: 390
+A child of the state     Lemn Sissay    ['Courageous', 'Inspiring']    Word Count: 2460    Laugh Count: 10    First Laugh At: 83
+A choreographer's creative process in real time     Wayne McGregor    ['Beautiful', 'Inspiring']    Word Count: 3319    Laugh Count: 2    First Laugh At: 2068
+A cinematic journey through visual effects     Don Levy    ['Fascinating', 'Informative']    Word Count: 904    Laugh Count: 0    First Laugh At: -1
+A clean energy proposal -- race to the top!     Jennifer Granholm    ['Persuasive', 'Inspiring']    Word Count: 2261    Laugh Count: 3    First Laugh At: 714
+A country with no water     Fahad Al-Attiya    ['Informative', 'Inspiring']    Word Count: 1473    Laugh Count: 0    First Laugh At: -1
+A cyber-magic card trick like no other     Marco Tempest    []    Word Count: 979    Laugh Count: 3    First Laugh At: 446
+A dance in a hurricane of paper, wind and light     Aakash Odedra    ['Beautiful', 'Fascinating']    Word Count: 6    Laugh Count: 0    First Laugh At: -1
+A drone's-eye view of conservation     Lian Pin Koh    ['Informative', 'Ingenious']    Word Count: 2243    Laugh Count: 0    First Laugh At: -1
+A father-daughter bond, one photo at a time     Steven Addis    ['Beautiful', 'Inspiring']    Word Count: 615    Laugh Count: 0    First Laugh At: -1
+A father-daughter dance ... in prison     Angela Patton    ['Inspiring', 'Beautiful']    Word Count: 1111    Laugh Count: 4    First Laugh At: 198
+A flying camera ... on a leash     Sergei Lupashin    ['Informative', 'Fascinating']    Word Count: 1151    Laugh Count: 2    First Laugh At: 929
+A forensic anthropologist who brings closure for the "disappeared"     Fredy Peccerelli    ['Informative', 'Courageous']    Word Count: 1654    Laugh Count: 0    First Laugh At: -1
+A girl who demanded school     Kakenya Ntaiya    ['Inspiring', 'Courageous']    Word Count: 2840    Laugh Count: 2    First Laugh At: 131
+A glimpse of life on the road     Kitra Cahana    ['Informative', 'Inspiring']    Word Count: 782    Laugh Count: 0    First Laugh At: -1
+A guerilla gardener in South Central LA     Ron Finley    ['Inspiring', 'Persuasive']    Word Count: 1744    Laugh Count: 5    First Laugh At: 79
+A journey through the mind of an artist     Dustin Yellin    ['Fascinating', 'Funny']    Word Count: 1592    Laugh Count: 7    First Laugh At: 28
+A life lesson from a volunteer firefighter     Mark Bezos    ['Inspiring', 'Funny']    Word Count: 703    Laugh Count: 4    First Laugh At: 212
+A little-told tale of sex and sensuality     Shereen El Feki    ['Informative', 'Courageous']    Word Count: 2524    Laugh Count: 3    First Laugh At: 559
+A love poem for lonely prime numbers     Harry Baker    ['Beautiful', 'Funny']    Word Count: 2977    Laugh Count: 15    First Laugh At: 29
+A magical search for a coincidence     Helder Guimarães    ['Fascinating', 'Funny']    Word Count: 2267    Laugh Count: 9    First Laugh At: 18
+A mini robot -- powered by your phone     Keller Rinaudo    ['Fascinating', 'Ingenious']    Word Count: 1217    Laugh Count: 0    First Laugh At: -1
+A monkey that controls a robot with its thoughts. No, really.     Miguel Nicolelis    ['Fascinating', 'Ingenious']    Word Count: 2612    Laugh Count: 0    First Laugh At: -1
+A mouse. A laser beam. A manipulated memory.     Steve Ramirez and Xu Liu    []    Word Count: 3427    Laugh Count: 7    First Laugh At: 48
+A moving song from women in prison for life     The Lady Lifers    ['Beautiful', 'Courageous']    Word Count: 791    Laugh Count: 0    First Laugh At: -1
+A neural portrait of the human mind     Nancy Kanwisher    ['Informative', 'Fascinating']    Word Count: 3357    Laugh Count: 2    First Laugh At: 828
+A new equation for intelligence     Alex Wissner-Gross    ['Fascinating', 'Informative']    Word Count: 1856    Laugh Count: 0    First Laugh At: -1
+A new kind of job market     Wingham Rowan    ['Informative', 'Ingenious']    Word Count: 2354    Laugh Count: 0    First Laugh At: -1
+A new mission for veterans -- disaster relief     Jake Wood    ['Inspiring', 'Persuasive']    Word Count: 1043    Laugh Count: 0    First Laugh At: -1
+A new museum wing ... in a giant bubble     Liz Diller    ['Ingenious', 'Informative']    Word Count: 1947    Laugh Count: 0    First Laugh At: -1
+A new vision for rebuilding Detroit     Toni Griffin    ['Informative', 'Inspiring']    Word Count: 2229    Laugh Count: 0    First Laugh At: -1
+A new way to diagnose autism     Ami Klin    ['Informative', 'Fascinating']    Word Count: 3387    Laugh Count: 1    First Laugh At: 838
+A new way to grow bone     Molly Stevens    ['Informative', 'Fascinating']    Word Count: 3015    Laugh Count: 2    First Laugh At: 222
+A new way to stop identity theft     David Birch    ['Informative', 'Persuasive']    Word Count: 4174    Laugh Count: 12    First Laugh At: 321
+A novel idea for cleaning up oil spills     Cesar Harada    ['Ingenious', 'Inspiring']    Word Count: 2902    Laugh Count: 2    First Laugh At: 1339
+A one-man world summit     Rory  Bremner    ['Funny', 'Ingenious']    Word Count: 3387    Laugh Count: 55    First Laugh At: 104
+A one-woman global village     Sarah Jones    ['Funny', 'Beautiful']    Word Count: 3989    Laugh Count: 16    First Laugh At: 170
+A park underneath the hustle and bustle of New York City     Dan Barasch    ['Inspiring', 'Ingenious']    Word Count: 1270    Laugh Count: 0    First Laugh At: -1
+A powerful poem about what it feels like to be transgender     Lee Mokobe    ['Inspiring', 'Courageous']    Word Count: 756    Laugh Count: 0    First Laugh At: -1
+A promising test for pancreatic cancer ... from a teenager     Jack Andraka    []    Word Count: 1887    Laugh Count: 8    First Laugh At: 162
+A rare interview with the mathematician who cracked Wall Street     Jim Simons    ['Inspiring', 'Informative']    Word Count: 4326    Laugh Count: 5    First Laugh At: 597
+A reality check on renewables     David MacKay    ['Informative', 'Persuasive']    Word Count: 3774    Laugh Count: 4    First Laugh At: 1866
+A science award that makes you laugh, then think     Marc Abrahams    ['Funny', 'Informative']    Word Count: 2108    Laugh Count: 8    First Laugh At: 137
+A secret memorial for civilian casualties     Matt Kenyon    ['Courageous', 'Ingenious']    Word Count: 1034    Laugh Count: 5    First Laugh At: 77
+A shark-deterrent wetsuit (and it's not what you think)     Hamish Jolly    ['Informative', 'Ingenious']    Word Count: 2213    Laugh Count: 2    First Laugh At: 1415
+A simple solution to the coming phosphorus crisis     Mohamed Hijri    ['Informative', 'Persuasive']    Word Count: 2256    Laugh Count: 0    First Laugh At: -1
+A skateboard, with a boost     Sanjay Dastoor    ['Ingenious', 'Inspiring']    Word Count: 530    Laugh Count: 0    First Laugh At: -1
+A song for my hero, the woman who rowed into a hurricane     Dawn Landes    ['Fascinating', 'Beautiful']    Word Count: 1331    Laugh Count: 0    First Laugh At: -1
+A story about knots and surgeons     Ed Gavagan    ['Courageous', 'Inspiring']    Word Count: 2189    Laugh Count: 14    First Laugh At: 407
+A story of mixed emoticons     Rives    ['Funny', 'Ingenious']    Word Count: 478    Laugh Count: 3    First Laugh At: 137
+A tale of mental illness -- from the inside     Elyn Saks    ['Courageous', 'Inspiring']    Word Count: 3233    Laugh Count: 2    First Laugh At: 1599
+A tale of two Americas. And the mini-mart where they collided     Anand Giridharadas    ['Inspiring', 'Courageous']    Word Count: 2638    Laugh Count: 2    First Laugh At: 720
+A tale of two political systems     Eric X. Li    ['Informative', 'Fascinating']    Word Count: 3618    Laugh Count: 5    First Laugh At: 297
+A talking, squawking parrot     Einstein the Parrot    ['Funny', 'Fascinating']    Word Count: 1450    Laugh Count: 17    First Laugh At: 102
+A teacher growing green in the South Bronx     Stephen Ritz    ['Inspiring', 'Funny']    Word Count: 3346    Laugh Count: 1    First Laugh At: 11
+A teen just trying to figure it out     Tavi Gevinson    ['Inspiring', 'Courageous']    Word Count: 1318    Laugh Count: 5    First Laugh At: 88
+A test for Parkinson's with a phone call     Max Little    ['Ingenious', 'Informative']    Word Count: 1334    Laugh Count: 0    First Laugh At: -1
+A theory of everything     Emily Levine    ['Funny', 'Ingenious']    Word Count: 3873    Laugh Count: 45    First Laugh At: 43
+A thousand times no     Bahia Shehab    ['Courageous', 'Inspiring']    Word Count: 929    Laugh Count: 1    First Laugh At: 848
+A tool to fix one of the most dangerous moments in surgery     Nikolai Begg    ['Informative', 'Ingenious']    Word Count: 1868    Laugh Count: 4    First Laugh At: 87
+A universal translator for surgeons     Steven Schwaitzberg    ['Informative', 'Ingenious']    Word Count: 1923    Laugh Count: 0    First Laugh At: -1
+A vision of crimes in the future     Marc Goodman    ['Informative', 'Persuasive']    Word Count: 3296    Laugh Count: 5    First Laugh At: 364
+A visual history of human knowledge     Manuel Lima    ['Informative', 'Fascinating']    Word Count: 2301    Laugh Count: 0    First Laugh At: -1
+A visual history of inequality in industrial America     LaToya Ruby Frazier    ['Informative', 'Courageous']    Word Count: 526    Laugh Count: 0    First Laugh At: -1
+A warrior’s cry against child marriage     Memory Banda    ['Inspiring', 'Courageous']    Word Count: 1723    Laugh Count: 4    First Laugh At: 72
+A word game to communicate in any language     Ajit Narayanan    ['Inspiring', 'Fascinating']    Word Count: 3129    Laugh Count: 0    First Laugh At: -1
+A young guitarist meets his hero     Usman Riaz + Preston Reed    []    Word Count: 413    Laugh Count: 5    First Laugh At: 47
+A-rhythm-etic. The math behind the beats     Clayton Cameron    ['Fascinating', 'Beautiful']    Word Count: 596    Laugh Count: 0    First Laugh At: -1
+Actually, the world isn't flat     Pankaj Ghemawat    ['Informative', 'Persuasive']    Word Count: 2644    Laugh Count: 6    First Laugh At: 994
+Adventures in Twitter fiction     Andrew Fitzgerald    ['Informative', 'Fascinating']    Word Count: 2081    Laugh Count: 1    First Laugh At: 1304
+Advice to young scientists     E.O. Wilson    ['Inspiring', 'Persuasive']    Word Count: 2203    Laugh Count: 0    First Laugh At: -1
+Africa's next boom     Charles Robertson    ['Informative', 'Inspiring']    Word Count: 2471    Laugh Count: 0    First Laugh At: -1
+Agile programming -- for your family     Bruce Feiler    ['Inspiring', 'Informative']    Word Count: 3731    Laugh Count: 2    First Laugh At: 1364
+Aliens, love -- where are they?     John Hodgman    ['Funny', 'Beautiful']    Word Count: 3299    Laugh Count: 25    First Laugh At: 123
+All it takes is 10 mindful minutes     Andy Puddicombe    ['Inspiring', 'Informative']    Word Count: 1848    Laugh Count: 3    First Laugh At: 127
+All things are Moleeds     Charles Fleischer    ['Funny', 'Ingenious']    Word Count: 3715    Laugh Count: 74    First Laugh At: 30
+Alzheimer's is not normal aging — and we can cure it     Samuel Cohen    ['Informative', 'Inspiring']    Word Count: 1318    Laugh Count: 0    First Laugh At: -1
+An 11-year-old prodigy performs old-school jazz     Joey Alexander    ['Beautiful', 'Inspiring']    Word Count: 12    Laugh Count: 0    First Laugh At: -1
+An inventory of the invisible     John Lloyd    ['Funny', 'Fascinating']    Word Count: 2166    Laugh Count: 20    First Laugh At: 84
+An invitation to men who want a better world for women     Elizabeth Nyamayaro    ['Inspiring', 'Beautiful']    Word Count: 1575    Laugh Count: 3    First Laugh At: 131
+An ode to envy     Parul Sehgal    ['Fascinating', 'Funny']    Word Count: 2362    Laugh Count: 4    First Laugh At: 158
+An ultra-low-cost college degree     Shai Reshef    ['Inspiring', 'Informative']    Word Count: 1499    Laugh Count: 0    First Laugh At: -1
+Anatomy of a New Yorker cartoon     Bob Mankoff    ['Funny', 'Informative']    Word Count: 3704    Laugh Count: 27    First Laugh At: 119
+And for my next trick, a robot     Marco Tempest    ['Funny', 'Fascinating']    Word Count: 886    Laugh Count: 0    First Laugh At: -1
+Archaeology from space     Sarah Parcak    ['Informative', 'Fascinating']    Word Count: 927    Laugh Count: 1    First Laugh At: 885
+Archeology, animal photography, BBQ ...     Nathan Myhrvold    ['Funny', 'Inspiring']    Word Count: 3524    Laugh Count: 12    First Laugh At: 98
+Architecture at home in its community     Xavier Vilalta    ['Inspiring', 'Ingenious']    Word Count: 1466    Laugh Count: 1    First Laugh At: 147
+Architecture for the people by the people     Alastair Parvin    ['Inspiring', 'Ingenious']    Word Count: 2507    Laugh Count: 1    First Laugh At: 1573
+Are China and the US doomed to conflict?     Kevin Rudd    ['Informative', 'Inspiring']    Word Count: 3650    Laugh Count: 3    First Laugh At: 20
+Are athletes really getting faster, better, stronger?     David Epstein    ['Informative', 'Fascinating']    Word Count: 2953    Laugh Count: 4    First Laugh At: 849
+Are droids taking our jobs?     Andrew McAfee    ['Informative', 'Persuasive']    Word Count: 2880    Laugh Count: 9    First Laugh At: 1086
+Are we designed to be sexual omnivores?     Christopher Ryan    ['Informative', 'Persuasive']    Word Count: 2562    Laugh Count: 3    First Laugh At: 111
+Are we in control of our own decisions?     Dan Ariely    ['Fascinating', 'Informative']    Word Count: 3854    Laugh Count: 23    First Laugh At: 23
+Are we over-medicalized?     Ivan Oransky    ['Persuasive', 'Informative']    Word Count: 2003    Laugh Count: 0    First Laugh At: -1
+Are you human?     Ze Frank    ['Funny', 'Beautiful']    Word Count: 585    Laugh Count: 4    First Laugh At: 53
+Art that craves your attention     Aparna Rao    ['Funny', 'Fascinating']    Word Count: 1679    Laugh Count: 4    First Laugh At: 125
+Art that looks back at you     Golan Levin    ['Funny', 'Fascinating']    Word Count: 2595    Laugh Count: 7    First Laugh At: 401
+Art with wire, sugar, chocolate and string     Vik Muniz    ['Funny', 'Ingenious']    Word Count: 2800    Laugh Count: 6    First Laugh At: 550
+As work gets more complex, 6 rules to simplify     Yves Morieux    ['Inspiring', 'Informative']    Word Count: 2003    Laugh Count: 3    First Laugh At: 1137
+Asia's rise -- how and when     Hans Rosling    ['Fascinating', 'Informative']    Word Count: 2833    Laugh Count: 6    First Laugh At: 85
+Augmented reality, techno-magic     Marco Tempest    ['Funny', 'Ingenious']    Word Count: 331    Laugh Count: 3    First Laugh At: 275
+Autism — what we know (and what we don’t know yet)     Wendy Chung    ['Informative', 'Fascinating']    Word Count: 2820    Laugh Count: 0    First Laugh At: -1
+Be an artist, right now!     Young-ha Kim    ['Inspiring', 'Persuasive']    Word Count: 3447    Laugh Count: 3    First Laugh At: 1584
+Be an opportunity maker     Kare Anderson    ['Inspiring', 'Informative']    Word Count: 1542    Laugh Count: 4    First Laugh At: 319
+Be passionate. Be courageous. Be your best.     Gabby Giffords and Mark Kelly    ['Inspiring', 'Courageous']    Word Count: 3504    Laugh Count: 6    First Laugh At: 646
+Beats that defy boxes     Reggie Watts    ['Funny', 'Ingenious']    Word Count: 987    Laugh Count: 13    First Laugh At: 80
+Before I die I want to...     Candy Chang    ['Inspiring', 'Beautiful']    Word Count: 948    Laugh Count: 3    First Laugh At: 97
+Behind the Great Firewall of China     Michael Anti    ['Informative', 'Courageous']    Word Count: 2848    Laugh Count: 5    First Laugh At: 177
+Better toilets, better life     Joe Madiath    ['Inspiring', 'Informative']    Word Count: 1494    Laugh Count: 2    First Laugh At: 70
+Between music and medicine     Robert Gupta    ['Inspiring', 'Beautiful']    Word Count: 2026    Laugh Count: 1    First Laugh At: 877
+Beware neuro-bunk     Molly Crockett    ['Informative', 'Persuasive']    Word Count: 1891    Laugh Count: 2    First Laugh At: 610
+Beware, fellow plutocrats, the pitchforks are coming     Nick Hanauer    ['Persuasive', 'Informative']    Word Count: 2941    Laugh Count: 2    First Laugh At: 139
+Big data is better data     Kenneth Cukier    ['Informative', 'Fascinating']    Word Count: 2703    Laugh Count: 1    First Laugh At: 119
+Biohacking -- you can do it, too     Ellen Jorgensen    ['Inspiring', 'Informative']    Word Count: 1728    Laugh Count: 9    First Laugh At: 13
+Bitcoin. Sweat. Tide. Meet the future of branded currency.     Paul Kemp-Robertson    ['Informative', 'Fascinating']    Word Count: 2348    Laugh Count: 2    First Laugh At: 89
+Bluegrass virtuosity from ... New Jersey?     Sleepy Man Banjo Boys    []    Word Count: 337    Laugh Count: 1    First Laugh At: 66
+Body parts on a chip     Geraldine Hamilton    ['Fascinating', 'Ingenious']    Word Count: 2317    Laugh Count: 0    First Laugh At: -1
+Brain-to-brain communication has arrived. How we did it     Miguel Nicolelis    ['Inspiring', 'Fascinating']    Word Count: 3284    Laugh Count: 3    First Laugh At: 1181
+Brilliant designs to fit more people in every city     Kent Larson    ['Ingenious', 'Inspiring']    Word Count: 3237    Laugh Count: 12    First Laugh At: 524
+Bring back the woolly mammoth!     Hendrik Poinar    ['Informative', 'Fascinating']    Word Count: 2143    Laugh Count: 1    First Laugh At: 1626
+Bring on the learning revolution!     Ken Robinson    ['Inspiring', 'Persuasive']    Word Count: 3290    Laugh Count: 32    First Laugh At: 54
+Build a School in the Cloud     Sugata Mitra    ['Inspiring', 'Fascinating']    Word Count: 4032    Laugh Count: 11    First Laugh At: 780
+Building unimaginable shapes     Michael Hansmeyer    ['Beautiful', 'Fascinating']    Word Count: 1983    Laugh Count: 0    First Laugh At: -1
+Can democracy exist without trust?     Ivan Krastev    ['Persuasive', 'Informative']    Word Count: 2511    Laugh Count: 3    First Laugh At: 152
+Can prejudice ever be a good thing?     Paul Bloom    ['Informative', 'Persuasive']    Word Count: 3503    Laugh Count: 2    First Laugh At: 1466
+Can technology solve our big problems?     Jason Pontin    ['Informative', 'Inspiring']    Word Count: 1495    Laugh Count: 0    First Laugh At: -1
+Can the damaged brain repair itself?     Siddharthan Chandran    ['Inspiring', 'Informative']    Word Count: 3154    Laugh Count: 2    First Laugh At: 337
+Can we all "have it all"?     Anne-Marie Slaughter    ['Inspiring', 'Persuasive']    Word Count: 2333    Laugh Count: 0    First Laugh At: -1
+Can we create new senses for humans?     David Eagleman    ['Fascinating', 'Ingenious']    Word Count: 3641    Laugh Count: 6    First Laugh At: 657
+Can we prevent the end of the world?     Martin Rees    ['Informative', 'Inspiring']    Word Count: 1065    Laugh Count: 2    First Laugh At: 30
+Capturing memories in video art     Gabriel Barcia-Colombo    ['Funny', 'Ingenious']    Word Count: 1009    Laugh Count: 10    First Laugh At: 141
+Cheap, effective shelter for disaster relief     Michael McDaniel    ['Ingenious', 'Inspiring']    Word Count: 1497    Laugh Count: 6    First Laugh At: 432
+Chimps have feelings and thoughts. They should also have rights     Steven Wise    ['Inspiring', 'Informative']    Word Count: 2681    Laugh Count: 0    First Laugh At: -1
+Climate change is happening. Here's how we adapt     Alice Bows-Larkin    ['Informative', 'Persuasive']    Word Count: 2505    Laugh Count: 0    First Laugh At: -1
+Close-up card magic with a twist     Lennart Green    []    Word Count: 4492    Laugh Count: 38    First Laugh At: 261
+Cloudy with a chance of joy     Gavin Pretor-Pinney    ['Beautiful', 'Inspiring']    Word Count: 1904    Laugh Count: 7    First Laugh At: 214
+Color blind or color brave?     Mellody Hobson    ['Inspiring', 'Courageous']    Word Count: 2744    Laugh Count: 1    First Laugh At: 2384
+Comedy is translation     Chris Bliss    ['Funny', 'Persuasive']    Word Count: 2832    Laugh Count: 12    First Laugh At: 474
+Comics that ask "what if?"     Randall Munroe    ['Funny', 'Informative']    Word Count: 2010    Laugh Count: 6    First Laugh At: 260
+Confessions of a bad feminist     Roxane Gay    ['Inspiring', 'Courageous']    Word Count: 2132    Laugh Count: 14    First Laugh At: 103
+Confessions of a depressed comic     Kevin Breel    ['Courageous', 'Inspiring']    Word Count: 2452    Laugh Count: 0    First Laugh At: -1
+Cool tricks your phone can do     David Pogue    ['Funny', 'Informative']    Word Count: 5669    Laugh Count: 42    First Laugh At: 141
+Could future devices read images from our brains?     Mary Lou Jepsen    []    Word Count: 1749    Laugh Count: 2    First Laugh At: 349
+Could the sun be good for your heart?     Richard Weller    ['Informative', 'Fascinating']    Word Count: 2678    Laugh Count: 2    First Laugh At: 351
+Could tissue engineering mean personalized medicine?     Nina Tandon    ['Fascinating', 'Informative']    Word Count: 1217    Laugh Count: 0    First Laugh At: -1
+Could we cure HIV with lasers?     Patience Mthunzi    ['Informative', 'Ingenious']    Word Count: 634    Laugh Count: 0    First Laugh At: -1
+Could we speak the language of dolphins?     Denise Herzing    ['Fascinating', 'Informative']    Word Count: 2995    Laugh Count: 2    First Laugh At: 877
+Could your language affect your ability to save money?     Keith Chen    ['Informative', 'Fascinating']    Word Count: 2475    Laugh Count: 2    First Laugh At: 1589
+Creative houses from reclaimed stuff     Dan Phillips    ['Inspiring', 'Ingenious']    Word Count: 3757    Laugh Count: 17    First Laugh At: 254
+Creative problem-solving in the face of extreme limits     Navi Radjou    ['Informative', 'Inspiring']    Word Count: 2447    Laugh Count: 0    First Laugh At: -1
+Crop insurance, an idea worth seeding     Rose Goslinga    ['Inspiring', 'Informative']    Word Count: 1706    Laugh Count: 1    First Laugh At: 202
+DJ decks made of... paper     Kate Stone    ['Ingenious', 'Fascinating']    Word Count: 2299    Laugh Count: 0    First Laugh At: -1
+Dance, tiny robots!     Bruno Maisonnier    ['Fascinating', 'Beautiful']    Word Count: 10    Laugh Count: 0    First Laugh At: -1
+Dancing with light     Quixotic Fusion    []    Word Count: 24    Laugh Count: 0    First Laugh At: -1
+Dare to disagree     Margaret Heffernan    ['Inspiring', 'Persuasive']    Word Count: 1962    Laugh Count: 0    First Laugh At: -1
+Dare to educate Afghan girls     Shabana Basij-Rasikh    ['Inspiring', 'Courageous']    Word Count: 1214    Laugh Count: 0    First Laugh At: -1
+Deep sea diving ... in a wheelchair     Sue Austin    ['Inspiring', 'Beautiful']    Word Count: 892    Laugh Count: 1    First Laugh At: 510
+Demand a fair trade cell phone     Bandi Mbubi    ['Informative', 'Persuasive']    Word Count: 1011    Laugh Count: 1    First Laugh At: 141
+Demand a more open-source government     Beth Noveck    ['Inspiring', 'Persuasive']    Word Count: 3275    Laugh Count: 0    First Laugh At: -1
+Demo    Mark Kendall    ['Ingenious', 'Fascinating']    Word Count: 2508    Laugh Count: 0    First Laugh At: -1
+Depressed dogs, cats with OCD — what animal madness means for us humans     Laurel Braitman    ['Informative', 'Inspiring']    Word Count: 3649    Laugh Count: 8    First Laugh At: 23
+Depression, the secret we share     Andrew Solomon    ['Inspiring', 'Courageous']    Word Count: 5867    Laugh Count: 12    First Laugh At: 2110
+Design and destiny     Philippe Starck    ['Funny', 'Inspiring']    Word Count: 2702    Laugh Count: 5    First Laugh At: 128
+Design and discovery     David Carson    ['Funny', 'Inspiring']    Word Count: 4518    Laugh Count: 34    First Laugh At: 31
+Design at the intersection of technology and biology     Neri Oxman    ['Fascinating', 'Inspiring']    Word Count: 2654    Laugh Count: 1    First Laugh At: 1101
+Design for all 5 senses     Jinsop Lee    ['Inspiring', 'Funny']    Word Count: 1602    Laugh Count: 0    First Laugh At: -1
+Design for people, not awards     Timothy Prestero    ['Inspiring', 'Persuasive']    Word Count: 2341    Laugh Count: 4    First Laugh At: 133
+Design with the blind in mind     Chris Downey    ['Inspiring', 'Beautiful']    Word Count: 2111    Laugh Count: 5    First Laugh At: 344
+Design, explained.     John Hodgman    ['Funny', 'Ingenious']    Word Count: 1022    Laugh Count: 3    First Laugh At: 40
+Designing books is no laughing matter. OK, it is.     Chip Kidd    ['Funny', 'Inspiring']    Word Count: 2587    Laugh Count: 27    First Laugh At: 4
+Designing for simplicity     John Maeda    ['Funny', 'Inspiring']    Word Count: 3928    Laugh Count: 17    First Laugh At: 71
+Did you hear the one about the Iranian-American?     Maz Jobrani    ['Funny', 'Inspiring']    Word Count: 2196    Laugh Count: 23    First Laugh At: 230
+Discover the physical side of the internet     Andrew Blum    ['Informative', 'Fascinating']    Word Count: 2664    Laugh Count: 7    First Laugh At: 575
+Do schools kill creativity?     Ken Robinson    ['Inspiring', 'Funny']    Word Count: 3968    Laugh Count: 39    First Laugh At: 9
+Do we see reality as it is?     Donald Hoffman    ['Fascinating', 'Informative']    Word Count: 3779    Laugh Count: 6    First Laugh At: 1253
+Does money make you mean?     Paul Piff    ['Informative', 'Inspiring']    Word Count: 2835    Laugh Count: 5    First Laugh At: 222
+Does the media have a "duty of care"?     David Puttnam    ['Persuasive', 'Informative']    Word Count: 1985    Laugh Count: 0    First Laugh At: -1
+Don't ask where I'm from, ask where I'm a local     Taiye Selasi    ['Inspiring', 'Beautiful']    Word Count: 2815    Laugh Count: 1    First Laugh At: 2344
+Don't eat the marshmallow!     Joachim de Posada    ['Funny', 'Fascinating']    Word Count: 758    Laugh Count: 5    First Laugh At: 139
+Don't kill your language     Suzanne Talhouk    ['Inspiring', 'Beautiful']    Word Count: 2362    Laugh Count: 3    First Laugh At: 1291
+Don't like clickbait? Don't click     Sally Kohn    ['Persuasive', 'Informative']    Word Count: 848    Laugh Count: 1    First Laugh At: 264
+Drawing on humor for change     Liza Donnelly    ['Funny', 'Inspiring']    Word Count: 1192    Laugh Count: 9    First Laugh At: 2
+ET is (probably) out there -- get ready     Seth Shostak    ['Inspiring', 'Informative']    Word Count: 4516    Laugh Count: 3    First Laugh At: 884
+Ecology from the air     Greg Asner    ['Informative', 'Fascinating']    Word Count: 2716    Laugh Count: 0    First Laugh At: -1
+Embrace the near win     Sarah Lewis    ['Inspiring', 'Beautiful']    Word Count: 1994    Laugh Count: 0    First Laugh At: -1
+Embrace the remix     Kirby Ferguson    ['Persuasive', 'Informative']    Word Count: 1876    Laugh Count: 6    First Laugh At: 783
+Embrace the shake     Phil Hansen    ['Inspiring', 'Fascinating']    Word Count: 1824    Laugh Count: 5    First Laugh At: 990
+Emergency shelters made from paper     Shigeru Ban    ['Inspiring', 'Ingenious']    Word Count: 2140    Laugh Count: 3    First Laugh At: 202
+Energy from floating algae pods     Jonathan Trent    ['Ingenious', 'Informative']    Word Count: 2892    Laugh Count: 1    First Laugh At: 2561
+Ethical riddles in HIV research     Boghuma Kabisen Titanji    ['Informative', 'Persuasive']    Word Count: 1744    Laugh Count: 0    First Laugh At: -1
+Every city needs healthy honey bees     Noah Wilson-Rich    ['Informative', 'Inspiring']    Word Count: 2682    Laugh Count: 10    First Laugh At: 13
+Every kid needs a champion     Rita Pierson    ['Inspiring', 'Beautiful']    Word Count: 1412    Laugh Count: 14    First Laugh At: 29
+Everyday cybercrime -- and what you can do about it     James Lyne    ['Informative', 'Persuasive']    Word Count: 3122    Laugh Count: 2    First Laugh At: 244
+Everyday leadership     Drew Dudley    ['Inspiring', 'Funny']    Word Count: 1765    Laugh Count: 7    First Laugh At: 596
+Everyday moments, caught in time     Billy Collins    ['Funny', 'Beautiful']    Word Count: 2407    Laugh Count: 13    First Laugh At: 82
+Everyday objects, tragic histories     Ziyah Gafić    ['Informative', 'Inspiring']    Word Count: 706    Laugh Count: 0    First Laugh At: -1
+Everyone around you has a story the world needs to hear     Dave Isay    ['Inspiring', 'Beautiful']    Word Count: 4176    Laugh Count: 3    First Laugh At: 1289
+Everything you think you know about addiction is wrong     Johann Hari    ['Inspiring', 'Informative']    Word Count: 3553    Laugh Count: 4    First Laugh At: 492
+Evolution's gift of play, from bonobo apes to humans     Isabel Behncke    ['Funny', 'Informative']    Word Count: 980    Laugh Count: 5    First Laugh At: 57
+Excuse me, may I rent your car?     Robin Chase    ['Inspiring', 'Ingenious']    Word Count: 2311    Laugh Count: 1    First Laugh At: 1654
+Experiments that point to a new understanding of cancer     Mina Bissell    ['Fascinating', 'Inspiring']    Word Count: 2749    Laugh Count: 1    First Laugh At: 48
+FBI, here I am!     Hasan Elahi    ['Funny', 'Ingenious']    Word Count: 3424    Laugh Count: 5    First Laugh At: 450
+Falling in love is the easy part     Mandy Len Catron    ['Fascinating', 'Inspiring']    Word Count: 2351    Laugh Count: 5    First Laugh At: 304
+Fashion and creativity     Isaac Mizrahi    ['Funny', 'Inspiring']    Word Count: 3449    Laugh Count: 7    First Laugh At: 130
+Feats of memory anyone can do     Joshua Foer    ['Inspiring', 'Fascinating']    Word Count: 3528    Laugh Count: 10    First Laugh At: 55
+Fifty shades of gay     iO Tillett Wright    ['Inspiring', 'Courageous']    Word Count: 3393    Laugh Count: 5    First Laugh At: 351
+Fighters and mourners of the Ukrainian revolution     Anastasia Taylor-Lind    ['Beautiful', 'Courageous']    Word Count: 923    Laugh Count: 0    First Laugh At: -1
+Fighting with nonviolence     Scilla Elworthy    ['Inspiring', 'Persuasive']    Word Count: 2129    Laugh Count: 1    First Laugh At: 1005
+Find your voice against gender violence     Meera Vijayann    ['Courageous', 'Inspiring']    Word Count: 2371    Laugh Count: 0    First Laugh At: -1
+Finding the story inside the painting     Tracy Chevalier    ['Beautiful', 'Inspiring']    Word Count: 2901    Laugh Count: 3    First Laugh At: 252
+For argument’s sake     Daniel H. Cohen    ['Informative', 'Persuasive']    Word Count: 1957    Laugh Count: 0    First Laugh At: -1
+For more tolerance, we need more ... tourism?     Aziz Abu Sarah    ['Inspiring', 'Beautiful']    Word Count: 837    Laugh Count: 1    First Laugh At: 82
+For more wonder, rewild the world     George Monbiot    ['Inspiring', 'Fascinating']    Word Count: 2494    Laugh Count: 0    First Laugh At: -1
+For parents, happiness is a very high bar     Jennifer Senior    ['Inspiring', 'Informative']    Word Count: 2790    Laugh Count: 6    First Laugh At: 28
+For these women, reading is a daring act     Laura Boushnak    ['Inspiring', 'Informative']    Word Count: 852    Laugh Count: 1    First Laugh At: 353
+Forget multitasking, try monotasking     Paolo Cardini    ['Funny', 'Inspiring']    Word Count: 313    Laugh Count: 2    First Laugh At: 69
+Four principles for the open world     Don Tapscott    ['Inspiring', 'Persuasive']    Word Count: 3367    Laugh Count: 8    First Laugh At: 29
+Gaming for understanding     Brenda Romero    ['Inspiring', 'Ingenious']    Word Count: 2541    Laugh Count: 5    First Laugh At: 981
+Get ready for hybrid thinking     Ray Kurzweil    ['Informative', 'Fascinating']    Word Count: 1961    Laugh Count: 0    First Laugh At: -1
+Get your next eye exam on a smartphone     Andrew Bastawrous    ['Inspiring', 'Ingenious']    Word Count: 1141    Laugh Count: 1    First Laugh At: 1000
+Global warming's theme song, "Manhattan in January"     Jill Sobule    ['Funny', 'Beautiful']    Word Count: 205    Laugh Count: 2    First Laugh At: 63
+Go ahead, make up new words!     Erin McKean    ['Funny', 'Inspiring']    Word Count: 1452    Laugh Count: 8    First Laugh At: 115
+Gorgeous portraits of the world's vanishing people     Jimmy Nelson    ['Beautiful', 'Inspiring']    Word Count: 4375    Laugh Count: 3    First Laugh At: 1590
+Got a meeting? Take a walk     Nilofer Merchant    ['Inspiring', 'Informative']    Word Count: 633    Laugh Count: 0    First Laugh At: -1
+Got a smartphone? Start broadcasting     Bruno Torturra    ['Informative', 'Inspiring']    Word Count: 2122    Laugh Count: 0    First Laugh At: -1
+Got a wicked problem? First, tell me how you make toast     Tom Wujec    ['Informative', 'Inspiring']    Word Count: 1615    Laugh Count: 1    First Laugh At: 287
+Government -- investor, risk-taker, innovator     Mariana Mazzucato    ['Persuasive', 'Informative']    Word Count: 2895    Laugh Count: 0    First Laugh At: -1
+Government surveillance — this is just the beginning     Christopher Soghoian    ['Informative', 'Persuasive']    Word Count: 1613    Laugh Count: 2    First Laugh At: 376
+HIV -- how to fight an epidemic of bad laws     Shereen El-Feki    ['Informative', 'Persuasive']    Word Count: 2396    Laugh Count: 0    First Laugh At: -1
+Hack a banana, make a keyboard!     Jay Silver    ['Inspiring', 'Ingenious']    Word Count: 2992    Laugh Count: 5    First Laugh At: 61
+Hackers    Keren Elazari    ['Informative', 'Inspiring']    Word Count: 2500    Laugh Count: 0    First Laugh At: -1
+Happiness by design     Stefan Sagmeister    ['Inspiring', 'Funny']    Word Count: 2384    Laugh Count: 25    First Laugh At: 118
+Happy maps     Daniele Quercia    ['Inspiring', 'Beautiful']    Word Count: 1064    Laugh Count: 0    First Laugh At: -1
+Health care should be a team sport     Eric Dishman    ['Inspiring', 'Informative']    Word Count: 3471    Laugh Count: 2    First Laugh At: 699
+Healthier men, one moustache at a time     Adam Garone    ['Inspiring', 'Funny']    Word Count: 3408    Laugh Count: 28    First Laugh At: 41
+Here's how we take back the Internet     Edward Snowden    ['Courageous', 'Informative']    Word Count: 6176    Laugh Count: 6    First Laugh At: 97
+Hey science teachers -- make it fun     Tyler DeWitt    ['Inspiring', 'Persuasive']    Word Count: 2238    Laugh Count: 0    First Laugh At: -1
+Hidden cameras that film injustice in the world’s most dangerous places     Oren Yakobovich    ['Courageous', 'Inspiring']    Word Count: 2318    Laugh Count: 1    First Laugh At: 688
+Hidden miracles of the natural world     Louie Schwartzberg    ['Fascinating', 'Beautiful']    Word Count: 913    Laugh Count: 0    First Laugh At: -1
+Hidden music rituals around the world     Vincent Moon and Naná Vasconcelos    ['Inspiring', 'Beautiful']    Word Count: 2244    Laugh Count: 1    First Laugh At: 1069
+High-tech art (with a sense of humor)     Aparna Rao    ['Ingenious', 'Fascinating']    Word Count: 1830    Laugh Count: 1    First Laugh At: 1076
+His and hers … healthcare     Paula Johnson    ['Informative', 'Persuasive']    Word Count: 2171    Laugh Count: 0    First Laugh At: -1
+Home is a song I've always remembered     Teitur    ['Beautiful', 'Inspiring']    Word Count: 716    Laugh Count: 1    First Laugh At: 416
+Homeopathy, quackery and fraud     James Randi    ['Funny', 'Persuasive']    Word Count: 3479    Laugh Count: 17    First Laugh At: 99
+Hopeful lessons from the battle to save rainforests     Tasso Azevedo    ['Informative', 'Inspiring']    Word Count: 2531    Laugh Count: 0    First Laugh At: -1
+How Arduino is open-sourcing imagination     Massimo Banzi    ['Inspiring', 'Ingenious']    Word Count: 3194    Laugh Count: 12    First Laugh At: 357
+How Christmas lights helped guerrillas put down their guns     Jose Miguel Sokoloff    ['Inspiring', 'Beautiful']    Word Count: 2554    Laugh Count: 2    First Laugh At: 67
+How I beat stage fright     Joe Kowan    ['Funny', 'Inspiring']    Word Count: 1369    Laugh Count: 11    First Laugh At: 184
+How I became 100 artists     Shea Hembrey    ['Funny', 'Ingenious']    Word Count: 3391    Laugh Count: 20    First Laugh At: 136
+How I brought a river, and my city, back to life     Aziza Chaouni    ['Inspiring', 'Informative']    Word Count: 949    Laugh Count: 0    First Laugh At: -1
+How I built a toaster -- from scratch     Thomas Thwaites    ['Funny', 'Ingenious']    Word Count: 1770    Laugh Count: 2    First Laugh At: 805
+How I defend the rule of law     Kimberley Motley    ['Courageous', 'Inspiring']    Word Count: 2724    Laugh Count: 2    First Laugh At: 1860
+How I fell in love with a fish     Dan Barber    ['Inspiring', 'Informative']    Word Count: 3054    Laugh Count: 19    First Laugh At: 55
+How I fell in love with quasars, blazars and our incredible universe     Jedidah Isler    ['Informative', 'Fascinating']    Word Count: 651    Laugh Count: 1    First Laugh At: 147
+How I hacked online dating     Amy Webb    ['Funny', 'Ingenious']    Word Count: 3688    Laugh Count: 13    First Laugh At: 911
+How I help transgender teens become who they want to be     Norman Spack    ['Informative', 'Inspiring']    Word Count: 2571    Laugh Count: 3    First Laugh At: 744
+How I learned to communicate my inner life with Asperger's     Alix Generous    ['Inspiring', 'Courageous']    Word Count: 1589    Laugh Count: 21    First Laugh At: 32
+How I learned to stop worrying and love "useless" art     Luke Syson    ['Funny', 'Inspiring']    Word Count: 2332    Laugh Count: 11    First Laugh At: 664
+How I made an impossible film     Martin Villeneuve    ['Inspiring', 'Ingenious']    Word Count: 1937    Laugh Count: 1    First Laugh At: 1126
+How I named, shamed and jailed     Anas Aremeyaw Anas    ['Courageous', 'Inspiring']    Word Count: 2205    Laugh Count: 0    First Laugh At: -1
+How I started a sanitary napkin revolution!     Arunachalam Muruganantham    ['Inspiring', 'Ingenious']    Word Count: 1731    Laugh Count: 1    First Laugh At: 583
+How I started writing songs again     Sting    ['Inspiring', 'Beautiful']    Word Count: 3753    Laugh Count: 2    First Laugh At: 737
+How I stopped the Taliban from shutting down my school     Sakena Yacoobi    ['Inspiring', 'Courageous']    Word Count: 3097    Laugh Count: 8    First Laugh At: 1220
+How I use sonar to navigate the world     Daniel Kish    ['Inspiring', 'Fascinating']    Word Count: 1765    Laugh Count: 8    First Laugh At: 75
+How I work to protect women from honor killings     Khalida Brohi    ['Inspiring', 'Courageous']    Word Count: 3440    Laugh Count: 1    First Laugh At: 998
+How I'm preparing to get Alzheimer's     Alanna Shaikh    ['Inspiring', 'Courageous']    Word Count: 1241    Laugh Count: 2    First Laugh At: 370
+How Mars might hold the secret to the origin of life     Nathalie Cabrol    ['Informative', 'Fascinating']    Word Count: 2892    Laugh Count: 1    First Laugh At: 479
+How Mr. Condom made Thailand a better place for life and love     Mechai Viravaidya    ['Funny', 'Inspiring']    Word Count: 2938    Laugh Count: 12    First Laugh At: 766
+How a boy became an artist     Jarrett J. Krosoczka    ['Inspiring', 'Beautiful']    Word Count: 3904    Laugh Count: 16    First Laugh At: 583
+How a dead duck changed my life     Kees Moeliker    ['Funny', 'Informative']    Word Count: 1614    Laugh Count: 13    First Laugh At: 135
+How a driverless car sees the road     Chris Urmson    ['Informative', 'Fascinating']    Word Count: 3627    Laugh Count: 3    First Laugh At: 2668
+How a fly flies     Michael Dickinson    ['Fascinating', 'Informative']    Word Count: 3167    Laugh Count: 6    First Laugh At: 113
+How a penny made me feel like a millionaire     Tania Luna    ['Inspiring', 'Beautiful']    Word Count: 1009    Laugh Count: 0    First Laugh At: -1
+How an obese town lost a million pounds     Mick Cornett    ['Inspiring', 'Informative']    Word Count: 2648    Laugh Count: 8    First Laugh At: 36
+How animations can help scientists test a hypothesis     Janet Iwasa    ['Informative', 'Fascinating']    Word Count: 935    Laugh Count: 0    First Laugh At: -1
+How architectural innovations migrate across borders     Teddy Cruz    ['Informative', 'Inspiring']    Word Count: 1981    Laugh Count: 0    First Laugh At: -1
+How art, technology and design inform creative leaders     John Maeda    ['Inspiring', 'Informative']    Word Count: 3670    Laugh Count: 18    First Laugh At: 213
+How augmented reality will change sports ... and build empathy     Chris Kluwe    ['Informative', 'Inspiring']    Word Count: 1846    Laugh Count: 2    First Laugh At: 401
+How autism freed me to be myself     Rosie King    ['Inspiring', 'Courageous']    Word Count: 1171    Laugh Count: 3    First Laugh At: 292
+How behavioral science can lower your energy bill     Alex Laskey    ['Persuasive', 'Informative']    Word Count: 1519    Laugh Count: 2    First Laugh At: 29
+How books can open your mind     Lisa Bu    ['Inspiring', 'Beautiful']    Word Count: 1047    Laugh Count: 3    First Laugh At: 420
+How butterflies self-medicate     Jaap de Roode    ['Informative', 'Fascinating']    Word Count: 1327    Laugh Count: 0    First Laugh At: -1
+How can Formula 1 racing help ... babies?     Peter van Manen    ['Inspiring', 'Ingenious']    Word Count: 1405    Laugh Count: 0    First Laugh At: -1
+How childhood trauma affects health across a lifetime     Nadine Burke Harris    ['Informative', 'Inspiring']    Word Count: 2385    Laugh Count: 1    First Laugh At: 1309
+How common threats can make common (political) ground     Jonathan Haidt    ['Persuasive', 'Informative']    Word Count: 4207    Laugh Count: 1    First Laugh At: 1606
+How data will transform business     Philip Evans    ['Informative', 'Fascinating']    Word Count: 2573    Laugh Count: 0    First Laugh At: -1
+How do you explain consciousness?     David Chalmers    ['Fascinating', 'Informative']    Word Count: 2954    Laugh Count: 0    First Laugh At: -1
+How equal do we want the world to be? You'd be surprised     Dan Ariely    ['Informative', 'Persuasive']    Word Count: 1763    Laugh Count: 1    First Laugh At: 162
+How fear drives American politics     David Rothkopf    ['Informative', 'Persuasive']    Word Count: 3076    Laugh Count: 3    First Laugh At: 67
+How giant websites design for you (and a billion others, too)     Margaret Gould Stewart    ['Informative', 'Inspiring']    Word Count: 2457    Laugh Count: 1    First Laugh At: 916
+How healthy living nearly killed me     AJ Jacobs    ['Funny', 'Informative']    Word Count: 1445    Laugh Count: 7    First Laugh At: 178
+How movies teach manhood     Colin Stokes    ['Inspiring', 'Persuasive']    Word Count: 2226    Laugh Count: 4    First Laugh At: 182
+How my mind came back to life — and no one knew     Martin Pistorius    ['Inspiring', 'Courageous']    Word Count: 2423    Laugh Count: 0    First Laugh At: -1
+How not to be ignorant about the world     Hans and Ola Rosling    ['Informative', 'Funny']    Word Count: 3458    Laugh Count: 8    First Laugh At: 433
+How open data is changing international aid     Sanjay Pradhan    ['Inspiring', 'Informative']    Word Count: 1901    Laugh Count: 1    First Laugh At: 1081
+How our microbes make us who we are     Rob Knight    ['Informative', 'Fascinating']    Word Count: 3707    Laugh Count: 4    First Laugh At: 433
+How our stories cross over     Colin Grant    ['Courageous', 'Beautiful']    Word Count: 2991    Laugh Count: 4    First Laugh At: 148
+How painting can transform communities     Haas&Hahn    ['Inspiring', 'Beautiful']    Word Count: 2121    Laugh Count: 6    First Laugh At: 221
+How prisons can help inmates live meaningful lives     Dan Pacholke    ['Inspiring', 'Informative']    Word Count: 2236    Laugh Count: 0    First Laugh At: -1
+How public spaces make cities work     Amanda Burden    ['Inspiring', 'Informative']    Word Count: 3063    Laugh Count: 0    First Laugh At: -1
+How quantum biology might explain life’s biggest questions     Jim Al-Khalili    ['Fascinating', 'Informative']    Word Count: 2895    Laugh Count: 4    First Laugh At: 432
+How reliable is your memory?     Elizabeth Loftus    ['Informative', 'Fascinating']    Word Count: 2770    Laugh Count: 1    First Laugh At: 2486
+How sampling transformed music     Mark Ronson    ['Beautiful', 'Fascinating']    Word Count: 2703    Laugh Count: 2    First Laugh At: 726
+How societies can grow old better     Jared Diamond    ['Informative', 'Persuasive']    Word Count: 2904    Laugh Count: 2    First Laugh At: 70
+How synchronized hammer strikes could generate nuclear fusion     Michel Laberge    ['Informative', 'Ingenious']    Word Count: 2870    Laugh Count: 1    First Laugh At: 2162
+How technology allowed me to read     Ron McCallum    ['Inspiring', 'Beautiful']    Word Count: 2425    Laugh Count: 14    First Laugh At: 416
+How the Internet will (one day) transform government     Clay Shirky    ['Inspiring', 'Persuasive']    Word Count: 3378    Laugh Count: 21    First Laugh At: 89
+How the NSA betrayed the world's trust -- time to act     Mikko Hypponen    ['Informative', 'Persuasive']    Word Count: 3137    Laugh Count: 3    First Laugh At: 194
+How the mysterious dark net is going mainstream     Jamie Bartlett    ['Informative', 'Fascinating']    Word Count: 2289    Laugh Count: 10    First Laugh At: 418
+How the teddy bear taught us compassion     Jon Mooallem    ['Informative', 'Inspiring']    Word Count: 2992    Laugh Count: 2    First Laugh At: 1139
+How the worst moments in our lives make us who we are     Andrew Solomon    ['Inspiring', 'Beautiful']    Word Count: 3228    Laugh Count: 5    First Laugh At: 1297
+How this FBI strategy is actually creating US-based terrorists     Trevor Aaronson    ['Informative', 'Courageous']    Word Count: 1875    Laugh Count: 0    First Laugh At: -1
+How to "sketch" with electronics     Leah Buechley    ['Fascinating', 'Ingenious']    Word Count: 511    Laugh Count: 1    First Laugh At: 299
+How to air-condition outdoor spaces     Wolfgang Kessling    ['Informative', 'Ingenious']    Word Count: 1910    Laugh Count: 0    First Laugh At: -1
+How to avoid surveillance ... with the phone in your pocket     Christopher Soghoian    ['Informative', 'Persuasive']    Word Count: 1143    Laugh Count: 0    First Laugh At: -1
+How to build an information time machine     Frederic Kaplan    ['Fascinating', 'Ingenious']    Word Count: 1859    Laugh Count: 0    First Laugh At: -1
+How to build with clay... and community     Diébédo Francis Kéré    ['Inspiring', 'Beautiful']    Word Count: 1700    Laugh Count: 7    First Laugh At: 672
+How to build your creative confidence     David Kelley    ['Inspiring', 'Beautiful']    Word Count: 2141    Laugh Count: 2    First Laugh At: 1590
+How to buy happiness     Michael Norton    ['Inspiring', 'Persuasive']    Word Count: 2981    Laugh Count: 5    First Laugh At: 84
+How to control someone else's arm with your brain     Greg Gage    ['Fascinating', 'Informative']    Word Count: 1343    Laugh Count: 5    First Laugh At: 933
+How to defend Earth from asteroids     Phil Plait    ['Funny', 'Fascinating']    Word Count: 3189    Laugh Count: 14    First Laugh At: 30
+How to engineer a viral music video     Adam Sadowsky    ['Ingenious', 'Funny']    Word Count: 1744    Laugh Count: 5    First Laugh At: 602
+How to escape education's death valley     Ken Robinson    ['Inspiring', 'Persuasive']    Word Count: 3391    Laugh Count: 29    First Laugh At: 33
+How to fight desertification and reverse climate change     Allan Savory    []    Word Count: 3304    Laugh Count: 0    First Laugh At: -1
+How to find work you love     Scott Dinsmore    ['Inspiring', 'Persuasive']    Word Count: 4489    Laugh Count: 2    First Laugh At: 252
+How to fix a broken school? Lead fearlessly, love hard     Linda Cliatt-Wayman    ['Inspiring', 'Courageous']    Word Count: 2167    Laugh Count: 9    First Laugh At: 128
+How to fool a GPS     Todd Humphreys    ['Informative', 'Fascinating']    Word Count: 2781    Laugh Count: 5    First Laugh At: 867
+How to get (a new) hip     Allison Hunt    ['Funny', 'Ingenious']    Word Count: 1009    Laugh Count: 0    First Laugh At: -1
+How to go to space, without having to go to space     Angelo Vermeulen    ['Informative', 'Inspiring']    Word Count: 1313    Laugh Count: 0    First Laugh At: -1
+How to grow a tiny forest anywhere     Shubhendu Sharma    ['Inspiring', 'Ingenious']    Word Count: 707    Laugh Count: 0    First Laugh At: -1
+How to help refugees rebuild their world     Melissa Fleming    ['Inspiring', 'Informative']    Word Count: 2207    Laugh Count: 0    First Laugh At: -1
+How to land on a comet     Fred Jansen    ['Fascinating', 'Inspiring']    Word Count: 3499    Laugh Count: 5    First Laugh At: 666
+How to let altruism be your guide     Matthieu Ricard    ['Inspiring', 'Informative']    Word Count: 2698    Laugh Count: 4    First Laugh At: 510
+How to live passionately—no matter your age     Isabel Allende    ['Inspiring', 'Beautiful']    Word Count: 1276    Laugh Count: 10    First Laugh At: 6
+How to look inside the brain     Carl Schoonover    ['Informative', 'Fascinating']    Word Count: 985    Laugh Count: 0    First Laugh At: -1
+How to make a splash in social media     Alexis Ohanian    ['Funny', 'Inspiring']    Word Count: 1237    Laugh Count: 5    First Laugh At: 383
+How to make hard choices     Ruth Chang    ['Inspiring', 'Informative']    Word Count: 2411    Laugh Count: 0    First Laugh At: -1
+How to make peace? Get angry     Kailash Satyarthi    ['Inspiring', 'Courageous']    Word Count: 2285    Laugh Count: 0    First Laugh At: -1
+How to make stress your friend     Kelly McGonigal    ['Informative', 'Inspiring']    Word Count: 2350    Laugh Count: 8    First Laugh At: 260
+How to manage for collective creativity     Linda Hill    ['Inspiring', 'Informative']    Word Count: 3185    Laugh Count: 3    First Laugh At: 288
+How to overcome our biases? Walk boldly toward them     Vernā Myers    ['Inspiring', 'Beautiful']    Word Count: 2960    Laugh Count: 6    First Laugh At: 609
+How to protect fast-growing cities from failing     Robert Muggah    ['Ingenious', 'Inspiring']    Word Count: 2786    Laugh Count: 0    First Laugh At: -1
+How to raise a black son in America     Clint Smith    ['Inspiring', 'Courageous']    Word Count: 1087    Laugh Count: 0    First Laugh At: -1
+How to reduce poverty? Fix homes     Paul Pholeros    ['Inspiring', 'Ingenious']    Word Count: 3153    Laugh Count: 2    First Laugh At: 712
+How to reinvent the apartment building     Moshe Safdie    ['Informative', 'Fascinating']    Word Count: 850    Laugh Count: 0    First Laugh At: -1
+How to revive a neighborhood    Theaster Gates    ['Inspiring', 'Beautiful']    Word Count: 3155    Laugh Count: 2    First Laugh At: 836
+How to rob a bank (from the inside, that is)     William Black    ['Informative', 'Persuasive']    Word Count: 2856    Laugh Count: 0    First Laugh At: -1
+How to run a company with (almost) no rules     Ricardo Semler    ['Inspiring', 'Fascinating']    Word Count: 4618    Laugh Count: 14    First Laugh At: 250
+How to save the world (or at least yourself) from bad meetings     David Grady    ['Funny', 'Informative']    Word Count: 1424    Laugh Count: 13    First Laugh At: 161
+How to separate fact and fiction online     Markham Nolan    ['Informative', 'Fascinating']    Word Count: 3262    Laugh Count: 3    First Laugh At: 893
+How to solve traffic jams     Jonas Eliasson    ['Informative', 'Persuasive']    Word Count: 1769    Laugh Count: 1    First Laugh At: 1459
+How to speak so that people want to listen     Julian Treasure    ['Informative', 'Inspiring']    Word Count: 2073    Laugh Count: 5    First Laugh At: 282
+How to start a movement     Derek Sivers    ['Inspiring', 'Funny']    Word Count: 584    Laugh Count: 4    First Laugh At: 173
+How to step up in the face of disaster     Caitria + Morgan O'Neill    ['Inspiring', 'Courageous']    Word Count: 2128    Laugh Count: 2    First Laugh At: 685
+How to talk to veterans about the war     Wes Moore    ['Inspiring', 'Courageous']    Word Count: 2925    Laugh Count: 1    First Laugh At: 557
+How to upgrade democracy for the Internet era     Pia Mancini    ['Inspiring', 'Courageous']    Word Count: 1967    Laugh Count: 0    First Laugh At: -1
+How to use a paper towel     Joe Smith    ['Funny', 'Informative']    Word Count: 586    Laugh Count: 3    First Laugh At: 310
+How too many rules at work keep you from getting things done     Yves Morieux    ['Inspiring', 'Persuasive']    Word Count: 2187    Laugh Count: 6    First Laugh At: 449
+How virtual reality can create the ultimate empathy machine     Chris Milk    ['Inspiring', 'Fascinating']    Word Count: 1751    Laugh Count: 5    First Laugh At: 189
+How we can eat our landscapes     Pam Warhurst    ['Inspiring', 'Persuasive']    Word Count: 2822    Laugh Count: 17    First Laugh At: 85
+How we can make the world a better place by 2030     Michael Green    ['Informative', 'Inspiring']    Word Count: 2612    Laugh Count: 1    First Laugh At: 1325
+How we can predict the next financial crisis     Didier Sornette    ['Informative', 'Persuasive']    Word Count: 2495    Laugh Count: 1    First Laugh At: 709
+How we cut youth violence in Boston by 79 percent     Jeffrey Brown    ['Inspiring', 'Persuasive']    Word Count: 2999    Laugh Count: 5    First Laugh At: 189
+How we found the giant squid     Edith Widder    []    Word Count: 1436    Laugh Count: 2    First Laugh At: 89
+How we found the worst place to park in New York City -- using big data     Ben Wellington    ['Informative', 'Persuasive']    Word Count: 3010    Laugh Count: 2    First Laugh At: 561
+How we turned the tide on domestic violence (Hint    Esta Soler    ['Courageous', 'Inspiring']    Word Count: 1867    Laugh Count: 2    First Laugh At: 568
+How we unearthed the Spinosaurus     Nizar Ibrahim    ['Informative', 'Fascinating']    Word Count: 1040    Laugh Count: 0    First Laugh At: -1
+How we'll resurrect the gastric brooding frog, the Tasmanian tiger     Michael Archer    ['Fascinating', 'Informative']    Word Count: 3818    Laugh Count: 1    First Laugh At: 2469
+How we're priming some kids for college — and others for prison     Alice Goffman    ['Inspiring', 'Courageous']    Word Count: 2773    Laugh Count: 0    First Laugh At: -1
+How we're teaching computers to understand pictures     Fei-Fei Li    ['Inspiring', 'Informative']    Word Count: 2632    Laugh Count: 3    First Laugh At: 772
+How young blood might help reverse aging. Yes, really     Tony Wyss-Coray    ['Fascinating', 'Informative']    Word Count: 2344    Laugh Count: 2    First Laugh At: 415
+How your "working memory" makes sense of the world     Peter Doolittle    ['Informative', 'Funny']    Word Count: 1945    Laugh Count: 7    First Laugh At: 619
+Human trafficking is all around you. This is how it works     Noy Thrupkaew    ['Informative', 'Courageous']    Word Count: 3238    Laugh Count: 1    First Laugh At: 187
+Humanity vs. Ebola. How we could win a terrifying war     Bruce Aylward    ['Informative', 'Inspiring']    Word Count: 3575    Laugh Count: 0    First Laugh At: -1
+Humble plants that hide surprising secrets     Ameenah Gurib-Fakim    ['Informative', 'Fascinating']    Word Count: 2336    Laugh Count: 1    First Laugh At: 1683
+I am the son of a terrorist. Here's how I chose peace.     Zak Ebrahim    ['Inspiring', 'Courageous']    Word Count: 1567    Laugh Count: 0    First Laugh At: -1
+I got 99 problems... palsy is just one     Maysoon Zayid    ['Inspiring', 'Funny']    Word Count: 2379    Laugh Count: 34    First Laugh At: 102
+I leapt from the stratosphere. Here's how I did it     Alan Eustace    ['Courageous', 'Inspiring']    Word Count: 2424    Laugh Count: 8    First Laugh At: 440
+I listen to color     Neil Harbisson    []    Word Count: 1662    Laugh Count: 12    First Laugh At: 235
+I was held hostage for 317 days. Here's what I thought about…     Vincent Cochetel    ['Courageous', 'Inspiring']    Word Count: 3015    Laugh Count: 1    First Laugh At: 1972
+If I controlled the Internet     Rives    ['Funny', 'Beautiful']    Word Count: 716    Laugh Count: 11    First Laugh At: 43
+If cars could talk, accidents might be avoidable     Jennifer Healey    ['Informative', 'Persuasive']    Word Count: 1761    Laugh Count: 2    First Laugh At: 842
+Image recognition that triggers augmented reality     Matt Mills    []    Word Count: 1657    Laugh Count: 8    First Laugh At: 197
+Imagine a European democracy without borders     George Papandreou    ['Inspiring', 'Informative']    Word Count: 3178    Laugh Count: 1    First Laugh At: 444
+Imaging at a trillion frames per second     Ramesh Raskar    []    Word Count: 1674    Laugh Count: 7    First Laugh At: 305
+In our baby's illness, a life lesson     Roberto D'Angelo + Francesca Fedeli    ['Inspiring', 'Beautiful']    Word Count: 1052    Laugh Count: 0    First Laugh At: -1
+In praise of macro -- yes, macro -- finance in Africa     Sangu Delle    ['Informative', 'Inspiring']    Word Count: 796    Laugh Count: 2    First Laugh At: 114
+In search of the man who broke my neck     Joshua Prager    ['Inspiring', 'Courageous']    Word Count: 3376    Laugh Count: 2    First Laugh At: 1055
+In the key of genius     Derek Paravicini and Adam Ockelford    []    Word Count: 2479    Laugh Count: 4    First Laugh At: 918
+India's invisible innovation     Nirmalya Kumar    ['Informative', 'Persuasive']    Word Count: 3002    Laugh Count: 3    First Laugh At: 382
+Information is food     JP Rangaswami    ['Informative', 'Fascinating']    Word Count: 1425    Laugh Count: 3    First Laugh At: 31
+Ingenious homes in unexpected places     Iwan Baan    ['Fascinating', 'Inspiring']    Word Count: 2772    Laugh Count: 0    First Laugh At: -1
+Ingenuity and elegance in ancient African alphabets     Saki Mafundikwa    ['Informative', 'Fascinating']    Word Count: 1081    Laugh Count: 0    First Laugh At: -1
+Inside the secret shipping industry     Rose George    ['Informative', 'Fascinating']    Word Count: 1943    Laugh Count: 2    First Laugh At: 291
+Invest in social change     Toby Eccles    ['Persuasive', 'Inspiring']    Word Count: 1826    Laugh Count: 0    First Laugh At: -1
+Iran and Israel    Trita Parsi    ['Informative', 'Persuasive']    Word Count: 1572    Laugh Count: 0    First Laugh At: -1
+Is China the new idol for emerging economies?     Dambisa Moyo    ['Persuasive', 'Informative']    Word Count: 2863    Laugh Count: 1    First Laugh At: 2671
+Is our universe the only universe?     Brian Greene    ['Fascinating', 'Informative']    Word Count: 3642    Laugh Count: 1    First Laugh At: 202
+Is religion good or bad? (This is a trick question)     Kwame Anthony Appiah    ['Informative', 'Fascinating']    Word Count: 3061    Laugh Count: 4    First Laugh At: 11
+Is the obesity crisis hiding a bigger problem?     Peter Attia    ['Courageous', 'Inspiring']    Word Count: 2805    Laugh Count: 0    First Laugh At: -1
+Israel and Iran    Ronny Edry    ['Inspiring', 'Beautiful']    Word Count: 2715    Laugh Count: 5    First Laugh At: 111
+It's time for "The Talk"     Julia Sweeney    ['Funny', 'Beautiful']    Word Count: 1242    Laugh Count: 10    First Laugh At: 185
+It’s our city. Let’s fix it     Alessandra Orofino    ['Inspiring', 'Informative']    Word Count: 2134    Laugh Count: 0    First Laugh At: -1
+I’m not your inspiration, thank you very much     Stella Young    ['Funny', 'Informative']    Word Count: 1609    Laugh Count: 7    First Laugh At: 108
+Juggle and jest     Raspyni Brothers    []    Word Count: 2611    Laugh Count: 37    First Laugh At: 152
+Kids need structure     Colin Powell    ['Inspiring', 'Persuasive']    Word Count: 3832    Laugh Count: 18    First Laugh At: 42
+Learn to read Chinese ... with ease!     ShaoLan    ['Informative', 'Ingenious']    Word Count: 937    Laugh Count: 2    First Laugh At: 517
+Learning from Sherman the shark     Jim Toomey    ['Inspiring', 'Funny']    Word Count: 2795    Laugh Count: 4    First Laugh At: 1049
+Leather and meat without killing animals     Andras Forgacs    ['Ingenious', 'Fascinating']    Word Count: 1308    Laugh Count: 0    First Laugh At: -1
+Legos for grownups     Hillel Cooperman    ['Funny', 'Fascinating']    Word Count: 1107    Laugh Count: 7    First Laugh At: 91
+Lessons from death row inmates     David R. Dow    ['Persuasive', 'Inspiring']    Word Count: 3292    Laugh Count: 0    First Laugh At: -1
+Lessons from past presidents     Doris Kearns Goodwin    ['Inspiring', 'Beautiful']    Word Count: 4397    Laugh Count: 10    First Laugh At: 1011
+Lessons in business ... from prison     Jeff Smith    ['Informative', 'Persuasive']    Word Count: 909    Laugh Count: 1    First Laugh At: 81
+Let's crowdsource the world's goals     Jamie Drummond    ['Inspiring', 'Persuasive']    Word Count: 2323    Laugh Count: 0    First Laugh At: -1
+Let's go all-in on selling sustainability     Steve Howard    ['Inspiring', 'Persuasive']    Word Count: 2703    Laugh Count: 0    First Laugh At: -1
+Let's pool our medical data     John Wilbanks    ['Persuasive', 'Inspiring']    Word Count: 3774    Laugh Count: 4    First Laugh At: 1761
+Let's prepare for our new climate     Vicki Arroyo    ['Informative', 'Persuasive']    Word Count: 1868    Laugh Count: 1    First Laugh At: 778
+Let's rethink America's military strategy     Thomas Barnett    ['Persuasive', 'Informative']    Word Count: 4746    Laugh Count: 35    First Laugh At: 342
+Let's save the last pristine continent     Robert Swan    ['Inspiring', 'Courageous']    Word Count: 2098    Laugh Count: 5    First Laugh At: 363
+Let's talk crap. Seriously.     Rose George    ['Informative', 'Persuasive']    Word Count: 2679    Laugh Count: 6    First Laugh At: 108
+Let's talk parenting taboos     Rufus Griscom + Alisa Volkman    ['Funny', 'Informative']    Word Count: 3765    Laugh Count: 5    First Laugh At: 385
+Let's teach kids to code     Mitch Resnick    ['Inspiring', 'Informative']    Word Count: 3024    Laugh Count: 3    First Laugh At: 438
+Let's treat violence like a contagious disease     Gary Slutkin    ['Inspiring', 'Persuasive']    Word Count: 2372    Laugh Count: 2    First Laugh At: 396
+Letting go of God     Julia Sweeney    ['Funny', 'Courageous']    Word Count: 3735    Laugh Count: 32    First Laugh At: 160
+Let’s try emotional correctness     Sally Kohn    ['Inspiring', 'Persuasive']    Word Count: 1035    Laugh Count: 3    First Laugh At: 232
+Life in the "digital now"     Abha Dawesar    ['Inspiring', 'Persuasive']    Word Count: 2264    Laugh Count: 0    First Laugh At: -1
+Life lessons from an ad man     Rory Sutherland    ['Funny', 'Fascinating']    Word Count: 3671    Laugh Count: 27    First Laugh At: 65
+Life that doesn't end with death     Kelli Swazey    ['Informative', 'Fascinating']    Word Count: 1942    Laugh Count: 0    First Laugh At: -1
+Looks aren't everything. Believe me, I'm a model.     Cameron Russell    ['Courageous', 'Inspiring']    Word Count: 2080    Laugh Count: 9    First Laugh At: 52
+Love -- you're doing it wrong     Yann Dall'Aglio    ['Inspiring', 'Funny']    Word Count: 1402    Laugh Count: 9    First Laugh At: 49
+Love letters to strangers     Hannah Brencher    ['Inspiring', 'Beautiful']    Word Count: 986    Laugh Count: 1    First Laugh At: 555
+Love, no matter what     Andrew Solomon    ['Inspiring', 'Beautiful']    Word Count: 4361    Laugh Count: 7    First Laugh At: 235
+Magical houses, made of bamboo     Elora Hardy    ['Beautiful', 'Inspiring']    Word Count: 1662    Laugh Count: 5    First Laugh At: 37
+Making peace is a marathon     May El-Khalil    ['Inspiring', 'Courageous']    Word Count: 1274    Laugh Count: 1    First Laugh At: 883
+Making sense of maps     Aris Venetikidis    ['Informative', 'Ingenious']    Word Count: 2752    Laugh Count: 8    First Laugh At: 394
+Mapping ideas worth spreading     Eric Berlow and Sean Gourley    ['Fascinating', 'Informative']    Word Count: 1885    Laugh Count: 0    First Laugh At: -1
+Massively multi-player… thumb-wrestling?     Jane McGonigal    ['Funny', 'Inspiring']    Word Count: 1647    Laugh Count: 2    First Laugh At: 627
+Math is forever     Eduardo Sáenz de Cabezón    ['Funny', 'Inspiring']    Word Count: 1648    Laugh Count: 20    First Laugh At: 58
+Meet BRCK, Internet access built for Africa     Juliana Rotich    ['Ingenious', 'Inspiring']    Word Count: 1669    Laugh Count: 0    First Laugh At: -1
+Meet a young entrepreneur, cartoonist, designer, activist …     Maya Penn    ['Inspiring', 'Beautiful']    Word Count: 1284    Laugh Count: 2    First Laugh At: 579
+Meet global corruption's hidden players     Charmian Gooch    ['Courageous', 'Informative']    Word Count: 2494    Laugh Count: 0    First Laugh At: -1
+Meet the mom who started the Ice Bucket Challenge     Nancy Frates    ['Inspiring', 'Courageous']    Word Count: 3088    Laugh Count: 2    First Laugh At: 2046
+Meet the robots for humanity     Henry Evans and Chad Jenkins    ['Inspiring', 'Fascinating']    Word Count: 1409    Laugh Count: 8    First Laugh At: 477
+Meet the women fighting on the front lines of an American war     Gayle Tzemach Lemmon    ['Inspiring', 'Beautiful']    Word Count: 2153    Laugh Count: 4    First Laugh At: 618
+Meet your microbes     Jonathan Eisen    ['Informative', 'Fascinating']    Word Count: 2593    Laugh Count: 3    First Laugh At: 341
+Mental health for all by involving all     Vikram Patel    ['Informative', 'Inspiring']    Word Count: 2243    Laugh Count: 0    First Laugh At: -1
+Metal that breathes     Doris Kim Sung    ['Ingenious', 'Fascinating']    Word Count: 1722    Laugh Count: 0    First Laugh At: -1
+Militant atheism     Richard Dawkins    ['Courageous', 'Inspiring']    Word Count: 4792    Laugh Count: 29    First Laugh At: 30
+Mining minerals from seawater     Damian Palin    ['Ingenious', 'Fascinating']    Word Count: 472    Laugh Count: 0    First Laugh At: -1
+Moral behavior in animals     Frans de Waal    ['Fascinating', 'Informative']    Word Count: 3331    Laugh Count: 13    First Laugh At: 195
+Music and emotion through time     Michael Tilson Thomas    ['Inspiring', 'Fascinating']    Word Count: 2845    Laugh Count: 0    First Laugh At: -1
+My 5 lives as an artist     Raghava KK    ['Inspiring', 'Beautiful']    Word Count: 3648    Laugh Count: 8    First Laugh At: 263
+My DNA vending machine     Gabe Barcia-Colombo    ['Fascinating', 'Informative']    Word Count: 1049    Laugh Count: 1    First Laugh At: 390
+My architectural philosophy? Bring the community into the process     Alejandro Aravena    ['Inspiring', 'Ingenious']    Word Count: 2414    Laugh Count: 0    First Laugh At: -1
+My battle to expose government corruption     Heather Brooke    ['Courageous', 'Informative']    Word Count: 3691    Laugh Count: 0    First Laugh At: -1
+My daughter, Malala     Ziauddin Yousafzai    ['Inspiring', 'Courageous']    Word Count: 2015    Laugh Count: 0    First Laugh At: -1
+My daughter, my wife, our robot, and the quest for immortality     Martine Rothblatt    ['Fascinating', 'Inspiring']    Word Count: 3760    Laugh Count: 3    First Laugh At: 506
+My desperate journey with a human smuggler     Barat Ali Batoor    ['Courageous', 'Informative']    Word Count: 1581    Laugh Count: 0    First Laugh At: -1
+My escape from North Korea     Hyeonseo Lee    ['Courageous', 'Inspiring']    Word Count: 1854    Laugh Count: 0    First Laugh At: -1
+My father, locked in his body but soaring free     Kitra Cahana    ['Inspiring', 'Beautiful']    Word Count: 1572    Laugh Count: 0    First Laugh At: -1
+My glacier cave discoveries     Eddy Cartaya    ['Fascinating', 'Beautiful']    Word Count: 1860    Laugh Count: 0    First Laugh At: -1
+My invention that made peace with lions     Richard Turere    ['Inspiring', 'Ingenious']    Word Count: 1209    Laugh Count: 6    First Laugh At: 365
+My journey to yo-yo mastery     BLACK    []    Word Count: 485    Laugh Count: 1    First Laugh At: 211
+My life in typefaces     Matthew Carter    ['Informative', 'Fascinating']    Word Count: 2772    Laugh Count: 0    First Laugh At: -1
+My mother’s strange definition of empowerment     Khadija Gbla    ['Courageous', 'Informative']    Word Count: 3512    Laugh Count: 7    First Laugh At: 989
+My obsession with objects and the stories they tell     Adam Savage    ['Funny', 'Fascinating']    Word Count: 3657    Laugh Count: 3    First Laugh At: 360
+My radical plan for small nuclear fission reactors     Taylor Wilson    []    Word Count: 2539    Laugh Count: 2    First Laugh At: 173
+My road trip through the whitest towns in America     Rich Benjamin    ['Funny', 'Informative']    Word Count: 1781    Laugh Count: 15    First Laugh At: 53
+My simple invention, designed to keep my grandfather safe     Kenneth Shinozuka    ['Inspiring', 'Ingenious']    Word Count: 1160    Laugh Count: 0    First Laugh At: -1
+My story, from gangland daughter to star teacher     Pearl Arredondo    ['Inspiring', 'Courageous']    Word Count: 1414    Laugh Count: 0    First Laugh At: -1
+My underwater robot     David Lang    ['Inspiring', 'Ingenious']    Word Count: 849    Laugh Count: 1    First Laugh At: 651
+My wish    Dave Eggers    ['Inspiring', 'Funny']    Word Count: 5593    Laugh Count: 10    First Laugh At: 69
+My year of living biblically     AJ Jacobs    ['Funny', 'Fascinating']    Word Count: 3337    Laugh Count: 14    First Laugh At: 246
+Nature. Beauty. Gratitude.     Louie Schwartzberg    ['Beautiful', 'Inspiring']    Word Count: 1211    Laugh Count: 0    First Laugh At: -1
+Nerdcore comedy     Ze Frank    ['Funny', 'Ingenious']    Word Count: 3269    Laugh Count: 69    First Laugh At: 228
+Never, ever give up     Diana Nyad    ['Inspiring', 'Courageous']    Word Count: 2747    Laugh Count: 11    First Laugh At: 312
+New York's streets? Not so mean any more     Janette Sadik-Khan    ['Inspiring', 'Informative']    Word Count: 2493    Laugh Count: 4    First Laugh At: 505
+New insights on poverty     Hans Rosling    []    Word Count: 3582    Laugh Count: 10    First Laugh At: 536
+New thoughts on capital in the twenty-first century     Thomas Piketty    ['Informative', 'Fascinating']    Word Count: 4014    Laugh Count: 1    First Laugh At: 2971
+New video technology that reveals an object's hidden properties     Abe Davis    ['Fascinating', 'Inspiring']    Word Count: 2943    Laugh Count: 6    First Laugh At: 971
+New ways to see music (with color! and fire!)     Jared Ficklin    ['Fascinating', 'Ingenious']    Word Count: 1858    Laugh Count: 2    First Laugh At: 165
+No roads? There’s a drone for that     Andreas Raptopoulos    ['Ingenious', 'Inspiring']    Word Count: 1654    Laugh Count: 0    First Laugh At: -1
+Old books reborn as art     Brian Dettmer    ['Fascinating', 'Beautiful']    Word Count: 1204    Laugh Count: 0    First Laugh At: -1
+Older people are happier     Laura Carstensen    ['Informative', 'Inspiring']    Word Count: 1701    Laugh Count: 5    First Laugh At: 640
+On being a woman and a diplomat     Madeleine Albright    ['Inspiring', 'Funny']    Word Count: 2607    Laugh Count: 7    First Laugh At: 204
+Once upon a time, my mother ...     Carmen Agra Deedy    ['Funny', 'Beautiful']    Word Count: 4322    Laugh Count: 17    First Laugh At: 58
+One more reason to get a good night’s sleep     Jeff Iliff    ['Informative', 'Fascinating']    Word Count: 2134    Laugh Count: 0    First Laugh At: -1
+One second every day     Cesar Kuriyama    ['Inspiring', 'Beautiful']    Word Count: 1456    Laugh Count: 0    First Laugh At: -1
+One very dry demo     Mark Shaw    ['Ingenious', 'Fascinating']    Word Count: 907    Laugh Count: 1    First Laugh At: 877
+One woman, five characters, and a sex lesson from the future     Sarah Jones    ['Funny', 'Ingenious']    Word Count: 4788    Laugh Count: 19    First Laugh At: 174
+One year of turning the world inside out     JR    ['Inspiring', 'Courageous']    Word Count: 1062    Laugh Count: 0    First Laugh At: -1
+Online social change    Zeynep Tufekci    ['Informative', 'Inspiring']    Word Count: 2648    Laugh Count: 1    First Laugh At: 430
+Online video -- annotated, remixed and popped     Ryan Merkley    ['Ingenious', 'Informative']    Word Count: 859    Laugh Count: 0    First Laugh At: -1
+Our antisocial phone tricks     Renny Gleeson    ['Funny', 'Persuasive']    Word Count: 730    Laugh Count: 3    First Laugh At: 322
+Our failing schools. Enough is enough!     Geoffrey Canada    ['Inspiring', 'Persuasive']    Word Count: 3415    Laugh Count: 10    First Laugh At: 71
+Our shared condition -- consciousness     John Searle    ['Fascinating', 'Informative']    Word Count: 3045    Laugh Count: 1    First Laugh At: 794
+Our unhealthy obsession with choice     Renata Salecl    ['Informative', 'Inspiring']    Word Count: 2288    Laugh Count: 2    First Laugh At: 560
+Own your body's data     Talithia Williams    ['Informative', 'Funny']    Word Count: 3249    Laugh Count: 16    First Laugh At: 83
+Paper beats plastic? How to rethink environmental folklore     Leyla Acaroglu    ['Informative', 'Persuasive']    Word Count: 3723    Laugh Count: 1    First Laugh At: 2448
+Parkinson's, depression and the switch that might turn them off     Andres Lozano    []    Word Count: 3361    Laugh Count: 2    First Laugh At: 169
+Perspective is everything     Rory Sutherland    ['Persuasive', 'Informative']    Word Count: 3595    Laugh Count: 11    First Laugh At: 33
+Photos from a storm chaser     Camille Seaman    ['Beautiful', 'Fascinating']    Word Count: 449    Laugh Count: 2    First Laugh At: 327
+Photos that bear witness to modern slavery     Lisa Kristine    ['Courageous', 'Inspiring']    Word Count: 2890    Laugh Count: 0    First Laugh At: -1
+Photos that give voice to the animal kingdom     Frans Lanting    ['Beautiful', 'Inspiring']    Word Count: 462    Laugh Count: 0    First Laugh At: -1
+Physical therapy is boring -- play a game instead     Cosmin Mihaiu    ['Ingenious', 'Inspiring']    Word Count: 1161    Laugh Count: 1    First Laugh At: 667
+Pimp my ... trash cart?     Mundano    ['Inspiring', 'Beautiful']    Word Count: 732    Laugh Count: 1    First Laugh At: 384
+Play this game to come up with original ideas     Shimpei Takahashi    ['Funny', 'Inspiring']    Word Count: 1063    Laugh Count: 4    First Laugh At: 115
+Play with smart materials     Catarina Mota    ['Inspiring', 'Informative']    Word Count: 1513    Laugh Count: 0    First Laugh At: -1
+Please don't take my Air Jordans     Lemon Andersen    ['Inspiring', 'Beautiful']    Word Count: 1761    Laugh Count: 3    First Laugh At: 58
+Please, please, people. Let's put the 'awe' back in 'awesome'     Jill Shargaa    ['Funny', 'Persuasive']    Word Count: 1088    Laugh Count: 6    First Laugh At: 323
+Poetry that frees the soul     Cristina Domenech    ['Beautiful', 'Inspiring']    Word Count: 1613    Laugh Count: 0    First Laugh At: -1
+Pool medical patents, save lives     Ellen 't Hoen    ['Informative', 'Persuasive']    Word Count: 1547    Laugh Count: 0    First Laugh At: -1
+Pop an ollie and innovate!     Rodney Mullen    ['Inspiring', 'Fascinating']    Word Count: 3906    Laugh Count: 12    First Laugh At: 27
+Prepare for a good end of life     Judy MacDonald Johnston    ['Inspiring', 'Informative']    Word Count: 1115    Laugh Count: 1    First Laugh At: 580
+Print your own medicine     Lee Cronin    ['Fascinating', 'Ingenious']    Word Count: 531    Laugh Count: 0    First Laugh At: -1
+Profit’s not always the point     Harish Manwani    ['Inspiring', 'Informative']    Word Count: 1374    Laugh Count: 0    First Laugh At: -1
+Programming bacteria to detect cancer (and maybe treat it)     Tal Danino    ['Informative', 'Fascinating']    Word Count: 731    Laugh Count: 0    First Laugh At: -1
+Progress is not a zero-sum game     Robert Wright    ['Funny', 'Inspiring']    Word Count: 3776    Laugh Count: 17    First Laugh At: 53
+Protecting Twitter users (sometimes from themselves)     Del Harvey    ['Informative', 'Funny']    Word Count: 1476    Laugh Count: 5    First Laugh At: 318
+Psychedelic science     Fabian Oefner    ['Beautiful', 'Fascinating']    Word Count: 1576    Laugh Count: 4    First Laugh At: 55
+Puppies! Now that I’ve got your attention, complexity theory     Nicolas Perony    ['Informative', 'Fascinating']    Word Count: 2331    Laugh Count: 0    First Laugh At: -1
+Re-engineering mosquitos to fight disease     Hadyn Parry    ['Ingenious', 'Informative']    Word Count: 2753    Laugh Count: 1    First Laugh At: 2249
+Reach into the computer and grab a pixel     Jinha Lee    []    Word Count: 757    Laugh Count: 1    First Laugh At: 689
+Reinventing the encyclopedia game     Rives    ['Funny', 'Fascinating']    Word Count: 2064    Laugh Count: 1    First Laugh At: 986
+Religions and babies     Hans Rosling    ['Informative', 'Fascinating']    Word Count: 2272    Laugh Count: 1    First Laugh At: 44
+Rethinking infidelity ... a talk for anyone who has ever loved     Esther Perel    ['Informative', 'Fascinating']    Word Count: 3255    Laugh Count: 9    First Laugh At: 224
+Revealing the lost codex of Archimedes     William Noel    ['Fascinating', 'Informative']    Word Count: 2863    Laugh Count: 1    First Laugh At: 804
+Robots with "soul"     Guy Hoffman    ['Fascinating', 'Ingenious']    Word Count: 3430    Laugh Count: 13    First Laugh At: 87
+Sanitation is a basic human right     Francis de los Reyes    ['Informative', 'Persuasive']    Word Count: 1492    Laugh Count: 3    First Laugh At: 20
+Save the oceans, feed the world!     Jackie Savitz    ['Informative', 'Persuasive']    Word Count: 2368    Laugh Count: 1    First Laugh At: 1836
+Science is for everyone, kids included     Beau Lotto + Amy O'Toole    ['Inspiring', 'Fascinating']    Word Count: 3164    Laugh Count: 26    First Laugh At: 90
+Science versus wonder?     Robin Ince    ['Funny', 'Inspiring']    Word Count: 1723    Laugh Count: 7    First Laugh At: 149
+Sculpted space, within and without     Antony Gormley    ['Inspiring', 'Beautiful']    Word Count: 2231    Laugh Count: 4    First Laugh At: 109
+Sculpting waves in wood and time     Reuben Margolin    ['Beautiful', 'Fascinating']    Word Count: 962    Laugh Count: 1    First Laugh At: 159
+Sculptures that’d be at home in the deep sea     Shih Chieh Huang    ['Ingenious', 'Beautiful']    Word Count: 724    Laugh Count: 1    First Laugh At: 245
+See invisible motion, hear silent sounds     Michael Rubinstein    []    Word Count: 2586    Laugh Count: 6    First Laugh At: 440
+Sex needs a new metaphor. Here's one ...     Al Vernacchio    ['Funny', 'Persuasive']    Word Count: 1537    Laugh Count: 5    First Laugh At: 189
+Shake up your story     Raghava KK    ['Inspiring', 'Funny']    Word Count: 799    Laugh Count: 3    First Laugh At: 222
+Should you donate differently?     Joy Sun    ['Informative', 'Inspiring']    Word Count: 1156    Laugh Count: 0    First Laugh At: -1
+Should you live for your résumé ... or your eulogy?     David Brooks    ['Inspiring', 'Fascinating']    Word Count: 962    Laugh Count: 0    First Laugh At: -1
+Silicon-based comedy     Heather Knight    ['Funny', 'Fascinating']    Word Count: 993    Laugh Count: 8    First Laugh At: 147
+Simplicity sells     David Pogue    ['Funny', 'Informative']    Word Count: 4290    Laugh Count: 38    First Laugh At: 26
+Smart failure for a fast-changing world     Eddie Obeng    ['Inspiring', 'Funny']    Word Count: 2988    Laugh Count: 11    First Laugh At: 242
+So we leaned in ... now what?     Sheryl Sandberg    ['Inspiring', 'Courageous']    Word Count: 4018    Laugh Count: 9    First Laugh At: 229
+Social maps that reveal a city's intersections — and separations     Dave Troy    ['Informative', 'Fascinating']    Word Count: 1193    Laugh Count: 1    First Laugh At: 161
+Sometimes it's good to give up the driver's seat     Baba Shiv    ['Informative', 'Persuasive']    Word Count: 2042    Laugh Count: 1    First Laugh At: 1737
+Soon we'll cure diseases with a cell, not a pill     Siddhartha Mukherjee    ['Informative', 'Fascinating']    Word Count: 3137    Laugh Count: 1    First Laugh At: 1595
+Spider-Man, The Lion King and life on the creative edge     Julie Taymor    ['Beautiful', 'Inspiring']    Word Count: 2949    Laugh Count: 1    First Laugh At: 190
+Strange answers to the psychopath test     Jon Ronson    ['Fascinating', 'Informative']    Word Count: 3542    Laugh Count: 17    First Laugh At: 108
+Street art with a message of hope and peace     eL Seed    ['Beautiful', 'Inspiring']    Word Count: 1085    Laugh Count: 2    First Laugh At: 882
+Stunning photos of the endangered Everglades     Mac Stone    ['Beautiful', 'Inspiring']    Word Count: 3816    Laugh Count: 5    First Laugh At: 58
+Success, failure and the drive to keep creating     Elizabeth Gilbert    ['Inspiring', 'Beautiful']    Word Count: 1665    Laugh Count: 1    First Laugh At: 149
+Sweat the small stuff     Rory Sutherland    ['Funny', 'Persuasive']    Word Count: 2738    Laugh Count: 5    First Laugh At: 602
+Swim with the giant sunfish     Tierney Thys    ['Informative', 'Fascinating']    Word Count: 3195    Laugh Count: 3    First Laugh At: 618
+Synthetic voices, as unique as fingerprints     Rupal Patel    ['Inspiring', 'Fascinating']    Word Count: 1936    Laugh Count: 0    First Laugh At: -1
+Take Turns     Gary Lauder's new traffic sign    ['Ingenious', 'Persuasive']    Word Count: 993    Laugh Count: 1    First Laugh At: 922
+Take back your city with paint     Edi Rama    ['Inspiring', 'Courageous']    Word Count: 1972    Laugh Count: 1    First Laugh At: 653
+Tales of passion     Isabel Allende    ['Inspiring', 'Courageous']    Word Count: 3059    Laugh Count: 20    First Laugh At: 197
+Talk nerdy to me     Melissa Marshall    ['Funny', 'Inspiring']    Word Count: 771    Laugh Count: 4    First Laugh At: 46
+Teach teachers how to create magic     Christopher Emdin    ['Inspiring', 'Persuasive']    Word Count: 1280    Laugh Count: 0    First Laugh At: -1
+Teachers need real feedback     Bill Gates    ['Inspiring', 'Informative']    Word Count: 1773    Laugh Count: 2    First Laugh At: 29
+Technology crafts for the digitally underserved     Vinay Venkatraman    ['Ingenious', 'Inspiring']    Word Count: 2843    Laugh Count: 3    First Laugh At: 349
+Teen wonders play bluegrass     Sleepy Man Banjo Boys    []    Word Count: 150    Laugh Count: 0    First Laugh At: -1
+Terrorism is a failed brand     Jason McCue    ['Persuasive', 'Informative']    Word Count: 3402    Laugh Count: 5    First Laugh At: 248
+Texting that saves lives     Nancy Lublin    ['Inspiring', 'Persuasive']    Word Count: 954    Laugh Count: 1    First Laugh At: 133
+The  4 a.m. mystery     Rives    ['Funny', 'Ingenious']    Word Count: 1611    Laugh Count: 15    First Laugh At: 122
+The $8 billion iPod     Rob Reid    ['Funny', 'Informative']    Word Count: 820    Laugh Count: 8    First Laugh At: 135
+The $80 prosthetic knee that's changing lives     Krista Donaldson    ['Inspiring', 'Ingenious']    Word Count: 2072    Laugh Count: 0    First Laugh At: -1
+The 100,000-student classroom     Peter Norvig    ['Inspiring', 'Informative']    Word Count: 1149    Laugh Count: 4    First Laugh At: 105
+The 1s and 0s behind cyber warfare     Chris Domas    ['Informative', 'Fascinating']    Word Count: 3757    Laugh Count: 4    First Laugh At: 156
+The 3 A's of awesome     Neil Pasricha    ['Inspiring', 'Beautiful']    Word Count: 3506    Laugh Count: 14    First Laugh At: 225
+The 3 agencies with the power to make or break economies     Annette Heuser    ['Informative', 'Persuasive']    Word Count: 1614    Laugh Count: 0    First Laugh At: -1
+The 4 commandments of cities     Eduardo Paes    ['Inspiring', 'Informative']    Word Count: 2412    Laugh Count: 0    First Laugh At: -1
+The 4 stories we tell ourselves about death     Stephen Cave    ['Inspiring', 'Fascinating']    Word Count: 2808    Laugh Count: 1    First Laugh At: 2029
+The Axis of Evil Middle East Comedy Tour     Jamil Abu-Wardeh    ['Funny', 'Inspiring']    Word Count: 1651    Laugh Count: 10    First Laugh At: 116
+The DIY orchestra of the future     Ge Wang    ['Inspiring', 'Fascinating']    Word Count: 2766    Laugh Count: 2    First Laugh At: 1482
+The Internet could crash. We need a Plan B     Danny Hillis    ['Informative', 'Persuasive']    Word Count: 2432    Laugh Count: 2    First Laugh At: 25
+The Jill and Julia Show     Jill Sobule + Julia Sweeney    ['Funny', 'Beautiful']    Word Count: 1234    Laugh Count: 5    First Laugh At: 361
+The Museum of Four in the Morning     Rives    ['Beautiful', 'Funny']    Word Count: 3030    Laugh Count: 8    First Laugh At: 715
+The Philosophical Breakfast Club     Laura Snyder    ['Informative', 'Fascinating']    Word Count: 1924    Laugh Count: 0    First Laugh At: -1
+The Web as random acts of kindness     Jonathan Zittrain    ['Inspiring', 'Funny']    Word Count: 3596    Laugh Count: 20    First Laugh At: 508
+The amazing story of the man who gave us modern pain relief     Latif Nasser    ['Informative', 'Inspiring']    Word Count: 2083    Laugh Count: 0    First Laugh At: -1
+The art of asking     Amanda Palmer    ['Inspiring', 'Courageous']    Word Count: 2329    Laugh Count: 9    First Laugh At: 42
+The art of bow-making     Dong Woo Jang    ['Inspiring', 'Fascinating']    Word Count: 1098    Laugh Count: 2    First Laugh At: 383
+The art of creating awe     Rob Legato    ['Fascinating', 'Funny']    Word Count: 3635    Laugh Count: 20    First Laugh At: 595
+The art of first impressions -- in design and life     Chip Kidd    ['Funny', 'Informative']    Word Count: 3145    Laugh Count: 21    First Laugh At: 417
+The art of misdirection     Apollo Robbins    []    Word Count: 2129    Laugh Count: 7    First Laugh At: 161
+The art of stillness     Pico Iyer    ['Inspiring', 'Beautiful']    Word Count: 2723    Laugh Count: 2    First Laugh At: 779
+The art of wearable communication     Kate Hartman    ['Funny', 'Inspiring']    Word Count: 1584    Laugh Count: 11    First Laugh At: 49
+The arts festival revolution     David Binder    ['Inspiring', 'Fascinating']    Word Count: 1502    Laugh Count: 4    First Laugh At: 182
+The astounding athletic power of quadcopters     Raffaello D'Andrea    []    Word Count: 2183    Laugh Count: 6    First Laugh At: 604
+The attitudes that sparked Arab Spring     Dalia Mogahed    ['Informative', 'Inspiring']    Word Count: 1916    Laugh Count: 1    First Laugh At: 1078
+The beautiful nano details of our world     Gary Greenberg    ['Beautiful', 'Fascinating']    Word Count: 2547    Laugh Count: 1    First Laugh At: 2037
+The beauty and diversity of Muslim life     Bassam Tariq    ['Inspiring', 'Beautiful']    Word Count: 879    Laugh Count: 3    First Laugh At: 71
+The best computer interface? Maybe ... your hands     James Patten    ['Ingenious', 'Fascinating']    Word Count: 1190    Laugh Count: 0    First Laugh At: -1
+The best kindergarten you’ve ever seen     Takaharu Tezuka    ['Inspiring', 'Ingenious']    Word Count: 1179    Laugh Count: 14    First Laugh At: 120
+The birds and the bees are just the beginning     Carin Bondar    ['Funny', 'Informative']    Word Count: 1730    Laugh Count: 3    First Laugh At: 11
+The bridge between suicide and life     Kevin Briggs    ['Inspiring', 'Courageous']    Word Count: 2076    Laugh Count: 0    First Laugh At: -1
+The call to learn     Clifford Stoll    ['Funny', 'Inspiring']    Word Count: 3412    Laugh Count: 7    First Laugh At: 119
+The camel's hump     Keith Bellows    ['Informative', 'Funny']    Word Count: 2743    Laugh Count: 6    First Laugh At: 17
+The career advice you probably didn’t get     Susan Colantuono    ['Informative', 'Inspiring']    Word Count: 2215    Laugh Count: 0    First Laugh At: -1
+The case for anonymity online     Christopher "moot" Poole"    ['Funny', 'Fascinating']    Word Count: 2230    Laugh Count: 9    First Laugh At: 474
+The case for engineering our food     Pamela Ronald    ['Informative', 'Persuasive']    Word Count: 2904    Laugh Count: 0    First Laugh At: -1
+The cheap all-terrain wheelchair     Amos Winter    ['Ingenious', 'Inspiring']    Word Count: 2424    Laugh Count: 0    First Laugh At: -1
+The coming crisis in antibiotics     Ramanan Laxminarayan    ['Informative', 'Persuasive']    Word Count: 2731    Laugh Count: 0    First Laugh At: -1
+The courage to tell a hidden story     Eman Mohammed    ['Courageous', 'Inspiring']    Word Count: 573    Laugh Count: 0    First Laugh At: -1
+The curly fry conundrum    Jennifer Golbeck    ['Informative', 'Fascinating']    Word Count: 2155    Laugh Count: 1    First Laugh At: 865
+The currency of the new economy is trust     Rachel Botsman    ['Informative', 'Inspiring']    Word Count: 3385    Laugh Count: 3    First Laugh At: 621
+The dance of the dung beetle     Marcus Byrne    ['Fascinating', 'Informative']    Word Count: 3228    Laugh Count: 4    First Laugh At: 433
+The dancer, the singer, the cellist ... and a moment of creative magic     Bill T. Jones    ['Beautiful', 'Inspiring']    Word Count: 187    Laugh Count: 0    First Laugh At: -1
+The danger of hiding who you are     Morgana Bailey    ['Courageous', 'Inspiring']    Word Count: 1315    Laugh Count: 1    First Laugh At: 81
+The danger of silence     Clint Smith    ['Inspiring', 'Beautiful']    Word Count: 859    Laugh Count: 0    First Laugh At: -1
+The dangers of "willful blindness"     Margaret Heffernan    ['Inspiring', 'Courageous']    Word Count: 2341    Laugh Count: 0    First Laugh At: -1
+The dark secrets of a surveillance state     Hubertus Knabe    ['Informative', 'Fascinating']    Word Count: 2865    Laugh Count: 0    First Laugh At: -1
+The dawn of de-extinction. Are you ready?     Stewart Brand    ['Fascinating', 'Informative']    Word Count: 3319    Laugh Count: 1    First Laugh At: 2041
+The day I stood up alone     Boniface Mwangi    ['Courageous', 'Inspiring']    Word Count: 1379    Laugh Count: 2    First Laugh At: 123
+The deadly genius of drug cartels     Rodrigo Canales    ['Informative', 'Fascinating']    Word Count: 3059    Laugh Count: 0    First Laugh At: -1
+The death of innovation, the end of growth     Robert Gordon    ['Informative', 'Persuasive']    Word Count: 2140    Laugh Count: 1    First Laugh At: 1890
+The demise of guys?     Philip Zimbardo    ['Informative', 'Funny']    Word Count: 862    Laugh Count: 3    First Laugh At: 213
+The discovery that could rewrite physics     Allan Adams    ['Fascinating', 'Informative']    Word Count: 881    Laugh Count: 0    First Laugh At: -1
+The doubt essential to faith     Lesley Hazleton    ['Inspiring', 'Fascinating']    Word Count: 1816    Laugh Count: 1    First Laugh At: 198
+The economic case for preschool     Timothy Bartik    ['Informative', 'Persuasive']    Word Count: 2674    Laugh Count: 0    First Laugh At: -1
+The electric rise and fall of Nikola Tesla     Marco Tempest    ['Beautiful', 'Fascinating']    Word Count: 751    Laugh Count: 0    First Laugh At: -1
+The emergence of "4D printing"     Skylar Tibbits    ['Fascinating', 'Ingenious']    Word Count: 1448    Laugh Count: 0    First Laugh At: -1
+The emergent patterns of climate change     Gavin Schmidt    ['Informative', 'Persuasive']    Word Count: 2131    Laugh Count: 0    First Laugh At: -1
+The family I lost in North Korea. And the family I gained.     Joseph Kim    ['Inspiring', 'Courageous']    Word Count: 1885    Laugh Count: 4    First Laugh At: 906
+The fastest ambulance? A motorcycle     Eli Beer    ['Inspiring', 'Courageous']    Word Count: 2071    Laugh Count: 2    First Laugh At: 697
+The first 21 days of a bee’s life     Anand Varma    ['Informative', 'Fascinating']    Word Count: 853    Laugh Count: 0    First Laugh At: -1
+The first secret of design is ... noticing     Tony Fadell    ['Inspiring', 'Informative']    Word Count: 3091    Laugh Count: 1    First Laugh At: 2736
+The flower-shaped starshade that might help us detect Earth-like planets     Jeremy Kasdin    ['Fascinating', 'Informative']    Word Count: 1514    Laugh Count: 0    First Laugh At: -1
+The forgotten history of autism     Steve Silberman    ['Informative', 'Persuasive']    Word Count: 2156    Laugh Count: 0    First Laugh At: -1
+The future of early cancer detection?     Jorge Soto    ['Inspiring', 'Ingenious']    Word Count: 1833    Laugh Count: 0    First Laugh At: -1
+The future of flying robots     Vijay Kumar    ['Fascinating', 'Informative']    Word Count: 2220    Laugh Count: 8    First Laugh At: 250
+The future of lying     Jeff Hancock    ['Informative', 'Fascinating']    Word Count: 3991    Laugh Count: 9    First Laugh At: 28
+The future race car -- 150mph, and no driver     Chris Gerdes    ['Fascinating', 'Informative']    Word Count: 2049    Laugh Count: 3    First Laugh At: 275
+The game that can give you 10 extra years of life     Jane McGonigal    ['Inspiring', 'Persuasive']    Word Count: 3912    Laugh Count: 6    First Laugh At: 373
+The ghastly tragedy of the suburbs     James Howard Kunstler    ['Persuasive', 'Funny']    Word Count: 3752    Laugh Count: 14    First Laugh At: 642
+The global food waste scandal     Tristram Stuart    ['Informative', 'Persuasive']    Word Count: 2942    Laugh Count: 7    First Laugh At: 322
+The good news about PMS     Robyn Stein DeLuca    ['Informative', 'Persuasive']    Word Count: 2385    Laugh Count: 1    First Laugh At: 449
+The good news on poverty (Yes, there's good news)     Bono    ['Inspiring', 'Informative']    Word Count: 2183    Laugh Count: 2    First Laugh At: 34
+The greatest machine that never was     John Graham-Cumming    ['Fascinating', 'Informative']    Word Count: 2834    Laugh Count: 13    First Laugh At: 181
+The happy secret to better work     Shawn Achor    ['Inspiring', 'Funny']    Word Count: 2980    Laugh Count: 15    First Laugh At: 158
+The hidden force in global economics    Dilip Ratha    ['Inspiring', 'Informative']    Word Count: 2468    Laugh Count: 0    First Laugh At: -1
+The hidden reason for poverty the world needs to address now     Gary Haugen    ['Inspiring', 'Informative']    Word Count: 3639    Laugh Count: 0    First Laugh At: -1
+The hunt for "unexpected genetic heroes"     Stephen Friend    ['Informative', 'Inspiring']    Word Count: 1926    Laugh Count: 0    First Laugh At: -1
+The hunt for General Tso     Jennifer 8. Lee    ['Funny', 'Informative']    Word Count: 3786    Laugh Count: 12    First Laugh At: 111
+The illustrated woman     Maira Kalman    ['Funny', 'Beautiful']    Word Count: 4096    Laugh Count: 11    First Laugh At: 285
+The investment logic for sustainability     Chris McKnett    ['Informative', 'Persuasive']    Word Count: 1927    Laugh Count: 4    First Laugh At: 276
+The invisible man     Liu Bolin    ['Fascinating', 'Beautiful']    Word Count: 1065    Laugh Count: 5    First Laugh At: 157
+The journey across the high wire     Philippe Petit    ['Inspiring', 'Beautiful']    Word Count: 2574    Laugh Count: 5    First Laugh At: 130
+The joy of lexicography     Erin McKean    ['Funny', 'Informative']    Word Count: 3401    Laugh Count: 5    First Laugh At: 21
+The joy of surfing in ice-cold water     Chris Burkard    ['Inspiring', 'Beautiful']    Word Count: 1653    Laugh Count: 5    First Laugh At: 230
+The key to growth? Race with the machines     Erik Brynjolfsson    ['Informative', 'Inspiring']    Word Count: 1899    Laugh Count: 4    First Laugh At: 917
+The key to success? Grit     Angela Lee Duckworth    ['Inspiring', 'Informative']    Word Count: 1002    Laugh Count: 1    First Laugh At: 729
+The kill decision shouldn't belong to a robot     Daniel Suarez    ['Persuasive', 'Informative']    Word Count: 1987    Laugh Count: 0    First Laugh At: -1
+The leaders who ruined Africa, and the generation who can fix it     Fred Swaniker    ['Inspiring', 'Informative']    Word Count: 2357    Laugh Count: 2    First Laugh At: 880
+The levitating superconductor     Boaz Almog    []    Word Count: 1283    Laugh Count: 1    First Laugh At: 1096
+The link between unemployment and terrorism     Mohamed Ali    ['Inspiring', 'Informative']    Word Count: 1497    Laugh Count: 0    First Laugh At: -1
+The little problem I had renting a house     James A. White Sr.    ['Inspiring', 'Courageous']    Word Count: 2917    Laugh Count: 5    First Laugh At: 1357
+The long reach of reason     Steven Pinker and Rebecca Newberger Goldstein    ['Informative', 'Persuasive']    Word Count: 2895    Laugh Count: 0    First Laugh At: -1
+The loves and lies of fireflies     Sara Lewis    ['Informative', 'Fascinating']    Word Count: 2023    Laugh Count: 1    First Laugh At: 1276
+The mad scientist of music     Mark Applebaum    ['Funny', 'Fascinating']    Word Count: 3120    Laugh Count: 22    First Laugh At: 31
+The magic of Fibonacci numbers     Arthur Benjamin    ['Fascinating', 'Informative']    Word Count: 1148    Laugh Count: 2    First Laugh At: 382
+The magic of the Amazon    Antonio Donato Nobre    ['Fascinating', 'Informative']    Word Count: 3778    Laugh Count: 0    First Laugh At: -1
+The magic washing machine     Hans Rosling    ['Funny', 'Inspiring']    Word Count: 1692    Laugh Count: 2    First Laugh At: 501
+The math behind basketball's wildest moves     Rajiv Maheswaran    ['Informative', 'Fascinating']    Word Count: 2436    Laugh Count: 6    First Laugh At: 538
+The mathematics of history     Jean-Baptiste Michel    ['Informative', 'Fascinating']    Word Count: 845    Laugh Count: 1    First Laugh At: 148
+The mathematics of love     Hannah Fry    ['Funny', 'Informative']    Word Count: 3271    Laugh Count: 10    First Laugh At: 100
+The military case for sharing knowledge     Stanley McChrystal    ['Informative', 'Persuasive']    Word Count: 1213    Laugh Count: 3    First Laugh At: 526
+The mind behind Tesla, SpaceX, SolarCity ...     Elon Musk    ['Inspiring', 'Fascinating']    Word Count: 4339    Laugh Count: 5    First Laugh At: 832
+The museum of you     Jake Barton    ['Beautiful', 'Inspiring']    Word Count: 3418    Laugh Count: 1    First Laugh At: 509
+The music wars     David Pogue    ['Funny', 'Ingenious']    Word Count: 569    Laugh Count: 0    First Laugh At: -1
+The mysterious workings of the adolescent brain     Sarah-Jayne Blakemore    ['Informative', 'Fascinating']    Word Count: 2871    Laugh Count: 6    First Laugh At: 311
+The mystery box     J.J. Abrams    ['Funny', 'Inspiring']    Word Count: 4293    Laugh Count: 18    First Laugh At: 36
+The myth of the gay agenda     LZ Granderson    ['Inspiring', 'Courageous']    Word Count: 2810    Laugh Count: 8    First Laugh At: 655
+The nerd's guide to learning everything online     John Green    ['Inspiring', 'Informative']    Word Count: 4036    Laugh Count: 10    First Laugh At: 350
+The neuroscience of restorative justice     Daniel Reisel    ['Informative', 'Fascinating']    Word Count: 2363    Laugh Count: 4    First Laugh At: 384
+The new bionics that let us run, climb and dance     Hugh Herr    ['Inspiring', 'Beautiful']    Word Count: 2872    Laugh Count: 5    First Laugh At: 318
+The next outbreak? We’re not ready     Bill Gates    ['Informative', 'Persuasive']    Word Count: 1438    Laugh Count: 0    First Laugh At: -1
+The optimism bias     Tali Sharot    ['Informative', 'Fascinating']    Word Count: 3151    Laugh Count: 5    First Laugh At: 225
+The orchestra in my mouth     Tom Thum    []    Word Count: 881    Laugh Count: 4    First Laugh At: 37
+The origins of pleasure     Paul Bloom    ['Fascinating', 'Informative']    Word Count: 3378    Laugh Count: 9    First Laugh At: 329
+The paralyzed rat that walked     Grégoire Courtine    ['Inspiring', 'Fascinating']    Word Count: 2026    Laugh Count: 2    First Laugh At: 518
+The polyphonic me     Beardyman    ['Fascinating', 'Ingenious']    Word Count: 1132    Laugh Count: 2    First Laugh At: 113
+The power of believing that you can improve     Carol Dweck    ['Inspiring', 'Informative']    Word Count: 1247    Laugh Count: 0    First Laugh At: -1
+The power of cartoons     Patrick Chappatte    ['Funny', 'Inspiring']    Word Count: 1959    Laugh Count: 13    First Laugh At: 35
+The power of herd immunity     Romina Libster    ['Informative', 'Persuasive']    Word Count: 2036    Laugh Count: 0    First Laugh At: -1
+The power of the informal economy     Robert Neuwirth    ['Informative', 'Fascinating']    Word Count: 2312    Laugh Count: 4    First Laugh At: 1602
+The price of happiness     Benjamin Wallace    ['Funny', 'Informative']    Word Count: 2944    Laugh Count: 13    First Laugh At: 477
+The price of shame     Monica Lewinsky    ['Courageous', 'Inspiring']    Word Count: 2881    Laugh Count: 3    First Laugh At: 110
+The problem with "trickle-down techonomics"     Jon Gosier    ['Informative', 'Persuasive']    Word Count: 1062    Laugh Count: 1    First Laugh At: 223
+The promise of research with stem cells     Susan Solomon    ['Informative', 'Fascinating']    Word Count: 2573    Laugh Count: 0    First Laugh At: -1
+The psychology of your future self     Dan Gilbert    ['Informative', 'Fascinating']    Word Count: 1337    Laugh Count: 0    First Laugh At: -1
+The pursuit of ignorance     Stuart Firestein    ['Inspiring', 'Persuasive']    Word Count: 4272    Laugh Count: 6    First Laugh At: 211
+The rise of cricket, the rise of India     Harsha Bhogle    ['Informative', 'Fascinating']    Word Count: 3461    Laugh Count: 12    First Laugh At: 286
+The rise of human-computer cooperation     Shyam Sankar    ['Informative', 'Fascinating']    Word Count: 2520    Laugh Count: 2    First Laugh At: 1371
+The rise of the new global super-rich     Chrystia Freeland    ['Informative', 'Persuasive']    Word Count: 2379    Laugh Count: 0    First Laugh At: -1
+The search for planets beyond our solar system     Sara Seager    ['Informative', 'Fascinating']    Word Count: 3251    Laugh Count: 2    First Laugh At: 897
+The secret US prisons you've never heard of before     Will Potter    ['Courageous', 'Informative']    Word Count: 2576    Laugh Count: 4    First Laugh At: 1017
+The secret lives of paintings     Maurizio Seracini    ['Fascinating', 'Informative']    Word Count: 2210    Laugh Count: 4    First Laugh At: 1119
+The secret of the bat genome     Emma Teeling    ['Informative', 'Fascinating']    Word Count: 2932    Laugh Count: 0    First Laugh At: -1
+The secret to desire in a long-term relationship     Esther Perel    ['Informative', 'Fascinating']    Word Count: 3644    Laugh Count: 8    First Laugh At: 99
+The secrets of nature's grossest creatures, channeled into robots     Robert Full    ['Fascinating', 'Informative']    Word Count: 847    Laugh Count: 2    First Laugh At: 645
+The self-organizing computer course     Shimon Schocken    ['Inspiring', 'Ingenious']    Word Count: 2555    Laugh Count: 5    First Laugh At: 336
+The shared experience of absurdity     Charlie Todd    ['Funny', 'Inspiring']    Word Count: 2415    Laugh Count: 19    First Laugh At: 190
+The shared wonder of film     Beeban Kidron    ['Inspiring', 'Beautiful']    Word Count: 2061    Laugh Count: 0    First Laugh At: -1
+The shocking move to criminalize nonviolent protest     Will Potter    ['Informative', 'Courageous']    Word Count: 770    Laugh Count: 0    First Laugh At: -1
+The silent drama of photography     Sebastião Salgado    ['Inspiring', 'Fascinating']    Word Count: 2340    Laugh Count: 0    First Laugh At: -1
+The simple power of hand-washing     Myriam Sidibe    ['Informative', 'Inspiring']    Word Count: 1870    Laugh Count: 2    First Laugh At: 365
+The single biggest reason why startups succeed     Bill Gross    ['Informative', 'Inspiring']    Word Count: 1538    Laugh Count: 1    First Laugh At: 388
+The small and surprisingly dangerous detail the police track about you     Catherine Crump    ['Informative', 'Persuasive']    Word Count: 988    Laugh Count: 0    First Laugh At: -1
+The smelly mystery of the human pheromone     Tristram Wyatt    ['Informative', 'Fascinating']    Word Count: 2664    Laugh Count: 1    First Laugh At: 371
+The social animal     David Brooks    ['Inspiring', 'Fascinating']    Word Count: 3719    Laugh Count: 11    First Laugh At: 71
+The sore problem of prosthetic limbs     David Sengeh    ['Inspiring', 'Informative']    Word Count: 653    Laugh Count: 1    First Laugh At: 548
+The state of the climate — and what we might do about it     Lord Nicholas Stern    ['Informative', 'Persuasive']    Word Count: 2782    Laugh Count: 3    First Laugh At: 1754
+The stories behind the bloodlines     Taryn Simon    ['Fascinating', 'Informative']    Word Count: 2914    Laugh Count: 0    First Laugh At: -1
+The story we tell about poverty isn't true     Mia Birdsong    ['Inspiring', 'Beautiful']    Word Count: 2595    Laugh Count: 7    First Laugh At: 343
+The strange politics of disgust     David Pizarro    ['Informative', 'Fascinating']    Word Count: 2898    Laugh Count: 12    First Laugh At: 37
+The surprising need for strangeness     Maria Bezaitis    ['Informative', 'Persuasive']    Word Count: 1355    Laugh Count: 0    First Laugh At: -1
+The surprising seeds of a big-data revolution in healthcare     Joel Selanikio    ['Informative', 'Inspiring']    Word Count: 3527    Laugh Count: 0    First Laugh At: -1
+The surprising thing I learned sailing solo around the world     Dame Ellen MacArthur    ['Inspiring', 'Informative']    Word Count: 3273    Laugh Count: 4    First Laugh At: 807
+The surprising way groups like ISIS stay in power     Benedetta Berti    ['Informative', 'Persuasive']    Word Count: 951    Laugh Count: 0    First Laugh At: -1
+The surprisingly logical minds of babies     Laura Schulz    ['Informative', 'Fascinating']    Word Count: 3572    Laugh Count: 5    First Laugh At: 52
+The technology of storytelling     Joe Sabia    ['Funny', 'Ingenious']    Word Count: 510    Laugh Count: 2    First Laugh At: 297
+The tragedy of orphanages     Georgette Mulheir    ['Informative', 'Persuasive']    Word Count: 1855    Laugh Count: 0    First Laugh At: -1
+The troubling reason why vaccines are made too late ... if they're made at all     Seth Berkley    ['Informative', 'Persuasive']    Word Count: 1091    Laugh Count: 0    First Laugh At: -1
+The unexpected beauty of everyday sounds     Meklit Hadero    ['Beautiful', 'Inspiring']    Word Count: 2098    Laugh Count: 2    First Laugh At: 816
+The unheard story of David and Goliath     Malcolm Gladwell    ['Fascinating', 'Informative']    Word Count: 2984    Laugh Count: 0    First Laugh At: -1
+The unstoppable walk to political reform     Lawrence Lessig    ['Inspiring', 'Persuasive']    Word Count: 2304    Laugh Count: 1    First Laugh At: 1152
+The violin, and my dark night of the soul     Ji-Hae Park    ['Beautiful', 'Inspiring']    Word Count: 446    Laugh Count: 0    First Laugh At: -1
+The voice of the natural world     Bernie Krause    ['Beautiful', 'Fascinating']    Word Count: 2168    Laugh Count: 2    First Laugh At: 1213
+The voices in my head     Eleanor Longden    ['Courageous', 'Inspiring']    Word Count: 2793    Laugh Count: 1    First Laugh At: 2135
+The voices of China's workers     Leslie T. Chang    ['Informative', 'Persuasive']    Word Count: 2785    Laugh Count: 3    First Laugh At: 1391
+The walkable city     Jeff Speck    ['Informative', 'Persuasive']    Word Count: 3281    Laugh Count: 4    First Laugh At: 975
+The way we think about charity is dead wrong     Dan Pallotta    ['Persuasive', 'Inspiring']    Word Count: 3430    Laugh Count: 4    First Laugh At: 47
+The way we think about work is broken     Barry Schwartz    ['Inspiring', 'Informative']    Word Count: 1372    Laugh Count: 3    First Laugh At: 56
+The why and how of effective altruism     Peter Singer    ['Inspiring', 'Persuasive']    Word Count: 2936    Laugh Count: 0    First Laugh At: -1
+The wonderful and terrifying implications of computers that can learn     Jeremy Howard    ['Informative', 'Fascinating']    Word Count: 4008    Laugh Count: 0    First Laugh At: -1
+The workforce crisis of 2030 -- and how to start solving it now     Rainer Strack    ['Informative', 'Inspiring']    Word Count: 1870    Laugh Count: 4    First Laugh At: 144
+The world is one big dataset. Now, how to photograph it ...     Dan Berkenstock    ['Informative', 'Ingenious']    Word Count: 1783    Laugh Count: 0    First Laugh At: -1
+The world's largest family reunion … we're all invited!     AJ Jacobs    ['Fascinating', 'Funny']    Word Count: 1732    Laugh Count: 6    First Laugh At: 415
+The world's most boring television ... and why it's hilariously addictive     Thomas Hellum    ['Funny', 'Fascinating']    Word Count: 3172    Laugh Count: 11    First Laugh At: 279
+There’s a better way to die, and architecture can help     Alison Killing    ['Informative', 'Inspiring']    Word Count: 957    Laugh Count: 0    First Laugh At: -1
+These robots come to the rescue after a disaster     Robin Murphy    ['Informative', 'Fascinating']    Word Count: 1626    Laugh Count: 2    First Laugh At: 890
+Think your email's private? Think again     Andy Yen    ['Informative', 'Persuasive']    Word Count: 2544    Laugh Count: 1    First Laugh At: 1231
+This app knows how you feel -- from the look on your face     Rana el Kaliouby    ['Informative', 'Fascinating']    Word Count: 2019    Laugh Count: 7    First Laugh At: 300
+This gel can make you stop bleeding instantly     Joe Landolina    ['Ingenious', 'Fascinating']    Word Count: 1019    Laugh Count: 0    First Laugh At: -1
+This is what enduring love looks like     Alec Soth + Stacey Baker    ['Beautiful', 'Inspiring']    Word Count: 1826    Laugh Count: 7    First Laugh At: 395
+This is what it's like to teach in North Korea     Suki Kim    ['Courageous', 'Informative']    Word Count: 1725    Laugh Count: 0    First Laugh At: -1
+This new telescope might show us the beginning of the universe     Wendy Freedman    ['Informative', 'Fascinating']    Word Count: 2779    Laugh Count: 4    First Laugh At: 56
+This tennis icon paved the way for women in sports     Billie Jean King    ['Inspiring', 'Funny']    Word Count: 3282    Laugh Count: 14    First Laugh At: 28
+Three myths about corruption     Afra Raymond    ['Courageous', 'Informative']    Word Count: 3779    Laugh Count: 4    First Laugh At: 1073
+Tidying up art     Ursus Wehrli    ['Funny', 'Ingenious']    Word Count: 2756    Laugh Count: 38    First Laugh At: 179
+Tiny satellites show us the Earth as it changes in near-real-time     Will Marshall    ['Informative', 'Inspiring']    Word Count: 1584    Laugh Count: 1    First Laugh At: 878
+To This Day ... for the bullied and beautiful     Shane Koyczan    ['Inspiring', 'Beautiful']    Word Count: 2348    Laugh Count: 12    First Laugh At: 9
+To create for the ages, let's combine art and engineering     Bran Ferren    ['Inspiring', 'Fascinating']    Word Count: 3378    Laugh Count: 2    First Laugh At: 901
+To hear this music you have to be there. Literally     Ryan Holladay    ['Fascinating', 'Ingenious']    Word Count: 1020    Laugh Count: 0    First Laugh At: -1
+To solve mass violence, look to locals     Severine Autesserre    ['Inspiring', 'Persuasive']    Word Count: 2082    Laugh Count: 0    First Laugh At: -1
+To the South Pole and back — the hardest 105 days of my life     Ben Saunders    ['Inspiring', 'Courageous']    Word Count: 3094    Laugh Count: 3    First Laugh At: 336
+Tour the solar system from home     Jon Nguyen    ['Fascinating', 'Informative']    Word Count: 1553    Laugh Count: 2    First Laugh At: 532
+Toward a new understanding of mental illness     Thomas Insel    ['Informative', 'Fascinating']    Word Count: 2456    Laugh Count: 0    First Laugh At: -1
+Tracking ancient diseases using ... plaque     Christina Warinner    ['Informative', 'Fascinating']    Word Count: 946    Laugh Count: 1    First Laugh At: 371
+Tracking our online trackers     Gary Kovacs    []    Word Count: 1264    Laugh Count: 2    First Laugh At: 115
+Two nameless bodies washed up on the beach. Here are their stories     Anders Fjellberg    ['Informative', 'Courageous']    Word Count: 2853    Laugh Count: 0    First Laugh At: -1
+Two nerdy obsessions meet -- and it's magic     David Kwong    ['Fascinating', 'Ingenious']    Word Count: 2225    Laugh Count: 3    First Laugh At: 410
+Two poems about what dogs think (probably)     Billy Collins    ['Funny', 'Beautiful']    Word Count: 583    Laugh Count: 2    First Laugh At: 267
+Txtng is killing language. JK!!!     John McWhorter    ['Informative', 'Fascinating']    Word Count: 2710    Laugh Count: 5    First Laugh At: 430
+Unseen footage, untamed nature     Karen Bass    ['Beautiful', 'Fascinating']    Word Count: 1159    Laugh Count: 0    First Laugh At: -1
+Use data to build better schools     Andreas Schleicher    ['Informative', 'Persuasive']    Word Count: 3390    Laugh Count: 1    First Laugh At: 3283
+Violence against women—it's a men's issue     Jackson Katz    ['Inspiring', 'Courageous']    Word Count: 4242    Laugh Count: 0    First Laugh At: -1
+Virtual Choir Live     Eric Whitacre    ['Beautiful', 'Inspiring']    Word Count: 846    Laugh Count: 0    First Laugh At: -1
+Wake up!     They Might Be Giants    ['Funny', 'Ingenious']    Word Count: 2226    Laugh Count: 0    First Laugh At: -1
+Want to be an activist? Start with your toys     McKenna Pope    ['Inspiring', 'Courageous']    Word Count: 1094    Laugh Count: 0    First Laugh At: -1
+Want to be happier? Stay in the moment     Matt Killingsworth    ['Informative', 'Fascinating']    Word Count: 2162    Laugh Count: 4    First Laugh At: 856
+Want to be happy? Be grateful     David Steindl-Rast    ['Inspiring', 'Beautiful']    Word Count: 2144    Laugh Count: 1    First Laugh At: 1724
+Want to help someone? Shut up and listen!     Ernesto Sirolli    ['Inspiring', 'Persuasive']    Word Count: 2587    Laugh Count: 8    First Laugh At: 44
+Want to innovate? Become a "now-ist"     Joi Ito    ['Inspiring', 'Informative']    Word Count: 2605    Laugh Count: 1    First Laugh At: 503
+Watson, Jeopardy and me, the obsolete know-it-all     Ken Jennings    ['Funny', 'Inspiring']    Word Count: 4070    Laugh Count: 7    First Laugh At: 66
+We are all designers     John Hockenberry    ['Inspiring', 'Courageous']    Word Count: 3484    Laugh Count: 7    First Laugh At: 772
+We can now edit our DNA. But let's do it wisely     Jennifer Doudna    ['Informative', 'Fascinating']    Word Count: 2655    Laugh Count: 1    First Laugh At: 505
+We need a heroic narrative for death     Amanda Bennett    ['Inspiring', 'Courageous']    Word Count: 2402    Laugh Count: 4    First Laugh At: 194
+We need better drugs -- now     Francis Collins    ['Informative', 'Fascinating']    Word Count: 3103    Laugh Count: 0    First Laugh At: -1
+We need money for aid. So let’s print it.     Michael Metcalfe    ['Fascinating', 'Persuasive']    Word Count: 1812    Laugh Count: 1    First Laugh At: 91
+We the People, and the Republic we must reclaim     Lawrence Lessig    ['Persuasive', 'Inspiring']    Word Count: 3207    Laugh Count: 3    First Laugh At: 978
+We're all hiding something. Let's find the courage to open up     Ash Beckham    ['Inspiring', 'Courageous']    Word Count: 1868    Laugh Count: 7    First Laugh At: 314
+We're covered in germs. Let's design for that.     Jessica Green    ['Informative', 'Fascinating']    Word Count: 1461    Laugh Count: 0    First Laugh At: -1
+We're worried about local warming ... in your lap     Yossi Vardi    ['Funny', 'Informative']    Word Count: 943    Laugh Count: 10    First Laugh At: 143
+Weaving narratives in museum galleries     Thomas P. Campbell    ['Fascinating', 'Inspiring']    Word Count: 2458    Laugh Count: 3    First Laugh At: 217
+Weird, or just different?     Derek Sivers    ['Funny', 'Informative']    Word Count: 636    Laugh Count: 1    First Laugh At: 579
+Welcome to the age of the industrial internet     Marco Annunziata    ['Informative', 'Fascinating']    Word Count: 2100    Laugh Count: 1    First Laugh At: 1785
+What I discovered in New York City  trash     Robin Nagle    ['Informative', 'Inspiring']    Word Count: 1417    Laugh Count: 0    First Laugh At: -1
+What I learned as a kid in jail     Ismael Nazario    ['Inspiring', 'Courageous']    Word Count: 2375    Laugh Count: 2    First Laugh At: 1659
+What I learned from Nelson Mandela     Boyd Varty    ['Inspiring', 'Beautiful']    Word Count: 2752    Laugh Count: 8    First Laugh At: 351
+What I learned from going blind in space     Chris Hadfield    ['Inspiring', 'Fascinating']    Word Count: 3338    Laugh Count: 4    First Laugh At: 482
+What I learned from spending 31 days underwater     Fabien Cousteau    ['Fascinating', 'Beautiful']    Word Count: 1839    Laugh Count: 0    First Laugh At: -1
+What I saw in the war     Janine di Giovanni    ['Courageous', 'Inspiring']    Word Count: 1983    Laugh Count: 0    First Laugh At: -1
+What I've learned from my autistic brothers     Faith Jegede    ['Inspiring', 'Beautiful']    Word Count: 807    Laugh Count: 0    First Laugh At: -1
+What ants teach us about the brain, cancer and the Internet     Deborah Gordon    ['Informative', 'Fascinating']    Word Count: 2593    Laugh Count: 0    First Laugh At: -1
+What can save the rainforest? Your used cell phone     Topher White    ['Ingenious', 'Inspiring']    Word Count: 2054    Laugh Count: 0    First Laugh At: -1
+What do we do when antibiotics don’t work any more?     Maryn McKenna    ['Informative', 'Persuasive']    Word Count: 2346    Laugh Count: 0    First Laugh At: -1
+What do we do with all this big data?     Susan Etlinger    ['Informative', 'Inspiring']    Word Count: 2030    Laugh Count: 2    First Laugh At: 146
+What doctors can learn from each other     Stefan Larsson    ['Persuasive', 'Inspiring']    Word Count: 2239    Laugh Count: 0    First Laugh At: -1
+What doctors don't know about the drugs they prescribe     Ben Goldacre    ['Informative', 'Persuasive']    Word Count: 2654    Laugh Count: 3    First Laugh At: 39
+What does my headscarf mean to you?     Yassmin Abdel-Magied    ['Inspiring', 'Informative']    Word Count: 2807    Laugh Count: 1    First Laugh At: 1381
+What does the future hold? 11 characters offer quirky answers     Sarah Jones    ['Funny', 'Beautiful']    Word Count: 3736    Laugh Count: 6    First Laugh At: 876
+What explains the rise of humans?     Yuval Noah Harari    ['Fascinating', 'Informative']    Word Count: 2771    Laugh Count: 6    First Laugh At: 1322
+What fear can teach us     Karen Thompson Walker    ['Inspiring', 'Fascinating']    Word Count: 2285    Laugh Count: 0    First Laugh At: -1
+What happened when I open-sourced my brain cancer     Salvatore Iaconesi    ['Inspiring', 'Courageous']    Word Count: 1476    Laugh Count: 4    First Laugh At: 15
+What happens when our computers get smarter than we are?     Nick Bostrom    ['Informative', 'Fascinating']    Word Count: 2905    Laugh Count: 3    First Laugh At: 69
+What humans can learn from semi-intelligent slime     Heather Barnett    ['Fascinating', 'Informative']    Word Count: 2025    Laugh Count: 2    First Laugh At: 833
+What if 3D printing was 100x faster?     Joseph DeSimone    ['Informative', 'Ingenious']    Word Count: 1809    Laugh Count: 1    First Laugh At: 461
+What if our healthcare system kept us healthy?     Rebecca Onie    ['Inspiring', 'Persuasive']    Word Count: 3068    Laugh Count: 1    First Laugh At: 950
+What is retro-futurism?     Bruce McCall    ['Funny', 'Beautiful']    Word Count: 2132    Laugh Count: 3    First Laugh At: 1551
+What is so special about the human brain?     Suzana Herculano-Houzel    ['Informative', 'Fascinating']    Word Count: 2677    Laugh Count: 0    First Laugh At: -1
+What it takes to be a great leader     Roselinde Torres    ['Inspiring', 'Informative']    Word Count: 1308    Laugh Count: 0    First Laugh At: -1
+What makes a word "real"?     Anne Curzan    ['Informative', 'Fascinating']    Word Count: 2895    Laugh Count: 12    First Laugh At: 65
+What makes us feel good about our work?     Dan Ariely    ['Informative', 'Inspiring']    Word Count: 4206    Laugh Count: 13    First Laugh At: 238
+What makes us get sick? Look upstream     Rishi Manchanda    ['Informative', 'Inspiring']    Word Count: 4081    Laugh Count: 0    First Laugh At: -1
+What my religion really says about women     Alaa Murabit    ['Inspiring', 'Courageous']    Word Count: 1906    Laugh Count: 3    First Laugh At: 86
+What new power looks like     Jeremy Heimans    ['Informative', 'Inspiring']    Word Count: 2989    Laugh Count: 2    First Laugh At: 351
+What really matters at the end of life     BJ Miller    ['Inspiring', 'Beautiful']    Word Count: 2744    Laugh Count: 3    First Laugh At: 151
+What the Social Progress Index can reveal about your country     Michael Green    ['Informative', 'Inspiring']    Word Count: 2372    Laugh Count: 5    First Laugh At: 1039
+What the gay rights movement learned from the civil rights movement     Yoruba Richen    ['Inspiring', 'Informative']    Word Count: 2884    Laugh Count: 2    First Laugh At: 1882
+What the people of the Amazon know that you don’t     Mark Plotkin    ['Informative', 'Fascinating']    Word Count: 2992    Laugh Count: 3    First Laugh At: 219
+What veterinarians know that physicians don't     Barbara Natterson-Horowitz    ['Informative', 'Fascinating']    Word Count: 1717    Laugh Count: 1    First Laugh At: 1426
+What we can learn from galaxies far, far away     Henry Lin    ['Informative', 'Fascinating']    Word Count: 1285    Laugh Count: 0    First Laugh At: -1
+What we didn't know about penis anatomy     Diane Kelly    ['Informative', 'Fascinating']    Word Count: 2138    Laugh Count: 4    First Laugh At: 299
+What we don't understand about trust     Onora O'Neill    ['Persuasive', 'Informative']    Word Count: 1651    Laugh Count: 1    First Laugh At: 979
+What we learn from insects’ kinky sex lives     Marlene Zuk    ['Informative', 'Funny']    Word Count: 2064    Laugh Count: 13    First Laugh At: 16
+What we learned from 5 million books     Jean-Baptiste Michel + Erez Lieberman Aiden    ['Funny', 'Fascinating']    Word Count: 3006    Laugh Count: 15    First Laugh At: 29
+What we learned from teetering on the fiscal cliff     Adam Davidson    ['Informative', 'Persuasive']    Word Count: 3732    Laugh Count: 0    First Laugh At: -1
+What we think we know     Jonathan Drori    ['Informative', 'Fascinating']    Word Count: 2976    Laugh Count: 5    First Laugh At: 493
+What we're learning from 5,000 brains     Read Montague    ['Informative', 'Fascinating']    Word Count: 2978    Laugh Count: 3    First Laugh At: 1408
+What we're learning from online education     Daphne Koller    ['Inspiring', 'Persuasive']    Word Count: 4095    Laugh Count: 4    First Laugh At: 1258
+What will a future without secrets look like?     Alessandro Acquisti    ['Informative', 'Persuasive']    Word Count: 2612    Laugh Count: 0    First Laugh At: -1
+What will future jobs look like?     Andrew McAfee    ['Informative', 'Persuasive']    Word Count: 2948    Laugh Count: 1    First Laugh At: 1408
+What you don't know about marriage     Jenna McCarthy    ['Funny', 'Informative']    Word Count: 1884    Laugh Count: 6    First Laugh At: 27
+What your designs say about you     Sebastian Deterding    ['Inspiring', 'Persuasive']    Word Count: 2417    Laugh Count: 0    First Laugh At: -1
+What your doctor won’t disclose     Leana Wen    ['Courageous', 'Inspiring']    Word Count: 3057    Laugh Count: 1    First Laugh At: 2006
+What's a snollygoster? A short lesson in political speak     Mark Forsyth    ['Informative', 'Fascinating']    Word Count: 1235    Laugh Count: 2    First Laugh At: 90
+What's left to explore?     Nathan Wolfe    ['Fascinating', 'Informative']    Word Count: 1366    Laugh Count: 0    First Laugh At: -1
+What's so funny about mental illness?     Ruby Wax    ['Funny', 'Courageous']    Word Count: 1854    Laugh Count: 23    First Laugh At: 36
+What's the next window into our universe?     Andrew Connolly    ['Informative', 'Fascinating']    Word Count: 3103    Laugh Count: 1    First Laugh At: 917
+What's your 200-year plan?     Raghava KK    ['Inspiring', 'Beautiful']    Word Count: 2018    Laugh Count: 3    First Laugh At: 733
+What’s next in 3D printing     Avi Reichental    ['Inspiring', 'Informative']    Word Count: 1293    Laugh Count: 0    First Laugh At: -1
+What’s wrong with your pa$$w0rd?     Lorrie Faith Cranor    ['Informative', 'Persuasive']    Word Count: 3537    Laugh Count: 2    First Laugh At: 1963
+When online shaming spirals out of control     Jon Ronson    ['Informative', 'Courageous']    Word Count: 3590    Laugh Count: 9    First Laugh At: 258
+When people of Muslim heritage challenge fundamentalism     Karima Bennoune    ['Courageous', 'Inspiring']    Word Count: 3486    Laugh Count: 0    First Laugh At: -1
+When to take a stand -- and when to let it go     Ash Beckham    ['Inspiring', 'Courageous']    Word Count: 2812    Laugh Count: 20    First Laugh At: 154
+When you're making a deal, what's going on in your brain?     Colin Camerer    ['Informative', 'Fascinating']    Word Count: 3412    Laugh Count: 3    First Laugh At: 946
+Where are the baby dinosaurs?     Jack Horner    ['Funny', 'Informative']    Word Count: 2863    Laugh Count: 18    First Laugh At: 32
+Where is home?     Pico Iyer    ['Inspiring', 'Beautiful']    Word Count: 2564    Laugh Count: 3    First Laugh At: 296
+Where to train the world's doctors? Cuba.     Gail Reed    ['Inspiring', 'Informative']    Word Count: 2420    Laugh Count: 0    First Laugh At: -1
+Where’s Google going next?     Larry Page    ['Informative', 'Inspiring']    Word Count: 4680    Laugh Count: 1    First Laugh At: 46
+Which country does the most good for the world?     Simon Anholt    ['Inspiring', 'Beautiful']    Word Count: 3703    Laugh Count: 2    First Laugh At: 2017
+Who am I? Think again     Hetain Patel    ['Funny', 'Inspiring']    Word Count: 1148    Laugh Count: 10    First Laugh At: 123
+Who controls the world?     James B. Glattfelder    ['Informative', 'Fascinating']    Word Count: 2085    Laugh Count: 0    First Laugh At: -1
+Why 30 is not the new 20     Meg Jay    ['Inspiring', 'Persuasive']    Word Count: 2556    Laugh Count: 3    First Laugh At: 98
+Why Google Glass?     Sergey Brin    ['Informative', 'Fascinating']    Word Count: 1073    Laugh Count: 0    First Laugh At: -1
+Why I believe the mistreatment of women is the number one human rights abuse      Jimmy Carter    ['Informative', 'Inspiring']    Word Count: 2896    Laugh Count: 2    First Laugh At: 73
+Why I brought Pac-Man to MoMA     Paola Antonelli    ['Funny', 'Informative']    Word Count: 3882    Laugh Count: 8    First Laugh At: 561
+Why I fell in love with monster prime numbers     Adam Spencer    ['Funny', 'Fascinating']    Word Count: 3261    Laugh Count: 12    First Laugh At: 162
+Why I live in mortal dread of public speaking     Megan Washington    ['Inspiring', 'Courageous']    Word Count: 1403    Laugh Count: 11    First Laugh At: 183
+Why I love a country that once betrayed me     George Takei    ['Inspiring', 'Courageous']    Word Count: 2018    Laugh Count: 0    First Laugh At: -1
+Why I love vultures     Munir Virani    ['Informative', 'Persuasive']    Word Count: 1128    Laugh Count: 10    First Laugh At: 74
+Why I make robots the size of a grain of rice     Sarah Bergbreiter    ['Informative', 'Fascinating']    Word Count: 1287    Laugh Count: 1    First Laugh At: 418
+Why I must come out     Geena Rocero    ['Courageous', 'Beautiful']    Word Count: 1644    Laugh Count: 0    First Laugh At: -1
+Why I take the piano on the road … and in the air     Daria van den Bercken    ['Beautiful', 'Inspiring']    Word Count: 669    Laugh Count: 0    First Laugh At: -1
+Why Libya's revolution didn't work -- and what might     Zahra' Langhi    ['Courageous', 'Inspiring']    Word Count: 1147    Laugh Count: 0    First Laugh At: -1
+Why a good book is a secret door     Mac Barnett    ['Funny', 'Inspiring']    Word Count: 3276    Laugh Count: 22    First Laugh At: 114
+Why architects need to use their ears     Julian Treasure    ['Informative', 'Persuasive']    Word Count: 1920    Laugh Count: 4    First Laugh At: 124
+Why bees are disappearing     Marla Spivak    ['Informative', 'Persuasive']    Word Count: 2595    Laugh Count: 1    First Laugh At: 219
+Why bother leaving the house?     Ben Saunders    ['Inspiring', 'Courageous']    Word Count: 2245    Laugh Count: 2    First Laugh At: 753
+Why buses represent democracy in action     Enrique Peñalosa    ['Inspiring', 'Persuasive']    Word Count: 2228    Laugh Count: 1    First Laugh At: 923
+Why business can be good at solving social problems     Michael Porter    ['Inspiring', 'Persuasive']    Word Count: 2473    Laugh Count: 0    First Laugh At: -1
+Why city flags may be the worst-designed thing you've never noticed     Roman Mars    ['Funny', 'Informative']    Word Count: 3606    Laugh Count: 18    First Laugh At: 156
+Why climate change is a threat to human rights     Mary Robinson    ['Inspiring', 'Informative']    Word Count: 3290    Laugh Count: 4    First Laugh At: 72
+Why democracy matters     Rory Stewart    ['Persuasive', 'Inspiring']    Word Count: 2282    Laugh Count: 1    First Laugh At: 115
+Why dieting doesn't usually work     Sandra Aamodt    ['Informative', 'Inspiring']    Word Count: 2061    Laugh Count: 5    First Laugh At: 97
+Why do ambitious women have flat heads?     Dame Stephanie Shirley    ['Inspiring', 'Beautiful']    Word Count: 1739    Laugh Count: 8    First Laugh At: 278
+Why do we sleep?     Russell Foster    ['Informative', 'Fascinating']    Word Count: 4157    Laugh Count: 8    First Laugh At: 287
+Why does the universe exist?     Jim Holt    ['Fascinating', 'Funny']    Word Count: 3311    Laugh Count: 12    First Laugh At: 16
+Why domestic violence victims don't leave     Leslie Morgan Steiner    ['Courageous', 'Inspiring']    Word Count: 2572    Laugh Count: 2    First Laugh At: 334
+Why eyewitnesses get it wrong     Scott Fraser    ['Informative', 'Persuasive']    Word Count: 2873    Laugh Count: 5    First Laugh At: 353
+Why gender equality is good for everyone — men included     Michael Kimmel    ['Inspiring', 'Funny']    Word Count: 2985    Laugh Count: 20    First Laugh At: 175
+Why giving away our wealth has been the most satisfying thing we've done     Bill and Melinda Gates    ['Inspiring', 'Informative']    Word Count: 5374    Laugh Count: 6    First Laugh At: 328
+Why global jihad is losing     Bobby Ghosh    ['Informative', 'Persuasive']    Word Count: 2659    Laugh Count: 0    First Laugh At: -1
+Why good hackers make good citizens     Catherine Bracy    ['Inspiring', 'Informative']    Word Count: 1766    Laugh Count: 1    First Laugh At: 869
+Why good leaders make you feel safe     Simon Sinek    ['Inspiring', 'Informative']    Word Count: 2279    Laugh Count: 0    First Laugh At: -1
+Why is 'x' the unknown?     Terry Moore    ['Informative', 'Funny']    Word Count: 586    Laugh Count: 1    First Laugh At: 574
+Why it's time to forget the pecking order at work     Margaret Heffernan    ['Inspiring', 'Informative']    Word Count: 2395    Laugh Count: 5    First Laugh At: 46
+Why lunch ladies are heroes     Jarrett J. Krosoczka    ['Inspiring', 'Beautiful']    Word Count: 1033    Laugh Count: 1    First Laugh At: 310
+Why massive open online courses (still) matter     Anant Agarwal    ['Inspiring', 'Informative']    Word Count: 2820    Laugh Count: 2    First Laugh At: 769
+Why mayors should rule the world     Benjamin Barber    ['Persuasive', 'Inspiring']    Word Count: 2769    Laugh Count: 1    First Laugh At: 1225
+Why medicine often has dangerous side effects for women     Alyson McGregor    ['Informative', 'Persuasive']    Word Count: 2165    Laugh Count: 0    First Laugh At: -1
+Why ordinary people need to understand power     Eric Liu    ['Inspiring', 'Persuasive']    Word Count: 2832    Laugh Count: 1    First Laugh At: 33
+Why our IQ levels are higher than our grandparents'     James Flynn    ['Informative', 'Fascinating']    Word Count: 3214    Laugh Count: 3    First Laugh At: 2049
+Why our universe might exist on a knife-edge     Gian Giudice    ['Fascinating', 'Informative']    Word Count: 2116    Laugh Count: 1    First Laugh At: 1448
+Why people believe weird things     Michael Shermer    ['Funny', 'Persuasive']    Word Count: 2739    Laugh Count: 23    First Laugh At: 140
+Why people need poetry     Stephen Burt    ['Beautiful', 'Fascinating']    Word Count: 2293    Laugh Count: 1    First Laugh At: 1458
+Why privacy matters     Glenn Greenwald    ['Informative', 'Persuasive']    Word Count: 3928    Laugh Count: 3    First Laugh At: 739
+Why public beheadings get millions of views     Frances Larson    ['Informative', 'Persuasive']    Word Count: 2477    Laugh Count: 0    First Laugh At: -1
+Why smart statistics are the key to fighting crime     Anne Milgram    ['Informative', 'Persuasive']    Word Count: 2625    Laugh Count: 0    First Laugh At: -1
+Why some of us don't have one true calling     Emilie Wapnick    ['Inspiring', 'Fascinating']    Word Count: 2106    Laugh Count: 11    First Laugh At: 94
+Why some of us don't have one true calling     Emilie Wapnick    []    Word Count: 2104    Laugh Count: 11    First Laugh At: 95
+Why some people find exercise harder than others     Emily Balcetis    ['Informative', 'Inspiring']    Word Count: 2541    Laugh Count: 0    First Laugh At: -1
+Why stay in Chernobyl? Because it's home.     Holly Morris    ['Fascinating', 'Informative']    Word Count: 1482    Laugh Count: 1    First Laugh At: 632
+Why the buildings of the future will be shaped by ... you     Marc Kushner    ['Inspiring', 'Fascinating']    Word Count: 2962    Laugh Count: 8    First Laugh At: 218
+Why thinking you're ugly is bad for you     Meaghan Ramsey    ['Inspiring', 'Beautiful']    Word Count: 1987    Laugh Count: 0    First Laugh At: -1
+Why truly innovative science demands a leap into the unknown     Uri Alon    ['Inspiring', 'Persuasive']    Word Count: 2962    Laugh Count: 2    First Laugh At: 716
+Why veterans miss war     Sebastian Junger    ['Informative', 'Inspiring']    Word Count: 2383    Laugh Count: 0    First Laugh At: -1
+Why videos go viral     Kevin Allocca    ['Funny', 'Informative']    Word Count: 1215    Laugh Count: 12    First Laugh At: 246
+Why we all need to practice emotional first aid     Guy Winch    ['Inspiring', 'Informative']    Word Count: 2990    Laugh Count: 8    First Laugh At: 59
+Why we laugh     Sophie Scott    ['Funny', 'Informative']    Word Count: 3645    Laugh Count: 12    First Laugh At: 126
+Why we need to end the War on Drugs     Ethan Nadelmann    ['Persuasive', 'Informative']    Word Count: 3003    Laugh Count: 2    First Laugh At: 501
+Why we need to rethink capitalism     Paul Tudor Jones II    ['Informative', 'Inspiring']    Word Count: 1671    Laugh Count: 1    First Laugh At: 737
+Why we should build wooden skyscrapers     Michael Green    ['Inspiring', 'Informative']    Word Count: 2527    Laugh Count: 0    First Laugh At: -1
+Why we should trust scientists     Naomi Oreskes    ['Informative', 'Persuasive']    Word Count: 3764    Laugh Count: 4    First Laugh At: 255
+Why we shouldn't trust markets with our civic life     Michael Sandel    ['Persuasive', 'Inspiring']    Word Count: 2168    Laugh Count: 2    First Laugh At: 1300
+Why we will rely on robots     Rodney Brooks    ['Informative', 'Fascinating']    Word Count: 2066    Laugh Count: 0    First Laugh At: -1
+Why you should care about whale poo     Asha de Vos    ['Informative', 'Inspiring']    Word Count: 829    Laugh Count: 0    First Laugh At: -1
+Why you will fail to have a great career     Larry Smith    ['Inspiring', 'Funny']    Word Count: 2692    Laugh Count: 21    First Laugh At: 22
+Why your worst deeds don’t define you     Shaka Senghor    ['Inspiring', 'Courageous']    Word Count: 1956    Laugh Count: 2    First Laugh At: 1461
+Will our kids be a different species?     Juan Enriquez    []    Word Count: 2861    Laugh Count: 9    First Laugh At: 242
+Women should represent women in media     Megan Kamerick    ['Persuasive', 'Informative']    Word Count: 1935    Laugh Count: 7    First Laugh At: 58
+Wry photos that turn stereotypes upside down     Uldus Bakhtiozina    ['Funny', 'Beautiful']    Word Count: 579    Laugh Count: 3    First Laugh At: 74
+Yes, I survived cancer. But that doesn't define me     Debra Jarvis    ['Inspiring', 'Beautiful']    Word Count: 2419    Laugh Count: 6    First Laugh At: 216
+You can grow new brain cells. Here's how     Sandrine Thuret    ['Informative', 'Fascinating']    Word Count: 1766    Laugh Count: 4    First Laugh At: 913
+You don't need an app for that     Toby Shapshak    ['Informative', 'Inspiring']    Word Count: 1457    Laugh Count: 6    First Laugh At: 44
+Your body is my canvas     Alexa Meade    ['Beautiful', 'Fascinating']    Word Count: 1269    Laugh Count: 2    First Laugh At: 542
+Your body language shapes who you are     Amy Cuddy    ['Inspiring', 'Fascinating']    Word Count: 4405    Laugh Count: 8    First Laugh At: 105
+Your brain is more than a bag of chemicals     David Anderson    ['Informative', 'Fascinating']    Word Count: 2687    Laugh Count: 2    First Laugh At: 1080
+Your brain on improv     Charles Limb    ['Fascinating', 'Informative']    Word Count: 3529    Laugh Count: 3    First Laugh At: 2070
+Your brain on video games     Daphne Bavelier    ['Informative', 'Fascinating']    Word Count: 3415    Laugh Count: 6    First Laugh At: 150
+Your online life, permanent as a tattoo     Juan Enriquez    ['Informative', 'Persuasive']    Word Count: 1067    Laugh Count: 4    First Laugh At: 73
+Your phone company is watching     Malte Spitz    ['Informative', 'Courageous']    Word Count: 1425    Laugh Count: 0    First Laugh At: -1
+Zombie roaches and other parasite tales     Ed Yong    ['Fascinating', 'Informative']    Word Count: 2343    Laugh Count: 7    First Laugh At: 197
+“Am I dying?” The honest answer.     Matthew O'Reilly    ['Inspiring', 'Beautiful']    Word Count: 1043    Laugh Count: 0    First Laugh At: -1
+“High School Training Ground”     Malcolm London    ['Inspiring', 'Beautiful']    Word Count: 401    Laugh Count: 0    First Laugh At: -1
