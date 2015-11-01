@@ -1,0 +1,7 @@
+parsed_websites/*
+
+search_pages/*
+
+websites/*
+
+!*.sh
