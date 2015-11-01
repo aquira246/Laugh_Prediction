@@ -9,6 +9,7 @@ import TedMeta
 
 CUT_OUTLIER_PERCENTAGE = .05
 
+
 def validNegativeLengths(pos, negs):
 
     if len(negs) < len(pos):
@@ -98,10 +99,32 @@ def getLaughLocations(firstLaughs, nonLaughs):
     return laughGroup
 
 
-def transferFiles(metadatas, location):
-    for md in metadatas:
-        dest = location+md.name.replace(" ", "_")+".txt"
-        shutil.copyfile(md.filename, dest)
+def trimFile(metadata, length, location):
+    dest = location+metadata.name.replace(" ", "_")+".txt"
+    rf = open(metadata.filename, 'r')
+    wf = open(dest, 'w')
+
+    wordCount = 0
+    lastWord = ""
+    for paragraph in rf:
+        if re.match(r'^Title: .+', paragraph) is not None:
+            pass
+        elif re.match(r'^Author: .+', paragraph) is not None:
+            pass
+        elif re.match(r'^Tags: .+', paragraph) is not None:
+            pass
+        else:
+            hitCount = False
+            for word in nltk.word_tokenize(paragraph):
+                wordCount += 1
+                if (wordCount >= length):
+                    hitCount = True
+
+                if not (word is "Laughter" and lastWord is "("):
+                    wf.writelines(word + " ")
+                    if hitCount and word is ".":
+                        break
+                lastWord = word
 
 
 def divideDataIntoGroups(metadata, firstLaughs, lengthNonLaugh):
@@ -120,21 +143,24 @@ def divideDataIntoGroups(metadata, firstLaughs, lengthNonLaugh):
     if not validNegativeLengths(laughLocs, negativeLengths):
         print("WARNING: Some of the negative laughs are not long enough")
 
-    positives = []
-    negatives = []
+    posNegMatch = []
+    for i in range(len(laughLocs)):
+        posNegMatch.append((laughLocs[i], negativeLengths[i]))
 
-    for md in metadata:
-        if md.firstLaughAt in laughLocs:
-            positives.append(md)
-            laughLocs.remove(md.firstLaughAt)
-        if md.numLaughs == 0 and md.wordCount in negativeLengths:
-            negatives.append(md)
-            negativeLengths.remove(md.wordCount)
+    posLocation = "Laugh_data/Positives/+"
+    negLocation = "Laugh_data/Negatives/-"
 
-    posLocation = "Laugh_data/Positives/"
-    negLocation = "Laugh_data/Negatives/"
-    transferFiles(positives, posLocation)
-    transferFiles(negatives, negLocation)
+    for (pos, neg) in posNegMatch:
+        for md in metadata:
+            if md.firstLaughAt == pos:
+                posFile = md
+            elif md.firstLaughAt == -1 and md.wordCount == neg:
+                negFile = md
+
+        metadata.remove(posFile)
+        metadata.remove(negFile)
+        trimFile(posFile, pos, posLocation)
+        trimFile(negFile, neg, negLocation)
 
 
 
