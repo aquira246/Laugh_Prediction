@@ -1,7 +1,5 @@
 import sys
 import nltk, re, pprint
-import os
-import shutil
 import math, random, statistics
 from nltk import word_tokenize
 from urllib import request
@@ -126,6 +124,9 @@ def trimFile(metadata, length, location):
                         break
                 lastWord = word
 
+    rf.close
+    wf.close
+
 
 def divideDataIntoGroups(metadata, firstLaughs, lengthNonLaugh):
     cutOutMeta = math.floor(len(metadata)*CUT_OUTLIER_PERCENTAGE)
@@ -147,8 +148,8 @@ def divideDataIntoGroups(metadata, firstLaughs, lengthNonLaugh):
     for i in range(len(laughLocs)):
         posNegMatch.append((laughLocs[i], negativeLengths[i]))
 
-    posLocation = "Laugh_data/Positives/+"
-    negLocation = "Laugh_data/Negatives/-"
+    posLocation = "Laugh_Data/Positives/+"
+    negLocation = "Laugh_Data/Negatives/-"
 
     for (pos, neg) in posNegMatch:
         for md in metadata:
@@ -161,7 +162,6 @@ def divideDataIntoGroups(metadata, firstLaughs, lengthNonLaugh):
         metadata.remove(negFile)
         trimFile(posFile, pos, posLocation)
         trimFile(negFile, neg, negLocation)
-
 
 
 (metadata, firstLaughs, lengthNonLaugh) = TedMeta.createTedMetaFile("parsed_websites/", "Ted_Meta.txt", "Ted_Laughs.txt")
