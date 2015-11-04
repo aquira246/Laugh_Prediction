@@ -50,7 +50,7 @@ class tedMetaData(object):
         self.tags = self.tags + newTags
 
     def toString(self):
-        return (self.name + "    " + self.author + "    " + str(self.tags) +
+        return (self.filename + "    " + self.name + "    " + self.author + "    " + str(self.tags) +
             "    " + "Word Count: " + str(self.wordCount)  + "    " +
             "Laugh Count: " + str(self.numLaughs) + "    " +
             "First Laugh At: " + str(self.firstLaughAt))
@@ -186,4 +186,57 @@ def createTedMetaFile(path, metaDataLocation, laughDataLocation):
     wf.close
     lf.close
 
+    return (metadataCollection, firstLaughs, lengthNonLaugh)
+
+
+def getMetaDataFromString(line):
+    #return a metadata if the string is good, else return None
+    #attempt to grab the sections of the string
+    res = re.findall("^(.+)    (.+)\s+   (.+)    .(.*).    Word Count: ([0-9]+)    Laugh Count: ([0-9]+)    First Laugh At: (\S+)", line)
+
+    #if we don't find anything, return None
+    if len(res) is 0:
+        return None
+    else:
+        #if we find the sections, we make a new metadata
+        filename, name, author, tags, wordCount, laughCount, firstLaughAt = res[0]
+
+        if len(tags) == 0:
+            tags = []
+        else:
+            tag1, tag2 = re.findall(".(\S+)., .(\S+).", tags)[0]
+            tags = [tag1, tag2]
+
+            #create metadata with the info
+            md = tedMetaData(filename, name, author, int(laughCount), int(wordCount), int(firstLaughAt), tags)
+
+            #return the metadata
+            return md
+
+
+def useTedMetaFiles(path, metaDataLocation, laughDataLocation):
+    metadataCollection = []
+    firstLaughs = []
+    lengthNonLaugh = []
+
+    lineNum = 0
+
+    #the file that stores all the meta data for the files
+    mf = open(metaDataLocation, "r")
+
+    for line in mf:
+        lineNum += 1
+        if lineNum > 2:
+            md = getMetaDataFromString(line)
+            if md:
+                metadataCollection.append(md)
+                if md.firstLaughAt != -1:
+                    firstLaughs.append(md.firstLaughAt)
+                else:
+                    lengthNonLaugh.append(md.wordCount)
+
+    mf.close
+
+    firstLaughs.sort()
+    lengthNonLaugh.sort()
     return (metadataCollection, firstLaughs, lengthNonLaugh)
