@@ -53,15 +53,16 @@ def extractFeatures(positives, negatives, verbose, useBayes, useTree):
     if useTree:
         print("Running Decision Tree classifier")
         #NLTK's built-in implementation of the Decision Tree classifier is trained
-        classifier = nltk.DecisionTreeClassifier.train(train, entropy_cutoff=0, support_cutoff=0)
+        classifier = nltk.DecisionTreeClassifier.train(train)
 
         #now, it is tested on the test set and the accuracy reported
         print ("DTree Accuracy: ", nltk.classify.accuracy(classifier, test))
 
         if verbose:
+            print("Printing tree")
+            #print(classifier.pretty_format())
             for (feats, cor) in test:
                 classification = classifier.classify(feats)
-
                 print("Correct: ", cor, " Result: ", classification)#, "for ", feats[0])
 
 

@@ -1,7 +1,4 @@
 have Feature extractor take in commandline arguments
-In Datacreator, set it so that it isn't a hardcoded 200 or 100 files
 improve the names of variables and functions
 comment more of the code
 start documenting what I am doing
-
-print the decision tree, as it is working strangly accurate. IT SHOULD NOT BE ACCURATE!

@@ -3,7 +3,6 @@ import nltk, re, pprint
 import os
 import statistics
 from nltk import word_tokenize
-from urllib import request
 
 class tedMetaData(object):
     """docstring for metaData"""

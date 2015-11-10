@@ -2,7 +2,6 @@ import sys
 import nltk, re, pprint
 import math, random, statistics
 from nltk import word_tokenize
-from urllib import request
 import TedMeta
 
 CUT_OUTLIER_PERCENTAGE = .05
@@ -39,11 +38,12 @@ def getLaughLocations(firstLaughs, nonLaughs, testCount):
     fl_mean, fl_mean + fl_std_dev, fl_mean + fl_std_dev*2, fl_mean + fl_std_dev*3]
 
     #TODO
-    #math.ceil(testCount*.001), math.floor(testCount*.021),\
-    #math.floor(testCount*.136), math.floor(testCount*.341),\
-    #math.floor(testCount*.341), math.floor(testCount*.136),\
-    #math.floor(testCount*.021), math.ceil(testCount*.001)
-    divisions_amounts = [1, 2, 13, 34, 34, 13, 2, 1]
+    divisions_amounts = [
+    math.ceil(testCount*.001), math.floor(testCount*.021),\
+    math.floor(testCount*.136), math.floor(testCount*.341),\
+    math.floor(testCount*.341), math.floor(testCount*.136),\
+    math.floor(testCount*.021), math.ceil(testCount*.001)]
+    #divisions_amounts = [1, 2, 13, 34, 34, 13, 2, 1]
     #divisions_amounts = [1, 4, 27, 68, 68, 27, 4, 1]
 
     bottomGroup = []
@@ -120,15 +120,18 @@ def trimFile(metadata, length):
             pass
         else:
             hitCount = False
-            for word in nltk.word_tokenize(paragraph):
+            #for word in nltk.word_tokenize(paragraph.decode('utf-8')): #python 2
+            for word in nltk.word_tokenize(paragraph): #python 3
                 wordCount += 1
                 if (wordCount >= length):
                     hitCount = True
 
-                if not (word is "Laughter" and lastWord is "("):
+                if hitCount and ("." in word or "?" in word or "!"):
+                    break
+
+                if not ("Laughter" in word or "(" in word):
                     words.append(word)
-                    if hitCount and word is ".":
-                        break
+
                 lastWord = word
 
     rf.close
@@ -136,10 +139,10 @@ def trimFile(metadata, length):
 
 
 def divideDataIntoGroups(metadata, firstLaughs, lengthNonLaugh, numTestFiles):
-    cutOutMeta = math.floor(len(metadata)*CUT_OUTLIER_PERCENTAGE)
+    cutOutMeta = int(math.floor(len(metadata)*CUT_OUTLIER_PERCENTAGE))
     trimmedFirstLaughs = firstLaughs[cutOutMeta:-cutOutMeta]
 
-    cutOutNonLaughs = math.floor(len(lengthNonLaugh)*CUT_OUTLIER_PERCENTAGE*2)
+    cutOutNonLaughs = int(math.floor(len(lengthNonLaugh)*CUT_OUTLIER_PERCENTAGE*2))
     #if a talk is too long, all the better for the non laughs
     trimmedNonLaughs = lengthNonLaugh[cutOutNonLaughs:]
 
@@ -168,8 +171,8 @@ def divideDataIntoGroups(metadata, firstLaughs, lengthNonLaugh, numTestFiles):
 
         metadata.remove(posFile)
         metadata.remove(negFile)
-        posData.append(trimFile(posFile, pos))
-        negData.append(trimFile(negFile, neg))
+        posData.append(trimFile(posFile, posFile.firstLaughAt))
+        negData.append(trimFile(negFile, posFile.firstLaughAt))
 
     return (posData, negData)
 
