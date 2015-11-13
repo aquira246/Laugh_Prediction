@@ -1,18 +1,11 @@
 import random
 import nltk
-import sys
-import time
 import DataCreator
+import loadingbar
+from loadingbar import printPercentage
 from nltk import word_tokenize
 from nltk.tag import pos_tag, map_tag
 from nltk.util import ngrams
-
-
-#little function to show percentage
-def printPercentage(intro_str, perc):
-    toWrite = "\r" + intro_str + "%d%%"
-    sys.stdout.write(toWrite % perc)
-    sys.stdout.flush()
 
 #First define a function that produces features from a given object
 #This function takes in a paragraph. It then breaks it up and uses it
@@ -129,12 +122,12 @@ def extractFeatures(positives, negatives, verbose, useBayes, useTree):
     for data in positives:
         featureSets.append((langFeatures(data), True))
         onDataSet += 1
-        printPercentage("Extracting Features: ", onDataSet/numDataSets * 100)
+        printPercentage(onDataSet/numDataSets * 100, "Extracting Features: ")
 
     for data in negatives:
         featureSets.append((langFeatures(data), False))
         onDataSet += 1
-        printPercentage("Extracting Features: ", onDataSet/numDataSets * 100)
+        printPercentage(onDataSet/numDataSets * 100, "Extracting Features: ")
 
     print("\n")
 
