@@ -105,11 +105,12 @@ def getLaughLocations(firstLaughs, nonLaughs, testCount):
 def trimFile(metadata, length):
     rf = open(metadata.filename, 'r')
 
-    words = []
-    wordCount = 0
+    segments = []
+    wordCount = 4
     lastWord = ""
+    trimComplete = False
 
-    words.append(metadata.name)
+    segments.append(metadata.name)
 
     for paragraph in rf:
         if re.match(r'^Title: .+', paragraph) is not None:
@@ -119,23 +120,31 @@ def trimFile(metadata, length):
         elif re.match(r'^Tags: .+', paragraph) is not None:
             pass
         else:
-            hitCount = False
-            #for word in nltk.word_tokenize(paragraph.decode('utf-8')): #python 2
-            for word in nltk.word_tokenize(paragraph): #python 3
-                wordCount += 1
-                if (wordCount >= length):
-                    hitCount = True
+            hold = wordCount + len(nltk.word_tokenize(paragraph))
+            paragraph = paragraph.replace("(Laughter)", "")
 
-                if hitCount and ("." in word or "?" in word or "!"):
-                    break
+            if  hold > length:
+                sentences = []
+                #for sent in nltk.sent_tokenize(paragraph.decode('utf-8')): #python 2
+                for sent in nltk.sent_tokenize(paragraph): #python 3
+                    wordCount += len(nltk.word_tokenize(sent))
+                    sentences.append(sent)
+                    if (wordCount >= length):
+                        para = " ".join(sentences)
+                        if len(para) > 1:
+                            segments.append(para)
+                        trimComplete = True
+                        break
+            else:
+                wordCount = hold
+                if len(paragraph) > 1:
+                    segments.append(paragraph)
 
-                if not ("Laughter" in word or "(" in word):
-                    words.append(word)
-
-                lastWord = word
+        if trimComplete:
+            break
 
     rf.close
-    return words
+    return segments
 
 
 def divideDataIntoGroups(metadata, firstLaughs, lengthNonLaugh, numTestFiles):
@@ -171,8 +180,12 @@ def divideDataIntoGroups(metadata, firstLaughs, lengthNonLaugh, numTestFiles):
 
         metadata.remove(posFile)
         metadata.remove(negFile)
-        posData.append(trimFile(posFile, posFile.firstLaughAt))
-        negData.append(trimFile(negFile, posFile.firstLaughAt))
+
+        segments = trimFile(posFile, posFile.firstLaughAt)
+        posData.append(segments[-1])
+        #posData = posData + segments[1:-1] #keeping some paragraphs out of negs
+        segments = trimFile(negFile, posFile.firstLaughAt)
+        negData = negData + segments[1:]
 
     return (posData, negData)
 

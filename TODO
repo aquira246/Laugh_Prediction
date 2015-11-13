@@ -2,3 +2,7 @@ have Feature extractor take in commandline arguments
 improve the names of variables and functions
 comment more of the code
 start documenting what I am doing
+
+Include the non-funny paragraphs from the positive file to the negatives
+Cleanly switch between datasets
+do the noun, verb, and adjective dataset

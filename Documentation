@@ -1,1 +1,41 @@
-Documentation
+Documentation:
+
+Accuracy for using Naive Bayes and Decision trees when the features are every word up to the first laugh: ~55% so might as well be guessing
+
+Accuracy for using Naive Bayes and Decision trees with only the last paragraph before the laugh, using all the words in the paragraph as features: ~77% This is significantly more than just using the whole text.
+
+When using naive bayes with the ngrams (2-4grams for characters and words), the results are REALLY low. ~20%
+While using Decision tree is still pretty high, about 78%
+
+After testing the percentage of nouns, verbs, and adjectives 3 times, I got the following data. 
+mean Noun:  0.20232220197213233
+mean Noun:  0.20001447637842718
+mean Noun:  0.20115009755835697
+
+std_dev Noun:  0.060288939529409565
+std_dev Noun:  0.05825488402818412
+std_dev Noun:  0.05860120254432491
+
+mean Adjective:  0.061696352526332654
+mean Adjective:  0.06274923028735785
+mean Adjective:  0.06250457723806231
+
+std_dev Adjective:  0.035619442016751414
+std_dev Adjective:  0.0343900788699468
+std_dev Adjective:  0.03392326607613692
+
+mean Verb:  0.1732463822749182
+mean Verb:  0.17348569290550092
+mean Verb:  0.1730733211025457
+
+std_dev Verb:  0.04681431031330794
+std_dev Verb:  0.045695402129826916
+std_dev Verb:  0.04415720204037863
+
+I set the bin cutoffs to:
+nouns     : low <.145 medium < .255
+adjectives: low <.028 medium < .096
+verbs     : low <.13 medium < .22 
+
+This is important for binning the adjectives by percentage for naive bayes and decision tree
+The results of using only the percentages was ~74% for both decision tree and naive bayes
