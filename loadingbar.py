@@ -18,13 +18,13 @@ getAnimationChar.ctr = 0
 #little function to show percentage
 def printPercentage(perc, intro_str="", useBar=True):
     if useBar:
-        toWrite = "\r|<"
-        for i in range(int(perc)//4):
+        toWrite = "\r" + intro_str + "|<"
+        for i in range(int(perc)//4 + 1):
             toWrite = toWrite + "="
 
         toWrite = toWrite + getAnimationChar() + ">"
 
-        for i in range(int(perc)//4 + 2, 100//4):
+        for i in range(int(perc)//4 + 1, 100//4):
             toWrite = toWrite + " "
 
         toWrite = toWrite + "|"

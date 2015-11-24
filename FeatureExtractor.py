@@ -2,6 +2,7 @@ import random
 import nltk
 import DataCreator
 import loadingbar
+import numpy
 from loadingbar import printPercentage
 from nltk import word_tokenize
 from nltk.tag import pos_tag, map_tag
@@ -25,13 +26,13 @@ def langFeatures(data):
     nounCount = 0
     adjCount = 0
 
-    if False:
+    if True:
         #featureset of just words
         for word in text:
             #the feature list is the words in the script
             D[word] = True
 
-    if False:
+    if True:
         #create word ngrams
         word_bigrams = ngrams(text, 2)
         word_trigrams = ngrams(text, 3)
@@ -43,26 +44,12 @@ def langFeatures(data):
         char_quadgrams = ngrams(char_text, 4)
 
         #combine the ngrams
-        # allGrams = []
-        # allGrams = word_bigrams +
-        #          word_trigrams +
-        #          word_quadgrams +
-        #          char_bigrams +
-        #          char_trigrams +
-        #          char_quadgrams
-
         D["word_bigrams"] =  word_bigrams
         D["word_trigrams"] = word_trigrams
         D["word_quadgrams"] = word_quadgrams
         D["char_bigrams"] = char_bigrams
         D["char_trigrams"] = char_trigrams
         D["char_quadgrams"] = char_quadgrams
-        # #put the ngrams in the dictionary
-        # for grams in allGrams:
-        #     #combine the words in the ngram
-        #     feat = " ".join(grams)
-        #     #put the new feature in the dictionary
-        #     D[feat] = True
 
     if True:
         #POS tag based feature set
@@ -114,7 +101,7 @@ def langFeatures(data):
     return D
 
 
-def extractFeatures(positives, negatives, verbose, useBayes, useTree):
+def extractFeatures(positives, negatives, verbose, useBayes, useTree, useEntropy):
     featureSets = []
     onDataSet = 0
     numDataSets = len(positives + negatives)
@@ -166,9 +153,23 @@ def extractFeatures(positives, negatives, verbose, useBayes, useTree):
                 classification = classifier.classify(feats)
                 print("Correct: ", cor, " Result: ", classification)#, "for ", feats[0])
 
+    if useEntropy:
+        print("Running Maximum Entropy classifier")
+        #NLTK's built-in implementation of the Naive Bayes classifier is trained
+        classifier = nltk.MaxentClassifier.train(train)
+
+        #now, it is tested on the test set and the accuracy reported
+        print ("Maximum Entropy: ", nltk.classify.accuracy(classifier, test))
+
+        if verbose:
+            #this is a nice function that reports the top most impactful features the NB classifier found
+            print (classifier.show_most_informative_features(20))
+            #this is a function that explains the effect of each feature in the set
+            #print (classifier.explain())
+
 
 #TODO Handle command line arguments. 1 for the amount of test files, another for if we are making a new meta file or not, and
 #what classifier to use
 (positives, negatives) = DataCreator.createDataFrom("parsed_websites/", "Ted_Meta.txt", "Ted_Laughs.txt", 100, False)
 print("Extracting Features\n")
-extractFeatures(positives, negatives, False, True, True)
+extractFeatures(positives, negatives, False, True, True, False)

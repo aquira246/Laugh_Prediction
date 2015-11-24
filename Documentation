@@ -39,3 +39,32 @@ verbs     : low <.13 medium < .22
 
 This is important for binning the adjectives by percentage for naive bayes and decision tree
 The results of using only the percentages was ~74% for both decision tree and naive bayes
+
+Running Maximum Entropy with words alone had the following results: 78.23% accuracy but took 1.25 hours to run
+Running Maximum Entropy with ngrams had the following results: 21.26% accuracy and didn't take long
+Running Maximum Entropy with POS had the following results: 78.74% accuracy but took 1.25 hours to run
+
+When using both words and POS tagging, the results were:
+Decision Tree: 71%
+Naive Bayes: 46.88%
+
+When using both words and ngrams, the results were:
+Decision Tree: 80%
+Naive Bayes: 78%
+However, there was massive variation. On a few occaisions, the results would suddenly drop to about 23% accuracy. And just as often it would shoot up to about 84%.
+
+When using Ngrams and POS tagging, the results varied greatly. Below are the results:
+Naive   DTree
+.42    .79
+.728   .824
+.322   .79
+.642   .206
+.787   .843
+
+When using all of the features, the Naive bayes results varied. The decision tree results had a sudden drop, but was much more consistent. Below are the results:
+Naive   DTree
+.748   .834
+.468   .758
+.699   .179
+.758   .782
+.74    .827
