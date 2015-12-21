@@ -172,4 +172,4 @@ def extractFeatures(positives, negatives, verbose, useBayes, useTree, useEntropy
 #what classifier to use
 (positives, negatives) = DataCreator.createDataFrom("parsed_websites/", "Ted_Meta.txt", "Ted_Laughs.txt", 100, False)
 print("Extracting Features\n")
-extractFeatures(positives, negatives, False, True, True, False)
+extractFeatures(positives, negatives, False, False, False, True)

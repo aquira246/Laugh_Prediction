@@ -43,6 +43,7 @@ The results of using only the percentages was ~74% for both decision tree and na
 Running Maximum Entropy with words alone had the following results: 78.23% accuracy but took 1.25 hours to run
 Running Maximum Entropy with ngrams had the following results: 21.26% accuracy and didn't take long
 Running Maximum Entropy with POS had the following results: 78.74% accuracy but took 1.25 hours to run
+Running Maximum Entropy with all 3 (once) resulted in 86.7% accuracy. It took a long time to run however.
 
 When using both words and POS tagging, the results were:
 Decision Tree: 71%
