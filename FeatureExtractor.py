@@ -3,6 +3,8 @@ import nltk
 import DataCreator
 import loadingbar
 import numpy
+import time
+import collections
 from loadingbar import printPercentage
 from nltk import word_tokenize
 from nltk.tag import pos_tag, map_tag
@@ -15,6 +17,7 @@ from nltk.util import ngrams
 #1. every word in the text
 #2. ngram for words and characters
 #3. POS tag
+#4. Sentiment Analysis
 #Note that featuresets are lists. That's what the classifier takes as input
 def langFeatures(data):
     D = {} #dictionary of keys
@@ -32,7 +35,7 @@ def langFeatures(data):
             #the feature list is the words in the script
             D[word] = True
 
-    if True:
+    if False:
         #create word ngrams
         word_bigrams = ngrams(text, 2)
         word_trigrams = ngrams(text, 3)
@@ -56,8 +59,6 @@ def langFeatures(data):
         #get the parts of speech tags
         parts_of_speech = nltk.pos_tag(text)
         for (word, pos) in parts_of_speech:
-            #the feature list is the words in the script
-            D[word] = True
             #simplify the POS tag
             tag = map_tag('en-ptb', 'universal', pos)
             #increment pos counters
@@ -67,6 +68,10 @@ def langFeatures(data):
                 adjCount += 1
             elif "VERB" in tag:
                 verbCount += 1
+
+        if wordCount == 0:
+            D["Empty"] = True
+            return D
 
         #record the percentages the pos
         np = nounCount/wordCount
@@ -126,25 +131,65 @@ def extractFeatures(positives, negatives, verbose, useBayes, useTree, useEntropy
     #splits training and test sets
     train, test = featureSets[cutOff:], featureSets[:cutOff]
 
+    numDataSets = len(test)
+
     if useBayes:
+        timeStart = time.time()
+
         print("Running Naive Bayes classifier")
         #NLTK's built-in implementation of the Naive Bayes classifier is trained
         classifier = nltk.NaiveBayesClassifier.train(train)
 
-        #now, it is tested on the test set and the accuracy reported
-        print ("Bayes Accuracy: ", nltk.classify.accuracy(classifier, test))
+        #now, it is tested on the test set
+        refsets = collections.defaultdict(set)
+        testsets = collections.defaultdict(set)
+
+        onDataSet = 0
+        for i, (feats, label) in enumerate(test):
+            refsets[label].add(i)
+            observed = classifier.classify(feats)
+            testsets[observed].add(i)
+            onDataSet += 1
+            printPercentage(onDataSet/numDataSets * 100, "Extracting Features: ")
+
+        #get the time it takes to run Naive Bayes
+        print ("\nTime to run in seconds: ", time.time() - timeStart)
+
+        #report the accuracy
+        print ("Bayes Precision: ", nltk.metrics.precision(refsets[True], testsets[True]))
+        print ("Bayes Recall: ", nltk.metrics.recall(refsets[True], testsets[True]))
+        print ("Bayes F-Measure: ", nltk.metrics.f_measure(refsets[True], testsets[True]))
 
         if verbose:
             #this is a nice function that reports the top most impactful features the NB classifier found
             print (classifier.show_most_informative_features(20))
 
     if useTree:
+        timeStart = time.time()
+
         print("Running Decision Tree classifier")
         #NLTK's built-in implementation of the Decision Tree classifier is trained
         classifier = nltk.DecisionTreeClassifier.train(train)
 
+        #now, it is tested on the test set
+        refsets = collections.defaultdict(set)
+        testsets = collections.defaultdict(set)
+
+        onDataSet = 0
+        for i, (feats, label) in enumerate(test):
+            refsets[label].add(i)
+            observed = classifier.classify(feats)
+            testsets[observed].add(i)
+            onDataSet += 1
+            printPercentage(onDataSet/numDataSets * 100, "Extracting Features: ")
+
+        #get the time to run Decision tree
+        print ("\nTime to run in seconds: ", time.time() - timeStart)
+
         #now, it is tested on the test set and the accuracy reported
-        print ("DTree Accuracy: ", nltk.classify.accuracy(classifier, test))
+        print ("DTree Precision: ", nltk.metrics.precision(refsets[True], testsets[True]))
+        print ("DTree Recall: ", nltk.metrics.recall(refsets[True], testsets[True]))
+        print ("DTree F-Measure: ", nltk.metrics.f_measure(refsets[True], testsets[True]))
 
         if verbose:
             print("Printing tree")
@@ -154,22 +199,34 @@ def extractFeatures(positives, negatives, verbose, useBayes, useTree, useEntropy
                 print("Correct: ", cor, " Result: ", classification)#, "for ", feats[0])
 
     if useEntropy:
+        timeStart = time.time()
+
         print("Running Maximum Entropy classifier")
         #NLTK's built-in implementation of the Naive Bayes classifier is trained
         classifier = nltk.MaxentClassifier.train(train)
 
-        #now, it is tested on the test set and the accuracy reported
-        print ("Maximum Entropy: ", nltk.classify.accuracy(classifier, test))
+        #now, it is tested on the test set
+        refsets = collections.defaultdict(set)
+        testsets = collections.defaultdict(set)
+
+        onDataSet = 0
+        for i, (feats, label) in enumerate(test):
+            refsets[label].add(i)
+            observed = classifier.classify(feats)
+            testsets[observed].add(i)
+            onDataSet += 1
+            printPercentage(onDataSet/numDataSets * 100, "Extracting Features: ")
+
+        #get the time to run Decision tree
+        print ("\nTime to run in seconds: ", time.time() - timeStart)
+
+         #now, it is tested on the test set and the accuracy reported
+        print ("Entropy Precision: ", nltk.metrics.precision(refsets[True], testsets[True]))
+        print ("Entropy Recall: ", nltk.metrics.recall(refsets[True], testsets[True]))
+        print ("Entropy F-Measure: ", nltk.metrics.f_measure(refsets[True], testsets[True]))
 
         if verbose:
             #this is a nice function that reports the top most impactful features the NB classifier found
             print (classifier.show_most_informative_features(20))
             #this is a function that explains the effect of each feature in the set
             #print (classifier.explain())
-
-
-#TODO Handle command line arguments. 1 for the amount of test files, another for if we are making a new meta file or not, and
-#what classifier to use
-(positives, negatives) = DataCreator.createDataFrom("parsed_websites/", "Ted_Meta.txt", "Ted_Laughs.txt", 100, False)
-print("Extracting Features\n")
-extractFeatures(positives, negatives, False, False, False, True)

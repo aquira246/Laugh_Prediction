@@ -102,15 +102,14 @@ def getLaughLocations(firstLaughs, nonLaughs, testCount):
     laughGroup.sort()
     return laughGroup
 
-def trimFile(metadata, length):
+def trimFile(metadata):
     rf = open(metadata.filename, 'r')
 
-    segments = []
-    wordCount = 4
-    lastWord = ""
-    trimComplete = False
+    prevPara = ""
+    prevIsPositive = False
+    positives = []
+    negatives = []
 
-    segments.append(metadata.name)
 
     for paragraph in rf:
         if re.match(r'^Title: .+', paragraph) is not None:
@@ -120,31 +119,30 @@ def trimFile(metadata, length):
         elif re.match(r'^Tags: .+', paragraph) is not None:
             pass
         else:
-            hold = wordCount + len(nltk.word_tokenize(paragraph))
-            paragraph = paragraph.replace("(Laughter)", "")
+            paragraph = paragraph.replace("(Applause)", "")
+            paragraph = paragraph.replace("(Audio: Laughing)", "")
 
-            if  hold > length:
-                sentences = []
-                #for sent in nltk.sent_tokenize(paragraph.decode('utf-8')): #python 2
-                for sent in nltk.sent_tokenize(paragraph): #python 3
-                    wordCount += len(nltk.word_tokenize(sent))
-                    sentences.append(sent)
-                    if (wordCount >= length):
-                        para = " ".join(sentences)
-                        if len(para) > 1:
-                            segments.append(para)
-                        trimComplete = True
-                        break
+            if prevIsPositive or ("(Laughter)" in paragraph[:11] and prevPara != ""):
+                positives.append(prevPara)
             else:
-                wordCount = hold
-                if len(paragraph) > 1:
-                    segments.append(paragraph)
+                if len(prevPara) > 2:
+                    negatives.append(prevPara)
 
-        if trimComplete:
-            break
+            prevIsPositive = False
+
+            if "(Laughter)" in paragraph[10:]:
+                prevIsPositive = True
+
+            prevPara = paragraph.replace("(Laughter)", "")
+
+    if prevIsPositive:
+        positives.append(prevPara)
+    else:
+        if len(prevPara) > 2:
+            negatives.append(prevPara)
 
     rf.close
-    return segments
+    return [positives, negatives]
 
 
 def divideDataIntoGroups(metadata, firstLaughs, lengthNonLaugh, numTestFiles):
@@ -181,11 +179,11 @@ def divideDataIntoGroups(metadata, firstLaughs, lengthNonLaugh, numTestFiles):
         metadata.remove(posFile)
         metadata.remove(negFile)
 
-        segments = trimFile(posFile, posFile.firstLaughAt)
-        posData.append(segments[-1])
-        #posData = posData + segments[1:-1] #keeping some paragraphs out of negs
-        segments = trimFile(negFile, posFile.firstLaughAt)
-        negData = negData + segments[1:]
+        segments = trimFile(posFile)
+        posData = posData + segments[0]
+        negData = negData + segments[1]
+        segments = trimFile(negFile)
+        negData = negData + segments[1]
 
     return (posData, negData)
 

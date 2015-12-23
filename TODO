@@ -2,6 +2,6 @@ have Feature extractor take in commandline arguments
 improve the names of variables and functions
 comment more of the code
 start documenting what I am doing
+stop songs from getting in
 
-Include the non-funny paragraphs from the positive file to the negatives
 Cleanly switch between datasets
