@@ -2,16 +2,45 @@ import random
 import time
 import collections
 import nltk
-from nltk.metrics import precision, recall, f_measure
+from nltk.metrics import precision, recall, f_measure, accuracy
+from tabulate import tabulate
 
 import FeatureExtractor
 import DataCreator
 from loadingbar import printPercentage
 
+
+#helper function to run tests on the classifier passed in
+def assess_classifier(classifier, test_data, text):
+    refsets = collections.defaultdict(set)
+    testsets = collections.defaultdict(set)
+
+    numDataSets = len(test_data)
+    onDataSet = 0
+
+    #enumerate through the test data and classify them
+    for i, (feats, label) in enumerate(test_data):
+        refsets[label].add(i)
+        observed = classifier.classify(feats)
+        testsets[observed].add(i)
+        onDataSet += 1
+        printPercentage(onDataSet/numDataSets * 100, "Extracting Features: ")
+
+    #calculate the precision and recall
+    laugh_precision = precision(refsets[True], testsets[True])
+    laugh_recall = recall(refsets[True], testsets[True])
+
+    non_laugh_precision = precision(refsets[False], testsets[False])
+    non_laugh_recall = recall(refsets[False], testsets[False])
+
+    return [text, laugh_precision, laugh_recall, non_laugh_precision, non_laugh_recall]
+
+
 def runClassifiers(positives, negatives, verbose, useBayes, useTree, useEntropy):
     featureSets = []
     onDataSet = 0
     numDataSets = len(positives + negatives)
+    table = []
 
     for data in positives:
         featureSets.append((FeatureExtractor.langFeatures(data), True))
@@ -31,104 +60,63 @@ def runClassifiers(positives, negatives, verbose, useBayes, useTree, useEntropy)
     random.shuffle(featureSets)
 
     #splits training and test sets
-    train, test = featureSets[cutOff:], featureSets[:cutOff]
-
-    numDataSets = len(test)
+    train_data, test_data = featureSets[cutOff:], featureSets[:cutOff]
 
     if useBayes:
+        print("Running Naive Bayes classifier")
         timeStart = time.time()
 
-        print("Running Naive Bayes classifier")
         #NLTK's built-in implementation of the Naive Bayes classifier is trained
-        classifier = nltk.NaiveBayesClassifier.train(train)
+        classifier = nltk.NaiveBayesClassifier.train(train_data)
 
-        #now, it is tested on the test set
-        refsets = collections.defaultdict(set)
-        testsets = collections.defaultdict(set)
+        #get the time it takes to train Naive Bayes
+        print ("\nTime to train in seconds: ", time.time() - timeStart)
 
-        onDataSet = 0
-        for i, (feats, label) in enumerate(test):
-            refsets[label].add(i)
-            observed = classifier.classify(feats)
-            testsets[observed].add(i)
-            onDataSet += 1
-            printPercentage(onDataSet/numDataSets * 100, "Extracting Features: ")
-
-        #get the time it takes to run Naive Bayes
-        print ("\nTime to run in seconds: ", time.time() - timeStart)
-
-        #report the accuracy
-        print ("Bayes Precision: ", precision(refsets[True], testsets[True]))
-        print ("Bayes Recall: ", recall(refsets[True], testsets[True]))
-        print ("Bayes F-Measure: ", f_measure(refsets[True], testsets[True]))
+        #store the accuracy in the table
+        table.append(assess_classifier(classifier, test_data, "Naive Bayes"))
 
         if verbose:
             #this is a nice function that reports the top most impactful features the NB classifier found
+            print("\n\n")
             print (classifier.show_most_informative_features(20))
 
     if useTree:
+        print("Running Decision Tree classifier")
         timeStart = time.time()
 
-        print("Running Decision Tree classifier")
         #NLTK's built-in implementation of the Decision Tree classifier is trained
-        classifier = nltk.DecisionTreeClassifier.train(train)
+        classifier = nltk.DecisionTreeClassifier.train(train_data)
 
-        #now, it is tested on the test set
-        refsets = collections.defaultdict(set)
-        testsets = collections.defaultdict(set)
+        #get the time to train Decision tree
+        print ("\nTime to train in seconds: ", time.time() - timeStart)
 
-        onDataSet = 0
-        for i, (feats, label) in enumerate(test):
-            refsets[label].add(i)
-            observed = classifier.classify(feats)
-            testsets[observed].add(i)
-            onDataSet += 1
-            printPercentage(onDataSet/numDataSets * 100, "Extracting Features: ")
-
-        #get the time to run Decision tree
-        print ("\nTime to run in seconds: ", time.time() - timeStart)
-
-        #now, it is tested on the test set and the accuracy reported
-        print ("DTree Precision: ", precision(refsets[True], testsets[True]))
-        print ("DTree Recall: ", recall(refsets[True], testsets[True]))
-        print ("DTree F-Measure: ", f_measure(refsets[True], testsets[True]))
+        #store the accuracy in the table
+        table.append(assess_classifier(classifier, test_data, "Decision Tree"))
 
         if verbose:
             print("Printing tree")
             #print(classifier.pretty_format())
-            for (feats, cor) in test[:20]:
+            for (feats, cor) in test_data[:20]:
                 classification = classifier.classify(feats)
                 print("Correct: ", cor, " Result: ", classification)#, "for ", feats[0])
 
     if useEntropy:
+        print("Running Maximum Entropy classifier")
         timeStart = time.time()
 
-        print("Running Maximum Entropy classifier")
-        #NLTK's built-in implementation of the Naive Bayes classifier is trained
-        classifier = nltk.MaxentClassifier.train(train)
+        #NLTK's built-in implementation of the Max Entropy classifier is trained
+        classifier = nltk.MaxentClassifier.train(train_data)
 
-        #now, it is tested on the test set
-        refsets = collections.defaultdict(set)
-        testsets = collections.defaultdict(set)
+        #get the time to train Maximum Entropy
+        print ("\nTime to train in seconds: ", time.time() - timeStart)
 
-        onDataSet = 0
-        for i, (feats, label) in enumerate(test):
-            refsets[label].add(i)
-            observed = classifier.classify(feats)
-            testsets[observed].add(i)
-            onDataSet += 1
-            printPercentage(onDataSet/numDataSets * 100, "Extracting Features: ")
-
-        #get the time to run Decision tree
-        print ("\nTime to run in seconds: ", time.time() - timeStart)
-
-         #now, it is tested on the test set and the accuracy reported
-        print ("Entropy Precision: ", precision(refsets[True], testsets[True]))
-        print ("Entropy Recall: ", recall(refsets[True], testsets[True]))
-        print ("Entropy F-Measure: ", f_measure(refsets[True], testsets[True]))
+        #store the accuracy in the table
+        table.append(assess_classifier(classifier, test_data, "Maximum Entropy"))
 
         if verbose:
             #this is a nice function that reports the top most impactful features the NB classifier found
             print (classifier.show_most_informative_features(20))
             #this is a function that explains the effect of each feature in the set
             #print (classifier.explain())
+
+    print(tabulate(table, headers=["Classifier","laugh precision", "laugh recall", "non-laugh precision", "non-laugh recall"]))

@@ -5,4 +5,4 @@ import DataCreator
 #what classifier to use
 (positives, negatives) = DataCreator.createDataFrom("parsed_websites/", "Ted_Meta.txt", "Ted_Laughs.txt", 25, False)
 print("Extracting Features\n")
-Classifiers.runClassifiers(positives, negatives, True, False, True, False) #positives, negatives, verbose, bayes, tree, entropy
+Classifiers.runClassifiers(positives, negatives, True, True, False, False) #positives, negatives, verbose, bayes, tree, entropy
