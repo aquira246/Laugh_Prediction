@@ -2,6 +2,7 @@ LaughData/*
 parsed_websites/*
 search_pages/*
 websites/*
+__pycache__
 __pycache__/*
 
 !*.sh

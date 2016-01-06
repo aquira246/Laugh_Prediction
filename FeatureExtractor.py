@@ -26,13 +26,13 @@ def langFeatures(data):
     nounCount = 0
     adjCount = 0
 
-    if True:
+    if False:
         #featureset of just words
         for word in text:
             #the feature list is the words in the script
             D[word] = True
 
-    if False:
+    if True:
         #create word ngrams
         word_bigrams = ngrams(text, 2)
         word_trigrams = ngrams(text, 3)
@@ -100,7 +100,7 @@ def langFeatures(data):
         else:
             D["verb_percentage"] = 2
 
-    if True:
+    if False:
         testimonial = TextBlob(data)
         D["Subjectivity"] = testimonial.sentiment.subjectivity
         D["Polarity"] = testimonial.sentiment.polarity

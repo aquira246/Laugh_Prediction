@@ -2,6 +2,7 @@ import random
 import time
 import collections
 import nltk
+import sys
 from nltk.metrics import precision, recall, f_measure, accuracy
 from tabulate import tabulate
 
@@ -33,7 +34,9 @@ def assess_classifier(classifier, test_data, text):
     non_laugh_precision = precision(refsets[False], testsets[False])
     non_laugh_recall = recall(refsets[False], testsets[False])
 
-    return [text, laugh_precision, laugh_recall, non_laugh_precision, non_laugh_recall]
+    accuracy = nltk.classify.accuracy(classifier, test_data)
+
+    return [text, accuracy, laugh_precision, laugh_recall, non_laugh_precision, non_laugh_recall]
 
 
 def runClassifiers(positives, negatives, verbose, useBayes, useTree, useEntropy):
@@ -45,13 +48,14 @@ def runClassifiers(positives, negatives, verbose, useBayes, useTree, useEntropy)
     for data in positives:
         featureSets.append((FeatureExtractor.langFeatures(data), True))
         onDataSet += 1
-        printPercentage(onDataSet/numDataSets * 100, "Extracting Features: ")
+        printPercentage(onDataSet/numDataSets * 100, "Extracting Features: ", False)
 
     for data in negatives:
         featureSets.append((FeatureExtractor.langFeatures(data), False))
         onDataSet += 1
-        printPercentage(onDataSet/numDataSets * 100, "Extracting Features: ")
+        printPercentage(onDataSet/numDataSets * 100, "Extracting Features: ", False)
 
+    sys.stdout.flush()
     print("\n")
 
     #Testing is 1/4 of the data set, so we will cut it off there
@@ -119,4 +123,4 @@ def runClassifiers(positives, negatives, verbose, useBayes, useTree, useEntropy)
             #this is a function that explains the effect of each feature in the set
             #print (classifier.explain())
 
-    print(tabulate(table, headers=["Classifier","laugh precision", "laugh recall", "non-laugh precision", "non-laugh recall"]))
+    print("\n", tabulate(table, headers=["Classifier", "accuracy", "laugh precision", "laugh recall", "non-laugh precision", "non-laugh recall"]))

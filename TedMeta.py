@@ -4,6 +4,7 @@ import os
 import statistics
 from nltk import word_tokenize
 
+#contains the Meta Data for a TED Talk
 class tedMetaData(object):
     """docstring for metaData"""
 
@@ -99,7 +100,10 @@ def getMetaDataForFile(filename):
 
     return md
 
-
+#Goes to path and reads the parsed TED Talks
+#Then makes a collection of tedMetaData from the TED Talks in path
+#stores the meta data in a meta data file at metaDataLocation
+#stores metadata about the laughter in the TED Talks at laughDataLocation
 def createTedMetaFile(path, metaDataLocation, laughDataLocation):
 
     #the file that stores the laugh meta data
@@ -119,7 +123,8 @@ def createTedMetaFile(path, metaDataLocation, laughDataLocation):
     numWithoutLaughs = 0
     metadataCollection = []
 
-    lengthNonLaugh = []
+    posLengths = []
+    negLengths = []
 
     for filename in os.listdir(path):
         fileToCheck = path+filename
@@ -133,9 +138,10 @@ def createTedMetaFile(path, metaDataLocation, laughDataLocation):
             if md.firstLaughAt != -1:
                 firstLaughs.append(md.firstLaughAt)
                 firstLaughsPercent.append(md.firstLaughAt/md.wordCount)
+                posLengths.append(md.wordCount)
             else:
                 numWithoutLaughs += 1
-                lengthNonLaugh.append(md.wordCount)
+                negLengths.append(md.wordCount)
 
             if md.numLaughs > highestLaughs:
                 for i in range(md.numLaughs - highestLaughs):
@@ -149,7 +155,8 @@ def createTedMetaFile(path, metaDataLocation, laughDataLocation):
     linesToWrite.sort()
     firstLaughs.sort()
     firstLaughsPercent.sort()
-    lengthNonLaugh.sort()
+    negLengths.sort()
+    posLengths.sort()
 
     lf.writelines("Number with laughs: " + str(numFiles - numWithoutLaughs) + "\n")
     lf.writelines("Number without Laughs: " + str(numWithoutLaughs) + "\n\n")
@@ -177,7 +184,7 @@ def createTedMetaFile(path, metaDataLocation, laughDataLocation):
         lf.writelines("    " + str(fl))
 
     lf.writelines("\nWord count for non laugh scripts\n")
-    for line in lengthNonLaugh:
+    for line in negLengths:
         lf.writelines("    " + str(line))
 
     for line in linesToWrite:
@@ -185,7 +192,7 @@ def createTedMetaFile(path, metaDataLocation, laughDataLocation):
     wf.close
     lf.close
 
-    return (metadataCollection, firstLaughs, lengthNonLaugh)
+    return (metadataCollection, posLengths, negLengths)
 
 
 def getMetaDataFromString(line):
@@ -215,8 +222,8 @@ def getMetaDataFromString(line):
 
 def useTedMetaFiles(path, metaDataLocation, laughDataLocation):
     metadataCollection = []
-    firstLaughs = []
-    lengthNonLaugh = []
+    posLengths = []
+    negLengths = []
 
     lineNum = 0
 
@@ -230,12 +237,12 @@ def useTedMetaFiles(path, metaDataLocation, laughDataLocation):
             if md:
                 metadataCollection.append(md)
                 if md.firstLaughAt != -1:
-                    firstLaughs.append(md.firstLaughAt)
+                    posLengths.append(md.wordCount)
                 else:
-                    lengthNonLaugh.append(md.wordCount)
+                    negLengths.append(md.wordCount)
 
     mf.close
 
-    firstLaughs.sort()
-    lengthNonLaugh.sort()
-    return (metadataCollection, firstLaughs, lengthNonLaugh)
+    posLengths.sort()
+    negLengths.sort()
+    return (metadataCollection, posLengths, negLengths)

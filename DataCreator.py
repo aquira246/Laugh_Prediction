@@ -5,111 +5,18 @@ from nltk import word_tokenize
 import TedMeta
 
 CUT_OUTLIER_PERCENTAGE = .05
+MAX_DATA_COUNT = 500
+POS_PARAGRAPHS_FROM_DATA = 3
+NEG_PARAGRAPHS_FROM_DATA = 2
 
 
-def validNegativeLengths(pos, negs):
-
-    if len(negs) < len(pos):
-        print("Not enough Negs")
-        return False
-
-    for i in range(len(pos)):
-        if negs[i] < pos[i]:
-            return False
-
-    return True
-
-
-def getLaughLocations(firstLaughs, nonLaughs, testCount):
-    fl_mean = statistics.mean(firstLaughs)
-    fl_std_dev = statistics.stdev(firstLaughs, fl_mean)
-
-    print("Mean " + str(fl_mean) + "\n")
-    print("Std Dev " + str(fl_std_dev) + "\n")
-    print ("laughs smallest location: " + str(firstLaughs[0]) + "\nLargest location: " + str(firstLaughs[-1]) + "\n")
-    print ("non-laughs smallest length: " + str(nonLaughs[0]) + "\nLargest length: " + str(nonLaughs[-1]) + "\n")
-    print ("non-laugh count: " + str(len(nonLaughs)) + "\n")
-
-    if len(nonLaughs) < testCount:
-        print("ERROR! Can't create data, need more non-laughs")
-        return 0
-
-    divisions_values = [fl_mean - fl_std_dev*3, fl_mean - fl_std_dev*2, fl_mean - fl_std_dev,\
-    fl_mean, fl_mean + fl_std_dev, fl_mean + fl_std_dev*2, fl_mean + fl_std_dev*3]
-
-    #TODO
-    divisions_amounts = [
-    math.ceil(testCount*.001), math.floor(testCount*.021),\
-    math.floor(testCount*.136), math.floor(testCount*.341),\
-    math.floor(testCount*.341), math.floor(testCount*.136),\
-    math.floor(testCount*.021), math.ceil(testCount*.001)]
-    #divisions_amounts = [1, 2, 13, 34, 34, 13, 2, 1]
-    #divisions_amounts = [1, 4, 27, 68, 68, 27, 4, 1]
-
-    bottomGroup = []
-    neg3q = []
-    neg2q = []
-    neg1q = []
-    pos1q = []
-    pos2q = []
-    pos3q = []
-    topGroup = []
-
-    for x in firstLaughs:
-        if x < divisions_values[0]:
-            bottomGroup.append(x)
-        elif x < divisions_values[1]:
-            neg3q.append(x)
-        elif x < divisions_values[2]:
-            neg2q.append(x)
-        elif x < divisions_values[3]:
-            neg1q.append(x)
-        elif x < divisions_values[4]:
-            pos1q.append(x)
-        elif x < divisions_values[5]:
-            pos2q.append(x)
-        elif x < divisions_values[6]:
-            pos3q.append(x)
-        else:
-            topGroup.append(x)
-
-    print (divisions_values)
-
-    random.shuffle(bottomGroup)
-    random.shuffle(neg3q)
-    random.shuffle(neg2q)
-    random.shuffle(neg1q)
-    random.shuffle(pos1q)
-    random.shuffle(pos2q)
-    random.shuffle(pos3q)
-    random.shuffle(topGroup)
-
-    groups = [bottomGroup, neg3q, neg2q, neg1q, pos1q, pos2q, pos3q, topGroup]
-
-    laughGroup = []
-    hits = 0
-
-    for i in range(0, len(divisions_amounts)):
-        hits += divisions_amounts[i]
-
-        if len(groups[i]) < hits:
-            laughGroup = laughGroup + groups[i]
-            hits -= len(groups[i])
-        else:
-            laughGroup = laughGroup + groups[i][:hits]
-            hits = 0
-
-    laughGroup.sort()
-    return laughGroup
-
-def trimFile(metadata):
+def splitFile(metadata):
     rf = open(metadata.filename, 'r')
 
     prevPara = ""
     prevIsPositive = False
     positives = []
     negatives = []
-
 
     for paragraph in rf:
         if re.match(r'^Title: .+', paragraph) is not None:
@@ -145,56 +52,106 @@ def trimFile(metadata):
     return [positives, negatives]
 
 
-def divideDataIntoGroups(metadata, firstLaughs, lengthNonLaugh, numTestFiles):
-    cutOutMeta = int(math.floor(len(metadata)*CUT_OUTLIER_PERCENTAGE))
-    trimmedFirstLaughs = firstLaughs[cutOutMeta:-cutOutMeta]
+def matchMetaWithLengths(metadata, lengths):
+    ret = []
 
-    cutOutNonLaughs = int(math.floor(len(lengthNonLaugh)*CUT_OUTLIER_PERCENTAGE*2))
-    #if a talk is too long, all the better for the non laughs
-    trimmedNonLaughs = lengthNonLaugh[cutOutNonLaughs:]
+    for wordCount in lengths:
+        for md in metadata:
+            if md.wordCount == wordCount:
+                matchedFile = md
 
-    laughLocs = getLaughLocations(trimmedFirstLaughs, trimmedNonLaughs, numTestFiles)
-    laughLocs.sort()
-    trimmedNonLaughs.sort()
-    negativeLengths = trimmedNonLaughs[-(len(laughLocs)):]
+        metadata.remove(matchedFile)
+        ret.append(splitFile(matchedFile))
 
-    if not validNegativeLengths(laughLocs, negativeLengths):
-        print("WARNING: Some of the negative laughs are not long enough")
-        return []
+    return ret
 
-    posNegMatch = []
-    for i in range(len(laughLocs)):
-        posNegMatch.append((laughLocs[i], negativeLengths[i]))
+
+def generateDataGroups(fromPosData, fromNegData):
+    random.shuffle(fromPosData)
+    random.shuffle(fromNegData)
 
     posData = []
     negData = []
 
-    for (pos, neg) in posNegMatch:
-        for md in metadata:
-            if md.firstLaughAt == pos:
-                posFile = md
-            elif md.firstLaughAt == -1 and md.wordCount == neg:
-                negFile = md
+    # numPosData = MAX_DATA_COUNT
+    # numNegData = MAX_DATA_COUNT
 
-        metadata.remove(posFile)
-        metadata.remove(negFile)
+    # for data in fromPosData:
+    #     if numPosData <= 0:
+    #         break
 
-        segments = trimFile(posFile)
-        posData = posData + segments[0]
-        negData = negData + segments[1]
-        segments = trimFile(negFile)
-        negData = negData + segments[1]
+    #     numData = min(len(data[0]), POS_PARAGRAPHS_FROM_DATA)
+    #     paragraphs = random.shuffle(data[0])
+    #     posData = posData + paragraphs[:numData]
+    #     numPosData -= numData
 
-    return (posData, negData)
+    #     numData = min(len(data[1]), NEG_PARAGRAPHS_FROM_DATA)
+    #     paragraphs = random.shuffle(data[1])
+    #     negData = negData + paragraphs[:numData]
+    #     numNegData -= numData
+
+    # for data in fromNegData:
+    #     if numNegData <= 0:
+    #         break
+
+    #     numData = min(len(data[1]), NEG_PARAGRAPHS_FROM_DATA)
+    #     paragraphs = random.shuffle(data[1])
+    #     negData = negData + paragraphs[:numData]
+    #     numNegData -= numData
+
+    # if numPosData > 0 or numNegData > 0:
+    #     print("ERROR! Invalid number of positive or negative data")
+
+    for data in fromPosData + fromNegData:
+        posData = posData + data[0]
+        negData = negData + data[0]
+
+    minLen = min(min(len(posData), len(negData)), MAX_DATA_COUNT)
+    random.shuffle(posData)
+    random.shuffle(negData)
+    posData = posData[:minLen]
+    negData = negData[:minLen]
+
+    print("Number of Positive Data: ", len(posData), "\n")
+    print("Number of Negative Data: ", len(negData), "\n")
+
+    return [posData, negData]
+
+
+def splitData(metadata, posLengths, lengthNonLaugh, numTestFiles):
+    #cut out talks that are too long or short
+    cutPoint = int(math.floor(len(metadata)*CUT_OUTLIER_PERCENTAGE))
+    trimmedPosLengths = posLengths[cutPoint:-cutPoint]
+
+    cutPoint = int(math.floor(len(lengthNonLaugh)*CUT_OUTLIER_PERCENTAGE))
+    trimmedNonLaughs = lengthNonLaugh[cutPoint:-cutPoint]
+
+    negMetaData = []
+    posMetaData = []
+
+    for md in metadata:
+        if md.firstLaughAt == -1:
+            negMetaData.append(md)
+        else:
+            posMetaData.append(md)
+
+    fromPosData = matchMetaWithLengths(posMetaData, trimmedPosLengths)
+    fromNegData = matchMetaWithLengths(negMetaData, trimmedNonLaughs)
+
+
+
+    return generateDataGroups(fromPosData, fromNegData)
 
 
 def createDataFrom(location, metadataFile, laughDataFile, numTestFiles, createFiles):
     if createFiles:
         print("Creating meta files\n")
-        (metadata, firstLaughs, lengthNonLaugh) = TedMeta.createTedMetaFile(location, metadataFile, laughDataFile)
+        (metadata, posLengths, negLengths) = \
+            TedMeta.createTedMetaFile(location, metadataFile, laughDataFile)
     else:
         print("Using previous meta files to get data\n")
-        (metadata, firstLaughs, lengthNonLaugh) = TedMeta.useTedMetaFiles(location, metadataFile, laughDataFile)
+        (metadata, posLengths, negLengths) = \
+            TedMeta.useTedMetaFiles(location, metadataFile, laughDataFile)
 
     print("Dividing data into groups\n")
-    return divideDataIntoGroups(metadata, firstLaughs, lengthNonLaugh, numTestFiles)
+    return splitData(metadata, posLengths, negLengths, numTestFiles)
