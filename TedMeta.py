@@ -192,7 +192,10 @@ def createTedMetaFile(path, metaDataLocation, laughDataLocation):
     wf.close
     lf.close
 
-    return (metadataCollection, posLengths, negLengths)
+    lengths = posLengths + negLengths
+    lengths.sort()
+
+    return (metadataCollection, lengths)
 
 
 def getMetaDataFromString(line):
@@ -220,10 +223,9 @@ def getMetaDataFromString(line):
             return md
 
 
-def useTedMetaFiles(path, metaDataLocation, laughDataLocation):
+def useTedMetaFiles(path, metaDataLocation):
     metadataCollection = []
-    posLengths = []
-    negLengths = []
+    lengths = []
 
     lineNum = 0
 
@@ -236,13 +238,9 @@ def useTedMetaFiles(path, metaDataLocation, laughDataLocation):
             md = getMetaDataFromString(line)
             if md:
                 metadataCollection.append(md)
-                if md.firstLaughAt != -1:
-                    posLengths.append(md.wordCount)
-                else:
-                    negLengths.append(md.wordCount)
+                lengths.append(md.wordCount)
 
     mf.close
 
-    posLengths.sort()
-    negLengths.sort()
-    return (metadataCollection, posLengths, negLengths)
+    lengths.sort()
+    return (metadataCollection, lengths)

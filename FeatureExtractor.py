@@ -1,44 +1,50 @@
 import nltk
 import loadingbar
 import numpy
+import FeatureCollection
 from nltk import word_tokenize
 from nltk.tag import pos_tag, map_tag
 from nltk.util import ngrams
-
 from textblob import TextBlob
 
-#First define a function that produces features from a given object
-#This function takes in a paragraph. It then breaks it up and uses it
-#for the feature sets
-#The features extracted for the talk are:
-#1. every word in the text
-#2. ngram for words and characters
-#3. POS tag
-#4. Sentiment Analysis
+# First define a function that produces features from a given object
+# This function takes in a paragraph. It then breaks it up and uses it
+# for the feature sets
+# The features extracted for the talk are:
+# 1. every word in the text
+# 2. ngram for words and characters
+# 3. POS tag
+# 4. Sentiment Analysis
+# 5. Laugh Count Before This
+# 6. Sentences since last laugh
+# 7. Depth
 #Note that featuresets are lists. That's what the classifier takes as input
-def langFeatures(data):
+def langFeatures(featsCollection):
     D = {} #dictionary of keys
 
-    text = nltk.word_tokenize(data)
+    lastSents = featsCollection.sentences[-1]
+    text = nltk.word_tokenize(lastSents)
 
     wordCount = len(text)
     verbCount = 0
     nounCount = 0
     adjCount = 0
 
-    if False:
+    # 1. every word in the text
+    if True:
         #featureset of just words
         for word in text:
             #the feature list is the words in the script
             D[word] = True
 
-    if True:
+    # 2. ngram for words and characters
+    if False:
         #create word ngrams
         word_bigrams = ngrams(text, 2)
         word_trigrams = ngrams(text, 3)
         word_quadgrams = ngrams(text, 4)
         #create character ngrams
-        char_text = list(data)
+        char_text = list(lastSents)
         char_bigrams = ngrams(char_text, 2)
         char_trigrams = ngrams(char_text, 3)
         char_quadgrams = ngrams(char_text, 4)
@@ -51,7 +57,8 @@ def langFeatures(data):
         D["char_trigrams"] = char_trigrams
         D["char_quadgrams"] = char_quadgrams
 
-    if False:
+    # 3. POS tag
+    if True:
         #POS tag based feature set
         #get the parts of speech tags
         parts_of_speech = nltk.pos_tag(text)
@@ -100,9 +107,22 @@ def langFeatures(data):
         else:
             D["verb_percentage"] = 2
 
+    # 4. Sentiment Analysis
     if False:
-        testimonial = TextBlob(data)
+        testimonial = TextBlob(lastSents)
         D["Subjectivity"] = testimonial.sentiment.subjectivity
         D["Polarity"] = testimonial.sentiment.polarity
+
+    # 5. Laugh Count Before This
+    if False:
+        D["Laugh Count"] = featsCollection.laughsUntilNow
+
+    # 6. Sentences since last laugh
+    if False:
+        D["Last Laugh"] = featsCollection.sentsSinceLaugh
+
+    # 7. Depth
+    if False:
+        D["Depth"] = featsCollection.depth
 
     return D

@@ -9,6 +9,7 @@ class FeatureCollection(object):
     sentsSinceLaugh = 0
     positive = False
     sentences = []
+    numSents = 0
 
     def __init__(self, talkName="", talkAuthor=""):
         self.name = talkName
@@ -19,6 +20,7 @@ class FeatureCollection(object):
         self.sentsSinceLaugh = 0
         self.positive = False
         self.sentences = []
+        self.numSents = 0
 
     def infoToString(self):
         ret = "Name: " + self.name + " " \
