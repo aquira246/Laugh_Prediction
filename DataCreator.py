@@ -1,52 +1,20 @@
 import sys
 import nltk, re, pprint
 import math, random, statistics
-from nltk import word_tokenize
+from nltk import sent_tokenize
 import TedMeta
+import FeatureCollection
 
 CUT_OUTLIER_PERCENTAGE = .05
 MAX_DATA_COUNT = 500
 POS_PARAGRAPHS_FROM_DATA = 3
 NEG_PARAGRAPHS_FROM_DATA = 2
 
-
 def splitFile(metadata):
     rf = open(metadata.filename, 'r')
 
-    prevPara = ""
-    prevIsPositive = False
-    positives = []
-    negatives = []
-
-    for paragraph in rf:
-        if re.match(r'^Title: .+', paragraph) is not None:
-            pass
-        elif re.match(r'^Author: .+', paragraph) is not None:
-            pass
-        elif re.match(r'^Tags: .+', paragraph) is not None:
-            pass
-        else:
-            paragraph = paragraph.replace("(Applause)", "")
-            paragraph = paragraph.replace("(Audio: Laughing)", "")
-
-            if prevIsPositive or ("(Laughter)" in paragraph[:11] and prevPara != ""):
-                positives.append(prevPara)
-            else:
-                if len(prevPara) > 2:
-                    negatives.append(prevPara)
-
-            prevIsPositive = False
-
-            if "(Laughter)" in paragraph[10:]:
-                prevIsPositive = True
-
-            prevPara = paragraph.replace("(Laughter)", "")
-
-    if prevIsPositive:
-        positives.append(prevPara)
-    else:
-        if len(prevPara) > 2:
-            negatives.append(prevPara)
+    talk = " ".join(rf[6:])
+    sents = nltk.sent_tokenize(talk)
 
     rf.close
     return [positives, negatives]
@@ -118,7 +86,7 @@ def generateDataGroups(fromPosData, fromNegData):
     return [posData, negData]
 
 
-def splitData(metadata, posLengths, lengthNonLaugh, numTestFiles):
+def splitData(metadata, posLengths, lengthNonLaugh):
     #cut out talks that are too long or short
     cutPoint = int(math.floor(len(metadata)*CUT_OUTLIER_PERCENTAGE))
     trimmedPosLengths = posLengths[cutPoint:-cutPoint]
@@ -143,7 +111,7 @@ def splitData(metadata, posLengths, lengthNonLaugh, numTestFiles):
     return generateDataGroups(fromPosData, fromNegData)
 
 
-def createDataFrom(location, metadataFile, laughDataFile, numTestFiles, createFiles):
+def createDataFrom(location, metadataFile, laughDataFile, createFiles):
     if createFiles:
         print("Creating meta files\n")
         (metadata, posLengths, negLengths) = \
@@ -154,4 +122,4 @@ def createDataFrom(location, metadataFile, laughDataFile, numTestFiles, createFi
             TedMeta.useTedMetaFiles(location, metadataFile, laughDataFile)
 
     print("Dividing data into groups\n")
-    return splitData(metadata, posLengths, negLengths, numTestFiles)
+    return splitData(metadata, posLengths, negLengths)

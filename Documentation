@@ -69,3 +69,10 @@ Naive   DTree
 .699   .179
 .758   .782
 .74    .827
+
+
+After switching the data to being each individual paragraph, the accuracy plummeted to random level. Paragraphs were marked positive based on if they had a laugh in them or immedietly after them. This created a lot of data, which actually took a very long time to run. We also added a sentiment analyzer with textblob that didn't increase the accuracy. It analyzed the whole paragraph however, and I believe it would work better only analyzing the last sentence or 2. The idea comes from a paper saying that humor is usually negative. They found evidence of this using a sentiment analyzer. They also found that personal pronouns are a strong sign of humor as well since humor is human focused.
+
+Anyway, we are now going to look at different data. Instead of looking at each paragraph, we are looking at what has already been said as well. Now, positive data is everything up to a laugh. This can mean there were previous laughs before. This also applies for negative data, which is data that goes up to a similar length but doesn't end with a laugh. There may have been laughs before in negative data as well. 
+
+The previous laughs actually will be a new feature. How many there were before, how deep the paragraph is in the text, how long it has been since another laugh, etc. All of which play a role in the features now. We are going to get into some crazy stuff now. To think, I thought I was getting close with the high level of accuracy described above. Well, let's do this! - Start of winter quarter

@@ -4,5 +4,6 @@ search_pages/*
 websites/*
 __pycache__
 __pycache__/*
+*.pyc
 
 !*.sh

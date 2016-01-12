@@ -1,83 +1,79 @@
-import sys
-import nltk, re, pprint
-import math, random, statistics
+from nltk import sent_tokenize
 from nltk import word_tokenize
-import TedMeta
+import FeatureCollection
+import copy
 
-def trimFile(metadata):
-    rf = open(metadata.filename, 'r')
+def splitFile(filename):
+    rf = open(filename, 'r')
 
-    prevPara = ""
-    prevIsPositive = False
-    positives = []
-    negatives = []
+    #skip first 6 lines since they aren't important
+    talk = " ".join(rf.readlines()[6:])
 
+    #remove the Audio: Laughing and the applause
+    talk = talk.replace("(Applause)", "")
+    talk = talk.replace("(Audio: Laughing)", "")
 
-    for paragraph in rf:
-        if re.match(r'^Title: .+', paragraph) is not None:
-            pass
-        elif re.match(r'^Author: .+', paragraph) is not None:
-            pass
-        elif re.match(r'^Tags: .+', paragraph) is not None:
-            pass
+    sents = sent_tokenize(talk) # the talk turned into sentences
+    passedSents = []            # all of the sentences passed
+    numSents = len(sents)       # the number of sentences in the talk
+    sentsSinceLastLaugh = 0     # the number of sentences since the last laugh
+    laughCount = 0              # the laughs counted so far
+    positives = []              # all of the positives
+    negatives = []              # all of the negatives
+
+    for i in range(numSents):
+        # create a FeatureCollection for each sentence
+        features = FeatureCollection.FeatureCollection("TODO_GETNAME")
+
+        # if there is laughter in the sentence and it is not at the beginning OR
+        # it is at the start of the next (if there is one) sentence
+        if ("(Laughter)" in sents[i][3:]) or (i != numSents - 1 and ("(Laughter)" in sents[i+1][:11])):
+            features.positive = True
         else:
-            paragraph = paragraph.replace("(Applause)", "")
-            paragraph = paragraph.replace("(Audio: Laughing)", "")
+            features.positive = False
 
-            if prevIsPositive or ("(Laughter)" in paragraph[:11] and prevPara != ""):
-                positives.append(prevPara)
-            else:
-                if len(prevPara) > 2:
-                    negatives.append(prevPara)
+        # remove the laughter from the sentence
+        curSent = sents[i].replace("(Laughter)", "")
 
-            prevIsPositive = False
+        #increase the distance since the last laugh
+        sentsSinceLastLaugh += 1
 
-            if "(Laughter)" in paragraph[10:]:
-                prevIsPositive = True
+        # put this sentence at the end of the passed sentences list
+        passedSents.append(curSent) #TODO might need to change it to a deep copy and not just a reference to curSent
 
-            prevPara = paragraph.replace("(Laughter)", "")
+        features.length = len(word_tokenize(curSent))
+        features.depth = i/numSents
+        features.laughsUntilNow = laughCount
+        features.sentsSinceLaugh = sentsSinceLastLaugh
+        features.sentences = copy.copy(passedSents) # need a shallow copy so that we can modify passedSents
 
-    if prevIsPositive:
-        positives.append(prevPara)
-    else:
-        if len(prevPara) > 2:
-            negatives.append(prevPara)
+        # if the sentence was positive, we need to reset the distance since last laugh and increment laugh count
+        if features.positive:
+            laughCount += 1
+            sentsSinceLastLaugh = 0
+            positives.append(features)
+            negatives.append(features)  # remove this. This is only for testing this
+        else:
+            negatives.append(features)
 
     rf.close
+
     return [positives, negatives]
 
-#main
-ret = []
 
-pf = open("positives.txt", 'w')
-nf = open("negatives.txt", 'w')
 
-meta = TedMeta.tedMetaData("parsed_websites/Aliens,_love_--_where_are_they?_.txt", "Aliens, love -- where are they? ")
-ret = trimFile(meta)
+[ps, ns] = splitFile("testfile.txt")
+wf = open("checkanswer.txt", 'w')
 
-pf.writelines("---------------------" + meta.name + "---------------------\n")
-nf.writelines("---------------------" + meta.name + "---------------------\n")
-for para in ret[0]:
-    pf.writelines(para + "\n")
-for para in ret[1]:
-    nf.writelines(para + "\n")
+# for feats in ps:
+#     wf.writelines(feats.infoToString())
+#     wf.writelines(feats.sentences[-1])
+#     wf.writelines("\n\n")
 
-meta = TedMeta.tedMetaData("parsed_websites/Why_we_laugh_.txt", "Why we laugh ")
-ret = trimFile(meta)
+for feats in ns:
+    wf.writelines(feats.infoToString())
+    wf.writelines(feats.sentences[-1])
+    wf.writelines("\n\n")
 
-pf.writelines("---------------------" + meta.name + "---------------------\n")
-nf.writelines("---------------------" + meta.name + "---------------------\n")
-for para in ret[0]:
-    pf.writelines(para + "\n")
-for para in ret[1]:
-    nf.writelines(para + "\n")
+wf.close
 
-meta = TedMeta.tedMetaData("parsed_websites/Comedy_is_translation_.txt", "Comedy is translation ")
-ret = trimFile(meta)
-
-pf.writelines("---------------------" + meta.name + "---------------------\n")
-nf.writelines("---------------------" + meta.name + "---------------------\n")
-for para in ret[0]:
-    pf.writelines(para + "\n")
-for para in ret[1]:
-    nf.writelines(para + "\n")
