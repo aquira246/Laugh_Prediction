@@ -1,4 +1,7 @@
+import time
 import sys
+
+toolbar_width = 40
 
 
 def getAnimationChar():
@@ -15,7 +18,7 @@ def getAnimationChar():
 getAnimationChar.ctr = 0
 
 
-#little function to show percentage
+# little function to show percentage
 def printPercentage(perc, intro_str="", useBar=True):
     if useBar:
         toWrite = "\r" + intro_str + "|<"

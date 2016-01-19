@@ -1,0 +1,19 @@
+Stack:
+import sys
+import copy
+import re
+import pprint
+import math
+import random
+import statistics
+import time
+import collections
+from tabulate import tabulate
+import os
+from urllib import request
+
+import nltk +
+import numpy + 
+from textblob import TextBlob +
+scikit
+scipy

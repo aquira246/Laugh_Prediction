@@ -4,7 +4,7 @@ comment more of the code
 start documenting what I am doing
 stop songs from getting in
 
-Cleanly switch between datasets
+Switch to Scikit learn for classifiers
 
 Add textblob on the list of tools used
 Add sentiment analysis into what im using as features

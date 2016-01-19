@@ -24,7 +24,7 @@ def assess_classifier(classifier, test_data, text):
         observed = classifier.classify(feats)
         testsets[observed].add(i)
         onDataSet += 1
-        printPercentage(onDataSet/numDataSets * 100, "Extracting Features: ")
+        # printPercentage(onDataSet/numDataSets * 100, "Extracting Features: ")
 
     # calculate the precision and recall
     laugh_precision = precision(refsets[True], testsets[True])
@@ -38,24 +38,27 @@ def assess_classifier(classifier, test_data, text):
     return [text, acc, laugh_precision, laugh_recall, non_laugh_precision, non_laugh_recall]
 
 
-def runClassifiers(positives, negatives, verbose, useBayes, useTree, useEntropy):
+def runClassifiers(positives, negatives, featuresToUse, outFile, verbose, useBayes, useTree, useEntropy):
     featureSets = []
     onDataSet = 0
     numDataSets = len(positives + negatives)
     table = []
 
+    # print which features we are using
+    print("Using these features: ", FeatureExtractor.featuresToString(featuresToUse))
+
     for data in positives:
-        featureSets.append((FeatureExtractor.langFeatures(data), True))
+        featureSets.append((FeatureExtractor.langFeatures(data, featuresToUse), True))
         onDataSet += 1
-        printPercentage(onDataSet/numDataSets * 100, "Extracting Features: ", False)
+        # printPercentage(onDataSet/numDataSets * 100, "Extracting Features: ", False)
 
     for data in negatives:
-        featureSets.append((FeatureExtractor.langFeatures(data), False))
+        featureSets.append((FeatureExtractor.langFeatures(data, featuresToUse), False))
         onDataSet += 1
-        printPercentage(onDataSet/numDataSets * 100, "Extracting Features: ", False)
+        # printPercentage(onDataSet/numDataSets * 100, "Extracting Features: ", False)
 
-    sys.stdout.flush()
-    print("\n")
+    # sys.stdout.flush()
+    # print("\n")
 
     # Testing is 1/4 of the data set, so we will cut it off there
     cutOff = len(featureSets)//4
@@ -122,4 +125,12 @@ def runClassifiers(positives, negatives, verbose, useBayes, useTree, useEntropy)
             # this is a function that explains the effect of each feature in the set
             # print (classifier.explain())
 
-    print("\n", tabulate(table, headers=["Classifier", "accuracy", "laugh precision", "laugh recall", "non-laugh precision", "non-laugh recall"]))
+    if (outFile == ""):
+        print("\n", FeatureExtractor.featuresToString(featuresToUse))
+        print(tabulate(table, headers=["Classifier", "accuracy", "laugh precision", "laugh recall", "non-laugh precision", "non-laugh recall"]))
+    else:
+        with open(outFile, 'a') as out:
+            out.write("\n")
+            out.write(FeatureExtractor.featuresToString(featuresToUse))
+            out.write(tabulate(table, headers=["Classifier", "accuracy", "laugh precision", "laugh recall", "non-laugh precision", "non-laugh recall"]))
+            out.write("\n")

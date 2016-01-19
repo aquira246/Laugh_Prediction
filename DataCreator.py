@@ -8,12 +8,9 @@ import TedMeta
 import FeatureCollection
 
 CUT_OUTLIER_PERCENTAGE = .05
-MAX_DATA_COUNT = 500
-POS_PARAGRAPHS_FROM_DATA = 3
-NEG_PARAGRAPHS_FROM_DATA = 2
+MAX_DATA_COUNT = 2000
 
 
-# TODO add parts of speech
 def splitFile(md):
     rf = open(md.filename, 'r')
 
@@ -94,6 +91,7 @@ def creatingData(metadata, lengths):
         posData = posData + pieces[0]
         negData = negData + pieces[1]
 
+    print("Total pieces of data from Positive: ", len(posData), " Negative: ", len(negData), "\n")
     # comment out the below 5 lines when testing
     minLen = min(min(len(posData), len(negData)), MAX_DATA_COUNT)
     random.shuffle(posData)
