@@ -6,6 +6,10 @@ import sys
 from nltk.metrics import precision, recall, f_measure
 from tabulate import tabulate
 
+import sklearn
+from nltk.classify import SklearnClassifier
+from sklearn.svm import SVC
+
 import FeatureExtractor
 from loadingbar import printPercentage
 
@@ -26,19 +30,21 @@ def assess_classifier(classifier, test_data, text):
         onDataSet += 1
         # printPercentage(onDataSet/numDataSets * 100, "Extracting Features: ")
 
-    # calculate the precision and recall
+    # calculate the precisionl, recall, f-measure
     laugh_precision = precision(refsets[True], testsets[True])
     laugh_recall = recall(refsets[True], testsets[True])
+    laugh_f1 = f_measure(refsets[True], testsets[True])
 
     non_laugh_precision = precision(refsets[False], testsets[False])
     non_laugh_recall = recall(refsets[False], testsets[False])
+    non_laugh_f1 = f_measure(refsets[False], testsets[False])
 
     acc = nltk.classify.accuracy(classifier, test_data)
 
-    return [text, acc, laugh_precision, laugh_recall, non_laugh_precision, non_laugh_recall]
+    return [text, acc, laugh_precision, laugh_recall, laugh_f1, non_laugh_precision, non_laugh_recall, non_laugh_f1]
 
 
-def runClassifiers(positives, negatives, featuresToUse, outFile, verbose, useBayes, useTree, useEntropy):
+def runClassifiers(positives, negatives, featuresToUse, outFile, verbose, classifiersToUse):
     featureSets = []
     onDataSet = 0
     numDataSets = len(positives + negatives)
@@ -68,7 +74,7 @@ def runClassifiers(positives, negatives, featuresToUse, outFile, verbose, useBay
     # splits training and test sets
     train_data, test_data = featureSets[cutOff:], featureSets[:cutOff]
 
-    if useBayes:
+    if classifiersToUse[0]:
         print("Running Naive Bayes classifier")
         timeStart = time.time()
 
@@ -86,7 +92,7 @@ def runClassifiers(positives, negatives, featuresToUse, outFile, verbose, useBay
             print("\n\n")
             print (classifier.show_most_informative_features(20))
 
-    if useTree:
+    if classifiersToUse[1]:
         print("Running Decision Tree classifier")
         timeStart = time.time()
 
@@ -106,7 +112,7 @@ def runClassifiers(positives, negatives, featuresToUse, outFile, verbose, useBay
                 classification = classifier.classify(feats)
                 print("Correct: ", cor, " Result: ", classification)#, "for ", feats[0])
 
-    if useEntropy:
+    if classifiersToUse[2]:
         print("Running Maximum Entropy classifier")
         timeStart = time.time()
 
@@ -125,12 +131,26 @@ def runClassifiers(positives, negatives, featuresToUse, outFile, verbose, useBay
             # this is a function that explains the effect of each feature in the set
             # print (classifier.explain())
 
+    if classifiersToUse[3]:
+        print("Running SVM classifier")
+        timeStart = time.time()
+
+        # Scikit-learn's SVC classifier, wrapped up in NLTK's wrapper class
+        classifier = SklearnClassifier(SVC(), sparse=False).train(train_data)
+
+        # get the time to train a Support Vector Machine
+        print ("\nTime to train in seconds: ", time.time() - timeStart)
+
+        # store the accuracy in the table
+        table.append(assess_classifier(classifier, test_data, "Support Vector Machine"))
+
+
     if (outFile == ""):
         print("\n", FeatureExtractor.featuresToString(featuresToUse))
-        print(tabulate(table, headers=["Classifier", "accuracy", "laugh precision", "laugh recall", "non-laugh precision", "non-laugh recall"]))
+        print(tabulate(table, headers=["Classifier", "accuracy", "laugh precision", "laugh recall", "laugh f1", "non-laugh precision", "non-laugh recall", "non-laugh f1"]))
     else:
         with open(outFile, 'a') as out:
             out.write("\n")
             out.write(FeatureExtractor.featuresToString(featuresToUse))
-            out.write(tabulate(table, headers=["Classifier", "accuracy", "laugh precision", "laugh recall", "non-laugh precision", "non-laugh recall"]))
+            out.write(tabulate(table, headers=["Classifier", "accuracy", "laugh precision", "laugh recall", "laugh f1", "non-laugh precision", "non-laugh recall", "non-laugh f1"]))
             out.write("\n")

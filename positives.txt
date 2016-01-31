@@ -1,58 +1,64 @@
-Name: How to separate fact and fiction online  Author:  Length: 46 Depth: 0.2874251497005988 Laughs Until Now: 0 Since Last Laugh: 49 positive: True 
-So what you had in Hurricane Sandy was a superstorm, the likes of which we hadn't seen for a long time, hitting the iPhone capital of the universe --  -- and you got volumes of media like we'd never seen before.
-
-Name: How to separate fact and fiction online  Author:  Length: 16 Depth: 0.30538922155688625 Laughs Until Now: 1 Since Last Laugh: 3 positive: True 
-We had to deal with images from films like "The Day After Tomorrow."
-
-Name: How to separate fact and fiction online  Author:  Length: 24 Depth: 0.31137724550898205 Laughs Until Now: 2 Since Last Laugh: 1 positive: True 
- And we had to deal with images that were so realistic it was nearly difficult to tell if they were real at all.
-
 Name: A one-woman global village  Author:  Length: 23 Depth: 0.027237354085603113 Laughs Until Now: 0 Since Last Laugh: 8 positive: True 
-Although many of you already know that I do speak the Queen's English because I am from Queens, New York.
+Personal Pronouns: 0.01904761904761905 noun_percentage: 2 adj_percentage: 2 verb_percentage: 1
+
 
 Name: A one-woman global village  Author:  Length: 11 Depth: 0.07782101167315175 Laughs Until Now: 1 Since Last Laugh: 13 positive: True 
-So feel free to think of this as Sarah University.
+Personal Pronouns: 0.0 noun_percentage: 2 adj_percentage: 1 verb_percentage: 1
+
 
 Name: A one-woman global village  Author:  Length: 2 Depth: 0.1245136186770428 Laughs Until Now: 2 Since Last Laugh: 12 positive: True 
-Okay.
+Personal Pronouns: 0.0 noun_percentage: 2 adj_percentage: 0 verb_percentage: 1
+
 
 Name: A one-woman global village  Author:  Length: 3 Depth: 0.14007782101167315 Laughs Until Now: 3 Since Last Laugh: 4 positive: True 
-But anyway.
+Personal Pronouns: 0.0 noun_percentage: 2 adj_percentage: 2 verb_percentage: 1
+
 
 Name: A one-woman global village  Author:  Length: 5 Depth: 0.1867704280155642 Laughs Until Now: 4 Since Last Laugh: 12 positive: True 
-Isn't that adorable?
+Personal Pronouns: 0.05 noun_percentage: 2 adj_percentage: 1 verb_percentage: 1
+
 
 Name: A one-woman global village  Author:  Length: 8 Depth: 0.22568093385214008 Laughs Until Now: 5 Since Last Laugh: 10 positive: True 
-But even so, a wonderful talent.
+Personal Pronouns: 0.0 noun_percentage: 2 adj_percentage: 2 verb_percentage: 0
+
 
 Name: A one-woman global village  Author:  Length: 2 Depth: 0.33073929961089493 Laughs Until Now: 6 Since Last Laugh: 27 positive: True 
-Anyway.
+Personal Pronouns: 0.0 noun_percentage: 2 adj_percentage: 2 verb_percentage: 1
+
 
 Name: A one-woman global village  Author:  Length: 9 Depth: 0.40077821011673154 Laughs Until Now: 7 Since Last Laugh: 18 positive: True 
-So --  
- I just -- I'm sorry.
+Personal Pronouns: 0.06896551724137931 noun_percentage: 2 adj_percentage: 2 verb_percentage: 0
+
 
 Name: A one-woman global village  Author:  Length: 5 Depth: 0.5603112840466926 Laughs Until Now: 8 Since Last Laugh: 41 positive: True 
-Thank you very much.
+Personal Pronouns: 0.0 noun_percentage: 2 adj_percentage: 2 verb_percentage: 0
+
 
 Name: A one-woman global village  Author:  Length: 14 Depth: 0.603112840466926 Laughs Until Now: 9 Since Last Laugh: 11 positive: True 
-And we were only 11 years old, so it was not appropriate.
+Personal Pronouns: 0.0 noun_percentage: 2 adj_percentage: 1 verb_percentage: 1
+
 
 Name: A one-woman global village  Author:  Length: 44 Depth: 0.6575875486381323 Laughs Until Now: 10 Since Last Laugh: 14 positive: True 
-And usually my work, it takes me to Washington D.C. And there, I must attend these meetings, mingling with some tiresome politicians, trying to make me feel comfortable by telling how often they are eating the curry in Georgetown.
+Personal Pronouns: 0.004347826086956522 noun_percentage: 2 adj_percentage: 1 verb_percentage: 0
+
 
 Name: A one-woman global village  Author:  Length: 16 Depth: 0.7042801556420234 Laughs Until Now: 11 Since Last Laugh: 12 positive: True 
-But then, I decided, just like Governor Arnold Schwarzenegger, I try anyway.
+Personal Pronouns: 0.02631578947368421 noun_percentage: 2 adj_percentage: 1 verb_percentage: 1
+
 
 Name: A one-woman global village  Author:  Length: 24 Depth: 0.7859922178988327 Laughs Until Now: 12 Since Last Laugh: 21 positive: True 
-But she told me, "Mom, you don't have to worry about boys because I don't like them."
+Personal Pronouns: 0.011764705882352941 noun_percentage: 2 adj_percentage: 1 verb_percentage: 0
+
 
 Name: A one-woman global village  Author:  Length: 39 Depth: 0.8093385214007782 Laughs Until Now: 13 Since Last Laugh: 6 positive: True 
-So, I always teach my kids to respect American ideas, but I told my daughter that this is one exception --  -- that she is not gay, she is just confused by this American problem.
+Personal Pronouns: 0.011235955056179775 noun_percentage: 2 adj_percentage: 1 verb_percentage: 1
+
 
 Name: A one-woman global village  Author:  Length: 15 Depth: 0.8171206225680934 Laughs Until Now: 14 Since Last Laugh: 2 positive: True 
-She said she is in love -- in love with a nice Chinese girl.
+Personal Pronouns: 0.0 noun_percentage: 2 adj_percentage: 1 verb_percentage: 1
+
 
 Name: A one-woman global village  Author:  Length: 21 Depth: 0.8210116731517509 Laughs Until Now: 15 Since Last Laugh: 1 positive: True 
- So, these are the words I am waiting to hear, but from my son, not my daughter.
+Personal Pronouns: 0.0125 noun_percentage: 2 adj_percentage: 1 verb_percentage: 0
+
 

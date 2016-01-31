@@ -1,5 +1,3 @@
 Number of files: 2 minus broken files
 
-parsed_websites/How_to_grow_a_tiny_forest_anywhere_.txt    How to grow a tiny forest anywhere     Shubhendu Sharma    ['Inspiring', 'Ingenious']    Word Count: 707    Laugh Count: 0    First Laugh At: -1
 parsed_websites/A_one-woman_global_village_.txt    A one-woman global village     Sarah Jones    ['Funny', 'Beautiful']    Word Count: 3989    Laugh Count: 16    First Laugh At: 170
-parsed_websites/How_to_separate_fact_and_fiction_online_.txt    How to separate fact and fiction online     Markham Nolan    ['Informative', 'Fascinating']    Word Count: 3262    Laugh Count: 3    First Laugh At: 893

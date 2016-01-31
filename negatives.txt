@@ -1,1324 +1,964 @@
-Name: How to grow a tiny forest anywhere  Author:  Length: 6 Depth: 0.0 Laughs Until Now: 0 Since Last Laugh: 1 positive: False 
-I'm an industrial engineer.
-
-Name: How to grow a tiny forest anywhere  Author:  Length: 23 Depth: 0.029411764705882353 Laughs Until Now: 0 Since Last Laugh: 2 positive: False 
-The goal in my life has always been to make more and more products in the least amount of time and resources.
-
-Name: How to grow a tiny forest anywhere  Author:  Length: 38 Depth: 0.058823529411764705 Laughs Until Now: 0 Since Last Laugh: 3 positive: False 
-While working at Toyota, all I knew was how to make cars until I met Dr. Akira Miyawaki, who came to our factory to make a forest in it in order to make it carbon-neutral.
-
-Name: How to grow a tiny forest anywhere  Author:  Length: 19 Depth: 0.08823529411764706 Laughs Until Now: 0 Since Last Laugh: 4 positive: False 
-I was so fascinated that I decided to learn this methodology by joining his team as a volunteer.
-
-Name: How to grow a tiny forest anywhere  Author:  Length: 25 Depth: 0.11764705882352941 Laughs Until Now: 0 Since Last Laugh: 5 positive: False 
-Soon, I started making a forest in the backyard of my own house, and this is how it looks after three years.
-
-Name: How to grow a tiny forest anywhere  Author:  Length: 27 Depth: 0.14705882352941177 Laughs Until Now: 0 Since Last Laugh: 6 positive: False 
-These forests, compared to a conventional plantation, grow 10 times faster, they're 30 times more dense, and 100 times more biodiverse.
-
-Name: How to grow a tiny forest anywhere  Author:  Length: 35 Depth: 0.17647058823529413 Laughs Until Now: 0 Since Last Laugh: 7 positive: False 
-Within two years of having this forest in our backyard, I could observe that the groundwater didn't dry during summers, the number of bird species I spotted in this area doubled.
-
-Name: How to grow a tiny forest anywhere  Author:  Length: 22 Depth: 0.20588235294117646 Laughs Until Now: 0 Since Last Laugh: 8 positive: False 
-Quality of air became better, and we started harvesting seasonal fruits growing effortlessly right in the backyard of our house.
-
-Name: How to grow a tiny forest anywhere  Author:  Length: 9 Depth: 0.23529411764705882 Laughs Until Now: 0 Since Last Laugh: 9 positive: False 
-I wanted to make more of these forests.
-
-Name: How to grow a tiny forest anywhere  Author:  Length: 50 Depth: 0.2647058823529412 Laughs Until Now: 0 Since Last Laugh: 10 positive: False 
-I was so moved by these results that I wanted to make these forests with the same acumen with which we make cars or write software or do any mainstream business, so I founded a company which is an end-to-end service provider to create these native natural forests.
-
-Name: How to grow a tiny forest anywhere  Author:  Length: 21 Depth: 0.29411764705882354 Laughs Until Now: 0 Since Last Laugh: 11 positive: False 
-But to make afforestation as a mainstream business or an industry, we had to standardize the process of forest-making.
-
-Name: How to grow a tiny forest anywhere  Author:  Length: 19 Depth: 0.3235294117647059 Laughs Until Now: 0 Since Last Laugh: 12 positive: False 
-So we benchmarked the Toyota Production System known for its quality and efficiency for the process of forest-making.
-
-Name: How to grow a tiny forest anywhere  Author:  Length: 32 Depth: 0.35294117647058826 Laughs Until Now: 0 Since Last Laugh: 13 positive: False 
-For an example, the core of TPS, Toyota Production System, lies in heijunka, which is making manufacturing of different models of cars on a single assembly line.
-
-Name: How to grow a tiny forest anywhere  Author:  Length: 16 Depth: 0.38235294117647056 Laughs Until Now: 0 Since Last Laugh: 14 positive: False 
-We replaced these cars with trees, using which now we can make multi-layered forests.
-
-Name: How to grow a tiny forest anywhere  Author:  Length: 8 Depth: 0.4117647058823529 Laughs Until Now: 0 Since Last Laugh: 15 positive: False 
-These forests utilize 100 percent vertical space.
-
-Name: How to grow a tiny forest anywhere  Author:  Length: 13 Depth: 0.4411764705882353 Laughs Until Now: 0 Since Last Laugh: 16 positive: False 
-They are so dense that one can't even walk into them.
-
-Name: How to grow a tiny forest anywhere  Author:  Length: 23 Depth: 0.47058823529411764 Laughs Until Now: 0 Since Last Laugh: 17 positive: False 
-For an example, we can make a 300-tree forest in an area as small as the parking spaces of six cars.
-
-Name: How to grow a tiny forest anywhere  Author:  Length: 22 Depth: 0.5 Laughs Until Now: 0 Since Last Laugh: 18 positive: False 
-In order to reduce cost and our own carbon footprint, we started utilizing local biomass as soil amender and fertilizers.
-
-Name: How to grow a tiny forest anywhere  Author:  Length: 34 Depth: 0.5294117647058824 Laughs Until Now: 0 Since Last Laugh: 19 positive: False 
-For example, coconut shells crushed in a machine mixed with rice straw, powder of rice husk mixed with organic manure is finally dumped in soil on which our forest is planted.
-
-Name: How to grow a tiny forest anywhere  Author:  Length: 31 Depth: 0.5588235294117647 Laughs Until Now: 0 Since Last Laugh: 20 positive: False 
-Once planted, we use grass or rice straw to cover the soil so that all the water which goes into irrigation doesn't get evaporated back into the atmosphere.
-
-Name: How to grow a tiny forest anywhere  Author:  Length: 24 Depth: 0.5882352941176471 Laughs Until Now: 0 Since Last Laugh: 21 positive: False 
-And using these simple improvisations, today we can make a forest for a cost as low as the cost of an iPhone.
-
-Name: How to grow a tiny forest anywhere  Author:  Length: 19 Depth: 0.6176470588235294 Laughs Until Now: 0 Since Last Laugh: 22 positive: False 
-Today, we are making forests in houses, in schools, even in factories with the corporates.
-
-Name: How to grow a tiny forest anywhere  Author:  Length: 6 Depth: 0.6470588235294118 Laughs Until Now: 0 Since Last Laugh: 23 positive: False 
-But that's not enough.
-
-Name: How to grow a tiny forest anywhere  Author:  Length: 17 Depth: 0.6764705882352942 Laughs Until Now: 0 Since Last Laugh: 24 positive: False 
-There is a huge number of people who want to take matters into their own hands.
-
-Name: How to grow a tiny forest anywhere  Author:  Length: 6 Depth: 0.7058823529411765 Laughs Until Now: 0 Since Last Laugh: 25 positive: False 
-So we let it happen.
-
-Name: How to grow a tiny forest anywhere  Author:  Length: 42 Depth: 0.7352941176470589 Laughs Until Now: 0 Since Last Laugh: 26 positive: False 
-Today, we are working on an Internet-based platform where we are going to share our methodology on an open source using which anyone and everyone can make their own forest without our physical presence being there, using our methodology.
-
-Name: How to grow a tiny forest anywhere  Author:  Length: 20 Depth: 0.7647058823529411 Laughs Until Now: 0 Since Last Laugh: 27 positive: False 
-At the click of a button, they can get to know all the native species of their place.
-
-Name: How to grow a tiny forest anywhere  Author:  Length: 27 Depth: 0.7941176470588235 Laughs Until Now: 0 Since Last Laugh: 28 positive: False 
-By installing a small hardware probe on site, we can do remote soil testing, using which we can give step-by-step instructions on forest-making remotely.
-
-Name: How to grow a tiny forest anywhere  Author:  Length: 14 Depth: 0.8235294117647058 Laughs Until Now: 0 Since Last Laugh: 29 positive: False 
-Also we can monitor the growth of this forest without being on site.
-
-Name: How to grow a tiny forest anywhere  Author:  Length: 10 Depth: 0.8529411764705882 Laughs Until Now: 0 Since Last Laugh: 30 positive: False 
-This methodology, I believe, has a potential.
-
-Name: How to grow a tiny forest anywhere  Author:  Length: 12 Depth: 0.8823529411764706 Laughs Until Now: 0 Since Last Laugh: 31 positive: False 
-By sharing, we can actually bring back our native forests.
-
-Name: How to grow a tiny forest anywhere  Author:  Length: 27 Depth: 0.9117647058823529 Laughs Until Now: 0 Since Last Laugh: 32 positive: False 
-Now, when you go back home, if you see a barren piece of land, do remember that it can be a potential forest.
-
-Name: How to grow a tiny forest anywhere  Author:  Length: 5 Depth: 0.9411764705882353 Laughs Until Now: 0 Since Last Laugh: 33 positive: False 
-Thank you very much.
-
-Name: How to grow a tiny forest anywhere  Author:  Length: 2 Depth: 0.9705882352941176 Laughs Until Now: 0 Since Last Laugh: 34 positive: False 
-Thanks. 
-  
-
-Name: How to separate fact and fiction online  Author:  Length: 82 Depth: 0.0 Laughs Until Now: 0 Since Last Laugh: 1 positive: False 
-I've been a journalist now since I was about 17, and it's an interesting industry to be in at the moment, because as you all know, there's a huge amount of upheaval going on in media, and most of you probably know this from the business angle, which is that the business model is pretty screwed, and as my grandfather would say, the profits have all been gobbled up by Google.
-
-Name: How to separate fact and fiction online  Author:  Length: 27 Depth: 0.005988023952095809 Laughs Until Now: 0 Since Last Laugh: 2 positive: False 
-So it's a really interesting time to be a journalist, but the upheaval that I'm interested in is not on the output side.
-
-Name: How to separate fact and fiction online  Author:  Length: 7 Depth: 0.011976047904191617 Laughs Until Now: 0 Since Last Laugh: 3 positive: False 
-It's on the input side.
-
-Name: How to separate fact and fiction online  Author:  Length: 15 Depth: 0.017964071856287425 Laughs Until Now: 0 Since Last Laugh: 4 positive: False 
-It's concern with how we get information and how we gather the news.
-
-Name: How to separate fact and fiction online  Author:  Length: 25 Depth: 0.023952095808383235 Laughs Until Now: 0 Since Last Laugh: 5 positive: False 
-And that's changed, because we've had a huge shift in the balance of power from the news organizations to the audience.
-
-Name: How to separate fact and fiction online  Author:  Length: 27 Depth: 0.029940119760479042 Laughs Until Now: 0 Since Last Laugh: 6 positive: False 
-And the audience for such a long time was in a position where they didn't have any way of affecting news or making any change.
-
-Name: How to separate fact and fiction online  Author:  Length: 6 Depth: 0.03592814371257485 Laughs Until Now: 0 Since Last Laugh: 7 positive: False 
-They couldn't really connect.
-
-Name: How to separate fact and fiction online  Author:  Length: 6 Depth: 0.041916167664670656 Laughs Until Now: 0 Since Last Laugh: 8 positive: False 
-And that's changed irrevocably.
-
-Name: How to separate fact and fiction online  Author:  Length: 18 Depth: 0.04790419161676647 Laughs Until Now: 0 Since Last Laugh: 9 positive: False 
-My first connection with the news media was in 1984, the BBC had a one-day strike.
-
-Name: How to separate fact and fiction online  Author:  Length: 5 Depth: 0.05389221556886228 Laughs Until Now: 0 Since Last Laugh: 10 positive: False 
-I wasn't happy.
-
-Name: How to separate fact and fiction online  Author:  Length: 4 Depth: 0.059880239520958084 Laughs Until Now: 0 Since Last Laugh: 11 positive: False 
-I was angry.
-
-Name: How to separate fact and fiction online  Author:  Length: 7 Depth: 0.0658682634730539 Laughs Until Now: 0 Since Last Laugh: 12 positive: False 
-I couldn't see my cartoons.
-
-Name: How to separate fact and fiction online  Author:  Length: 6 Depth: 0.0718562874251497 Laughs Until Now: 0 Since Last Laugh: 13 positive: False 
-So I wrote a letter.
-
-Name: How to separate fact and fiction online  Author:  Length: 21 Depth: 0.07784431137724551 Laughs Until Now: 0 Since Last Laugh: 14 positive: False 
-And it's a very effective way of ending your hate mail: "Love Markham, Aged 4."
-
-Name: How to separate fact and fiction online  Author:  Length: 3 Depth: 0.08383233532934131 Laughs Until Now: 0 Since Last Laugh: 15 positive: False 
-Still works.
-
-Name: How to separate fact and fiction online  Author:  Length: 32 Depth: 0.08982035928143713 Laughs Until Now: 0 Since Last Laugh: 16 positive: False 
-I'm not sure if I had any impact on the one-day strike, but what I do know is that it took them three weeks to get back to me.
-
-Name: How to separate fact and fiction online  Author:  Length: 7 Depth: 0.09580838323353294 Laughs Until Now: 0 Since Last Laugh: 17 positive: False 
-And that was the round journey.
-
-Name: How to separate fact and fiction online  Author:  Length: 15 Depth: 0.10179640718562874 Laughs Until Now: 0 Since Last Laugh: 18 positive: False 
-It took that long for anyone to have any impact and get some feedback.
-
-Name: How to separate fact and fiction online  Author:  Length: 16 Depth: 0.10778443113772455 Laughs Until Now: 0 Since Last Laugh: 19 positive: False 
-And that's changed now because, as journalists, we interact in real time.
-
-Name: How to separate fact and fiction online  Author:  Length: 14 Depth: 0.11377245508982035 Laughs Until Now: 0 Since Last Laugh: 20 positive: False 
-We're not in a position where the audience is reacting to news.
-
-Name: How to separate fact and fiction online  Author:  Length: 15 Depth: 0.11976047904191617 Laughs Until Now: 0 Since Last Laugh: 21 positive: False 
-We're reacting to the audience, and we're actually relying on them.
-
-Name: How to separate fact and fiction online  Author:  Length: 8 Depth: 0.12574850299401197 Laughs Until Now: 0 Since Last Laugh: 22 positive: False 
-They're helping us find the news.
-
-Name: How to separate fact and fiction online  Author:  Length: 24 Depth: 0.1317365269461078 Laughs Until Now: 0 Since Last Laugh: 23 positive: False 
-They're helping us figure out what is the best angle to take and what is the stuff that they want to hear.
-
-Name: How to separate fact and fiction online  Author:  Length: 7 Depth: 0.1377245508982036 Laughs Until Now: 0 Since Last Laugh: 24 positive: False 
-So it's a real-time thing.
-
-Name: How to separate fact and fiction online  Author:  Length: 5 Depth: 0.1437125748502994 Laughs Until Now: 0 Since Last Laugh: 25 positive: False 
-It's much quicker.
-
-Name: How to separate fact and fiction online  Author:  Length: 17 Depth: 0.1497005988023952 Laughs Until Now: 0 Since Last Laugh: 26 positive: False 
-It's happening on a constant basis, and the journalist is always playing catch up.
-
-Name: How to separate fact and fiction online  Author:  Length: 25 Depth: 0.15568862275449102 Laughs Until Now: 0 Since Last Laugh: 27 positive: False 
-To give an example of how we rely on the audience, on the 5th of September in Costa Rica, an earthquake hit.
-
-Name: How to separate fact and fiction online  Author:  Length: 6 Depth: 0.16167664670658682 Laughs Until Now: 0 Since Last Laugh: 28 positive: False 
-It was a 7.6 magnitude.
-
-Name: How to separate fact and fiction online  Author:  Length: 5 Depth: 0.16766467065868262 Laughs Until Now: 0 Since Last Laugh: 29 positive: False 
-It was fairly big.
-
-Name: How to separate fact and fiction online  Author:  Length: 19 Depth: 0.17365269461077845 Laughs Until Now: 0 Since Last Laugh: 30 positive: False 
-And 60 seconds is the amount of time it took for it to travel 250 kilometers to Managua.
-
-Name: How to separate fact and fiction online  Author:  Length: 14 Depth: 0.17964071856287425 Laughs Until Now: 0 Since Last Laugh: 31 positive: False 
-So the ground shook in Managua 60 seconds after it hit the epicenter.
-
-Name: How to separate fact and fiction online  Author:  Length: 24 Depth: 0.18562874251497005 Laughs Until Now: 0 Since Last Laugh: 32 positive: False 
-Thirty seconds later, the first message went onto Twitter, and this was someone saying "temblor," which means earthquake.
-
-Name: How to separate fact and fiction online  Author:  Length: 15 Depth: 0.19161676646706588 Laughs Until Now: 0 Since Last Laugh: 33 positive: False 
-So 60 seconds was how long it took for the physical earthquake to travel.
-
-Name: How to separate fact and fiction online  Author:  Length: 16 Depth: 0.19760479041916168 Laughs Until Now: 0 Since Last Laugh: 34 positive: False 
-Thirty seconds later news of that earthquake had traveled all around the world, instantly.
-
-Name: How to separate fact and fiction online  Author:  Length: 20 Depth: 0.20359281437125748 Laughs Until Now: 0 Since Last Laugh: 35 positive: False 
-Everyone in the world, hypothetically, had the potential to know that an earthquake was happening in Managua.
-
-Name: How to separate fact and fiction online  Author:  Length: 63 Depth: 0.20958083832335328 Laughs Until Now: 0 Since Last Laugh: 36 positive: False 
-And that happened because this one person had a documentary instinct, which was to post a status update, which is what we all do now, so if something happens, we put our status update, or we post a photo, we post a video, and it all goes up into the cloud in a constant stream.
-
-Name: How to separate fact and fiction online  Author:  Length: 15 Depth: 0.2155688622754491 Laughs Until Now: 0 Since Last Laugh: 37 positive: False 
-And what that means is just constant, huge volumes of data going up.
-
-Name: How to separate fact and fiction online  Author:  Length: 5 Depth: 0.2215568862275449 Laughs Until Now: 0 Since Last Laugh: 38 positive: False 
-It's actually staggering.
-
-Name: How to separate fact and fiction online  Author:  Length: 19 Depth: 0.2275449101796407 Laughs Until Now: 0 Since Last Laugh: 39 positive: False 
-When you look at the numbers, every minute there are 72 more hours of video on YouTube.
-
-Name: How to separate fact and fiction online  Author:  Length: 16 Depth: 0.23353293413173654 Laughs Until Now: 0 Since Last Laugh: 40 positive: False 
-So that's, every second, more than an hour of video gets uploaded.
-
-Name: How to separate fact and fiction online  Author:  Length: 15 Depth: 0.23952095808383234 Laughs Until Now: 0 Since Last Laugh: 41 positive: False 
-And in photos, Instagram, 58 photos are uploaded to Instagram a second.
-
-Name: How to separate fact and fiction online  Author:  Length: 13 Depth: 0.24550898203592814 Laughs Until Now: 0 Since Last Laugh: 42 positive: False 
-More than three and a half thousand photos go up onto Facebook.
-
-Name: How to separate fact and fiction online  Author:  Length: 44 Depth: 0.25149700598802394 Laughs Until Now: 0 Since Last Laugh: 43 positive: False 
-So by the time I'm finished talking here, there'll be 864 more hours of video on Youtube than there were when I started, and two and a half million more photos on Facebook and Instagram than when I started.
-
-Name: How to separate fact and fiction online  Author:  Length: 21 Depth: 0.25748502994011974 Laughs Until Now: 0 Since Last Laugh: 44 positive: False 
-So it's an interesting position to be in as a journalist, because we should have access to everything.
-
-Name: How to separate fact and fiction online  Author:  Length: 28 Depth: 0.2634730538922156 Laughs Until Now: 0 Since Last Laugh: 45 positive: False 
-Any event that happens anywhere in the world, I should be able to know about it pretty much instantaneously, as it happens, for free.
-
-Name: How to separate fact and fiction online  Author:  Length: 11 Depth: 0.2694610778443114 Laughs Until Now: 0 Since Last Laugh: 46 positive: False 
-And that goes for every single person in this room.
-
-Name: How to separate fact and fiction online  Author:  Length: 34 Depth: 0.2754491017964072 Laughs Until Now: 0 Since Last Laugh: 47 positive: False 
-The only problem is, when you have that much information, you have to find the good stuff, and that can be incredibly difficult when you're dealing with those volumes.
-
-Name: How to separate fact and fiction online  Author:  Length: 12 Depth: 0.281437125748503 Laughs Until Now: 0 Since Last Laugh: 48 positive: False 
-And nowhere was this brought home more than during Hurricane Sandy.
-
-Name: How to separate fact and fiction online  Author:  Length: 24 Depth: 0.2934131736526946 Laughs Until Now: 1 Since Last Laugh: 1 positive: False 
-And that meant that journalists had to deal with fakes, so we had to deal with old photos that were being reposted.
-
-Name: How to separate fact and fiction online  Author:  Length: 15 Depth: 0.2994011976047904 Laughs Until Now: 1 Since Last Laugh: 2 positive: False 
-We had to deal with composite images that were merging photos from previous storms.
-
-Name: How to separate fact and fiction online  Author:  Length: 21 Depth: 0.31736526946107785 Laughs Until Now: 3 Since Last Laugh: 1 positive: False 
- 
- But joking aside, there were images like this one from Instagram which was subjected to a grilling by journalists.
-
-Name: How to separate fact and fiction online  Author:  Length: 6 Depth: 0.32335329341317365 Laughs Until Now: 3 Since Last Laugh: 2 positive: False 
-They weren't really sure.
-
-Name: How to separate fact and fiction online  Author:  Length: 6 Depth: 0.32934131736526945 Laughs Until Now: 3 Since Last Laugh: 3 positive: False 
-It was filtered in Instagram.
-
-Name: How to separate fact and fiction online  Author:  Length: 5 Depth: 0.33532934131736525 Laughs Until Now: 3 Since Last Laugh: 4 positive: False 
-The lighting was questioned.
-
-Name: How to separate fact and fiction online  Author:  Length: 6 Depth: 0.3413173652694611 Laughs Until Now: 3 Since Last Laugh: 5 positive: False 
-Everything was questioned about it.
-
-Name: How to separate fact and fiction online  Author:  Length: 8 Depth: 0.3473053892215569 Laughs Until Now: 3 Since Last Laugh: 6 positive: False 
-And it turned out to be true.
-
-Name: How to separate fact and fiction online  Author:  Length: 13 Depth: 0.3532934131736527 Laughs Until Now: 3 Since Last Laugh: 7 positive: False 
-It was from Avenue C in downtown Manhattan, which was flooded.
-
-Name: How to separate fact and fiction online  Author:  Length: 33 Depth: 0.3592814371257485 Laughs Until Now: 3 Since Last Laugh: 8 positive: False 
-And the reason that they could tell that it was real was because they could get to the source, and in this case, these guys were New York food bloggers.
-
-Name: How to separate fact and fiction online  Author:  Length: 5 Depth: 0.3652694610778443 Laughs Until Now: 3 Since Last Laugh: 9 positive: False 
-They were well respected.
-
-Name: How to separate fact and fiction online  Author:  Length: 4 Depth: 0.3712574850299401 Laughs Until Now: 3 Since Last Laugh: 10 positive: False 
-They were known.
-
-Name: How to separate fact and fiction online  Author:  Length: 17 Depth: 0.3772455089820359 Laughs Until Now: 3 Since Last Laugh: 11 positive: False 
-So this one wasn't a debunk, it was actually something that they could prove.
-
-Name: How to separate fact and fiction online  Author:  Length: 9 Depth: 0.38323353293413176 Laughs Until Now: 3 Since Last Laugh: 12 positive: False 
-And that was the job of the journalist.
-
-Name: How to separate fact and fiction online  Author:  Length: 7 Depth: 0.38922155688622756 Laughs Until Now: 3 Since Last Laugh: 13 positive: False 
-It was filtering all this stuff.
-
-Name: How to separate fact and fiction online  Author:  Length: 30 Depth: 0.39520958083832336 Laughs Until Now: 3 Since Last Laugh: 14 positive: False 
-And you were, instead of going and finding the information and bringing it back to the reader, you were holding back the stuff that was potentially damaging.
-
-Name: How to separate fact and fiction online  Author:  Length: 24 Depth: 0.40119760479041916 Laughs Until Now: 3 Since Last Laugh: 15 positive: False 
-And finding the source becomes more and more important -- finding the good source -- and Twitter is where most journalists now go.
-
-Name: How to separate fact and fiction online  Author:  Length: 25 Depth: 0.40718562874251496 Laughs Until Now: 3 Since Last Laugh: 16 positive: False 
-It's like the de facto real-time newswire, if you know how to use it, because there is so much on Twitter.
-
-Name: How to separate fact and fiction online  Author:  Length: 21 Depth: 0.41317365269461076 Laughs Until Now: 3 Since Last Laugh: 17 positive: False 
-And a good example of how useful it can be but also how difficult was the Egyptian revolution in 2011.
-
-Name: How to separate fact and fiction online  Author:  Length: 37 Depth: 0.41916167664670656 Laughs Until Now: 3 Since Last Laugh: 18 positive: False 
-As a non-Arabic speaker, as someone who was looking from the outside, from Dublin, Twitter lists, and lists of good sources, people we could establish were credible, were really important.
-
-Name: How to separate fact and fiction online  Author:  Length: 12 Depth: 0.4251497005988024 Laughs Until Now: 3 Since Last Laugh: 19 positive: False 
-And how do you build a list like that from scratch?
-
-Name: How to separate fact and fiction online  Author:  Length: 18 Depth: 0.4311377245508982 Laughs Until Now: 3 Since Last Laugh: 20 positive: False 
-Well, it can be quite difficult, but you have to know what to look for.
-
-Name: How to separate fact and fiction online  Author:  Length: 9 Depth: 0.437125748502994 Laughs Until Now: 3 Since Last Laugh: 21 positive: False 
-This visualization was done by an Italian academic.
-
-Name: How to separate fact and fiction online  Author:  Length: 76 Depth: 0.4431137724550898 Laughs Until Now: 3 Since Last Laugh: 22 positive: False 
-He's called André Pannison, and he basically took the Twitter conversation in Tahrir Square on the day that Hosni Mubarak would eventually resign, and the dots you can see are retweets, so when someone retweets a message, a connection is made between two dots, and the more times that message is retweeted by other people, the more you get to see these nodes, these connections being made.
-
-Name: How to separate fact and fiction online  Author:  Length: 28 Depth: 0.4491017964071856 Laughs Until Now: 3 Since Last Laugh: 23 positive: False 
-And it's an amazing way of visualizing the conversation, but what you get is hints at who is more interesting and who is worth investigating.
-
-Name: How to separate fact and fiction online  Author:  Length: 32 Depth: 0.4550898203592814 Laughs Until Now: 3 Since Last Laugh: 24 positive: False 
-And as the conversation grew and grew, it became more and more lively, and eventually you were left with this huge, big, rhythmic pointer of this conversation.
-
-Name: How to separate fact and fiction online  Author:  Length: 28 Depth: 0.46107784431137727 Laughs Until Now: 3 Since Last Laugh: 25 positive: False 
-You could find the nodes, though, and then you went, and you go, "Right, I've got to investigate these people.
-
-Name: How to separate fact and fiction online  Author:  Length: 10 Depth: 0.46706586826347307 Laughs Until Now: 3 Since Last Laugh: 26 positive: False 
-These are the ones that are obviously making sense.
-
-Name: How to separate fact and fiction online  Author:  Length: 8 Depth: 0.47305389221556887 Laughs Until Now: 3 Since Last Laugh: 27 positive: False 
-Let's see who they are."
-
-Name: How to separate fact and fiction online  Author:  Length: 36 Depth: 0.47904191616766467 Laughs Until Now: 3 Since Last Laugh: 28 positive: False 
-Now in the deluge of information, this is where the real-time web gets really interesting for a journalist like myself, because we have more tools than ever to do that kind of investigation.
-
-Name: How to separate fact and fiction online  Author:  Length: 21 Depth: 0.48502994011976047 Laughs Until Now: 3 Since Last Laugh: 29 positive: False 
-And when you start digging into the sources, you can go further and further than you ever could before.
-
-Name: How to separate fact and fiction online  Author:  Length: 47 Depth: 0.49101796407185627 Laughs Until Now: 3 Since Last Laugh: 30 positive: False 
-Sometimes you come across a piece of content that is so compelling, you want to use it, you're dying to use it, but you're not 100 percent sure if you can because you don't know if the source is credible.
-
-Name: How to separate fact and fiction online  Author:  Length: 10 Depth: 0.49700598802395207 Laughs Until Now: 3 Since Last Laugh: 31 positive: False 
-You don't know if it's a scrape.
-
-Name: How to separate fact and fiction online  Author:  Length: 10 Depth: 0.5029940119760479 Laughs Until Now: 3 Since Last Laugh: 32 positive: False 
-You don't know if it's a re-upload.
-
-Name: How to separate fact and fiction online  Author:  Length: 9 Depth: 0.5089820359281437 Laughs Until Now: 3 Since Last Laugh: 33 positive: False 
-And you have to do that investigative work.
-
-Name: How to separate fact and fiction online  Author:  Length: 23 Depth: 0.5149700598802395 Laughs Until Now: 3 Since Last Laugh: 34 positive: False 
-And this video, which I'm going to let run through, was one we discovered a couple of weeks ago.
-
-Name: How to separate fact and fiction online  Author:  Length: 10 Depth: 0.5209580838323353 Laughs Until Now: 3 Since Last Laugh: 35 positive: False 
-Video: Getting real windy in just a second.
-
-Name: How to separate fact and fiction online  Author:  Length: 13 Depth: 0.5269461077844312 Laughs Until Now: 3 Since Last Laugh: 36 positive: False 
-(Rain and wind sounds) 
- (Explosion) Oh, shit!
-
-Name: How to separate fact and fiction online  Author:  Length: 31 Depth: 0.5329341317365269 Laughs Until Now: 3 Since Last Laugh: 37 positive: False 
-Markham Nolan: Okay, so now if you're a news producer, this is something you'd love to run with, because obviously, this is gold.
-
-Name: How to separate fact and fiction online  Author:  Length: 3 Depth: 0.5389221556886228 Laughs Until Now: 3 Since Last Laugh: 38 positive: False 
-You know?
-
-Name: How to separate fact and fiction online  Author:  Length: 20 Depth: 0.5449101796407185 Laughs Until Now: 3 Since Last Laugh: 39 positive: False 
-This is a fantastic reaction from someone, very genuine video that they've shot in their back garden.
-
-Name: How to separate fact and fiction online  Author:  Length: 33 Depth: 0.5508982035928144 Laughs Until Now: 3 Since Last Laugh: 40 positive: False 
-But how do you find if this person, if it's true, if it's faked, or if it's something that's old and that's been reposted?
-
-Name: How to separate fact and fiction online  Author:  Length: 29 Depth: 0.5568862275449101 Laughs Until Now: 3 Since Last Laugh: 41 positive: False 
-So we set about going to work on this video, and the only thing that we had to go on was the username on the YouTube account.
-
-Name: How to separate fact and fiction online  Author:  Length: 17 Depth: 0.562874251497006 Laughs Until Now: 3 Since Last Laugh: 42 positive: False 
-There was only one video posted to that account, and the username was Rita Krill.
-
-Name: How to separate fact and fiction online  Author:  Length: 16 Depth: 0.5688622754491018 Laughs Until Now: 3 Since Last Laugh: 43 positive: False 
-And we didn't know if Rita existed or if it was a fake name.
-
-Name: How to separate fact and fiction online  Author:  Length: 15 Depth: 0.5748502994011976 Laughs Until Now: 3 Since Last Laugh: 44 positive: False 
-But we started looking, and we used free Internet tools to do so.
-
-Name: How to separate fact and fiction online  Author:  Length: 16 Depth: 0.5808383233532934 Laughs Until Now: 3 Since Last Laugh: 45 positive: False 
-The first one was called Spokeo, which allowed us to look for Rita Krills.
-
-Name: How to separate fact and fiction online  Author:  Length: 24 Depth: 0.5868263473053892 Laughs Until Now: 3 Since Last Laugh: 46 positive: False 
-So we looked all over the U.S. We found them in New York, we found them in Pennsylvania, Nevada and Florida.
-
-Name: How to separate fact and fiction online  Author:  Length: 58 Depth: 0.592814371257485 Laughs Until Now: 3 Since Last Laugh: 47 positive: False 
-So we went and we looked for a second free Internet tool called Wolfram Alpha, and we checked the weather reports for the day in which this video had been uploaded, and when we went through all those various cities, we found that in Florida, there were thunderstorms and rain on the day.
-
-Name: How to separate fact and fiction online  Author:  Length: 46 Depth: 0.5988023952095808 Laughs Until Now: 3 Since Last Laugh: 48 positive: False 
-So we went to the white pages, and we found, we looked through the Rita Krills in the phonebook, and we looked through a couple of different addresses, and that took us to Google Maps, where we found a house.
-
-Name: How to separate fact and fiction online  Author:  Length: 16 Depth: 0.6047904191616766 Laughs Until Now: 3 Since Last Laugh: 49 positive: False 
-And we found a house with a swimming pool that looked remarkably like Rita's.
-
-Name: How to separate fact and fiction online  Author:  Length: 20 Depth: 0.6107784431137725 Laughs Until Now: 3 Since Last Laugh: 50 positive: False 
-So we went back to the video, and we had to look for clues that we could cross-reference.
-
-Name: How to separate fact and fiction online  Author:  Length: 43 Depth: 0.6167664670658682 Laughs Until Now: 3 Since Last Laugh: 51 positive: False 
-So if you look in the video, there's the big umbrella, there's a white lilo in the pool, there are some unusually rounded edges in the swimming pool, and there's two trees in the background.
-
-Name: How to separate fact and fiction online  Author:  Length: 37 Depth: 0.6227544910179641 Laughs Until Now: 3 Since Last Laugh: 52 positive: False 
-And we went back to Google Maps, and we looked a little bit closer, and sure enough, there's the white lilo, there are the two trees, there's the umbrella.
-
-Name: How to separate fact and fiction online  Author:  Length: 8 Depth: 0.6287425149700598 Laughs Until Now: 3 Since Last Laugh: 53 positive: False 
-It's actually folded in this photo.
-
-Name: How to separate fact and fiction online  Author:  Length: 5 Depth: 0.6347305389221557 Laughs Until Now: 3 Since Last Laugh: 54 positive: False 
-Little bit of trickery.
-
-Name: How to separate fact and fiction online  Author:  Length: 11 Depth: 0.6407185628742516 Laughs Until Now: 3 Since Last Laugh: 55 positive: False 
-And there are the rounded edges on the swimming pool.
-
-Name: How to separate fact and fiction online  Author:  Length: 37 Depth: 0.6467065868263473 Laughs Until Now: 3 Since Last Laugh: 56 positive: False 
-So we were able to call Rita, clear the video, make sure that it had been shot, and then our clients were delighted because they were able to run it without being worried.
-
-Name: How to separate fact and fiction online  Author:  Length: 22 Depth: 0.6526946107784432 Laughs Until Now: 3 Since Last Laugh: 57 positive: False 
-Sometimes the search for truth, though, is a little bit less flippant, and it has much greater consequences.
-
-Name: How to separate fact and fiction online  Author:  Length: 51 Depth: 0.6586826347305389 Laughs Until Now: 3 Since Last Laugh: 58 positive: False 
-Syria has been really interesting for us, because obviously a lot of the time you're trying to debunk stuff that can be potentially war crime evidence, so this is where YouTube actually becomes the most important repository of information about what's going on in the world.
-
-Name: How to separate fact and fiction online  Author:  Length: 30 Depth: 0.6646706586826348 Laughs Until Now: 3 Since Last Laugh: 59 positive: False 
-So this video, I'm not going to show you the whole thing, because it's quite gruesome, but you'll hear some of the sounds.
-
-Name: How to separate fact and fiction online  Author:  Length: 5 Depth: 0.6706586826347305 Laughs Until Now: 3 Since Last Laugh: 60 positive: False 
-This is from Hama.
-
-Name: How to separate fact and fiction online  Author:  Length: 35 Depth: 0.6766467065868264 Laughs Until Now: 3 Since Last Laugh: 61 positive: False 
-Video: (Shouting) And what this video shows, when you watch the whole thing through, is bloody bodies being taken out of a pickup truck and thrown off a bridge.
-
-Name: How to separate fact and fiction online  Author:  Length: 55 Depth: 0.6826347305389222 Laughs Until Now: 3 Since Last Laugh: 62 positive: False 
-The allegations were that these guys were Muslim Brotherhood and they were throwing Syrian Army officers' bodies off the bridge, and they were cursing and using blasphemous language, and there were lots of counterclaims about who they were, and whether or not they were what the video said it was.
-
-Name: How to separate fact and fiction online  Author:  Length: 41 Depth: 0.688622754491018 Laughs Until Now: 3 Since Last Laugh: 63 positive: False 
-So we talked to some sources in Hama who we had been back and forth with on Twitter, and we asked them about this, and the bridge was interesting to us because it was something we could identify.
-
-Name: How to separate fact and fiction online  Author:  Length: 11 Depth: 0.6946107784431138 Laughs Until Now: 3 Since Last Laugh: 64 positive: False 
-Three different sources said three different things about the bridge.
-
-Name: How to separate fact and fiction online  Author:  Length: 11 Depth: 0.7005988023952096 Laughs Until Now: 3 Since Last Laugh: 65 positive: False 
-They said, one, the bridge doesn't exist.
-
-Name: How to separate fact and fiction online  Author:  Length: 15 Depth: 0.7065868263473054 Laughs Until Now: 3 Since Last Laugh: 66 positive: False 
-Another one said the bridge does exist, but it's not in Hama.
-
-Name: How to separate fact and fiction online  Author:  Length: 5 Depth: 0.7125748502994012 Laughs Until Now: 3 Since Last Laugh: 67 positive: False 
-It's somewhere else.
-
-Name: How to separate fact and fiction online  Author:  Length: 41 Depth: 0.718562874251497 Laughs Until Now: 3 Since Last Laugh: 68 positive: False 
-And the third one said, "I think the bridge does exist, but the dam upstream of the bridge was closed, so the river should actually have been dry, so this doesn't make sense."
-
-Name: How to separate fact and fiction online  Author:  Length: 12 Depth: 0.7245508982035929 Laughs Until Now: 3 Since Last Laugh: 69 positive: False 
-So that was the only one that gave us a clue.
-
-Name: How to separate fact and fiction online  Author:  Length: 9 Depth: 0.7305389221556886 Laughs Until Now: 3 Since Last Laugh: 70 positive: False 
-We looked through the video for other clues.
-
-Name: How to separate fact and fiction online  Author:  Length: 11 Depth: 0.7365269461077845 Laughs Until Now: 3 Since Last Laugh: 71 positive: False 
-We saw the distinctive railings, which we could use.
-
-Name: How to separate fact and fiction online  Author:  Length: 6 Depth: 0.7425149700598802 Laughs Until Now: 3 Since Last Laugh: 72 positive: False 
-We looked at the curbs.
-
-Name: How to separate fact and fiction online  Author:  Length: 20 Depth: 0.7485029940119761 Laughs Until Now: 3 Since Last Laugh: 73 positive: False 
-The curbs were throwing shadows south, so we could tell the bridge was running east-west across the river.
-
-Name: How to separate fact and fiction online  Author:  Length: 5 Depth: 0.7544910179640718 Laughs Until Now: 3 Since Last Laugh: 74 positive: False 
-It had black-and-white curbs.
-
-Name: How to separate fact and fiction online  Author:  Length: 21 Depth: 0.7604790419161677 Laughs Until Now: 3 Since Last Laugh: 75 positive: False 
-As we looked at the river itself, you could see there's a concrete stone on the west side.
-
-Name: How to separate fact and fiction online  Author:  Length: 7 Depth: 0.7664670658682635 Laughs Until Now: 3 Since Last Laugh: 76 positive: False 
-There's a cloud of blood.
-
-Name: How to separate fact and fiction online  Author:  Length: 7 Depth: 0.7724550898203593 Laughs Until Now: 3 Since Last Laugh: 77 positive: False 
-That's blood in the river.
-
-Name: How to separate fact and fiction online  Author:  Length: 9 Depth: 0.7784431137724551 Laughs Until Now: 3 Since Last Laugh: 78 positive: False 
-So the river is flowing south to north.
-
-Name: How to separate fact and fiction online  Author:  Length: 7 Depth: 0.7844311377245509 Laughs Until Now: 3 Since Last Laugh: 79 positive: False 
-That's what that tells me.
-
-Name: How to separate fact and fiction online  Author:  Length: 28 Depth: 0.7904191616766467 Laughs Until Now: 3 Since Last Laugh: 80 positive: False 
-And also, as you look away from the bridge, there's a divot on the left-hand side of the bank, and the river narrows.
-
-Name: How to separate fact and fiction online  Author:  Length: 17 Depth: 0.7964071856287425 Laughs Until Now: 3 Since Last Laugh: 81 positive: False 
-So onto Google Maps we go, and we start looking through literally every single bridge.
-
-Name: How to separate fact and fiction online  Author:  Length: 33 Depth: 0.8023952095808383 Laughs Until Now: 3 Since Last Laugh: 82 positive: False 
-We go to the dam that we talked about, we start just literally going through every time that road crosses the river, crossing off the bridges that don't match.
-
-Name: How to separate fact and fiction online  Author:  Length: 9 Depth: 0.8083832335329342 Laughs Until Now: 3 Since Last Laugh: 83 positive: False 
-We're looking for one that crosses east-west.
-
-Name: How to separate fact and fiction online  Author:  Length: 6 Depth: 0.8143712574850299 Laughs Until Now: 3 Since Last Laugh: 84 positive: False 
-And we get to Hama.
-
-Name: How to separate fact and fiction online  Author:  Length: 16 Depth: 0.8203592814371258 Laughs Until Now: 3 Since Last Laugh: 85 positive: False 
-We get all the way from the dam to Hama and there's no bridge.
-
-Name: How to separate fact and fiction online  Author:  Length: 7 Depth: 0.8263473053892215 Laughs Until Now: 3 Since Last Laugh: 86 positive: False 
-So we go a bit further.
-
-Name: How to separate fact and fiction online  Author:  Length: 20 Depth: 0.8323353293413174 Laughs Until Now: 3 Since Last Laugh: 87 positive: False 
-We switch to the satellite view, and we find another bridge, and everything starts to line up.
-
-Name: How to separate fact and fiction online  Author:  Length: 13 Depth: 0.8383233532934131 Laughs Until Now: 3 Since Last Laugh: 88 positive: False 
-The bridge looks like it's crossing the river east to west.
-
-Name: How to separate fact and fiction online  Author:  Length: 7 Depth: 0.844311377245509 Laughs Until Now: 3 Since Last Laugh: 89 positive: False 
-So this could be our bridge.
-
-Name: How to separate fact and fiction online  Author:  Length: 6 Depth: 0.8502994011976048 Laughs Until Now: 3 Since Last Laugh: 90 positive: False 
-And we zoom right in.
-
-Name: How to separate fact and fiction online  Author:  Length: 18 Depth: 0.8562874251497006 Laughs Until Now: 3 Since Last Laugh: 91 positive: False 
-We start to see that it's got a median, so it's a two-lane bridge.
-
-Name: How to separate fact and fiction online  Author:  Length: 46 Depth: 0.8622754491017964 Laughs Until Now: 3 Since Last Laugh: 92 positive: False 
-And it's got the black-and-white curbs that we saw in the video, and as we click through it, you can see someone's uploaded photos to go with the map, which is very handy, so we click into the photos.
-
-Name: How to separate fact and fiction online  Author:  Length: 16 Depth: 0.8682634730538922 Laughs Until Now: 3 Since Last Laugh: 93 positive: False 
-And the photos start showing us more detail that we can cross-reference with the video.
-
-Name: How to separate fact and fiction online  Author:  Length: 22 Depth: 0.874251497005988 Laughs Until Now: 3 Since Last Laugh: 94 positive: False 
-The first thing that we see is we see black-and-white curbing, which is handy because we've seen that before.
-
-Name: How to separate fact and fiction online  Author:  Length: 15 Depth: 0.8802395209580839 Laughs Until Now: 3 Since Last Laugh: 95 positive: False 
-We see the distinctive railing that we saw the guys throwing the bodies over.
-
-Name: How to separate fact and fiction online  Author:  Length: 16 Depth: 0.8862275449101796 Laughs Until Now: 3 Since Last Laugh: 96 positive: False 
-And we keep going through it until we're certain that this is our bridge.
-
-Name: How to separate fact and fiction online  Author:  Length: 7 Depth: 0.8922155688622755 Laughs Until Now: 3 Since Last Laugh: 97 positive: False 
-So what does that tell me?
-
-Name: How to separate fact and fiction online  Author:  Length: 66 Depth: 0.8982035928143712 Laughs Until Now: 3 Since Last Laugh: 98 positive: False 
-I've got to go back now to my three sources and look at what they told me: the one who said the bridge didn't exist, the one who said the bridge wasn't in Hama, and the one guy who said, "Yes, the bridge does exist, but I'm not sure about the water levels."
-
-Name: How to separate fact and fiction online  Author:  Length: 43 Depth: 0.9041916167664671 Laughs Until Now: 3 Since Last Laugh: 99 positive: False 
-Number three is looking like the most truthful all of a sudden, and we've been able to find that out using some free Internet tools sitting in a cubicle in an office in Dublin in the space of 20 minutes.
-
-Name: How to separate fact and fiction online  Author:  Length: 10 Depth: 0.9101796407185628 Laughs Until Now: 3 Since Last Laugh: 100 positive: False 
-And that's part of the joy of this.
-
-Name: How to separate fact and fiction online  Author:  Length: 41 Depth: 0.9161676646706587 Laughs Until Now: 3 Since Last Laugh: 101 positive: False 
-Although the web is running like a torrent, there's so much information there that it's incredibly hard to sift and getting harder every day, if you use them intelligently, you can find out incredible information.
-
-Name: How to separate fact and fiction online  Author:  Length: 31 Depth: 0.9221556886227545 Laughs Until Now: 3 Since Last Laugh: 102 positive: False 
-Given a couple of clues, I could probably find out a lot of things about most of you in the audience that you might not like me finding out.
-
-Name: How to separate fact and fiction online  Author:  Length: 40 Depth: 0.9281437125748503 Laughs Until Now: 3 Since Last Laugh: 103 positive: False 
-But what it tells me is that, at a time when there's more -- there's a greater abundance of information than there ever has been, it's harder to filter, we have greater tools.
-
-Name: How to separate fact and fiction online  Author:  Length: 17 Depth: 0.9341317365269461 Laughs Until Now: 3 Since Last Laugh: 104 positive: False 
-We have free Internet tools that allow us, help us do this kind of investigation.
-
-Name: How to separate fact and fiction online  Author:  Length: 19 Depth: 0.9401197604790419 Laughs Until Now: 3 Since Last Laugh: 105 positive: False 
-We have algorithms that are smarter than ever before, and computers that are quicker than ever before.
-
-Name: How to separate fact and fiction online  Author:  Length: 6 Depth: 0.9461077844311377 Laughs Until Now: 3 Since Last Laugh: 106 positive: False 
-But here's the thing.
-
-Name: How to separate fact and fiction online  Author:  Length: 4 Depth: 0.9520958083832335 Laughs Until Now: 3 Since Last Laugh: 107 positive: False 
-Algorithms are rules.
-
-Name: How to separate fact and fiction online  Author:  Length: 4 Depth: 0.9580838323353293 Laughs Until Now: 3 Since Last Laugh: 108 positive: False 
-They're binary.
-
-Name: How to separate fact and fiction online  Author:  Length: 12 Depth: 0.9640718562874252 Laughs Until Now: 3 Since Last Laugh: 109 positive: False 
-They're yes or no, they're black or white.
-
-Name: How to separate fact and fiction online  Author:  Length: 5 Depth: 0.9700598802395209 Laughs Until Now: 3 Since Last Laugh: 110 positive: False 
-Truth is never binary.
-
-Name: How to separate fact and fiction online  Author:  Length: 5 Depth: 0.9760479041916168 Laughs Until Now: 3 Since Last Laugh: 111 positive: False 
-Truth is a value.
-
-Name: How to separate fact and fiction online  Author:  Length: 16 Depth: 0.9820359281437125 Laughs Until Now: 3 Since Last Laugh: 112 positive: False 
-Truth is emotional, it's fluid, and above all, it's human.
-
-Name: How to separate fact and fiction online  Author:  Length: 43 Depth: 0.9880239520958084 Laughs Until Now: 3 Since Last Laugh: 113 positive: False 
-No matter how quick we get with computers, no matter how much information we have, you'll never be able to remove the human from the truth-seeking exercise, because in the end, it is a uniquely human trait.
-
-Name: How to separate fact and fiction online  Author:  Length: 4 Depth: 0.9940119760479041 Laughs Until Now: 3 Since Last Laugh: 114 positive: False 
-Thanks very much.  
-
 Name: A one-woman global village  Author:  Length: 24 Depth: 0.0 Laughs Until Now: 0 Since Last Laugh: 1 positive: False 
-I should tell you that when I was asked to be here, I thought to myself that well, it's TED.
+Personal Pronouns: 0.03260869565217391 noun_percentage: 2 adj_percentage: 1 verb_percentage: 0
+
 
 Name: A one-woman global village  Author:  Length: 30 Depth: 0.0038910505836575876 Laughs Until Now: 0 Since Last Laugh: 2 positive: False 
-And these TEDsters are -- you know, as innocent as that name sounds -- these are the philanthropists and artists and scientists who sort of shape our world.
+Personal Pronouns: 0.0 noun_percentage: 2 adj_percentage: 2 verb_percentage: 0
+
 
 Name: A one-woman global village  Author:  Length: 22 Depth: 0.007782101167315175 Laughs Until Now: 0 Since Last Laugh: 3 positive: False 
-And what could I possibly have to say that would be distinguished enough to justify my participation in something like that?
+Personal Pronouns: 0.008064516129032258 noun_percentage: 2 adj_percentage: 1 verb_percentage: 1
+
 
 Name: A one-woman global village  Author:  Length: 16 Depth: 0.011673151750972763 Laughs Until Now: 0 Since Last Laugh: 4 positive: False 
-And so I thought perhaps a really civilized-sounding British accent might help things a bit.
+Personal Pronouns: 0.010869565217391304 noun_percentage: 2 adj_percentage: 2 verb_percentage: 1
+
 
 Name: A one-woman global village  Author:  Length: 8 Depth: 0.01556420233463035 Laughs Until Now: 0 Since Last Laugh: 5 positive: False 
-And then I thought no, no.
+Personal Pronouns: 0.038461538461538464 noun_percentage: 2 adj_percentage: 2 verb_percentage: 0
+
 
 Name: A one-woman global village  Author:  Length: 28 Depth: 0.019455252918287938 Laughs Until Now: 0 Since Last Laugh: 6 positive: False 
-I should just get up there and be myself and just talk the way I really talk because, after all, this is the great unveiling.
+Personal Pronouns: 0.016 noun_percentage: 2 adj_percentage: 2 verb_percentage: 0
+
 
 Name: A one-woman global village  Author:  Length: 17 Depth: 0.023346303501945526 Laughs Until Now: 0 Since Last Laugh: 7 positive: False 
-And so I thought I'd come up here and unveil my real voice to you.
+Personal Pronouns: 0.030303030303030304 noun_percentage: 2 adj_percentage: 2 verb_percentage: 0
+
 
 Name: A one-woman global village  Author:  Length: 13 Depth: 0.0311284046692607 Laughs Until Now: 1 Since Last Laugh: 1 positive: False 
- But the theme of this session, of course, is invention.
+Personal Pronouns: 0.0 noun_percentage: 2 adj_percentage: 2 verb_percentage: 1
+
 
 Name: A one-woman global village  Author:  Length: 25 Depth: 0.03501945525291829 Laughs Until Now: 1 Since Last Laugh: 2 positive: False 
-And while I don't have any patents that I'm aware of, you will be meeting a few of my inventions today.
+Personal Pronouns: 0.019417475728155338 noun_percentage: 2 adj_percentage: 1 verb_percentage: 1
+
 
 Name: A one-woman global village  Author:  Length: 19 Depth: 0.038910505836575876 Laughs Until Now: 1 Since Last Laugh: 3 positive: False 
-I suppose it's fair to say that I am interested in the invention of self or selves.
+Personal Pronouns: 0.024096385542168676 noun_percentage: 2 adj_percentage: 1 verb_percentage: 1
+
 
 Name: A one-woman global village  Author:  Length: 21 Depth: 0.042801556420233464 Laughs Until Now: 1 Since Last Laugh: 4 positive: False 
-We're all born into certain circumstances with particular physical traits, unique developmental experiences, geographical and historical contexts.
+Personal Pronouns: 0.0 noun_percentage: 2 adj_percentage: 1 verb_percentage: 0
+
 
 Name: A one-woman global village  Author:  Length: 4 Depth: 0.04669260700389105 Laughs Until Now: 1 Since Last Laugh: 5 positive: False 
-But then what?
+Personal Pronouns: 0.0 noun_percentage: 2 adj_percentage: 2 verb_percentage: 0
+
 
 Name: A one-woman global village  Author:  Length: 11 Depth: 0.05058365758754864 Laughs Until Now: 1 Since Last Laugh: 6 positive: False 
-To what extent do we self-construct, do we self-invent?
+Personal Pronouns: 0.0 noun_percentage: 2 adj_percentage: 1 verb_percentage: 0
+
 
 Name: A one-woman global village  Author:  Length: 11 Depth: 0.054474708171206226 Laughs Until Now: 1 Since Last Laugh: 7 positive: False 
-How do we self-identify and how mutable is that identity?
+Personal Pronouns: 0.0 noun_percentage: 2 adj_percentage: 1 verb_percentage: 1
+
 
 Name: A one-woman global village  Author:  Length: 12 Depth: 0.058365758754863814 Laughs Until Now: 1 Since Last Laugh: 8 positive: False 
-Like, what if one could be anyone at any time?
+Personal Pronouns: 0.0 noun_percentage: 2 adj_percentage: 2 verb_percentage: 1
+
 
 Name: A one-woman global village  Author:  Length: 22 Depth: 0.0622568093385214 Laughs Until Now: 1 Since Last Laugh: 9 positive: False 
-Well my characters, like the ones in my shows, allow me to play with the spaces between those questions.
+Personal Pronouns: 0.0 noun_percentage: 2 adj_percentage: 1 verb_percentage: 0
+
 
 Name: A one-woman global village  Author:  Length: 12 Depth: 0.06614785992217899 Laughs Until Now: 1 Since Last Laugh: 10 positive: False 
-And so I've brought a couple of them with me.
+Personal Pronouns: 0.022222222222222223 noun_percentage: 2 adj_percentage: 2 verb_percentage: 0
+
 
 Name: A one-woman global village  Author:  Length: 8 Depth: 0.07003891050583658 Laughs Until Now: 1 Since Last Laugh: 11 positive: False 
-And well, they're very excited.
+Personal Pronouns: 0.0 noun_percentage: 2 adj_percentage: 1 verb_percentage: 0
+
 
 Name: A one-woman global village  Author:  Length: 23 Depth: 0.07392996108949416 Laughs Until Now: 1 Since Last Laugh: 12 positive: False 
-What I should tell you -- what I should tell you is that they've each prepared their own little TED talks.
+Personal Pronouns: 0.018867924528301886 noun_percentage: 2 adj_percentage: 1 verb_percentage: 1
+
 
 Name: A one-woman global village  Author:  Length: 2 Depth: 0.08171206225680934 Laughs Until Now: 2 Since Last Laugh: 1 positive: False 
- 
- Okay.
+Personal Pronouns: 0.0 noun_percentage: 2 adj_percentage: 2 verb_percentage: 0
+
 
 Name: A one-woman global village  Author:  Length: 2 Depth: 0.08560311284046693 Laughs Until Now: 2 Since Last Laugh: 2 positive: False 
-Okay.
+Personal Pronouns: 0.0 noun_percentage: 2 adj_percentage: 0 verb_percentage: 1
+
 
 Name: A one-woman global village  Author:  Length: 4 Depth: 0.08949416342412451 Laughs Until Now: 2 Since Last Laugh: 3 positive: False 
-Oh, well.
+Personal Pronouns: 0.0 noun_percentage: 2 adj_percentage: 2 verb_percentage: 0
+
 
 Name: A one-woman global village  Author:  Length: 4 Depth: 0.0933852140077821 Laughs Until Now: 2 Since Last Laugh: 4 positive: False 
-Oh, wonderful.
+Personal Pronouns: 0.0 noun_percentage: 2 adj_percentage: 2 verb_percentage: 0
+
 
 Name: A one-woman global village  Author:  Length: 4 Depth: 0.09727626459143969 Laughs Until Now: 2 Since Last Laugh: 5 positive: False 
-Good evening everybody.
+Personal Pronouns: 0.0 noun_percentage: 2 adj_percentage: 2 verb_percentage: 1
+
 
 Name: A one-woman global village  Author:  Length: 11 Depth: 0.10116731517509728 Laughs Until Now: 2 Since Last Laugh: 6 positive: False 
-Thank you so very much for having me here today.
+Personal Pronouns: 0.0 noun_percentage: 2 adj_percentage: 1 verb_percentage: 0
+
 
 Name: A one-woman global village  Author:  Length: 7 Depth: 0.10505836575875487 Laughs Until Now: 2 Since Last Laugh: 7 positive: False 
-Ah, thank you very much.
+Personal Pronouns: 0.0 noun_percentage: 2 adj_percentage: 2 verb_percentage: 0
+
 
 Name: A one-woman global village  Author:  Length: 6 Depth: 0.10894941634241245 Laughs Until Now: 2 Since Last Laugh: 8 positive: False 
-My name is Lorraine Levine.
+Personal Pronouns: 0.037037037037037035 noun_percentage: 2 adj_percentage: 1 verb_percentage: 1
+
 
 Name: A one-woman global village  Author:  Length: 3 Depth: 0.11284046692607004 Laughs Until Now: 2 Since Last Laugh: 9 positive: False 
-Oh my!
+Personal Pronouns: 0.0 noun_percentage: 2 adj_percentage: 0 verb_percentage: 0
+
 
 Name: A one-woman global village  Author:  Length: 7 Depth: 0.11673151750972763 Laughs Until Now: 2 Since Last Laugh: 10 positive: False 
-There's so many of you.
+Personal Pronouns: 0.0 noun_percentage: 2 adj_percentage: 2 verb_percentage: 0
+
 
 Name: A one-woman global village  Author:  Length: 3 Depth: 0.12062256809338522 Laughs Until Now: 2 Since Last Laugh: 11 positive: False 
-Hi sweetheart.
+Personal Pronouns: 0.0 noun_percentage: 2 adj_percentage: 0 verb_percentage: 1
+
 
 Name: A one-woman global village  Author:  Length: 14 Depth: 0.12840466926070038 Laughs Until Now: 3 Since Last Laugh: 1 positive: False 
- Anyway, I am here because of a young girl, Sarah Jones.
+Personal Pronouns: 0.017857142857142856 noun_percentage: 2 adj_percentage: 2 verb_percentage: 1
+
 
 Name: A one-woman global village  Author:  Length: 10 Depth: 0.13229571984435798 Laughs Until Now: 3 Since Last Laugh: 2 positive: False 
-She's a very nice, young black girl.
+Personal Pronouns: 0.0 noun_percentage: 2 adj_percentage: 1 verb_percentage: 0
+
 
 Name: A one-woman global village  Author:  Length: 23 Depth: 0.13618677042801555 Laughs Until Now: 3 Since Last Laugh: 3 positive: False 
-Well you know, she calls herself black -- she's really more like a caramel color if you look at her.
+Personal Pronouns: 0.0 noun_percentage: 2 adj_percentage: 1 verb_percentage: 0
+
 
 Name: A one-woman global village  Author:  Length: 19 Depth: 0.14396887159533073 Laughs Until Now: 4 Since Last Laugh: 1 positive: False 
- She has me here because she puts me in her show, what she calls her one-woman show.
+Personal Pronouns: 0.0 noun_percentage: 2 adj_percentage: 1 verb_percentage: 0
+
 
 Name: A one-woman global village  Author:  Length: 10 Depth: 0.14785992217898833 Laughs Until Now: 4 Since Last Laugh: 2 positive: False 
-And you know what that means, of course.
+Personal Pronouns: 0.0 noun_percentage: 2 adj_percentage: 2 verb_percentage: 1
+
 
 Name: A one-woman global village  Author:  Length: 19 Depth: 0.1517509727626459 Laughs Until Now: 4 Since Last Laugh: 3 positive: False 
-That means she takes the credit and then makes us come out here and do all the work.
+Personal Pronouns: 0.0 noun_percentage: 2 adj_percentage: 1 verb_percentage: 0
+
 
 Name: A one-woman global village  Author:  Length: 6 Depth: 0.1556420233463035 Laughs Until Now: 4 Since Last Laugh: 4 positive: False 
-But I don't mind.
+Personal Pronouns: 0.058823529411764705 noun_percentage: 2 adj_percentage: 2 verb_percentage: 0
+
 
 Name: A one-woman global village  Author:  Length: 23 Depth: 0.15953307392996108 Laughs Until Now: 4 Since Last Laugh: 5 positive: False 
-Frankly, I'm kvelling just to be here with all the luminaries you have attending something like this, you know.
+Personal Pronouns: 0.009009009009009009 noun_percentage: 2 adj_percentage: 1 verb_percentage: 0
+
 
 Name: A one-woman global village  Author:  Length: 6 Depth: 0.16342412451361868 Laughs Until Now: 4 Since Last Laugh: 6 positive: False 
-Really, it's amazing.
+Personal Pronouns: 0.0 noun_percentage: 2 adj_percentage: 1 verb_percentage: 1
+
 
 Name: A one-woman global village  Author:  Length: 20 Depth: 0.16731517509727625 Laughs Until Now: 4 Since Last Laugh: 7 positive: False 
-Not only, of course, the scientists and all the wonderful giants of the industries but the celebrities.
+Personal Pronouns: 0.009708737864077669 noun_percentage: 2 adj_percentage: 1 verb_percentage: 1
+
 
 Name: A one-woman global village  Author:  Length: 9 Depth: 0.17120622568093385 Laughs Until Now: 4 Since Last Laugh: 8 positive: False 
-There are so many celebrities running around here.
+Personal Pronouns: 0.0 noun_percentage: 2 adj_percentage: 2 verb_percentage: 1
+
 
 Name: A one-woman global village  Author:  Length: 9 Depth: 0.17509727626459143 Laughs Until Now: 4 Since Last Laugh: 9 positive: False 
-I saw -- Glenn Close I saw earlier.
+Personal Pronouns: 0.05714285714285714 noun_percentage: 2 adj_percentage: 1 verb_percentage: 0
+
 
 Name: A one-woman global village  Author:  Length: 4 Depth: 0.17898832684824903 Laughs Until Now: 4 Since Last Laugh: 10 positive: False 
-I love her.
+Personal Pronouns: 0.09090909090909091 noun_percentage: 2 adj_percentage: 1 verb_percentage: 0
+
 
 Name: A one-woman global village  Author:  Length: 11 Depth: 0.1828793774319066 Laughs Until Now: 4 Since Last Laugh: 11 positive: False 
-And she was getting a yogurt in the Google cafe.
+Personal Pronouns: 0.0 noun_percentage: 2 adj_percentage: 2 verb_percentage: 1
+
 
 Name: A one-woman global village  Author:  Length: 11 Depth: 0.19066147859922178 Laughs Until Now: 5 Since Last Laugh: 1 positive: False 
- So many others you see, they're just wonderful.
+Personal Pronouns: 0.020833333333333332 noun_percentage: 2 adj_percentage: 2 verb_percentage: 0
+
 
 Name: A one-woman global village  Author:  Length: 12 Depth: 0.19455252918287938 Laughs Until Now: 5 Since Last Laugh: 2 positive: False 
-It's lovely to know they're concerned, you know.
+Personal Pronouns: 0.020833333333333332 noun_percentage: 2 adj_percentage: 2 verb_percentage: 1
+
 
 Name: A one-woman global village  Author:  Length: 9 Depth: 0.19844357976653695 Laughs Until Now: 5 Since Last Laugh: 3 positive: False 
-And -- oh, I saw Goldie Hawn.
+Personal Pronouns: 0.034482758620689655 noun_percentage: 2 adj_percentage: 1 verb_percentage: 1
+
 
 Name: A one-woman global village  Author:  Length: 5 Depth: 0.20233463035019456 Laughs Until Now: 5 Since Last Laugh: 4 positive: False 
-Oh, Goldie Hawn.
+Personal Pronouns: 0.0 noun_percentage: 2 adj_percentage: 0 verb_percentage: 1
+
 
 Name: A one-woman global village  Author:  Length: 10 Depth: 0.20622568093385213 Laughs Until Now: 5 Since Last Laugh: 5 positive: False 
-I love her, too; she's wonderful.
+Personal Pronouns: 0.030303030303030304 noun_percentage: 2 adj_percentage: 2 verb_percentage: 0
+
 
 Name: A one-woman global village  Author:  Length: 2 Depth: 0.21011673151750973 Laughs Until Now: 5 Since Last Laugh: 6 positive: False 
-Yeah.
+Personal Pronouns: 0.0 noun_percentage: 2 adj_percentage: 0 verb_percentage: 1
+
 
 Name: A one-woman global village  Author:  Length: 9 Depth: 0.2140077821011673 Laughs Until Now: 5 Since Last Laugh: 7 positive: False 
-You know, she's only half Jewish.
+Personal Pronouns: 0.0 noun_percentage: 2 adj_percentage: 1 verb_percentage: 2
+
 
 Name: A one-woman global village  Author:  Length: 7 Depth: 0.2178988326848249 Laughs Until Now: 5 Since Last Laugh: 8 positive: False 
-Did you know that about her?
+Personal Pronouns: 0.0 noun_percentage: 2 adj_percentage: 2 verb_percentage: 1
+
 
 Name: A one-woman global village  Author:  Length: 2 Depth: 0.22178988326848248 Laughs Until Now: 5 Since Last Laugh: 9 positive: False 
-Yeah.
+Personal Pronouns: 0.0 noun_percentage: 2 adj_percentage: 0 verb_percentage: 1
+
 
 Name: A one-woman global village  Author:  Length: 16 Depth: 0.22957198443579765 Laughs Until Now: 6 Since Last Laugh: 1 positive: False 
- And I -- you know, when I saw her, such a wonderful feeling.
+Personal Pronouns: 0.03278688524590164 noun_percentage: 2 adj_percentage: 2 verb_percentage: 0
+
 
 Name: A one-woman global village  Author:  Length: 6 Depth: 0.23346303501945526 Laughs Until Now: 6 Since Last Laugh: 2 positive: False 
-Yeah, she's lovely.
+Personal Pronouns: 0.0 noun_percentage: 2 adj_percentage: 1 verb_percentage: 0
+
 
 Name: A one-woman global village  Author:  Length: 15 Depth: 0.23735408560311283 Laughs Until Now: 6 Since Last Laugh: 3 positive: False 
-But anyway, I should have started by saying just how lucky I feel.
+Personal Pronouns: 0.030303030303030304 noun_percentage: 2 adj_percentage: 2 verb_percentage: 1
+
 
 Name: A one-woman global village  Author:  Length: 10 Depth: 0.24124513618677043 Laughs Until Now: 6 Since Last Laugh: 4 positive: False 
-It's such an eye-opening experience to be here.
+Personal Pronouns: 0.02127659574468085 noun_percentage: 2 adj_percentage: 2 verb_percentage: 0
+
 
 Name: A one-woman global village  Author:  Length: 14 Depth: 0.245136186770428 Laughs Until Now: 6 Since Last Laugh: 5 positive: False 
-You're all so responsible for this world that we live in today.
+Personal Pronouns: 0.0 noun_percentage: 2 adj_percentage: 1 verb_percentage: 1
+
 
 Name: A one-woman global village  Author:  Length: 17 Depth: 0.2490272373540856 Laughs Until Now: 6 Since Last Laugh: 6 positive: False 
-You know, I couldn't have dreamed of such a thing as a young girl.
+Personal Pronouns: 0.015151515151515152 noun_percentage: 2 adj_percentage: 2 verb_percentage: 1
+
 
 Name: A one-woman global village  Author:  Length: 20 Depth: 0.2529182879377432 Laughs Until Now: 6 Since Last Laugh: 7 positive: False 
-And you've all made these advancements happen in such a short time -- you're all so young.
+Personal Pronouns: 0.0 noun_percentage: 2 adj_percentage: 2 verb_percentage: 0
+
 
 Name: A one-woman global village  Author:  Length: 10 Depth: 0.25680933852140075 Laughs Until Now: 6 Since Last Laugh: 8 positive: False 
-You know, your parents must be very proud.
+Personal Pronouns: 0.0 noun_percentage: 2 adj_percentage: 1 verb_percentage: 1
+
 
 Name: A one-woman global village  Author:  Length: 13 Depth: 0.2607003891050584 Laughs Until Now: 6 Since Last Laugh: 9 positive: False 
-But I -- I also appreciate the diversity that you have here.
+Personal Pronouns: 0.03333333333333333 noun_percentage: 2 adj_percentage: 0 verb_percentage: 1
+
 
 Name: A one-woman global village  Author:  Length: 7 Depth: 0.26459143968871596 Laughs Until Now: 6 Since Last Laugh: 10 positive: False 
-I noticed it's very multicultural.
+Personal Pronouns: 0.029411764705882353 noun_percentage: 2 adj_percentage: 2 verb_percentage: 1
+
 
 Name: A one-woman global village  Author:  Length: 18 Depth: 0.26848249027237353 Laughs Until Now: 6 Since Last Laugh: 11 positive: False 
-You know, when you're standing up here, you can see all the different people.
+Personal Pronouns: 0.0 noun_percentage: 2 adj_percentage: 1 verb_percentage: 1
+
 
 Name: A one-woman global village  Author:  Length: 6 Depth: 0.2723735408560311 Laughs Until Now: 6 Since Last Laugh: 12 positive: False 
-It's like a rainbow.
+Personal Pronouns: 0.05 noun_percentage: 2 adj_percentage: 1 verb_percentage: 1
+
 
 Name: A one-woman global village  Author:  Length: 7 Depth: 0.27626459143968873 Laughs Until Now: 6 Since Last Laugh: 13 positive: False 
-It's okay to say rainbow.
+Personal Pronouns: 0.04 noun_percentage: 2 adj_percentage: 1 verb_percentage: 1
+
 
 Name: A one-woman global village  Author:  Length: 2 Depth: 0.2801556420233463 Laughs Until Now: 6 Since Last Laugh: 14 positive: False 
-Yeah.
+Personal Pronouns: 0.0 noun_percentage: 2 adj_percentage: 0 verb_percentage: 1
+
 
 Name: A one-woman global village  Author:  Length: 21 Depth: 0.2840466926070039 Laughs Until Now: 6 Since Last Laugh: 15 positive: False 
-I just -- I can't keep up with whether you can say, you know, the different things.
+Personal Pronouns: 0.024096385542168676 noun_percentage: 2 adj_percentage: 1 verb_percentage: 1
+
 
 Name: A one-woman global village  Author:  Length: 10 Depth: 0.28793774319066145 Laughs Until Now: 6 Since Last Laugh: 16 positive: False 
-What are you allowed to say or not say?
+Personal Pronouns: 0.0 noun_percentage: 2 adj_percentage: 0 verb_percentage: 1
+
 
 Name: A one-woman global village  Author:  Length: 11 Depth: 0.2918287937743191 Laughs Until Now: 6 Since Last Laugh: 17 positive: False 
-I just -- I don't want to offend anybody.
+Personal Pronouns: 0.04878048780487805 noun_percentage: 2 adj_percentage: 2 verb_percentage: 0
+
 
 Name: A one-woman global village  Author:  Length: 3 Depth: 0.29571984435797666 Laughs Until Now: 6 Since Last Laugh: 18 positive: False 
-You know.
+Personal Pronouns: 0.0 noun_percentage: 2 adj_percentage: 0 verb_percentage: 2
+
 
 Name: A one-woman global village  Author:  Length: 34 Depth: 0.29961089494163423 Laughs Until Now: 6 Since Last Laugh: 19 positive: False 
-But anyway, you know, I just think that to be here with all of you accomplished young people -- literally, some of you, the architects building our brighter future.
+Personal Pronouns: 0.006097560975609756 noun_percentage: 2 adj_percentage: 2 verb_percentage: 1
+
 
 Name: A one-woman global village  Author:  Length: 9 Depth: 0.3035019455252918 Laughs Until Now: 6 Since Last Laugh: 20 positive: False 
-You know, it's heartening to me.
+Personal Pronouns: 0.0 noun_percentage: 2 adj_percentage: 1 verb_percentage: 1
+
 
 Name: A one-woman global village  Author:  Length: 16 Depth: 0.30739299610894943 Laughs Until Now: 6 Since Last Laugh: 21 positive: False 
-Even though, quite frankly, some of your presentations are horrifying, absolutely horrifying.
+Personal Pronouns: 0.0 noun_percentage: 2 adj_percentage: 2 verb_percentage: 1
+
 
 Name: A one-woman global village  Author:  Length: 4 Depth: 0.311284046692607 Laughs Until Now: 6 Since Last Laugh: 22 positive: False 
-It's true.
+Personal Pronouns: 0.1 noun_percentage: 2 adj_percentage: 2 verb_percentage: 0
+
 
 Name: A one-woman global village  Author:  Length: 4 Depth: 0.3151750972762646 Laughs Until Now: 6 Since Last Laugh: 23 positive: False 
-It's true.
+Personal Pronouns: 0.1 noun_percentage: 2 adj_percentage: 2 verb_percentage: 0
+
 
 Name: A one-woman global village  Author:  Length: 19 Depth: 0.31906614785992216 Laughs Until Now: 6 Since Last Laugh: 24 positive: False 
-You know, between the environmental degradation and the crashing of the world markets you're talking about.
+Personal Pronouns: 0.0 noun_percentage: 2 adj_percentage: 1 verb_percentage: 1
+
 
 Name: A one-woman global village  Author:  Length: 59 Depth: 0.3229571984435798 Laughs Until Now: 6 Since Last Laugh: 25 positive: False 
-And of course, we know it's all because of the -- all the ... Well, I don't know how else to say it to you, so I'll just say it my way: the ganeyvish schticklich coming from the governments and the, you know, the bankers and the Wall Street.
+Personal Pronouns: 0.008298755186721992 noun_percentage: 2 adj_percentage: 2 verb_percentage: 0
+
 
 Name: A one-woman global village  Author:  Length: 4 Depth: 0.32684824902723736 Laughs Until Now: 6 Since Last Laugh: 26 positive: False 
-You know it.
+Personal Pronouns: 0.0 noun_percentage: 2 adj_percentage: 0 verb_percentage: 2
+
 
 Name: A one-woman global village  Author:  Length: 19 Depth: 0.3346303501945525 Laughs Until Now: 7 Since Last Laugh: 1 positive: False 
- 
- The point is, I'm happy somebody has practical ideas to get us out of this mess.
+Personal Pronouns: 0.012048192771084338 noun_percentage: 2 adj_percentage: 2 verb_percentage: 1
+
 
 Name: A one-woman global village  Author:  Length: 11 Depth: 0.33852140077821014 Laughs Until Now: 7 Since Last Laugh: 2 positive: False 
-So I salute each of you and your stellar achievements.
+Personal Pronouns: 0.018518518518518517 noun_percentage: 2 adj_percentage: 2 verb_percentage: 1
+
 
 Name: A one-woman global village  Author:  Length: 8 Depth: 0.3424124513618677 Laughs Until Now: 7 Since Last Laugh: 3 positive: False 
-Thank you for all that you do.
+Personal Pronouns: 0.0 noun_percentage: 2 adj_percentage: 1 verb_percentage: 1
+
 
 Name: A one-woman global village  Author:  Length: 14 Depth: 0.3463035019455253 Laughs Until Now: 7 Since Last Laugh: 4 positive: False 
-And congratulations on being such big makhers that you've become TED meisters.
+Personal Pronouns: 0.0 noun_percentage: 2 adj_percentage: 2 verb_percentage: 0
+
 
 Name: A one-woman global village  Author:  Length: 6 Depth: 0.35019455252918286 Laughs Until Now: 7 Since Last Laugh: 5 positive: False 
-So, happy continued success.
+Personal Pronouns: 0.0 noun_percentage: 2 adj_percentage: 2 verb_percentage: 0
+
 
 Name: A one-woman global village  Author:  Length: 2 Depth: 0.3540856031128405 Laughs Until Now: 7 Since Last Laugh: 6 positive: False 
-Congratulations.
+Personal Pronouns: 0.0 noun_percentage: 2 adj_percentage: 2 verb_percentage: 1
+
 
 Name: A one-woman global village  Author:  Length: 3 Depth: 0.35797665369649806 Laughs Until Now: 7 Since Last Laugh: 7 positive: False 
-Mazel tov.
+Personal Pronouns: 0.0 noun_percentage: 2 adj_percentage: 0 verb_percentage: 0
+
 
 Name: A one-woman global village  Author:  Length: 2 Depth: 0.36186770428015563 Laughs Until Now: 7 Since Last Laugh: 8 positive: False 
-Hi.
+Personal Pronouns: 0.0 noun_percentage: 2 adj_percentage: 0 verb_percentage: 0
+
 
 Name: A one-woman global village  Author:  Length: 2 Depth: 0.3657587548638132 Laughs Until Now: 7 Since Last Laugh: 9 positive: False 
-Hi.
+Personal Pronouns: 0.0 noun_percentage: 2 adj_percentage: 0 verb_percentage: 0
+
 
 Name: A one-woman global village  Author:  Length: 4 Depth: 0.36964980544747084 Laughs Until Now: 7 Since Last Laugh: 10 positive: False 
-Thank you everybody.
+Personal Pronouns: 0.0 noun_percentage: 2 adj_percentage: 2 verb_percentage: 0
+
 
 Name: A one-woman global village  Author:  Length: 17 Depth: 0.3735408560311284 Laughs Until Now: 7 Since Last Laugh: 11 positive: False 
-Sorry, this is such a wonderful opportunity and everything, to be here right now.
+Personal Pronouns: 0.0 noun_percentage: 2 adj_percentage: 2 verb_percentage: 0
+
 
 Name: A one-woman global village  Author:  Length: 5 Depth: 0.377431906614786 Laughs Until Now: 7 Since Last Laugh: 12 positive: False 
-My name is Noraida.
+Personal Pronouns: 0.05263157894736842 noun_percentage: 2 adj_percentage: 1 verb_percentage: 1
+
 
 Name: A one-woman global village  Author:  Length: 26 Depth: 0.38132295719844356 Laughs Until Now: 7 Since Last Laugh: 13 positive: False 
-And I'm just -- I'm so thrilled to be part of like your TED conference that you're doing and everything like that.
+Personal Pronouns: 0.017543859649122806 noun_percentage: 2 adj_percentage: 2 verb_percentage: 1
+
 
 Name: A one-woman global village  Author:  Length: 4 Depth: 0.3852140077821012 Laughs Until Now: 7 Since Last Laugh: 14 positive: False 
-I am Dominican-American.
+Personal Pronouns: 0.041666666666666664 noun_percentage: 2 adj_percentage: 1 verb_percentage: 1
+
 
 Name: A one-woman global village  Author:  Length: 25 Depth: 0.38910505836575876 Laughs Until Now: 7 Since Last Laugh: 15 positive: False 
-Actually, you could say I grew up in the capital of Dominican Republic, otherwise known as Washington Heights in New York City.
+Personal Pronouns: 0.007874015748031496 noun_percentage: 2 adj_percentage: 2 verb_percentage: 1
+
 
 Name: A one-woman global village  Author:  Length: 26 Depth: 0.39299610894941633 Laughs Until Now: 7 Since Last Laugh: 16 positive: False 
-But I don't know if there's any other Dominican people here, but I know that Juan Enriquez, he was here yesterday.
+Personal Pronouns: 0.017543859649122806 noun_percentage: 2 adj_percentage: 2 verb_percentage: 0
+
 
 Name: A one-woman global village  Author:  Length: 22 Depth: 0.3968871595330739 Laughs Until Now: 7 Since Last Laugh: 17 positive: False 
-And I think he's Mexican, so that's -- honestly, that's close enough for me right now.
+Personal Pronouns: 0.011627906976744186 noun_percentage: 2 adj_percentage: 2 verb_percentage: 0
+
 
 Name: A one-woman global village  Author:  Length: 20 Depth: 0.4046692607003891 Laughs Until Now: 8 Since Last Laugh: 1 positive: False 
-I'm just trying not to be nervous because this is a very wonderful experience for me and everything.
+Personal Pronouns: 0.01 noun_percentage: 2 adj_percentage: 2 verb_percentage: 0
+
 
 Name: A one-woman global village  Author:  Length: 16 Depth: 0.4085603112840467 Laughs Until Now: 8 Since Last Laugh: 2 positive: False 
-And I just -- you know I'm not used to doing the public speaking.
+Personal Pronouns: 0.03076923076923077 noun_percentage: 2 adj_percentage: 2 verb_percentage: 0
+
 
 Name: A one-woman global village  Author:  Length: 12 Depth: 0.41245136186770426 Laughs Until Now: 8 Since Last Laugh: 3 positive: False 
-And whenever I get nervous I start to talk really fast.
+Personal Pronouns: 0.03636363636363636 noun_percentage: 2 adj_percentage: 2 verb_percentage: 0
+
 
 Name: A one-woman global village  Author:  Length: 20 Depth: 0.4163424124513619 Laughs Until Now: 8 Since Last Laugh: 4 positive: False 
-Nobody can understand nothing I'm saying, which is very frustrating for me, as you can imagine.
+Personal Pronouns: 0.010526315789473684 noun_percentage: 2 adj_percentage: 2 verb_percentage: 1
+
 
 Name: A one-woman global village  Author:  Length: 16 Depth: 0.42023346303501946 Laughs Until Now: 8 Since Last Laugh: 5 positive: False 
-I usually have to just like try to calm down and take a deep breath.
+Personal Pronouns: 0.014705882352941176 noun_percentage: 2 adj_percentage: 1 verb_percentage: 0
+
 
 Name: A one-woman global village  Author:  Length: 20 Depth: 0.42412451361867703 Laughs Until Now: 8 Since Last Laugh: 6 positive: False 
-But then on top of that, you know, Sarah Jones told me we only have 18 minutes.
+Personal Pronouns: 0.0 noun_percentage: 2 adj_percentage: 1 verb_percentage: 1
+
 
 Name: A one-woman global village  Author:  Length: 20 Depth: 0.4280155642023346 Laughs Until Now: 8 Since Last Laugh: 7 positive: False 
-So then I'm like, should I be nervous, you know, because maybe it's better.
+Personal Pronouns: 0.02666666666666667 noun_percentage: 2 adj_percentage: 1 verb_percentage: 1
+
 
 Name: A one-woman global village  Author:  Length: 12 Depth: 0.43190661478599224 Laughs Until Now: 8 Since Last Laugh: 8 positive: False 
-And I'm just trying not to panic and freak out.
+Personal Pronouns: 0.02127659574468085 noun_percentage: 2 adj_percentage: 2 verb_percentage: 0
+
 
 Name: A one-woman global village  Author:  Length: 9 Depth: 0.4357976653696498 Laughs Until Now: 8 Since Last Laugh: 9 positive: False 
-So I like, take a deep breath.
+Personal Pronouns: 0.03333333333333333 noun_percentage: 2 adj_percentage: 1 verb_percentage: 1
+
 
 Name: A one-woman global village  Author:  Length: 2 Depth: 0.4396887159533074 Laughs Until Now: 8 Since Last Laugh: 10 positive: False 
-Okay.
+Personal Pronouns: 0.0 noun_percentage: 2 adj_percentage: 0 verb_percentage: 1
+
 
 Name: A one-woman global village  Author:  Length: 2 Depth: 0.44357976653696496 Laughs Until Now: 8 Since Last Laugh: 11 positive: False 
-Sorry.
+Personal Pronouns: 0.0 noun_percentage: 2 adj_percentage: 0 verb_percentage: 2
+
 
 Name: A one-woman global village  Author:  Length: 16 Depth: 0.4474708171206226 Laughs Until Now: 8 Since Last Laugh: 12 positive: False 
-So anyway, what I was trying to say is that I really love TED.
+Personal Pronouns: 0.03225806451612903 noun_percentage: 2 adj_percentage: 1 verb_percentage: 1
+
 
 Name: A one-woman global village  Author:  Length: 8 Depth: 0.45136186770428016 Laughs Until Now: 8 Since Last Laugh: 13 positive: False 
-Like, I love everything about this.
+Personal Pronouns: 0.02857142857142857 noun_percentage: 2 adj_percentage: 2 verb_percentage: 0
+
 
 Name: A one-woman global village  Author:  Length: 4 Depth: 0.45525291828793774 Laughs Until Now: 8 Since Last Laugh: 14 positive: False 
-It's amazing.
+Personal Pronouns: 0.07692307692307693 noun_percentage: 2 adj_percentage: 1 verb_percentage: 1
+
 
 Name: A one-woman global village  Author:  Length: 14 Depth: 0.4591439688715953 Laughs Until Now: 8 Since Last Laugh: 15 positive: False 
-Like, it's -- I can't get over this right now.
+Personal Pronouns: 0.021739130434782608 noun_percentage: 2 adj_percentage: 1 verb_percentage: 1
+
 
 Name: A one-woman global village  Author:  Length: 21 Depth: 0.46303501945525294 Laughs Until Now: 8 Since Last Laugh: 16 positive: False 
-And, like, people would not believe, seriously, where I'm from, that this even exists.
+Personal Pronouns: 0.011627906976744186 noun_percentage: 2 adj_percentage: 2 verb_percentage: 0
+
 
 Name: A one-woman global village  Author:  Length: 18 Depth: 0.4669260700389105 Laughs Until Now: 8 Since Last Laugh: 17 positive: False 
-You know, like even, I mean I love like the name, the -- TED.
+Personal Pronouns: 0.03278688524590164 noun_percentage: 2 adj_percentage: 1 verb_percentage: 1
+
 
 Name: A one-woman global village  Author:  Length: 56 Depth: 0.4708171206225681 Laughs Until Now: 8 Since Last Laugh: 18 positive: False 
-I mean I know it's a real person and everything, but I'm just saying that like, you know, I think it's very cool how it's also an acronym, you know, which is like, you know, is like very high concept and everything like that.
+Personal Pronouns: 0.017777777777777778 noun_percentage: 2 adj_percentage: 2 verb_percentage: 1
+
 
 Name: A one-woman global village  Author:  Length: 4 Depth: 0.47470817120622566 Laughs Until Now: 8 Since Last Laugh: 19 positive: False 
-I like that.
+Personal Pronouns: 0.08333333333333333 noun_percentage: 2 adj_percentage: 1 verb_percentage: 2
+
 
 Name: A one-woman global village  Author:  Length: 15 Depth: 0.4785992217898833 Laughs Until Now: 8 Since Last Laugh: 20 positive: False 
-And actually, I can relate to the whole like acronym thing and everything.
+Personal Pronouns: 0.013513513513513514 noun_percentage: 2 adj_percentage: 2 verb_percentage: 0
+
 
 Name: A one-woman global village  Author:  Length: 13 Depth: 0.48249027237354086 Laughs Until Now: 8 Since Last Laugh: 21 positive: False 
-Because, actually, I'm a sophomore at college right now.
+Personal Pronouns: 0.017857142857142856 noun_percentage: 2 adj_percentage: 1 verb_percentage: 0
+
 
 Name: A one-woman global village  Author:  Length: 35 Depth: 0.48638132295719844 Laughs Until Now: 8 Since Last Laugh: 22 positive: False 
-At my school -- actually I was part of co-founding an organization, which is like a leadership thing, you know, like you guys, you would really like it and everything.
+Personal Pronouns: 0.005988023952095809 noun_percentage: 2 adj_percentage: 2 verb_percentage: 1
+
 
 Name: A one-woman global village  Author:  Length: 47 Depth: 0.490272373540856 Laughs Until Now: 8 Since Last Laugh: 23 positive: False 
-And the organization is called DA BOMB, A\and DA BOMB -- not like what you guys can build and everything -- it's like, DA BOMB, it means like Dominican -- it's an acronym -- Dominican-American Benevolent Organization for Mothers and Babies.
+Personal Pronouns: 0.0 noun_percentage: 2 adj_percentage: 1 verb_percentage: 1
+
 
 Name: A one-woman global village  Author:  Length: 54 Depth: 0.49416342412451364 Laughs Until Now: 8 Since Last Laugh: 24 positive: False 
-So, I know, see, like the name is like a little bit long, but with the war on terror and everything, the Dean of Student Activities has asked us to stop saying DA BOMB and use the whole thing so nobody would get the wrong idea, whatever.
+Personal Pronouns: 0.004219409282700422 noun_percentage: 2 adj_percentage: 2 verb_percentage: 0
+
 
 Name: A one-woman global village  Author:  Length: 43 Depth: 0.4980544747081712 Laughs Until Now: 8 Since Last Laugh: 25 positive: False 
-So, basically like DA BOMB -- what Dominican-American Benevolent Organization for Mothers and Babies does is, basically, we try to advocate for students who show a lot of academic promise and who also happen to be mothers like me.
+Personal Pronouns: 0.0 noun_percentage: 2 adj_percentage: 1 verb_percentage: 0
+
 
 Name: A one-woman global village  Author:  Length: 14 Depth: 0.5019455252918288 Laughs Until Now: 8 Since Last Laugh: 26 positive: False 
-I am a working mother, and I also go to school full-time.
+Personal Pronouns: 0.03508771929824561 noun_percentage: 2 adj_percentage: 2 verb_percentage: 0
+
 
 Name: A one-woman global village  Author:  Length: 21 Depth: 0.5058365758754864 Laughs Until Now: 8 Since Last Laugh: 27 positive: False 
-And, you know, it's like -- it's so important to have like role models out there.
+Personal Pronouns: 0.0 noun_percentage: 2 adj_percentage: 1 verb_percentage: 1
+
 
 Name: A one-woman global village  Author:  Length: 14 Depth: 0.5097276264591439 Laughs Until Now: 8 Since Last Laugh: 28 positive: False 
-I mean, I know sometimes our lifestyles are very different, whatever.
+Personal Pronouns: 0.028985507246376812 noun_percentage: 2 adj_percentage: 1 verb_percentage: 1
+
 
 Name: A one-woman global village  Author:  Length: 14 Depth: 0.5136186770428015 Laughs Until Now: 8 Since Last Laugh: 29 positive: False 
-But like even at my job -- like, I just got promoted.
+Personal Pronouns: 0.018867924528301886 noun_percentage: 2 adj_percentage: 1 verb_percentage: 0
+
 
 Name: A one-woman global village  Author:  Length: 34 Depth: 0.5175097276264592 Laughs Until Now: 8 Since Last Laugh: 30 positive: False 
-Right now it's very exciting actually for me because I'm the Junior Assistant to the Associate Director under the Senior Vice President for Business Development -- that's my new title.
+Personal Pronouns: 0.005434782608695652 noun_percentage: 2 adj_percentage: 1 verb_percentage: 0
+
 
 Name: A one-woman global village  Author:  Length: 38 Depth: 0.5214007782101168 Laughs Until Now: 8 Since Last Laugh: 31 positive: False 
-So, but I think whether you own your own company or you're just starting out like me, like something like this is so vital for people to just continue expanding their minds and learning.
+Personal Pronouns: 0.010752688172043012 noun_percentage: 2 adj_percentage: 1 verb_percentage: 1
+
 
 Name: A one-woman global village  Author:  Length: 29 Depth: 0.5252918287937743 Laughs Until Now: 8 Since Last Laugh: 32 positive: False 
-And if everybody, like all people really had access to that, it would be a very different world out there, as I know you know.
+Personal Pronouns: 0.007936507936507936 noun_percentage: 2 adj_percentage: 2 verb_percentage: 1
+
 
 Name: A one-woman global village  Author:  Length: 43 Depth: 0.5291828793774319 Laughs Until Now: 8 Since Last Laugh: 33 positive: False 
-So, I think all people, we need that, but especially, I look at people like me, you know like, I mean, Latinos -- we're about to be the majority, in like two weeks.
+Personal Pronouns: 0.018292682926829267 noun_percentage: 2 adj_percentage: 1 verb_percentage: 1
+
 
 Name: A one-woman global village  Author:  Length: 19 Depth: 0.5330739299610895 Laughs Until Now: 8 Since Last Laugh: 34 positive: False 
-So, we deserve just as much to be part of the exchange of ideas as everybody else.
+Personal Pronouns: 0.0 noun_percentage: 2 adj_percentage: 2 verb_percentage: 0
+
 
 Name: A one-woman global village  Author:  Length: 25 Depth: 0.5369649805447471 Laughs Until Now: 8 Since Last Laugh: 35 positive: False 
-So, I'm very happy that you're, you know, doing this kind of thing, making the talks available online.
+Personal Pronouns: 0.00980392156862745 noun_percentage: 2 adj_percentage: 1 verb_percentage: 1
+
 
 Name: A one-woman global village  Author:  Length: 5 Depth: 0.5408560311284046 Laughs Until Now: 8 Since Last Laugh: 36 positive: False 
-That's very good.
+Personal Pronouns: 0.0 noun_percentage: 2 adj_percentage: 0 verb_percentage: 0
+
 
 Name: A one-woman global village  Author:  Length: 4 Depth: 0.5447470817120622 Laughs Until Now: 8 Since Last Laugh: 37 positive: False 
-I love that.
+Personal Pronouns: 0.08333333333333333 noun_percentage: 2 adj_percentage: 1 verb_percentage: 1
+
 
 Name: A one-woman global village  Author:  Length: 9 Depth: 0.5486381322957199 Laughs Until Now: 8 Since Last Laugh: 38 positive: False 
-And I just -- I love you guys.
+Personal Pronouns: 0.06666666666666667 noun_percentage: 2 adj_percentage: 2 verb_percentage: 1
+
 
 Name: A one-woman global village  Author:  Length: 4 Depth: 0.5525291828793775 Laughs Until Now: 8 Since Last Laugh: 39 positive: False 
-I love TED.
+Personal Pronouns: 0.09090909090909091 noun_percentage: 2 adj_percentage: 1 verb_percentage: 0
+
 
 Name: A one-woman global village  Author:  Length: 31 Depth: 0.556420233463035 Laughs Until Now: 8 Since Last Laugh: 40 positive: False 
-And if you don't mind, privately now, in the future, I'm going to think of TED as an acronym for Technology, Entertainment and Dominicans.
+Personal Pronouns: 0.007246376811594203 noun_percentage: 2 adj_percentage: 2 verb_percentage: 0
+
 
 Name: A one-woman global village  Author:  Length: 39 Depth: 0.5642023346303502 Laughs Until Now: 9 Since Last Laugh: 1 positive: False 
-  
- So, that was Noraida, and just like Lorraine and everybody else you're meeting today, these are folks who are based on real people from my real life: friends, neighbors, family members.
+Personal Pronouns: 0.0 noun_percentage: 2 adj_percentage: 1 verb_percentage: 1
+
 
 Name: A one-woman global village  Author:  Length: 7 Depth: 0.5680933852140078 Laughs Until Now: 9 Since Last Laugh: 2 positive: False 
-I come from a multicultural family.
+Personal Pronouns: 0.02857142857142857 noun_percentage: 2 adj_percentage: 2 verb_percentage: 1
+
 
 Name: A one-woman global village  Author:  Length: 25 Depth: 0.5719844357976653 Laughs Until Now: 9 Since Last Laugh: 3 positive: False 
-In fact, the older lady you just met: very, very loosely based on a great aunt on my mother's side.
+Personal Pronouns: 0.010101010101010102 noun_percentage: 2 adj_percentage: 1 verb_percentage: 0
+
 
 Name: A one-woman global village  Author:  Length: 9 Depth: 0.5758754863813229 Laughs Until Now: 9 Since Last Laugh: 4 positive: False 
-It's a long story, believe me.
+Personal Pronouns: 0.03333333333333333 noun_percentage: 2 adj_percentage: 2 verb_percentage: 0
+
 
 Name: A one-woman global village  Author:  Length: 37 Depth: 0.5797665369649806 Laughs Until Now: 9 Since Last Laugh: 5 positive: False 
-But on top of my family background, my parents also sent me to the United Nations school, where I encountered a plethora of new characters, including Alexandre, my French teacher, okay.
+Personal Pronouns: 0.005405405405405406 noun_percentage: 2 adj_percentage: 2 verb_percentage: 0
+
 
 Name: A one-woman global village  Author:  Length: 20 Depth: 0.5836575875486382 Laughs Until Now: 9 Since Last Laugh: 6 positive: False 
-Well, you know, it was beginner French, that I am taking with her, you know.
+Personal Pronouns: 0.013157894736842105 noun_percentage: 2 adj_percentage: 1 verb_percentage: 2
+
 
 Name: A one-woman global village  Author:  Length: 16 Depth: 0.5875486381322957 Laughs Until Now: 9 Since Last Laugh: 7 positive: False 
-And it was Madame Bousson, you know, she was very [French].
+Personal Pronouns: 0.0 noun_percentage: 2 adj_percentage: 1 verb_percentage: 1
+
 
 Name: A one-woman global village  Author:  Length: 24 Depth: 0.5914396887159533 Laughs Until Now: 9 Since Last Laugh: 8 positive: False 
-It was like, you know, she was there in the class, you know, she was kind of typically French.
+Personal Pronouns: 0.010638297872340425 noun_percentage: 2 adj_percentage: 2 verb_percentage: 1
+
 
 Name: A one-woman global village  Author:  Length: 19 Depth: 0.5953307392996109 Laughs Until Now: 9 Since Last Laugh: 9 positive: False 
-You know, she was very chic, but she was very filled with ennui, you know.
+Personal Pronouns: 0.0 noun_percentage: 2 adj_percentage: 1 verb_percentage: 1
+
 
 Name: A one-woman global village  Author:  Length: 35 Depth: 0.5992217898832685 Laughs Until Now: 9 Since Last Laugh: 10 positive: False 
-And she would be there, you know, kind of talking with the class, you know, talking about the, you know, the existential futility of life, you know.
+Personal Pronouns: 0.0 noun_percentage: 2 adj_percentage: 1 verb_percentage: 1
+
 
 Name: A one-woman global village  Author:  Length: 5 Depth: 0.6070038910505836 Laughs Until Now: 10 Since Last Laugh: 1 positive: False 
- 
- But [German].
+Personal Pronouns: 0.0 noun_percentage: 2 adj_percentage: 2 verb_percentage: 0
+
 
 Name: A one-woman global village  Author:  Length: 36 Depth: 0.6108949416342413 Laughs Until Now: 10 Since Last Laugh: 2 positive: False 
-Yes, I took German for three years, [German], and it was quite the experience because I was the only black girl in the class, even in the UN school.
+Personal Pronouns: 0.013513513513513514 noun_percentage: 2 adj_percentage: 1 verb_percentage: 1
+
 
 Name: A one-woman global village  Author:  Length: 9 Depth: 0.6147859922178989 Laughs Until Now: 10 Since Last Laugh: 3 positive: False 
-Although, you know, it was wonderful.
+Personal Pronouns: 0.0 noun_percentage: 2 adj_percentage: 2 verb_percentage: 1
+
 
 Name: A one-woman global village  Author:  Length: 10 Depth: 0.6186770428015564 Laughs Until Now: 10 Since Last Laugh: 4 positive: False 
-The teacher, Herr Schtopf, he never discriminated.
+Personal Pronouns: 0.0 noun_percentage: 2 adj_percentage: 1 verb_percentage: 0
+
 
 Name: A one-woman global village  Author:  Length: 2 Depth: 0.622568093385214 Laughs Until Now: 10 Since Last Laugh: 5 positive: False 
-Never.
+Personal Pronouns: 0.0 noun_percentage: 2 adj_percentage: 0 verb_percentage: 0
+
 
 Name: A one-woman global village  Author:  Length: 18 Depth: 0.6264591439688716 Laughs Until Now: 10 Since Last Laugh: 6 positive: False 
-He always, always treated each of us, you know, equally unbearably during the class.
+Personal Pronouns: 0.0 noun_percentage: 2 adj_percentage: 1 verb_percentage: 1
+
 
 Name: A one-woman global village  Author:  Length: 28 Depth: 0.6303501945525292 Laughs Until Now: 10 Since Last Laugh: 7 positive: False 
-So, there were the teachers and then there were my friends, classmates from everywhere, many of whom are still dear friends to this day.
+Personal Pronouns: 0.0 noun_percentage: 2 adj_percentage: 1 verb_percentage: 0
+
 
 Name: A one-woman global village  Author:  Length: 9 Depth: 0.6342412451361867 Laughs Until Now: 10 Since Last Laugh: 8 positive: False 
-And they've inspired many characters as well.
+Personal Pronouns: 0.0 noun_percentage: 2 adj_percentage: 2 verb_percentage: 1
+
 
 Name: A one-woman global village  Author:  Length: 8 Depth: 0.6381322957198443 Laughs Until Now: 10 Since Last Laugh: 9 positive: False 
-For example, a friend of mine.
+Personal Pronouns: 0.0 noun_percentage: 2 adj_percentage: 2 verb_percentage: 2
+
 
 Name: A one-woman global village  Author:  Length: 11 Depth: 0.642023346303502 Laughs Until Now: 10 Since Last Laugh: 10 positive: False 
-Well, I just wanted to quickly say good evening.
+Personal Pronouns: 0.020833333333333332 noun_percentage: 2 adj_percentage: 2 verb_percentage: 0
+
 
 Name: A one-woman global village  Author:  Length: 14 Depth: 0.6459143968871596 Laughs Until Now: 10 Since Last Laugh: 11 positive: False 
-My name is Praveen Manvi and thank you very much for this opportunity.
+Personal Pronouns: 0.014285714285714285 noun_percentage: 2 adj_percentage: 2 verb_percentage: 0
+
 
 Name: A one-woman global village  Author:  Length: 14 Depth: 0.6498054474708171 Laughs Until Now: 10 Since Last Laugh: 12 positive: False 
-Of course, TED, the reputation precedes itself all over the world.
+Personal Pronouns: 0.0 noun_percentage: 2 adj_percentage: 1 verb_percentage: 0
+
 
 Name: A one-woman global village  Author:  Length: 63 Depth: 0.6536964980544747 Laughs Until Now: 10 Since Last Laugh: 13 positive: False 
-But, you know, I am originally from India, and I wanted to start by telling you that once Sarah Jones told me that we will be having the opportunity to come here to TED in California, originally, I was very pleased and, frankly, relieved because, you know, I am a human rights advocate.
+Personal Pronouns: 0.017482517482517484 noun_percentage: 2 adj_percentage: 1 verb_percentage: 1
+
 
 Name: A one-woman global village  Author:  Length: 9 Depth: 0.6614785992217899 Laughs Until Now: 11 Since Last Laugh: 1 positive: False 
- So, you can just imagine -- right.
+Personal Pronouns: 0.0 noun_percentage: 2 adj_percentage: 1 verb_percentage: 1
+
 
 Name: A one-woman global village  Author:  Length: 14 Depth: 0.6653696498054474 Laughs Until Now: 11 Since Last Laugh: 2 positive: False 
-So, but I'm thrilled to be joining all of you here.
+Personal Pronouns: 0.0196078431372549 noun_percentage: 2 adj_percentage: 1 verb_percentage: 0
+
 
 Name: A one-woman global village  Author:  Length: 15 Depth: 0.669260700389105 Laughs Until Now: 11 Since Last Laugh: 3 positive: False 
-I wish we had more time together, but that's for another time.
+Personal Pronouns: 0.016129032258064516 noun_percentage: 2 adj_percentage: 1 verb_percentage: 0
+
 
 Name: A one-woman global village  Author:  Length: 2 Depth: 0.6731517509727627 Laughs Until Now: 11 Since Last Laugh: 4 positive: False 
-Okay?
+Personal Pronouns: 0.0 noun_percentage: 2 adj_percentage: 0 verb_percentage: 1
+
 
 Name: A one-woman global village  Author:  Length: 2 Depth: 0.6770428015564203 Laughs Until Now: 11 Since Last Laugh: 5 positive: False 
-Great.
+Personal Pronouns: 0.0 noun_percentage: 2 adj_percentage: 0 verb_percentage: 1
+
 
 Name: A one-woman global village  Author:  Length: 36 Depth: 0.6809338521400778 Laughs Until Now: 11 Since Last Laugh: 6 positive: False 
-And, sadly, I don't think we'll have time for you to meet everybody I brought, but -- I'm trying to behave myself, it's my first time here.
+Personal Pronouns: 0.02158273381294964 noun_percentage: 2 adj_percentage: 1 verb_percentage: 0
+
 
 Name: A one-woman global village  Author:  Length: 25 Depth: 0.6848249027237354 Laughs Until Now: 11 Since Last Laugh: 7 positive: False 
-But I do want to introduce you to a couple of folks you may recognize, if you saw "Bridge and Tunnel."
+Personal Pronouns: 0.00980392156862745 noun_percentage: 2 adj_percentage: 2 verb_percentage: 1
+
 
 Name: A one-woman global village  Author:  Length: 7 Depth: 0.688715953307393 Laughs Until Now: 11 Since Last Laugh: 8 positive: False 
-Uh, well, thank you.
+Personal Pronouns: 0.0 noun_percentage: 2 adj_percentage: 1 verb_percentage: 1
+
 
 Name: A one-woman global village  Author:  Length: 3 Depth: 0.6926070038910506 Laughs Until Now: 11 Since Last Laugh: 9 positive: False 
-Good evening.
+Personal Pronouns: 0.0 noun_percentage: 2 adj_percentage: 2 verb_percentage: 1
+
 
 Name: A one-woman global village  Author:  Length: 31 Depth: 0.6964980544747081 Laughs Until Now: 11 Since Last Laugh: 10 positive: False 
-My name is Pauline Ning, and first I want to tell you that I'm -- of course I am a member of the Chinese community in New York.
+Personal Pronouns: 0.031496062992125984 noun_percentage: 2 adj_percentage: 1 verb_percentage: 1
+
 
 Name: A one-woman global village  Author:  Length: 80 Depth: 0.7003891050583657 Laughs Until Now: 11 Since Last Laugh: 11 positive: False 
-But when Sarah Jones asked me to please come to TED, I said, well, you know, first, I don't know that, you know -- before two years ago, you would not find me in front of an audience of people, much less like this because I did not like to give speeches because I feel that, as an immigrant, I do not have good English skills for speaking.
+Personal Pronouns: 0.014749262536873156 noun_percentage: 2 adj_percentage: 1 verb_percentage: 1
+
 
 Name: A one-woman global village  Author:  Length: 21 Depth: 0.708171206225681 Laughs Until Now: 12 Since Last Laugh: 1 positive: False 
- My daughter -- my daughter wrote that, she told me, "Always start your speech with humor."
+Personal Pronouns: 0.0 noun_percentage: 2 adj_percentage: 1 verb_percentage: 1
+
 
 Name: A one-woman global village  Author:  Length: 13 Depth: 0.7120622568093385 Laughs Until Now: 12 Since Last Laugh: 2 positive: False 
-But my background -- I want to tell you story only briefly.
+Personal Pronouns: 0.03389830508474576 noun_percentage: 2 adj_percentage: 2 verb_percentage: 0
+
 
 Name: A one-woman global village  Author:  Length: 28 Depth: 0.7159533073929961 Laughs Until Now: 12 Since Last Laugh: 3 positive: False 
-My husband and I, we brought our son and daughter here in 1980s to have the freedom we cannot have in China at that time.
+Personal Pronouns: 0.01652892561983471 noun_percentage: 2 adj_percentage: 2 verb_percentage: 0
+
 
 Name: A one-woman global village  Author:  Length: 20 Depth: 0.7198443579766537 Laughs Until Now: 12 Since Last Laugh: 4 positive: False 
-And we tried to teach our kids to be proud of their tradition, but it's very hard.
+Personal Pronouns: 0.0 noun_percentage: 2 adj_percentage: 1 verb_percentage: 1
+
 
 Name: A one-woman global village  Author:  Length: 23 Depth: 0.7237354085603113 Laughs Until Now: 12 Since Last Laugh: 5 positive: False 
-You know, as immigrant, I would speak Chinese to them, and they would always answer me back in English.
+Personal Pronouns: 0.009708737864077669 noun_percentage: 2 adj_percentage: 1 verb_percentage: 1
+
 
 Name: A one-woman global village  Author:  Length: 11 Depth: 0.7276264591439688 Laughs Until Now: 12 Since Last Laugh: 6 positive: False 
-They love rock music, pop culture, American culture.
+Personal Pronouns: 0.0 noun_percentage: 2 adj_percentage: 2 verb_percentage: 0
+
 
 Name: A one-woman global village  Author:  Length: 37 Depth: 0.7315175097276264 Laughs Until Now: 12 Since Last Laugh: 7 positive: False 
-But when they got older, when the time comes for them to start think about getting married, that's when we expect them to realize, a little bit more, their own culture.
+Personal Pronouns: 0.0 noun_percentage: 2 adj_percentage: 1 verb_percentage: 0
+
 
 Name: A one-woman global village  Author:  Length: 9 Depth: 0.7354085603112841 Laughs Until Now: 12 Since Last Laugh: 8 positive: False 
-But that's where we had some problems.
+Personal Pronouns: 0.0 noun_percentage: 2 adj_percentage: 0 verb_percentage: 0
+
 
 Name: A one-woman global village  Author:  Length: 13 Depth: 0.7392996108949417 Laughs Until Now: 12 Since Last Laugh: 9 positive: False 
-My son, he says he is not ready to get married.
+Personal Pronouns: 0.02127659574468085 noun_percentage: 2 adj_percentage: 1 verb_percentage: 1
+
 
 Name: A one-woman global village  Author:  Length: 15 Depth: 0.7431906614785992 Laughs Until Now: 12 Since Last Laugh: 10 positive: False 
-And he has a sweetheart, but she is American woman, not Chinese.
+Personal Pronouns: 0.0 noun_percentage: 2 adj_percentage: 1 verb_percentage: 0
+
 
 Name: A one-woman global village  Author:  Length: 23 Depth: 0.7470817120622568 Laughs Until Now: 12 Since Last Laugh: 11 positive: False 
-It's not that it's bad, but I told him, "What's wrong with a Chinese woman?"
+Personal Pronouns: 0.02631578947368421 noun_percentage: 2 adj_percentage: 1 verb_percentage: 1
+
 
 Name: A one-woman global village  Author:  Length: 10 Depth: 0.7509727626459144 Laughs Until Now: 12 Since Last Laugh: 12 positive: False 
-But I think he will change his mind soon.
+Personal Pronouns: 0.024390243902439025 noun_percentage: 2 adj_percentage: 1 verb_percentage: 1
+
 
 Name: A one-woman global village  Author:  Length: 14 Depth: 0.754863813229572 Laughs Until Now: 12 Since Last Laugh: 13 positive: False 
-So, then I decide instead, I will concentrate on my daughter.
+Personal Pronouns: 0.03278688524590164 noun_percentage: 2 adj_percentage: 2 verb_percentage: 1
+
 
 Name: A one-woman global village  Author:  Length: 11 Depth: 0.7587548638132295 Laughs Until Now: 12 Since Last Laugh: 14 positive: False 
-The daughter's marriage is very special to the mom.
+Personal Pronouns: 0.0 noun_percentage: 2 adj_percentage: 1 verb_percentage: 0
+
 
 Name: A one-woman global village  Author:  Length: 10 Depth: 0.7626459143968871 Laughs Until Now: 12 Since Last Laugh: 15 positive: False 
-But first, she said she's not interested.
+Personal Pronouns: 0.0 noun_percentage: 2 adj_percentage: 2 verb_percentage: 0
+
 
 Name: A one-woman global village  Author:  Length: 10 Depth: 0.7665369649805448 Laughs Until Now: 12 Since Last Laugh: 16 positive: False 
-She only wants to spend time with her friends.
+Personal Pronouns: 0.0 noun_percentage: 2 adj_percentage: 1 verb_percentage: 0
+
 
 Name: A one-woman global village  Author:  Length: 13 Depth: 0.7704280155642024 Laughs Until Now: 12 Since Last Laugh: 17 positive: False 
-And then at college, it's like she never came home.
+Personal Pronouns: 0.0 noun_percentage: 2 adj_percentage: 2 verb_percentage: 0
+
 
 Name: A one-woman global village  Author:  Length: 11 Depth: 0.77431906614786 Laughs Until Now: 12 Since Last Laugh: 18 positive: False 
-And she doesn't want me to come and visit.
+Personal Pronouns: 0.0 noun_percentage: 2 adj_percentage: 2 verb_percentage: 0
+
 
 Name: A one-woman global village  Author:  Length: 13 Depth: 0.7782101167315175 Laughs Until Now: 12 Since Last Laugh: 19 positive: False 
-So I said, "What's wrong in this picture?"
+Personal Pronouns: 0.023809523809523808 noun_percentage: 2 adj_percentage: 2 verb_percentage: 1
+
 
 Name: A one-woman global village  Author:  Length: 13 Depth: 0.7821011673151751 Laughs Until Now: 12 Since Last Laugh: 20 positive: False 
-So, I accused my daughter to have like a secret boyfriend.
+Personal Pronouns: 0.017241379310344827 noun_percentage: 2 adj_percentage: 1 verb_percentage: 1
+
 
 Name: A one-woman global village  Author:  Length: 23 Depth: 0.7898832684824902 Laughs Until Now: 13 Since Last Laugh: 1 positive: False 
- And I said, "Yes, men can be difficult, but all women have to get used to that."
+Personal Pronouns: 0.012345679012345678 noun_percentage: 2 adj_percentage: 1 verb_percentage: 0
+
 
 Name: A one-woman global village  Author:  Length: 7 Depth: 0.7937743190661478 Laughs Until Now: 13 Since Last Laugh: 2 positive: False 
-She said, "No Mom.
+Personal Pronouns: 0.0 noun_percentage: 2 adj_percentage: 1 verb_percentage: 1
+
 
 Name: A one-woman global village  Author:  Length: 9 Depth: 0.7976653696498055 Laughs Until Now: 13 Since Last Laugh: 3 positive: False 
-I mean, I don't like boys.
+Personal Pronouns: 0.07692307692307693 noun_percentage: 2 adj_percentage: 2 verb_percentage: 1
+
 
 Name: A one-woman global village  Author:  Length: 4 Depth: 0.8015564202334631 Laughs Until Now: 13 Since Last Laugh: 4 positive: False 
-I like girls.
+Personal Pronouns: 0.07692307692307693 noun_percentage: 2 adj_percentage: 1 verb_percentage: 2
+
 
 Name: A one-woman global village  Author:  Length: 5 Depth: 0.8054474708171206 Laughs Until Now: 13 Since Last Laugh: 5 positive: False 
-I am lesbian."
+Personal Pronouns: 0.07142857142857142 noun_percentage: 2 adj_percentage: 0 verb_percentage: 0
+
 
 Name: A one-woman global village  Author:  Length: 14 Depth: 0.8132295719844358 Laughs Until Now: 14 Since Last Laugh: 1 positive: False 
-But she told me, "Mom, it's not American."
+Personal Pronouns: 0.0 noun_percentage: 2 adj_percentage: 1 verb_percentage: 0
+
 
 Name: A one-woman global village  Author:  Length: 11 Depth: 0.8249027237354085 Laughs Until Now: 16 Since Last Laugh: 1 positive: False 
- But at first I did not know what to do.
+Personal Pronouns: 0.025 noun_percentage: 2 adj_percentage: 2 verb_percentage: 1
+
 
 Name: A one-woman global village  Author:  Length: 18 Depth: 0.8287937743190662 Laughs Until Now: 16 Since Last Laugh: 2 positive: False 
-But then, over time, I have come to understand that this is who she is.
+Personal Pronouns: 0.014084507042253521 noun_percentage: 2 adj_percentage: 2 verb_percentage: 1
+
 
 Name: A one-woman global village  Author:  Length: 49 Depth: 0.8326848249027238 Laughs Until Now: 16 Since Last Laugh: 3 positive: False 
-So, even though sometimes it's still hard, I will share with you that it helps me to realize society is more tolerant, usually because of places like this, because of ideas like this, and people like you, with an open mind.
+Personal Pronouns: 0.004484304932735426 noun_percentage: 2 adj_percentage: 1 verb_percentage: 1
+
 
 Name: A one-woman global village  Author:  Length: 21 Depth: 0.8365758754863813 Laughs Until Now: 16 Since Last Laugh: 4 positive: False 
-So I think maybe TED, you impact people's lives in the ways maybe even you don't realize.
+Personal Pronouns: 0.011235955056179775 noun_percentage: 2 adj_percentage: 1 verb_percentage: 1
+
 
 Name: A one-woman global village  Author:  Length: 17 Depth: 0.8404669260700389 Laughs Until Now: 16 Since Last Laugh: 5 positive: False 
-So, for my daughter's sake, I thank you for your ideas worth spreading.
+Personal Pronouns: 0.014084507042253521 noun_percentage: 2 adj_percentage: 2 verb_percentage: 1
+
 
 Name: A one-woman global village  Author:  Length: 3 Depth: 0.8443579766536965 Laughs Until Now: 16 Since Last Laugh: 6 positive: False 
-Thank you.
+Personal Pronouns: 0.0 noun_percentage: 2 adj_percentage: 2 verb_percentage: 0
+
 
 Name: A one-woman global village  Author:  Length: 3 Depth: 0.8482490272373541 Laughs Until Now: 16 Since Last Laugh: 7 positive: False 
-Xie xie.
+Personal Pronouns: 0.0 noun_percentage: 2 adj_percentage: 0 verb_percentage: 2
+
 
 Name: A one-woman global village  Author:  Length: 3 Depth: 0.8521400778210116 Laughs Until Now: 16 Since Last Laugh: 8 positive: False 
-Good evening.
+Personal Pronouns: 0.0 noun_percentage: 2 adj_percentage: 2 verb_percentage: 1
+
 
 Name: A one-woman global village  Author:  Length: 6 Depth: 0.8560311284046692 Laughs Until Now: 16 Since Last Laugh: 9 positive: False 
-My name is Habbi Belahal.
+Personal Pronouns: 0.04 noun_percentage: 2 adj_percentage: 0 verb_percentage: 0
+
 
 Name: A one-woman global village  Author:  Length: 31 Depth: 0.8599221789883269 Laughs Until Now: 16 Since Last Laugh: 10 positive: False 
-And I would like to first of all thank Sarah Jones for putting all of the pressure on the only Arab who she brought with her to be last today.
+Personal Pronouns: 0.007042253521126761 noun_percentage: 2 adj_percentage: 2 verb_percentage: 0
+
 
 Name: A one-woman global village  Author:  Length: 6 Depth: 0.8638132295719845 Laughs Until Now: 16 Since Last Laugh: 11 positive: False 
-I am originally from Jordan.
+Personal Pronouns: 0.03571428571428571 noun_percentage: 2 adj_percentage: 0 verb_percentage: 1
+
 
 Name: A one-woman global village  Author:  Length: 9 Depth: 0.867704280155642 Laughs Until Now: 16 Since Last Laugh: 12 positive: False 
-And I teach comparative literature at Queens College.
+Personal Pronouns: 0.018867924528301886 noun_percentage: 2 adj_percentage: 2 verb_percentage: 1
+
 
 Name: A one-woman global village  Author:  Length: 5 Depth: 0.8715953307392996 Laughs Until Now: 16 Since Last Laugh: 13 positive: False 
-It is not Harvard.
+Personal Pronouns: 0.05555555555555555 noun_percentage: 2 adj_percentage: 2 verb_percentage: 0
+
 
 Name: A one-woman global village  Author:  Length: 12 Depth: 0.8754863813229572 Laughs Until Now: 16 Since Last Laugh: 14 positive: False 
-But I feel a bit like a fish out of water.
+Personal Pronouns: 0.023809523809523808 noun_percentage: 2 adj_percentage: 2 verb_percentage: 1
+
 
 Name: A one-woman global village  Author:  Length: 9 Depth: 0.8793774319066148 Laughs Until Now: 16 Since Last Laugh: 15 positive: False 
-But I am very proud of my students.
+Personal Pronouns: 0.02857142857142857 noun_percentage: 2 adj_percentage: 2 verb_percentage: 0
+
 
 Name: A one-woman global village  Author:  Length: 16 Depth: 0.8832684824902723 Laughs Until Now: 16 Since Last Laugh: 16 positive: False 
-And I see that a few of them did make it here to the conference.
+Personal Pronouns: 0.015625 noun_percentage: 2 adj_percentage: 2 verb_percentage: 0
+
 
 Name: A one-woman global village  Author:  Length: 11 Depth: 0.8871595330739299 Laughs Until Now: 16 Since Last Laugh: 17 positive: False 
-So you will get the extra credit I promised you.
+Personal Pronouns: 0.020833333333333332 noun_percentage: 2 adj_percentage: 1 verb_percentage: 1
+
 
 Name: A one-woman global village  Author:  Length: 44 Depth: 0.8910505836575876 Laughs Until Now: 16 Since Last Laugh: 18 positive: False 
-But, while I know that I may not look like the typical TED-izen, as you would say, I do like to make the point that we in global society, we are never as different as the appearances may suggest.
+Personal Pronouns: 0.015384615384615385 noun_percentage: 2 adj_percentage: 1 verb_percentage: 1
+
 
 Name: A one-woman global village  Author:  Length: 32 Depth: 0.8949416342412452 Laughs Until Now: 16 Since Last Laugh: 19 positive: False 
-So, if you will indulge me, I will share quickly with you a bit of verse, which I memorized as a young girl at 16 years of age.
+Personal Pronouns: 0.015748031496062992 noun_percentage: 2 adj_percentage: 2 verb_percentage: 1
+
 
 Name: A one-woman global village  Author:  Length: 8 Depth: 0.8988326848249028 Laughs Until Now: 16 Since Last Laugh: 20 positive: False 
-So, back in the ancient times.
+Personal Pronouns: 0.0 noun_percentage: 2 adj_percentage: 2 verb_percentage: 1
+
 
 Name: A one-woman global village  Author:  Length: 17 Depth: 0.9027237354085603 Laughs Until Now: 16 Since Last Laugh: 21 positive: False 
-[Arabic] And this roughly translates: "Please, let me hold your hand.
+Personal Pronouns: 0.0 noun_percentage: 2 adj_percentage: 2 verb_percentage: 0
+
 
 Name: A one-woman global village  Author:  Length: 7 Depth: 0.9066147859922179 Laughs Until Now: 16 Since Last Laugh: 22 positive: False 
-I want to hold your hand.
+Personal Pronouns: 0.04 noun_percentage: 2 adj_percentage: 2 verb_percentage: 0
+
 
 Name: A one-woman global village  Author:  Length: 7 Depth: 0.9105058365758755 Laughs Until Now: 16 Since Last Laugh: 23 positive: False 
-I want to hold your hand.
+Personal Pronouns: 0.04 noun_percentage: 2 adj_percentage: 2 verb_percentage: 0
+
 
 Name: A one-woman global village  Author:  Length: 11 Depth: 0.914396887159533 Laughs Until Now: 16 Since Last Laugh: 24 positive: False 
-And when I touch you, I feel happy inside.
+Personal Pronouns: 0.047619047619047616 noun_percentage: 2 adj_percentage: 1 verb_percentage: 1
+
 
 Name: A one-woman global village  Author:  Length: 25 Depth: 0.9182879377431906 Laughs Until Now: 16 Since Last Laugh: 25 positive: False 
-It's such a feeling that my love, I can't hide, I can't hide, I can't hide."
+Personal Pronouns: 0.05263157894736842 noun_percentage: 2 adj_percentage: 1 verb_percentage: 1
+
 
 Name: A one-woman global village  Author:  Length: 13 Depth: 0.9221789883268483 Laughs Until Now: 16 Since Last Laugh: 26 positive: False 
-Well, so okay, but please, please, but please.
+Personal Pronouns: 0.0 noun_percentage: 2 adj_percentage: 1 verb_percentage: 0
+
 
 Name: A one-woman global village  Author:  Length: 23 Depth: 0.9260700389105059 Laughs Until Now: 16 Since Last Laugh: 27 positive: False 
-If it is sounding familiar, it is because I was at the same time in my life listening to the Beatles.
+Personal Pronouns: 0.019801980198019802 noun_percentage: 2 adj_percentage: 1 verb_percentage: 1
+
 
 Name: A one-woman global village  Author:  Length: 12 Depth: 0.9299610894941635 Laughs Until Now: 16 Since Last Laugh: 28 positive: False 
-On the radio [unclear], they were very popular.
+Personal Pronouns: 0.0 noun_percentage: 2 adj_percentage: 1 verb_percentage: 0
+
 
 Name: A one-woman global village  Author:  Length: 42 Depth: 0.933852140077821 Laughs Until Now: 16 Since Last Laugh: 29 positive: False 
-So, all of that is to say that I like to believe that for every word intended as to render us deaf to one another, there is always a lyric connecting ears and hearts across the continents in rhyme.
+Personal Pronouns: 0.005076142131979695 noun_percentage: 2 adj_percentage: 1 verb_percentage: 1
+
 
 Name: A one-woman global village  Author:  Length: 16 Depth: 0.9377431906614786 Laughs Until Now: 16 Since Last Laugh: 30 positive: False 
-And I pray that this is the way that we will self-invent, in time.
+Personal Pronouns: 0.015151515151515152 noun_percentage: 2 adj_percentage: 2 verb_percentage: 1
+
 
 Name: A one-woman global village  Author:  Length: 6 Depth: 0.9416342412451362 Laughs Until Now: 16 Since Last Laugh: 31 positive: False 
-That's all, shukran.
+Personal Pronouns: 0.0 noun_percentage: 2 adj_percentage: 2 verb_percentage: 1
+
 
 Name: A one-woman global village  Author:  Length: 8 Depth: 0.9455252918287937 Laughs Until Now: 16 Since Last Laugh: 32 positive: False 
-Thank you very much for the opportunity.
+Personal Pronouns: 0.0 noun_percentage: 2 adj_percentage: 2 verb_percentage: 0
+
 
 Name: A one-woman global village  Author:  Length: 2 Depth: 0.9494163424124513 Laughs Until Now: 16 Since Last Laugh: 33 positive: False 
-Okay?
+Personal Pronouns: 0.0 noun_percentage: 2 adj_percentage: 0 verb_percentage: 1
+
 
 Name: A one-woman global village  Author:  Length: 2 Depth: 0.953307392996109 Laughs Until Now: 16 Since Last Laugh: 34 positive: False 
-Great.
+Personal Pronouns: 0.0 noun_percentage: 2 adj_percentage: 0 verb_percentage: 1
+
 
 Name: A one-woman global village  Author:  Length: 6 Depth: 0.9571984435797666 Laughs Until Now: 16 Since Last Laugh: 35 positive: False 
-Thank you all very much.
+Personal Pronouns: 0.0 noun_percentage: 2 adj_percentage: 2 verb_percentage: 0
+
 
 Name: A one-woman global village  Author:  Length: 4 Depth: 0.9610894941634242 Laughs Until Now: 16 Since Last Laugh: 36 positive: False 
-It was lovely.
+Personal Pronouns: 0.07142857142857142 noun_percentage: 2 adj_percentage: 1 verb_percentage: 1
+
 
 Name: A one-woman global village  Author:  Length: 6 Depth: 0.9649805447470817 Laughs Until Now: 16 Since Last Laugh: 37 positive: False 
-Thank you for having me.
+Personal Pronouns: 0.0 noun_percentage: 2 adj_percentage: 1 verb_percentage: 0
+
 
 Name: A one-woman global village  Author:  Length: 7 Depth: 0.9688715953307393 Laughs Until Now: 16 Since Last Laugh: 38 positive: False 
-Thank you very, very much.
+Personal Pronouns: 0.0 noun_percentage: 2 adj_percentage: 2 verb_percentage: 0
+
 
 Name: A one-woman global village  Author:  Length: 4 Depth: 0.9727626459143969 Laughs Until Now: 16 Since Last Laugh: 39 positive: False 
-I love you.
+Personal Pronouns: 0.09090909090909091 noun_percentage: 2 adj_percentage: 1 verb_percentage: 2
+
 
 Name: A one-woman global village  Author:  Length: 10 Depth: 0.9766536964980544 Laughs Until Now: 16 Since Last Laugh: 40 positive: False 
-Well, you have to let me say this.
+Personal Pronouns: 0.0 noun_percentage: 2 adj_percentage: 1 verb_percentage: 0
+
 
 Name: A one-woman global village  Author:  Length: 6 Depth: 0.980544747081712 Laughs Until Now: 16 Since Last Laugh: 41 positive: False 
-I just -- thank you.
+Personal Pronouns: 0.05 noun_percentage: 2 adj_percentage: 2 verb_percentage: 0
+
 
 Name: A one-woman global village  Author:  Length: 16 Depth: 0.9844357976653697 Laughs Until Now: 16 Since Last Laugh: 42 positive: False 
-I want to thank Chris and Jacqueline, and just everyone for having me here.
+Personal Pronouns: 0.013333333333333334 noun_percentage: 2 adj_percentage: 1 verb_percentage: 0
+
 
 Name: A one-woman global village  Author:  Length: 16 Depth: 0.9883268482490273 Laughs Until Now: 16 Since Last Laugh: 43 positive: False 
-It's been a long time coming, and I feel like I'm home.
+Personal Pronouns: 0.05454545454545454 noun_percentage: 2 adj_percentage: 2 verb_percentage: 1
+
 
 Name: A one-woman global village  Author:  Length: 34 Depth: 0.9922178988326849 Laughs Until Now: 16 Since Last Laugh: 44 positive: False 
-And I know I've performed for some of your companies or some of you have seen me elsewhere, but this is honestly one of the best audiences I've ever experienced.
+Personal Pronouns: 0.018633540372670808 noun_percentage: 2 adj_percentage: 2 verb_percentage: 0
+
 
 Name: A one-woman global village  Author:  Length: 19 Depth: 0.9961089494163424 Laughs Until Now: 16 Since Last Laugh: 45 positive: False 
-The whole thing is amazing, and so don't you all go reinventing yourselves any time soon.  
+Personal Pronouns: 0.0 noun_percentage: 2 adj_percentage: 1 verb_percentage: 0
+
 
