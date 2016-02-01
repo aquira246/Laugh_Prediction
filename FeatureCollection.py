@@ -8,14 +8,14 @@ class FeatureCollection(object):
     laughsUntilNow = 0
     sentsSinceLaugh = 0
     positive = False
-    namedEntities = []      # Not in use yet
-    namedEntityCount = 0    # Not in use yet
-    charNgrams = []
-    wordNgrams = []
+    # namedEntities = []      # Not in use yet
+    # namedEntityCount = 0    # Not in use yet
     POS = {}
     subjectivity = 0
     polarity = 0
     words = []
+    sentence = ""
+    prev3Words = []
 
     def __init__(self, talkName="", talkAuthor=""):
         self.name = talkName
@@ -25,14 +25,14 @@ class FeatureCollection(object):
         self.laughsUntilNow = 0
         self.sentsSinceLaugh = 0
         self.positive = False
-        self.namedEntities = []
-        self.namedEntityCount = 0
-        self.charNgrams = []
-        self.wordNgrams = []
+        # self.namedEntities = []
+        # self.namedEntityCount = 0
         self.POS = {}
         self.subjectivity = 0
         self.polarity = 0
         self.words = []
+        self.sentence = ""
+        self.prev3Words = []
 
     def infoToString(self):
         ret = "Name: " + self.name + " " \
@@ -43,14 +43,6 @@ class FeatureCollection(object):
             + "Since Last Laugh: " + str(self.sentsSinceLaugh) + " " \
             + "positive: " + str(self.positive) + " \n"
 
-        return ret
-
-    def charGramsToString(self):
-        ret = " ".join(self.charNgrams)
-        return ret
-
-    def wordGramsToString(self):
-        ret = " ".join(self.wordNgrams)
         return ret
 
     def stringWords(self):

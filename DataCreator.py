@@ -12,29 +12,25 @@ import loadingbar
 
 CUT_OUTLIER_PERCENTAGE = .05
 
-SENTENCES_CARED_ABOUT = 2
-
 def splitFile(md):
     rf = open(md.filename, 'r')
 
     # skip first 6 lines since they aren't important
-    talk = " ".join(rf.readlines()[6:])
+    talk = "\n".join(rf.readlines()[6:])
 
     # remove the Audio: Laughing and the applause
     talk = talk.replace("(Applause)", "")
     talk = talk.replace("(Audio: Laughing)", "")
 
-    sents = sent_tokenize(talk)  # the talk turned into sentences
-    passedSents = []             # the pure (laughs removed) sentences passed
-    passedWords = []             # prev sents broken into stemmed/CC words
-    passedPOS = []               # passed sents broken into POS
-    passedWordNgrams = []        # passed sents broken into word ngrams
-    passedCharNgrams = []        # passed sents broken into char ngrams
-    numSents = len(sents)        # the number of sentences in the talk
-    sentsSinceLastLaugh = 0      # the number of sentences since the last laugh
-    laughCount = 0               # the laughs counted so far
-    positives = []               # all of the positives
-    negatives = []               # all of the negatives
+    sents = sent_tokenize(talk)       # the talk turned into sentences
+    passedSents = []                  # the pure (laughs removed) sents passed
+    passedWords = [["TS", "TS", "TS"]]  # prev sents broken into stemmed/CC wds
+    passedPOS = []                    # passed sents broken into POS
+    numSents = len(sents)             # the number of sentences in the talk
+    sentsSinceLastLaugh = 0           # the number of sents since last laugh
+    laughCount = 0                    # the laughs counted so far
+    positives = []                    # all of the positives
+    negatives = []                    # all of the negatives
 
     for i in range(numSents):
         # create a FeatureCollection for each sentence
@@ -56,65 +52,43 @@ def splitFile(md):
 
         # remove the laughter from the sentence
         curSent = sents[i].replace("(Laughter)", "")
+        features.sentence = curSent
 
         # put this sentence at the end of the passed sentences list
-        passedSents.append(curSent)  # TODO might need to change it to a deep copy and not just a reference to curSent
-
-        # TODO named entities and named Entity count
-
-        # get char-ngrams
-        charGrams = FeatureExtractor.textToCharGrams(curSent)
-        passedCharNgrams.append(charGrams)
-        allGrams = passedCharNgrams[-SENTENCES_CARED_ABOUT:]
-        features.charNgrams = []
-
-        for grams in allGrams:
-            features.charNgrams = features.charNgrams + grams
+        passedSents.append(curSent)
 
         # get sentiment
         sentiment = FeatureExtractor.getSentiment(curSent)
         features.subjectivity = sentiment["Subjectivity"]
         features.polarity = sentiment["Polarity"]
 
-        # get Parts of speech features
-        pos = FeatureExtractor.getPOS(curSent)
-        passedPOS.append(pos)
+        # TODO named entities and named Entity count
 
-        # TODO, get POS for more than just the curSent
+        # get Parts of speech features and conviently tokenize string
+        (_, pos) = FeatureExtractor.getPOS(curSent)
+        passedPOS.append(pos)
         features.POS = pos
 
-        # tokenize string
         words = word_tokenize(curSent)
+
+        # set the last 3 words
+        features.prev3Words = passedWords[-1][-3:]
 
         # case collapse and stem words
         stemmer = SnowballStemmer("english")
 
         for i in range(len(words)):
-            words[i] = words[i].lower()
-            words[i] = stemmer.stem(words[i])
+            words[i] = stemmer.stem(words[i].lower())
 
         # get words as features
-        passedWords.append(words)
-
-        allWords = passedWords[-SENTENCES_CARED_ABOUT:]
-        features.words = []
-
-        for w in allWords:
-            features.words = features.words + w
-
-        # get word ngrams
-        wordGrams = FeatureExtractor.textToWordGrams(words)
-        passedWordNgrams.append(wordGrams)
-        allGrams = passedWordNgrams[-SENTENCES_CARED_ABOUT:]
-        features.wordNgrams = []
-
-        for grams in allGrams:
-            features.wordNgrams = features.wordNgrams + grams
+        passedWords.append((words + ["EOS"]))
+        features.words = words
 
         # get length of sentence
         features.length = len(words)
 
-        # if the sentence was positive, we need to reset the distance since last laugh and increment laugh count
+        # if the sentence was positive thenwe need to:
+        # reset the distance since last laugh and increment laugh count
         if features.positive:
             laughCount += 1
             sentsSinceLastLaugh = 0
@@ -140,6 +114,7 @@ def creatingData(metadata, lengths):
 
     i = 0
 
+    random.shuffle(trimmedLengths)
     for wordCount in trimmedLengths:
         for md in metadata:
             if md.wordCount == wordCount:

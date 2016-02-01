@@ -9,9 +9,12 @@ from tabulate import tabulate
 import sklearn
 from nltk.classify import SklearnClassifier
 from sklearn.svm import SVC
+from sklearn.ensemble import AdaBoostClassifier
 
 import FeatureExtractor
 from loadingbar import printPercentage
+
+NUM_CLASSIFIERS = 5
 
 
 # helper function to run tests on the classifier passed in
@@ -49,6 +52,10 @@ def runClassifiers(positives, negatives, featuresToUse, outFile, verbose, classi
     onDataSet = 0
     numDataSets = len(positives + negatives)
     table = []
+
+    short = NUM_CLASSIFIERS - len(classifiersToUse)
+    for x in range(short):
+        classifiersToUse.append(False)
 
     # print which features we are using
     print("Using these features: ", FeatureExtractor.featuresToString(featuresToUse))
@@ -143,6 +150,22 @@ def runClassifiers(positives, negatives, featuresToUse, outFile, verbose, classi
 
         # store the accuracy in the table
         table.append(assess_classifier(classifier, test_data, "Support Vector Machine"))
+
+    if classifiersToUse[4]:
+        print("Running AdaBoost classifier")
+        timeStart = time.time()
+
+        # Scikit-learn's AdaBoost classifier wrapped up in NLTK's wrapper class
+        # The main parameters to tune to obtain good results are:
+        # n_estimators and the complexity of the base estimators
+        clf = AdaBoostClassifier()
+        classifier = SklearnClassifier(clf, sparse=False).train(train_data)
+
+        # get the time to train
+        print ("\nTime to train in seconds: ", time.time() - timeStart)
+
+        # store the accuracy in the table
+        table.append(assess_classifier(classifier, test_data, "AdaBoost"))
 
 
     if (outFile == ""):

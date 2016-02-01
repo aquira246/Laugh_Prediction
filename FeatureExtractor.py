@@ -38,8 +38,18 @@ def langFeatures(featsCollection, featuresToUse):
 
     # 2. ngram for words and characters
     if featuresToUse[1]:
+        # create char ngrams
+        text = featsCollection.prev3Words[-1][-1] + ". "\
+                + featsCollection.sentence
+
+        cg = textToCharGrams(text)
+
+        # create word ngrams
+        wordList = featsCollection.prev3Words+featsCollection.words
+        wg = textToWordGrams(wordList)
+
         # combine the ngrams
-        allgrams = featsCollection.charNgrams + featsCollection.wordNgrams
+        allgrams = wg + cg
 
         for gram in allgrams:
             D[gram] = True
@@ -181,9 +191,10 @@ def getPOS(text):
     nounCount = 0
     adjCount = 0
     prpCount = 0
-    wordCount = 0
+    word_list = []
+
     for (word, pos) in parts_of_speech:
-        wordCount += 1
+        word_list.append(word)
 
         if 'PRP' in pos:
             prpCount += 1
@@ -200,6 +211,8 @@ def getPOS(text):
             adjCount += 1
         elif "VERB" in tag:
             verbCount += 1
+
+    wordCount = len(word_list)
 
     # record the percentages the pos
     np = nounCount/wordCount
@@ -234,4 +247,4 @@ def getPOS(text):
     ret["Personal_Pronoun_Percentage"] = prpCount/wordCount
     ret["word_count"] = wordCount
 
-    return ret
+    return (word_list, ret)
