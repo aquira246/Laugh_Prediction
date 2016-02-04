@@ -41,17 +41,17 @@ def langFeatures(featsCollection, featuresToUse):
     # 2. ngram for words and characters
     if featuresToUse[1]:
         # create char ngrams
-        text = featsCollection.prev3Words[-1][-1] + ". "\
-                + featsCollection.sentence
+        # text = featsCollection.prev3Words[-1][-1] + ". "\
+        #         + featsCollection.sentence
 
-        cg = textToCharGrams(text)
+        # cg = textToCharGrams(text)
 
         # create word ngrams
         wordList = featsCollection.prev3Words+featsCollection.words
         wg = textToWordGrams(wordList)
 
         # combine the ngrams
-        allgrams = wg + cg
+        allgrams = wg #+ cg
 
         for gram in allgrams:
             D[gram] = True
@@ -157,7 +157,7 @@ def textToCharGrams(text):
 def textToWordGrams(words):
     word_bigrams = ngrams(words, 2)
     word_trigrams = ngrams(words, 3)
-    word_quadgrams = ngrams(words, 4)
+    # word_quadgrams = ngrams(words, 4)
 
     # combine the ngrams
     allgrams = []
@@ -168,8 +168,8 @@ def textToWordGrams(words):
     for gram in word_trigrams:
         allgrams.append("".join(gram))
 
-    for gram in word_quadgrams:
-        allgrams.append("".join(gram))
+    # for gram in word_quadgrams:
+    #     allgrams.append("".join(gram))
 
     return allgrams
 

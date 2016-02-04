@@ -38,22 +38,22 @@ print("Extracting Features\n")
 #  Depth,
 #  length]
 featureSetsToUse = [
-    [True, False, False, False, False, False, False, False, False],
-    # [False, True, False, False, False, False, False, False, False],
-    [False, False, True, False, False, False, False, False, False],
-    [False, False, False, True, False, False, False, False, False],
-    [False, False, False, False, True, False, False, False, False],
-    [False, False, False, False, False, True, False, False, False],
-    [False, False, False, False, False, False, True, False, False],
-    [False, False, False, False, False, False, False, True, False],
-    [False, False, False, False, False, False, False, False, True],
-    [True, False, True, True, False, True, True, True, True],
-    # [True, True, True, True, True, True, True, True, True],
-    [True, False, True, True, True, True, True, True, True],
-    [True, False, True, True, True, True, True, False, False],
-    [False, False, True, True, True, True, True, True, False],
-    [True, False, True, True, True, False, False, False, True],
-    [False, False, False, False, False, True, True, True, False],
+    # [True, False, False, False, False, False, False, False, False],
+    [False, True, False, False, False, False, False, False, False],
+    # [False, False, True, False, False, False, False, False, False],
+    # [False, False, False, True, False, False, False, False, False],
+    # [False, False, False, False, True, False, False, False, False],
+    # [False, False, False, False, False, True, False, False, False],
+    # [False, False, False, False, False, False, True, False, False],
+    # [False, False, False, False, False, False, False, True, False],
+    # [False, False, False, False, False, False, False, False, True],
+    # [True, False, True, True, False, True, True, True, True],
+    [True, True, True, True, True, True, True, True, True],
+    # [True, False, True, True, True, True, True, True, True],
+    # [True, False, True, True, True, True, True, False, False],
+    # [False, False, True, True, True, True, True, True, False],
+    # [True, False, True, True, True, False, False, False, True],
+    # [False, False, False, False, False, True, True, True, False],
 ]
 
 # featureSetsToUse = [
@@ -67,4 +67,4 @@ classifiersToUse = [True, False, False, False, True]
 
 # positives, negatives, featuresToUse, whereToPrint, verbose, classifiersToUse
 for feats in featureSetsToUse:
-    Classifiers.runClassifiers(positives, negatives, feats, "output.txt", False, classifiersToUse)
+    Classifiers.runClassifiers(positives, negatives, feats, "Ngrams.txt", False, classifiersToUse)
