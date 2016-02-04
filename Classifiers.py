@@ -158,7 +158,7 @@ def runClassifiers(positives, negatives, featuresToUse, outFile, verbose, classi
         # Scikit-learn's AdaBoost classifier wrapped up in NLTK's wrapper class
         # The main parameters to tune to obtain good results are:
         # n_estimators and the complexity of the base estimators
-        clf = AdaBoostClassifier()
+        clf = AdaBoostClassifier(n_estimators = 100)
         classifier = SklearnClassifier(clf, sparse=False).train(train_data)
 
         # get the time to train

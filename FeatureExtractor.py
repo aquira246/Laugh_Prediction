@@ -3,9 +3,11 @@ import numpy
 import FeatureCollection
 from nltk.tag import pos_tag, map_tag
 from nltk.util import ngrams
-# from textblob import TextBlob
+from textblob import TextBlob
 
 TOTAL_FEATURES = 9
+
+
 # First define a function that produces features from a given object
 # This function takes in a paragraph. It then breaks it up and uses it
 # for the feature sets
@@ -174,9 +176,9 @@ def textToWordGrams(words):
 
 def getSentiment(text):
     D = {}
-    # testimonial = TextBlob(text)
-    D["Subjectivity"] = 0.0 # testimonial.sentiment.subjectivity
-    D["Polarity"] = 0.0 # testimonial.sentiment.polarity
+    testimonial = TextBlob(text)
+    D["Subjectivity"] = testimonial.sentiment.subjectivity
+    D["Polarity"] = testimonial.sentiment.polarity
 
     return D
 
