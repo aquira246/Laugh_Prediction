@@ -63,7 +63,7 @@ featureSetsToUse = [
 # ]
 
 # [Naive Bayes, Decision Tree, Max Entropy, Support Vector machine]
-classifiersToUse = [True, False, False, False, True]
+classifiersToUse = [True, True, False, True, True]
 
 # positives, negatives, featuresToUse, whereToPrint, verbose, classifiersToUse
 for feats in featureSetsToUse:
