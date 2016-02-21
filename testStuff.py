@@ -15,7 +15,7 @@ print("Positives: ", len(positives), "\n")
 print("Negatives: ", len(negatives), "\n")
 
 featureSetsToUse = [False, True, False, False, False, False, False, False, False]
-Classifiers.runClassifiers(positives, negatives, featureSetsToUse, "", False, [True, True, False, True, True])
+Classifiers.runClassifiers(positives, negatives, featureSetsToUse, "", False, [True, True, False, True, True, True])
 
 pf = open("positives.txt", 'w')
 nf = open("negatives.txt", 'w')

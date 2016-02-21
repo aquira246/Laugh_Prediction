@@ -10,11 +10,12 @@ import sklearn
 from nltk.classify import SklearnClassifier
 from sklearn.svm import SVC
 from sklearn.ensemble import AdaBoostClassifier
+from sklearn.ensemble import RandomForestClassifier
 
 import FeatureExtractor
 from loadingbar import printPercentage
 
-NUM_CLASSIFIERS = 5
+NUM_CLASSIFIERS = 6
 
 
 # helper function to run tests on the classifier passed in
@@ -48,10 +49,11 @@ def assess_classifier(classifier, test_data, text):
 
 
 def runClassifiers(positives, negatives, featuresToUse, outFile, verbose, classifiersToUse):
-    featureSets = []
     onDataSet = 0
     numDataSets = len(positives + negatives)
     table = []
+    pos = []
+    neg = []
 
     short = NUM_CLASSIFIERS - len(classifiersToUse)
     for x in range(short):
@@ -61,25 +63,25 @@ def runClassifiers(positives, negatives, featuresToUse, outFile, verbose, classi
     print("Using these features: ", FeatureExtractor.featuresToString(featuresToUse))
 
     for data in positives:
-        featureSets.append((FeatureExtractor.langFeatures(data, featuresToUse), True))
+        pos.append((FeatureExtractor.langFeatures(data, featuresToUse), True))
         onDataSet += 1
         # printPercentage(onDataSet/numDataSets * 100, "Extracting Features: ", False)
 
     for data in negatives:
-        featureSets.append((FeatureExtractor.langFeatures(data, featuresToUse), False))
+        neg.append((FeatureExtractor.langFeatures(data, featuresToUse), False))
         onDataSet += 1
         # printPercentage(onDataSet/numDataSets * 100, "Extracting Features: ", False)
 
-    # sys.stdout.flush()
-    # print("\n")
+    random.shuffle(pos)
+    random.shuffle(neg)
 
     # Testing is 1/4 of the data set, so we will cut it off there
-    cutOff = len(featureSets)//4
-
-    random.shuffle(featureSets)
+    posCut = len(pos)//4
+    negCut = len(neg)//4
 
     # splits training and test sets
-    train_data, test_data = featureSets[cutOff:], featureSets[:cutOff]
+    train_data = pos[posCut:] + neg[negCut:]
+    test_data = pos[:posCut] + neg[:negCut]
 
     if classifiersToUse[0]:
         print("Running Naive Bayes classifier")
@@ -158,8 +160,11 @@ def runClassifiers(positives, negatives, featuresToUse, outFile, verbose, classi
         # Scikit-learn's AdaBoost classifier wrapped up in NLTK's wrapper class
         # The main parameters to tune to obtain good results are:
         # n_estimators and the complexity of the base estimators
-        clf = AdaBoostClassifier(n_estimators = 100)
-        classifier = SklearnClassifier(clf, sparse=False).train(train_data)
+
+        # testclf = RandomForestClassifier()
+        # clf = AdaBoostClassifier(base_estimator=testclf, n_estimators=100)
+        clf = AdaBoostClassifier(n_estimators=100)
+        classifier = SklearnClassifier(clf).train(train_data)
 
         # get the time to train
         print ("\nTime to train in seconds: ", time.time() - timeStart)
@@ -167,13 +172,30 @@ def runClassifiers(positives, negatives, featuresToUse, outFile, verbose, classi
         # store the accuracy in the table
         table.append(assess_classifier(classifier, test_data, "AdaBoost"))
 
+    if classifiersToUse[5]:
+        print("Running Random Forest Classifier classifier")
+        timeStart = time.time()
+
+        # Scikit-learn's Random Forest classifier wrapped up in NLTK's
+        # wrapper class
+        # The main parameters to tune to obtain good results are:
+        # n_estimators
+        clf = RandomForestClassifier()
+        classifier = SklearnClassifier(clf).train(train_data)
+
+        # get the time to train
+        print ("\nTime to train in seconds: ", time.time() - timeStart)
+
+        # store the accuracy in the table
+        table.append(assess_classifier(classifier, test_data, "Random Forest"))
+
 
     if (outFile == ""):
         print("\n", FeatureExtractor.featuresToString(featuresToUse))
-        print(tabulate(table, headers=["Classifier", "accuracy", "laugh precision", "laugh recall", "laugh f1", "non-laugh precision", "non-laugh recall", "non-laugh f1"]))
+        print(tabulate(table, headers=["Classifier", "accuracy", "pos precision", "pos recall", "pos f1", "neg precision", "neg recall", "neg f1"]))
     else:
         with open(outFile, 'a') as out:
             out.write("\n")
             out.write(FeatureExtractor.featuresToString(featuresToUse))
-            out.write(tabulate(table, headers=["Classifier", "accuracy", "laugh precision", "laugh recall", "laugh f1", "non-laugh precision", "non-laugh recall", "non-laugh f1"]))
+            out.write(tabulate(table, headers=["Classifier", "accuracy", "pos precision", "pos recall", "pos f1", "neg precision", "neg recall", "neg f1"]))
             out.write("\n")

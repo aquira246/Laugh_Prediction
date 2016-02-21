@@ -28,6 +28,7 @@ class FeatureCollection(object):
         # self.namedEntities = []
         # self.namedEntityCount = 0
         self.POS = {}
+        self.sentimentFeats = {}
         self.subjectivity = 0
         self.polarity = 0
         self.words = []
@@ -58,5 +59,6 @@ class FeatureCollection(object):
         return ret
 
     def sentimentToString(self):
-        return "Polarity: " + str(self.polarity) + \
+        return "Polarity: " + str(self.polarity) + " " +\
+                "Polarity diff: " + str(self.sentimentFeats["Polarity_Diff"]) + " " +\
                 "  Subjectivity: " + str(self.subjectivity) + "\n"

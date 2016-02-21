@@ -1,0 +1,44 @@
+
+Words, Personal Pronouns, POS percentages, Sentiment analysis, Laughs previous, Sentences since last laugh, Depth, Sentence Length 
+Classifier      accuracy    laugh precision    laugh recall    laugh f1    non-laugh precision    non-laugh recall    non-laugh f1
+------------  ----------  -----------------  --------------  ----------  ---------------------  ------------------  --------------
+AdaBoost        0.694857           0.689535        0.689535    0.689535                    0.7                 0.7             0.7
+
+Words, Personal Pronouns, POS percentages, Sentiment analysis, Sentence Length 
+Classifier      accuracy    laugh precision    laugh recall    laugh f1    non-laugh precision    non-laugh recall    non-laugh f1
+------------  ----------  -----------------  --------------  ----------  ---------------------  ------------------  --------------
+AdaBoost        0.648571           0.664499         0.58871    0.624313               0.636086            0.707483        0.669887
+
+Words, Personal Pronouns, POS percentages, Sentiment analysis, Laughs previous, Sentences since last laugh, Depth, Sentence Length 
+Classifier      accuracy    laugh precision    laugh recall    laugh f1    non-laugh precision    non-laugh recall    non-laugh f1
+------------  ----------  -----------------  --------------  ----------  ---------------------  ------------------  --------------
+AdaBoost        0.692571           0.681716        0.702326    0.691867               0.703704            0.683146        0.693273
+
+Words, Personal Pronouns, POS percentages, Sentiment analysis, Sentence Length 
+Classifier      accuracy    laugh precision    laugh recall    laugh f1    non-laugh precision    non-laugh recall    non-laugh f1
+------------  ----------  -----------------  --------------  ----------  ---------------------  ------------------  --------------
+AdaBoost        0.621714           0.653315        0.535068    0.588308               0.599415            0.710162        0.650106
+
+===================================================================================================================================
+Above is decision stump, below is random forest
+===================================================================================================================================
+
+Words, Personal Pronouns, POS percentages, Sentiment analysis, Laughs previous, Sentences since last laugh, Depth, Sentence Length 
+Classifier      accuracy    laugh precision    laugh recall    laugh f1    non-laugh precision    non-laugh recall    non-laugh f1
+------------  ----------  -----------------  --------------  ----------  ---------------------  ------------------  --------------
+AdaBoost        0.677143           0.693662        0.660335    0.676588                0.66147            0.694737        0.677695
+
+Words, Personal Pronouns, POS percentages, Sentiment analysis, Sentence Length 
+Classifier      accuracy    laugh precision    laugh recall    laugh f1    non-laugh precision    non-laugh recall    non-laugh f1
+------------  ----------  -----------------  --------------  ----------  ---------------------  ------------------  --------------
+AdaBoost        0.621143           0.619429         0.62156    0.620492               0.622857            0.620729        0.621791
+
+Words, Personal Pronouns, POS percentages, Sentiment analysis, Laughs previous, Sentences since last laugh, Depth, Sentence Length 
+Classifier      accuracy    laugh precision    laugh recall    laugh f1    non-laugh precision    non-laugh recall    non-laugh f1
+------------  ----------  -----------------  --------------  ----------  ---------------------  ------------------  --------------
+AdaBoost        0.687429           0.692757        0.676169    0.684362               0.682327             0.69874        0.690436
+
+Words, Personal Pronouns, POS percentages, Sentiment analysis, Sentence Length 
+Classifier      accuracy    laugh precision    laugh recall    laugh f1    non-laugh precision    non-laugh recall    non-laugh f1
+------------  ----------  -----------------  --------------  ----------  ---------------------  ------------------  --------------
+AdaBoost        0.611429           0.600912        0.614936    0.607843               0.621993            0.608063        0.614949

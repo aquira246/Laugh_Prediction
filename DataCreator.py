@@ -21,6 +21,8 @@ def splitFile(md):
     # remove the Audio: Laughing and the applause
     talk = talk.replace("(Applause)", "")
     talk = talk.replace("(Audio: Laughing)", "")
+    talk = talk.replace("-- (Laughter) --", " (Laughter) ")
+    talk = talk.replace("-- (Laughter) ", " (Laughter) ")
 
     sents = sent_tokenize(talk)       # the talk turned into sentences
     passedSents = []                  # the pure (laughs removed) sents passed
@@ -31,6 +33,7 @@ def splitFile(md):
     laughCount = 0                    # the laughs counted so far
     positives = []                    # all of the positives
     negatives = []                    # all of the negatives
+    previousSentiment = 0             # the polarity of the previous sentiment
 
     for i in range(numSents):
         # create a FeatureCollection for each sentence
@@ -58,9 +61,10 @@ def splitFile(md):
         passedSents.append(curSent)
 
         # get sentiment
-        sentiment = FeatureExtractor.getSentiment(curSent)
+        sentiment = FeatureExtractor.getSentiment(curSent, previousSentiment)
         features.subjectivity = sentiment["Subjectivity"]
-        features.polarity = sentiment["Polarity"]
+        previousSentiment = features.polarity = sentiment["Polarity"]
+        features.sentimentFeats = sentiment
 
         # TODO named entities and named Entity count
 

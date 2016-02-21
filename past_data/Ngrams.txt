@@ -1,0 +1,76 @@
+
+Ngrams, 
+Classifier      accuracy    laugh precision    laugh recall    laugh f1    non-laugh precision    non-laugh recall    non-laugh f1
+------------  ----------  -----------------  --------------  ----------  ---------------------  ------------------  --------------
+Naive Bayes     0.617143           0.629823        0.657236    0.643237                0.60177            0.572804         0.58693
+
+Words, Ngrams, Personal Pronouns, POS percentages, Sentiment analysis, Laughs previous, Sentences since last laugh, Depth, Sentence Length 
+Classifier      accuracy    laugh precision    laugh recall    laugh f1    non-laugh precision    non-laugh recall    non-laugh f1
+------------  ----------  -----------------  --------------  ----------  ---------------------  ------------------  --------------
+Naive Bayes     0.705714           0.699684        0.742729    0.720564               0.712859            0.667056        0.689197
+
+Words, Ngrams, Personal Pronouns, POS percentages, Sentiment analysis, Sentence Length 
+Classifier      accuracy    laugh precision    laugh recall    laugh f1    non-laugh precision    non-laugh recall    non-laugh f1
+------------  ----------  -----------------  --------------  ----------  ---------------------  ------------------  --------------
+Naive Bayes     0.641714           0.627136        0.709091      0.6656               0.660927            0.573563        0.614154
+
+Words, Ngrams, 
+Classifier      accuracy    laugh precision    laugh recall    laugh f1    non-laugh precision    non-laugh recall    non-laugh f1
+------------  ----------  -----------------  --------------  ----------  ---------------------  ------------------  --------------
+Naive Bayes     0.670857           0.653251        0.725086    0.687296               0.692702            0.616876        0.652593
+
+Words, Ngrams, Personal Pronouns, POS percentages, Sentiment analysis, Laughs previous, Sentences since last laugh, Depth, Sentence Length 
+Classifier      accuracy    laugh precision    laugh recall    laugh f1    non-laugh precision    non-laugh recall    non-laugh f1
+------------  ----------  -----------------  --------------  ----------  ---------------------  ------------------  --------------
+Naive Bayes     0.682857           0.673469         0.73743       0.704               0.694805            0.625731        0.658462
+
+Words, Ngrams, Personal Pronouns, POS percentages, Sentiment analysis, Sentence Length 
+Classifier      accuracy    laugh precision    laugh recall    laugh f1    non-laugh precision    non-laugh recall    non-laugh f1
+------------  ----------  -----------------  --------------  ----------  ---------------------  ------------------  --------------
+Naive Bayes     0.653143           0.632856        0.676887    0.654131                0.67497             0.63082        0.652149
+
+Words, Personal Pronouns, POS percentages, Sentiment analysis, Sentence Length 
+Classifier      accuracy    laugh precision    laugh recall    laugh f1    non-laugh precision    non-laugh recall    non-laugh f1
+------------  ----------  -----------------  --------------  ----------  ---------------------  ------------------  --------------
+AdaBoost        0.620571           0.644947        0.549887    0.593635               0.602204            0.692396        0.644159
+
+Words, Personal Pronouns, POS percentages, Sentiment analysis, Sentence Length 
+Classifier      accuracy    laugh precision    laugh recall    laugh f1    non-laugh precision    non-laugh recall    non-laugh f1
+------------  ----------  -----------------  --------------  ----------  ---------------------  ------------------  --------------
+AdaBoost        0.614857           0.633172        0.585011     0.60814               0.598485            0.646028        0.621348
+
+Words, Personal Pronouns, POS percentages, Sentiment analysis, Laughs previous, Sentences since last laugh, Depth, Sentence Length 
+Classifier      accuracy    laugh precision    laugh recall    laugh f1    non-laugh precision    non-laugh recall    non-laugh f1
+------------  ----------  -----------------  --------------  ----------  ---------------------  ------------------  --------------
+AdaBoost        0.672571           0.661487        0.689815    0.675354               0.684335            0.655756        0.669741
+
+Words, Personal Pronouns, POS percentages, Sentiment analysis, Sentence Length 
+Classifier      accuracy    laugh precision    laugh recall    laugh f1    non-laugh precision    non-laugh recall    non-laugh f1
+------------  ----------  -----------------  --------------  ----------  ---------------------  ------------------  --------------
+AdaBoost           0.624           0.605603         0.65808    0.630752               0.644769            0.591518        0.616997
+
+Words, Personal Pronouns, POS percentages, Sentiment analysis, Laughs previous, Sentences since last laugh, Depth, Sentence Length 
+Classifier       accuracy    laugh precision    laugh recall    laugh f1    non-laugh precision    non-laugh recall    non-laugh f1
+-------------  ----------  -----------------  --------------  ----------  ---------------------  ------------------  --------------
+AdaBoost         0.704              0.710884        0.704494    0.707675               0.697005            0.703488        0.700231
+Random Forest    0.661714           0.703552        0.578652    0.635018               0.631631            0.747674        0.684771
+
+Words, Personal Pronouns, POS percentages, Sentiment analysis, Sentence Length 
+Classifier       accuracy    laugh precision    laugh recall    laugh f1    non-laugh precision    non-laugh recall    non-laugh f1
+-------------  ----------  -----------------  --------------  ----------  ---------------------  ------------------  --------------
+AdaBoost         0.626857           0.627551        0.576788    0.6011                 0.626294             0.67447        0.64949
+Random Forest    0.608571           0.622449        0.500586    0.554906               0.599624             0.71126        0.650688
+
+Words, Personal Pronouns, POS percentages, Sentiment analysis, Laughs previous, Sentences since last laugh, Depth, Sentence Length 
+Classifier       accuracy    laugh precision    laugh recall    laugh f1    non-laugh precision    non-laugh recall    non-laugh f1
+-------------  ----------  -----------------  --------------  ----------  ---------------------  ------------------  --------------
+Naive Bayes      0.692              0.673729        0.733564    0.702374               0.7134              0.651189        0.680876
+AdaBoost         0.696              0.690557        0.700115    0.695304               0.701493            0.691959        0.696693
+Random Forest    0.658857           0.686981        0.572088    0.624292               0.639105            0.744054        0.687598
+
+Words, Personal Pronouns, POS percentages, Sentiment analysis, Sentence Length 
+Classifier       accuracy    laugh precision    laugh recall    laugh f1    non-laugh precision    non-laugh recall    non-laugh f1
+-------------  ----------  -----------------  --------------  ----------  ---------------------  ------------------  --------------
+Naive Bayes      0.659429           0.646794        0.670945    0.658648               0.672474            0.648376        0.660205
+AdaBoost         0.646286           0.655352        0.585764    0.618608               0.639228            0.704367        0.670218
+Random Forest    0.636              0.669753        0.506418    0.576744               0.616152            0.760358        0.680702

@@ -70,10 +70,20 @@ def langFeatures(featsCollection, featuresToUse):
             D["adj_percentage"] = featsCollection.POS["adj_percentage"]
             D["verb_percentage"] = featsCollection.POS["verb_percentage"]
 
+            D["nouns"] = featsCollection.POS["nouns"]
+            D["adjectives"] = featsCollection.POS["adjectives"]
+            D["verbs"] = featsCollection.POS["verbs"]
+
     # 4. Sentiment Analysis
     if featuresToUse[4]:
         D["Subjectivity"] = featsCollection.subjectivity
         D["Polarity"] = featsCollection.polarity
+
+        D["Polarity_Diff"] = featsCollection.sentimentFeats["Polarity_Diff"]
+
+        D["Subjectivity_Bin"] = featsCollection.sentimentFeats["Subjectivity_Bin"]
+        D["Polarity_Bin"] = featsCollection.sentimentFeats["Polarity_Bin"]
+        D["Diff_Bin"] = featsCollection.sentimentFeats["Diff_Bin"]
 
     # 5. Laugh Count Before This
     if featuresToUse[5]:
@@ -174,11 +184,28 @@ def textToWordGrams(words):
     return allgrams
 
 
-def getSentiment(text):
+def sentimentBin(sent):
+    if sent < -.1:
+        return -1
+    elif sent > .1:
+        return 1
+    else:
+        return 0
+
+
+def getSentiment(text, previousSentiment):
     D = {}
     testimonial = TextBlob(text)
+    polarity = testimonial.sentiment.polarity
     D["Subjectivity"] = testimonial.sentiment.subjectivity
-    D["Polarity"] = testimonial.sentiment.polarity
+    D["Polarity"] = polarity
+
+    diff = polarity - previousSentiment
+    D["Polarity_Diff"] = diff
+
+    D["Subjectivity_Bin"] = sentimentBin(testimonial.sentiment.subjectivity)
+    D["Polarity_Bin"] = sentimentBin(polarity)
+    D["Diff_Bin"] = sentimentBin(diff)
 
     return D
 
@@ -223,6 +250,10 @@ def getPOS(text):
 
     # check the documentation for binning explanation
     # bin the nouns and add them to dictionary
+    ret["nouns"] = np
+    ret["adjectives"] = ap
+    ret["verbs"] = vp
+
     if np < .145:
         ret["noun_percentage"] = 0
     elif np < .255:
