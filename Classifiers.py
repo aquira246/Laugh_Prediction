@@ -163,7 +163,7 @@ def runClassifiers(positives, negatives, featuresToUse, outFile, verbose, classi
 
         # testclf = RandomForestClassifier()
         # clf = AdaBoostClassifier(base_estimator=testclf, n_estimators=100)
-        clf = AdaBoostClassifier(n_estimators=100)
+        clf = AdaBoostClassifier(n_estimators=35)
         classifier = SklearnClassifier(clf).train(train_data)
 
         # get the time to train
@@ -199,3 +199,5 @@ def runClassifiers(positives, negatives, featuresToUse, outFile, verbose, classi
             out.write(FeatureExtractor.featuresToString(featuresToUse))
             out.write(tabulate(table, headers=["Classifier", "accuracy", "pos precision", "pos recall", "pos f1", "neg precision", "neg recall", "neg f1"]))
             out.write("\n")
+
+    return table
