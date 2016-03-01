@@ -11,6 +11,7 @@ from nltk.classify import SklearnClassifier
 from sklearn.svm import SVC
 from sklearn.ensemble import AdaBoostClassifier
 from sklearn.ensemble import RandomForestClassifier
+from sklearn.tree import DecisionTreeClassifier
 
 import FeatureExtractor
 from loadingbar import printPercentage
@@ -161,9 +162,9 @@ def runClassifiers(positives, negatives, featuresToUse, outFile, verbose, classi
         # The main parameters to tune to obtain good results are:
         # n_estimators and the complexity of the base estimators
 
-        # testclf = RandomForestClassifier()
-        # clf = AdaBoostClassifier(base_estimator=testclf, n_estimators=100)
-        clf = AdaBoostClassifier(n_estimators=35)
+        testclf = DecisionTreeClassifier(max_depth=1)
+        clf = AdaBoostClassifier(base_estimator=testclf, n_estimators=60)
+        # clf = AdaBoostClassifier(n_estimators=35)
         classifier = SklearnClassifier(clf).train(train_data)
 
         # get the time to train
@@ -192,7 +193,7 @@ def runClassifiers(positives, negatives, featuresToUse, outFile, verbose, classi
 
     if (outFile == ""):
         print("\n", FeatureExtractor.featuresToString(featuresToUse))
-        print(tabulate(table, headers=["Classifier", "accuracy", "pos precision", "pos recall", "pos f1", "neg precision", "neg recall", "neg f1"]))
+        # print(tabulate(table, headers=["Classifier", "accuracy", "pos precision", "pos recall", "pos f1", "neg precision", "neg recall", "neg f1"]))
     else:
         with open(outFile, 'a') as out:
             out.write("\n")

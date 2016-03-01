@@ -1,38 +1,48 @@
-rf = open("blah.txt", 'r')
+import FeatureExtractor
+import DataCreator
 
-accuracy = 0
-posPrecision = 0
-posRecall = 0
-posf1 = 0
-negPrecision = 0
-negRecall = 0
-negf1 = 0
-i = 0
-for line in rf.readlines()[1:]:
-    info = line.strip().split("   ")
-    i += 1
-    accuracy += float(info[0])
-    posPrecision += float(info[1])
-    posRecall += float(info[2])
-    posf1 += float(info[3])
-    negPrecision += float(info[4])
-    negRecall += float(info[5])
-    negf1 += float(info[6])
 
-accuracy = accuracy/i
-posPrecision = posPrecision/i
-posRecall = posRecall/i
-posf1 = posf1/i
-negPrecision = negPrecision/i
-negRecall = negRecall/i
-negf1 = negf1/i
+def getData(usePickled):
+    positives = []
+    negatives = []
 
-print("Accuracy: ", accuracy)
-print("Positive Precision: ", posPrecision)
-print("Positive Recall: ", posRecall)
-print("Positive f1: ", posf1)
-print("Negative Precision: ", negPrecision)
-print("Negative Recall: ", negRecall)
-print("Negative f1: ", negf1)
+    # determine if we are going to use pickled data or not
+    if usePickled:
+        print("Using pickled files\n")
+        positives = DataCreator.usePickledFile("pickled_data/positives.p")
+        negatives = DataCreator.usePickledFile("pickled_data/negatives.p")
+    else:
+        print("Creating data\n")
+        (positives, negatives) = DataCreator.createDataFrom("parsed_websites/", "Ted_Meta.txt", "Ted_Laughs.txt", False)
+        print("Pickling data\n")
+        DataCreator.pickleData("pickled_data/positives.p", positives)
+        DataCreator.pickleData("pickled_data/negatives.p", negatives)
 
-rf.close
+    return(positives, negatives)
+
+
+
+"""MAIN"""
+if __name__ == '__main__':
+    (positives, negatives) = getData(True)
+
+    featuresToUse = [False, False, False, False, False, False, False, False, False, True, True]
+
+    wf = open("deleteme.txt", 'w')
+    wf.writelines("Question\n")
+
+    for data in positives[0:25]:
+        feats = FeatureExtractor.langFeatures(data, featuresToUse)
+
+        if feats["isQuestion"] == 0:
+            wf.writelines(data.sentence + "\n")
+
+    wf.writelines("\n=============================================================================\nQuote:\n")
+
+    for data in positives[0:25]:
+        feats = FeatureExtractor.langFeatures(data, featuresToUse)
+
+        if feats["hasQuote"] == 0:
+            wf.writelines(data.sentence + "\n")
+
+    wf.close

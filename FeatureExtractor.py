@@ -5,7 +5,7 @@ from nltk.tag import pos_tag, map_tag
 from nltk.util import ngrams
 from textblob import TextBlob
 
-TOTAL_FEATURES = 9
+TOTAL_FEATURES = 11
 
 
 # First define a function that produces features from a given object
@@ -22,6 +22,8 @@ TOTAL_FEATURES = 9
 # 6. Sentences since last laugh
 # 7. Depth
 # 8. Length of the sentence
+# 9. is question
+# 10. has quotation
 # Note that featuresets are lists. That's what the classifier takes as input
 def langFeatures(featsCollection, featuresToUse):
 
@@ -101,12 +103,26 @@ def langFeatures(featsCollection, featuresToUse):
     if featuresToUse[8]:
         D["Length"] = featsCollection.length
 
+    # 9. is question
+    if featuresToUse[9]:
+        if "?" in featsCollection.sentence and len(featsCollection.sentence) > 1:
+            D["isQuestion"] = 1
+        else:
+            D["isQuestion"] = 0
+
+    # 10. has quotation
+    if featuresToUse[10]:
+        if "\"" in featsCollection.sentence:
+            D["hasQuote"] = 1
+        else:
+            D["hasQuote"] = 0
+
     return D
 
 
 def featuresToString(featuresToUse):
-    if (len(featuresToUse) < 8):
-        for x in range(8 - len(featuresToUse)):
+    if (len(featuresToUse) < TOTAL_FEATURES):
+        for x in range(TOTAL_FEATURES - len(featuresToUse)):
             featuresToUse.append(False)
 
     ret = ""
@@ -136,7 +152,13 @@ def featuresToString(featuresToUse):
         ret = ret + "Depth, "
 
     if featuresToUse[8]:
-        ret = ret + "Sentence Length "
+        ret = ret + "Sentence Length, "
+
+    if featuresToUse[9]:
+        ret = ret + "Is Question, "
+
+    if featuresToUse[10]:
+        ret = ret + "Has Quote "
 
     ret = ret + "\n"
 

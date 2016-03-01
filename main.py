@@ -76,9 +76,7 @@ if __name__ == '__main__':
     # ]
 
     featureSetsToUse = [
-        # [False, False, False, False, False, True, True, True, False, False],
-        # [True, False, True, True, True, True, True, True, False, False],
-        [True, False, True, True, False, False, False, True, False]
+        [True, True, True, True, True, False, False, True, True]
     ]
 
     # [Naive Bayes, Decision Tree, Max Entropy, Support Vector machine, adaboost, random forest]
@@ -96,8 +94,8 @@ if __name__ == '__main__':
             for i in range(5):
                 random.shuffle(positives)
                 random.shuffle(negatives)
-                # positives = positives[:3580]
-                # negatives = negatives[:3580]
+                positives = positives[:3580]
+                negatives = negatives[:3580]
                 p = multiprocessing.Process(target=worker, args=(positives, negatives, classifiersToUse, feats, "blah.txt", j*5 + i,))
                 jobs.append(p)
                 p.start()
