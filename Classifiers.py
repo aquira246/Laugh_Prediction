@@ -26,6 +26,10 @@ def assess_classifier(classifier, test_data, text):
 
     numDataSets = len(test_data)
     onDataSet = 0
+    # TN = 0
+    # TP = 0
+    # FN = 0
+    # FP = 0
 
     # enumerate through the test data and classify them
     for i, (feats, label) in enumerate(test_data):
@@ -33,7 +37,22 @@ def assess_classifier(classifier, test_data, text):
         observed = classifier.classify(feats)
         testsets[observed].add(i)
         onDataSet += 1
+        # if label == observed:
+        #     if observed:
+        #         TP += 1
+        #     else:
+        #         TN += 1
+        # else:
+        #     if observed:
+        #         FP += 1
+        #     else:
+        #         FN += 1
+
+
         # printPercentage(onDataSet/numDataSets * 100, "Extracting Features: ")
+    # precision = TP/(TP+FP)
+    # recall = TP/(TP+FN)
+    # f1Score = 2*((precision*recall)/(precision + recall))
 
     # calculate the precisionl, recall, f-measure
     laugh_precision = precision(refsets[True], testsets[True])
@@ -155,6 +174,7 @@ def runClassifiers(positives, negatives, featuresToUse, outFile, verbose, classi
         table.append(assess_classifier(classifier, test_data, "Support Vector Machine"))
 
     if classifiersToUse[4]:
+        numEstimators = 50
         print("Running AdaBoost classifier")
         timeStart = time.time()
 
@@ -162,16 +182,16 @@ def runClassifiers(positives, negatives, featuresToUse, outFile, verbose, classi
         # The main parameters to tune to obtain good results are:
         # n_estimators and the complexity of the base estimators
 
-        testclf = DecisionTreeClassifier(max_depth=1)
-        clf = AdaBoostClassifier(base_estimator=testclf, n_estimators=60)
-        # clf = AdaBoostClassifier(n_estimators=35)
+        # testclf = DecisionTreeClassifier(max_depth=1)
+        # clf = AdaBoostClassifier(base_estimator=testclf, n_estimators=60)
+        clf = AdaBoostClassifier(n_estimators=numEstimators)
         classifier = SklearnClassifier(clf).train(train_data)
 
         # get the time to train
         print ("\nTime to train in seconds: ", time.time() - timeStart)
 
         # store the accuracy in the table
-        table.append(assess_classifier(classifier, test_data, "AdaBoost"))
+        table.append(assess_classifier(classifier, test_data, "AdaBoost(" + str(numEstimators) + ")"))
 
     if classifiersToUse[5]:
         print("Running Random Forest Classifier classifier")

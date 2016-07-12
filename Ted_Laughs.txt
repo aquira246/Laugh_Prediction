@@ -1,7 +1,14 @@
-Number with laughs: 693
-Number without Laughs: 279
+Number of files with laughs: 693
+Number of files without Laughs: 279
 
-Average Laugh Count: 6.438672438672438
+Average Paragraphs: 27.536008230452676
+Average Words: 2276.6944444444443
+
+Total Paragraphs: 26765
+Total Words: 2212947
+
+Total Laugh Count: 4462
+Average Laugh Count (only for files with laughter): 6.438672438672438
 Average Laugh Location: 517.6392496392497
 Average Laugh Location by Percent: 0.2342505633324997
 

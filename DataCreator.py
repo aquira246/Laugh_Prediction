@@ -12,7 +12,7 @@ import loadingbar
 
 CUT_OUTLIER_PERCENTAGE = .05
 
-def splitFile(md):
+def splitFile(md, splitBySentence):
     rf = open(md.filename, 'r')
 
     # skip first 6 lines since they aren't important
@@ -24,56 +24,64 @@ def splitFile(md):
     talk = talk.replace("-- (Laughter) --", " (Laughter) ")
     talk = talk.replace("-- (Laughter) ", " (Laughter) ")
 
-    sents = sent_tokenize(talk)       # the talk turned into sentences
-    passedSents = []                  # the pure (laughs removed) sents passed
-    passedWords = [["TS", "TS", "TS"]]  # prev sents broken into stemmed/CC wds
-    passedPOS = []                    # passed sents broken into POS
-    numSents = len(sents)             # the number of sentences in the talk
-    sentsSinceLastLaugh = 0           # the number of sents since last laugh
+    chunks = []
+    if splitBySentence:
+        chunks = sent_tokenize(talk)       # the talk turned into sentences
+    else:
+        chunks = talk.split("\n")          # the talk is split by paragraph
+
+    passedChunks = []                  # the pure (laughs removed) chunks passed
+    passedWords = [["TS", "TS", "TS"]]  # prev chunks broken into stemmed/CC wds
+    passedPOS = []                    # passed chunks broken into POS
+    numChunks = len(chunks)             # the number of chunks in the talk
+    chunksSinceLastLaugh = 0           # the number of chunks since last laugh
     laughCount = 0                    # the laughs counted so far
     positives = []                    # all of the positives
     negatives = []                    # all of the negatives
     previousSentiment = 0             # the polarity of the previous sentiment
 
-    for i in range(numSents):
-        # create a FeatureCollection for each sentence
+    for i in range(numChunks):
+        # create a FeatureCollection for each chunk
         features = FeatureCollection.FeatureCollection(md.name)
 
-        # if there is laughter in the sentence and it's not at the beginning OR
-        # it is at the start of the next (if there is one) sentence
-        if ("(Laughter)" in sents[i][3:]) or (i != numSents - 1 and ("(Laughter)" in sents[i+1][:11])):
+        # if there is laughter in the chunk and it's not at the beginning OR
+        # it is at the start of the next (if there is one) chunk
+        if ("(Laughter)" in chunks[i][3:]) or (i != numChunks - 1 and ("(Laughter)" in chunks[i+1][:11])):
             features.positive = True
         else:
             features.positive = False
 
         # increase the distance since the last laugh
-        sentsSinceLastLaugh += 1
+        chunksSinceLastLaugh += 1
 
-        features.depth = i/numSents  # Depth
+        features.depth = i/numChunks  # Depth
         features.laughsUntilNow = laughCount  # Laugh Count Before This
-        features.sentsSinceLaugh = sentsSinceLastLaugh  # Sents since lastlaugh
+        features.chunksSinceLaugh = chunksSinceLastLaugh  # Chunks since lastlaugh
 
-        # remove the laughter from the sentence
-        curSent = sents[i].replace("(Laughter)", "")
-        features.sentence = curSent
+        # remove the laughter from the chunk
+        curChunk = chunks[i].replace("(Laughter)", "")
+        features.sentence = curChunk
 
-        # put this sentence at the end of the passed sentences list
-        passedSents.append(curSent)
+        # put this chunk at the end of the passed chunks list
+        passedChunks.append(curChunk)
 
         # get sentiment
-        sentiment = FeatureExtractor.getSentiment(curSent, previousSentiment)
+        sentiment = FeatureExtractor.getSentiment(curChunk, previousSentiment)
         features.subjectivity = sentiment["Subjectivity"]
         previousSentiment = features.polarity = sentiment["Polarity"]
         features.sentimentFeats = sentiment
 
         # TODO named entities and named Entity count
 
+        words = word_tokenize(curChunk)
+
         # get Parts of speech features and conviently tokenize string
-        (_, pos) = FeatureExtractor.getPOS(curSent)
+        (_, pos) = FeatureExtractor.getPOS(words)
         passedPOS.append(pos)
         features.POS = pos
 
-        words = word_tokenize(curSent)
+        # get length of chunk
+        features.length = len(words)
 
         # set the last 3 words
         features.prev3Words = passedWords[-1][-3:]
@@ -81,21 +89,28 @@ def splitFile(md):
         # case collapse and stem words
         stemmer = SnowballStemmer("english")
 
-        for i in range(len(words)):
+        # stem words and get the variance
+        variousWords = {}
+        for i in range(features.length):
+            # move following line below if variance by stemmed words
+            variousWords[words[i]] = True
             words[i] = stemmer.stem(words[i].lower())
+
+        # calculate word variance
+        if (features.length > 0):
+            features.wordVariance = len(variousWords)/features.length
+        else:
+            features.wordVariance = 0
 
         # get words as features
         passedWords.append((words + ["EOS"]))
         features.words = words
 
-        # get length of sentence
-        features.length = len(words)
-
-        # if the sentence was positive thenwe need to:
+        # if the chunk was positive thenwe need to:
         # reset the distance since last laugh and increment laugh count
         if features.positive:
             laughCount += 1
-            sentsSinceLastLaugh = 0
+            chunksSinceLastLaugh = 0
             positives.append(features)
         else:
             negatives.append(features)
@@ -105,7 +120,7 @@ def splitFile(md):
     return [positives, negatives]
 
 
-def creatingData(metadata, lengths):
+def creatingData(metadata, lengths, useSentences):
     # cut out talks that are too long or short
     cutPoint = int(math.floor(len(metadata)*CUT_OUTLIER_PERCENTAGE))
     trimmedLengths = lengths[cutPoint:-cutPoint]
@@ -126,7 +141,7 @@ def creatingData(metadata, lengths):
                 break
 
         metadata.remove(matchedFile)
-        pieces = splitFile(matchedFile)
+        pieces = splitFile(matchedFile, useSentences)
         posData = posData + pieces[0]
         negData = negData + pieces[1]
 
@@ -139,7 +154,7 @@ def creatingData(metadata, lengths):
     return [posData, negData]
 
 
-def createDataFrom(location, metadataFile, laughDataFile, createFiles):
+def createDataFrom(location, metadataFile, laughDataFile, createFiles, useSentences = True):
     if createFiles:
         print("Creating meta files\n")
         (metadata, lengths) = \
@@ -150,7 +165,7 @@ def createDataFrom(location, metadataFile, laughDataFile, createFiles):
             TedMeta.useTedMetaFiles(location, metadataFile)
 
     print("Creating data\n")
-    return creatingData(metadata, lengths)
+    return creatingData(metadata, lengths, useSentences)
 
 
 def pickleData(wf, data):

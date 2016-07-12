@@ -1,0 +1,80 @@
+FEATURE RESULTS: June 20th
+Note, these are all the averages of at least 25 runs
+
+Has Quote 
+Classifier      accuracy    pos precision    pos recall    pos f1    neg precision    neg recall    neg f1
+------------  ----------  ---------------  ------------  --------  ---------------  ------------  --------
+Naive Bayes     0.567342         0.746401      0.204054  0.320387         0.539014      0.930630  0.682637
+
+Is Question, 
+Classifier      accuracy    pos precision    pos recall    pos f1    neg precision    neg recall    neg f1
+------------  ----------  ---------------  ------------  --------  ---------------  ------------  --------
+Naive Bayes     0.498392         0.491727      0.794778  0.572835         0.488272     0.2020066  0.215612
+
+Is Question, Has Quote 
+Classifier      accuracy    pos precision    pos recall    pos f1    neg precision    neg recall    neg f1
+------------  ----------  ---------------  ------------  --------  ---------------  ------------  --------
+Naive Bayes     0.573184          0.74717      0.221229  0.341379         0.542951       0.92514  0.684298
+
+Is Question, Has Quote 
+Classifier       accuracy    pos precision    pos recall    pos f1    neg precision    neg recall    neg f1
+-------------  ----------  ---------------  ------------  --------  ---------------  ------------  --------
+Decision Tree    0.566617         0.740660      0.205016  0.321004         0.538677      0.928217  0.681715
+
+Is Question, Has Quote 35 estimators
+Classifier      accuracy    pos precision    pos recall    pos f1    neg precision    neg recall    neg f1
+------------  ----------  ---------------  ------------  --------  ---------------  ------------  --------
+AdaBoost        0.566058         0.732863      0.207912  0.323786         0.538507      0.924204  0.680493
+
+Is Question, Has Quote 50 estimators
+Classifier      accuracy    pos precision    pos recall    pos f1    neg precision    neg recall    neg f1
+------------  ----------  ---------------  ------------  --------  ---------------  ------------  --------
+AdaBoost        0.566275         0.735317      0.207091  0.323000         0.538592      0.925459  0.680899
+
+50 estimators
+Words, Ngrams, Personal Pronouns, POS percentages, Sentiment analysis, Laughs previous, Sentences since last laugh, Depth, Sentence Length, Is Question, Has Quote 
+Classifier      accuracy    pos precision    pos recall    pos f1    neg precision    neg recall    neg f1
+------------  ----------  ---------------  ------------  --------  ---------------  ------------  --------
+AdaBoost        0.697090         0.697339      0.696741  0.696949         0.697046      0.697440  0.697153
+
+Words, Ngrams, Personal Pronouns, POS percentages, Laughs previous, Sentences since last laugh, Is Question, Has Quote 
+Classifier      accuracy    pos precision    pos recall    pos f1    neg precision    neg recall    neg f1
+------------  ----------  ---------------  ------------  --------  ---------------  ------------  --------
+AdaBoost        0.693296         0.702576      0.670391  0.686106         0.684829      0.716201  0.700164
+
+50 estimators
+Words, Ngrams, Personal Pronouns, POS percentages, Laughs previous, Sentences since last laugh, Is Question, Has Quote 
+Classifier      accuracy    pos precision    pos recall    pos f1    neg precision    neg recall    neg f1
+------------  ----------  ---------------  ------------  --------  ---------------  ------------  --------
+AdaBoost        0.686569         0.690243      0.677933  0.683723         0.683685       0.69525  0.689088
+
+50 estimators
+Words, Ngrams, Personal Pronouns, POS percentages, Sentiment analysis, Depth, Sentence Length, Is Question, Has Quote 
+Classifier      accuracy    pos precision    pos recall    pos f1    neg precision    neg recall    neg f1
+------------  ----------  ---------------  ------------  --------  ---------------  ------------  --------
+AdaBoost        0.632216         0.653384      0.563873  0.605183         0.616339      0.700558  0.655660
+
+Words, Ngrams, Personal Pronouns and PN/N, POS percentages, Sentiment analysis, Laughs previous, Sentences since last laugh, Depth, Sentence Length, Is Question, Has Quote, Word Variance 
+Classifier      accuracy    pos precision    pos recall    pos f1    neg precision    neg recall    neg f1
+------------  ----------  ---------------  ------------  --------  ---------------  ------------  --------
+AdaBoost        0.712291         0.713483      0.709497  0.711485         0.711111      0.715084  0.713092
+
+
+Decision Tree AdaBoost
+Words, Ngrams, Personal Pronouns and PN/N, POS percentages, Depth, Sentence Length, Is Question, Has Quote, Word Variance 
+Classifier      accuracy    pos precision    pos recall    pos f1    neg precision    neg recall    neg f1
+------------  ----------  ---------------  ------------  --------  ---------------  ------------  --------
+AdaBoost(50)     0.63743         0.656489      0.576536   0.61392          0.62251      0.698324  0.658241
+
+
+Words, Ngrams, Personal Pronouns and PN/N, POS percentages, Depth, Sentence Length, Is Question, Has Quote, Word Variance 
+Classifier                accuracy    pos precision    pos recall     pos f1    neg precision    neg recall    neg f1
+----------------------  ----------  ---------------  ------------  ---------  ---------------  ------------  --------
+Support Vector Machine    0.63431          0.65448       0.56969    0.60896         0.61899       0.69892   0.65641 
+
+Regular AdaBoost
+Words, Ngrams, Personal Pronouns and PN/N, POS percentages, Depth, Sentence Length, Is Question, Has Quote, Word Variance 
+Classifier      accuracy    pos precision    pos recall    pos f1    neg precision    neg recall    neg f1
+------------  ----------  ---------------  ------------  --------  ---------------  ------------  --------
+AdaBoost(50)    0.634637         0.640936      0.612291  0.626286         0.628877      0.656983  0.642623
+

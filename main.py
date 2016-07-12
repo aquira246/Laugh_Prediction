@@ -4,21 +4,30 @@ import random
 import multiprocessing
 
 
-def getData(usePickled):
+def getData(usePickled = True, useSentences = True):
     positives = []
     negatives = []
 
     # determine if we are going to use pickled data or not
     if usePickled:
         print("Using pickled files\n")
-        positives = DataCreator.usePickledFile("pickled_data/positives.p")
-        negatives = DataCreator.usePickledFile("pickled_data/negatives.p")
+        if useSentences:
+            positives = DataCreator.usePickledFile("pickled_data/sent_positives.p")
+            negatives = DataCreator.usePickledFile("pickled_data/sent_negatives.p")
+        else:
+            positives = DataCreator.usePickledFile("pickled_data/para_positives.p")
+            negatives = DataCreator.usePickledFile("pickled_data/para_negatives.p")
     else:
         print("Creating data\n")
-        (positives, negatives) = DataCreator.createDataFrom("parsed_websites/", "Ted_Meta.txt", "Ted_Laughs.txt", False)
+        (positives, negatives) = DataCreator.createDataFrom("parsed_websites/", "Ted_Meta.txt", "Ted_Laughs.txt", False, useSentences)
         print("Pickling data\n")
-        DataCreator.pickleData("pickled_data/positives.p", positives)
-        DataCreator.pickleData("pickled_data/negatives.p", negatives)
+
+        if useSentences:
+            DataCreator.pickleData("pickled_data/sent_positives.p", positives)
+            DataCreator.pickleData("pickled_data/sent_negatives.p", negatives)
+        else:
+            DataCreator.pickleData("pickled_data/para_positives.p", positives)
+            DataCreator.pickleData("pickled_data/para_negatives.p", negatives)
 
     return(positives, negatives)
 
@@ -43,18 +52,21 @@ def worker(positives, negatives, classifiersToUse, feats, outFile, i):
 
 """MAIN"""
 if __name__ == '__main__':
-    (positives, negatives) = getData(True)
+    (positives, negatives) = getData(False, False)
 
     print("Extracting Features\n")
     # [every word in the text,
     #  ngram for words and characters,
-    #  POS tag Personal Pronouns,
+    #  POS tag Personal Pronouns and Proper Nouns per Noun,
     #  Noun+adjective+verb percentage,
     #  Sentiment Analysis,
     #  Laugh Count Before This,
     #  Sentences since last laugh,
     #  Depth,
-    #  length]
+    #  length,
+    #  isQuestion,
+    #  isQuote,
+    #  word variance]
     # featureSetsToUse = [
     #     # [True, False, False, False, False, False, False, False, False],
     #     # [True, True, False, False, False, False, False, False, False],
@@ -65,22 +77,18 @@ if __name__ == '__main__':
     #     # [False, False, False, False, False, False, True, False, False],
     #     # [False, False, False, False, False, False, False, True, False],
     #     # [False, False, False, False, False, False, False, False, True],
-    #     # [True, False, True, True, False, True, True, True, True],
     #     [True, True, True, True, True, True, True, True, True],
     #     # [True, False, True, True, True, True, True, True, True],
-    #     # [True, False, True, True, True, True, True, False, False],
-    #     # [False, False, True, True, True, True, True, True, False],
-    #     # [True, False, True, True, True, False, False, False, True],
     #     # [False, False, False, False, False, True, True, True, False],
     #     # [True, True, True, True, True, False, False, False, True],
     # ]
 
     featureSetsToUse = [
-        [True, True, True, True, True, False, False, True, True]
+        [True, True, True, True, True, False, False, True, True, True, True, True],
     ]
 
     # [Naive Bayes, Decision Tree, Max Entropy, Support Vector machine, adaboost, random forest]
-    classifiersToUse = [False, False, False, False, True, False]
+    classifiersToUse = [True, False, False, False, False, False]
 
     jobs = []
 
@@ -103,41 +111,41 @@ if __name__ == '__main__':
             for p in jobs:
                 p.join()
 
-rf = open("blah.txt", 'r')
+    rf = open("blah.txt", 'r')
 
-accuracy = 0
-posPrecision = 0
-posRecall = 0
-posf1 = 0
-negPrecision = 0
-negRecall = 0
-negf1 = 0
-i = 0
-for line in rf.readlines()[1:]:
-    info = line.strip().split("   ")
-    i += 1
-    accuracy += float(info[0])
-    posPrecision += float(info[1])
-    posRecall += float(info[2])
-    posf1 += float(info[3])
-    negPrecision += float(info[4])
-    negRecall += float(info[5])
-    negf1 += float(info[6])
+    accuracy = 0
+    posPrecision = 0
+    posRecall = 0
+    posf1 = 0
+    negPrecision = 0
+    negRecall = 0
+    negf1 = 0
+    i = 0
+    for line in rf.readlines()[1:]:
+        info = line.strip().split("   ")
+        i += 1
+        accuracy += float(info[0])
+        posPrecision += float(info[1])
+        posRecall += float(info[2])
+        posf1 += float(info[3])
+        negPrecision += float(info[4])
+        negRecall += float(info[5])
+        negf1 += float(info[6])
 
-accuracy = accuracy/i
-posPrecision = posPrecision/i
-posRecall = posRecall/i
-posf1 = posf1/i
-negPrecision = negPrecision/i
-negRecall = negRecall/i
-negf1 = negf1/i
+    accuracy = accuracy/i
+    posPrecision = posPrecision/i
+    posRecall = posRecall/i
+    posf1 = posf1/i
+    negPrecision = negPrecision/i
+    negRecall = negRecall/i
+    negf1 = negf1/i
 
-print("Accuracy: ", accuracy)
-print("Positive Precision: ", posPrecision)
-print("Positive Recall: ", posRecall)
-print("Positive f1: ", posf1)
-print("Negative Precision: ", negPrecision)
-print("Negative Recall: ", negRecall)
-print("Negative f1: ", negf1)
+    print("Accuracy: ", accuracy)
+    print("Positive Precision: ", posPrecision)
+    print("Positive Recall: ", posRecall)
+    print("Positive f1: ", posf1)
+    print("Negative Precision: ", negPrecision)
+    print("Negative Recall: ", negRecall)
+    print("Negative f1: ", negf1)
 
-rf.close
+    rf.close

@@ -5,7 +5,7 @@ from nltk.tag import pos_tag, map_tag
 from nltk.util import ngrams
 from textblob import TextBlob
 
-TOTAL_FEATURES = 11
+TOTAL_FEATURES = 12
 
 
 # First define a function that produces features from a given object
@@ -15,7 +15,7 @@ TOTAL_FEATURES = 11
 # 1. every word in the text
 # 2. ngram for words and characters
 # 3. POS tag
-# 3A. Personal Pronouns
+# 3A. Personal Pronouns and Proper Nouns per Noun
 # 3B. Noun, adjective, and verb percentage
 # 4. Sentiment Analysis
 # 5. Laugh Count Before This
@@ -61,10 +61,14 @@ def langFeatures(featsCollection, featuresToUse):
     # 3. POS tag
     if featuresToUse[2] or featuresToUse[3]:
         # POS tag based feature set
-        # 3A. Personal Pronouns
+        # 3A. Personal Pronouns and Proper Nouns per Noun
         if featuresToUse[2]:
             D["Personal_Pronoun_Percentage"] = \
                 featsCollection.POS["Personal_Pronoun_Percentage"]
+
+            D["Proper_Noun_Percentage"] = \
+                featsCollection.POS["Proper_Noun_Percentage"]
+
 
         # 3B. Noun, adjective, and verb percentage
         if featuresToUse[3]:
@@ -117,6 +121,10 @@ def langFeatures(featsCollection, featuresToUse):
         else:
             D["hasQuote"] = 0
 
+    # 11. word variance
+    if featuresToUse[11]:
+        D["Word_Variance"] = featsCollection.wordVariance
+
     return D
 
 
@@ -134,7 +142,7 @@ def featuresToString(featuresToUse):
         ret = ret + "Ngrams, "
 
     if featuresToUse[2]:
-        ret = ret + "Personal Pronouns, "
+        ret = ret + "Personal Pronouns and PN/N, "
 
     if featuresToUse[3]:
         ret = ret + "POS percentages, "
@@ -158,7 +166,10 @@ def featuresToString(featuresToUse):
         ret = ret + "Is Question, "
 
     if featuresToUse[10]:
-        ret = ret + "Has Quote "
+        ret = ret + "Has Quote, "
+
+    if featuresToUse[11]:
+        ret = ret + "Word Variance "
 
     ret = ret + "\n"
 
@@ -240,35 +251,46 @@ def getPOS(text):
     ret = {}
     verbCount = 0
     nounCount = 0
+    properNounCount = 0
     adjCount = 0
     prpCount = 0
     word_list = []
+    punctuation = [".", ",", "!", "?", ";", ":", "\'", "\""]
 
     for (word, pos) in parts_of_speech:
-        word_list.append(word)
+        if word not in punctuation:
+            word_list.append(word)
 
-        if 'PRP' in pos:
-            prpCount += 1
+            if 'NNP' in pos:
+                properNounCount += 1
+            elif 'PRP' in pos:
+                prpCount += 1
 
 
-        # TODO possibly get social relationships
+            # TODO possibly get social relationships
 
-        # simplify the POS tag
-        tag = map_tag('en-ptb', 'universal', pos)
-        # increment pos counters
-        if "NOUN" in tag:
-            nounCount += 1
-        elif "ADJ" in tag:
-            adjCount += 1
-        elif "VERB" in tag:
-            verbCount += 1
+            # simplify the POS tag
+            tag = map_tag('en-ptb', 'universal', pos)
+            # increment pos counters
+            if "NOUN" in tag:
+                nounCount += 1
+            elif "ADJ" in tag:
+                adjCount += 1
+            elif "VERB" in tag:
+                verbCount += 1
+
 
     wordCount = len(word_list)
 
     # record the percentages the pos
-    np = nounCount/wordCount
-    ap = adjCount/wordCount
-    vp = verbCount/wordCount
+    np = 0
+    ap = 0
+    vp = 0
+
+    if (wordCount > 0):
+        np = nounCount/wordCount
+        ap = adjCount/wordCount
+        vp = verbCount/wordCount
 
     # check the documentation for binning explanation
     # bin the nouns and add them to dictionary
@@ -299,7 +321,16 @@ def getPOS(text):
     else:
         ret["verb_percentage"] = 2
 
-    ret["Personal_Pronoun_Percentage"] = prpCount/wordCount
+    if (wordCount > 0):
+        ret["Personal_Pronoun_Percentage"] = prpCount/wordCount
+    else:
+        ret["Personal_Pronoun_Percentage"] = 0
+
+    if (nounCount > 0):
+        ret["Proper_Noun_Percentage"] = properNounCount/nounCount
+    else:
+        ret["Proper_Noun_Percentage"] = 0
+
     ret["word_count"] = wordCount
 
     return (word_list, ret)

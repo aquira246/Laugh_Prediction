@@ -1,22 +1,6 @@
 class FeatureCollection(object):
     """docstring for featureCollection"""
 
-    name = ""
-    author = ""
-    length = 0
-    depth = 0
-    laughsUntilNow = 0
-    sentsSinceLaugh = 0
-    positive = False
-    # namedEntities = []      # Not in use yet
-    # namedEntityCount = 0    # Not in use yet
-    POS = {}
-    subjectivity = 0
-    polarity = 0
-    words = []
-    sentence = ""
-    prev3Words = []
-
     def __init__(self, talkName="", talkAuthor=""):
         self.name = talkName
         self.author = talkAuthor
@@ -34,6 +18,7 @@ class FeatureCollection(object):
         self.words = []
         self.sentence = ""
         self.prev3Words = []
+        self.wordVariance = 0
 
     def infoToString(self):
         ret = "Name: " + self.name + " " \
