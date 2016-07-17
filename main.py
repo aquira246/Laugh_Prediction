@@ -52,7 +52,7 @@ def worker(positives, negatives, classifiersToUse, feats, outFile, i):
 
 """MAIN"""
 if __name__ == '__main__':
-    (positives, negatives) = getData(False, False)
+    (positives, negatives) = getData(True, False)
 
     print("Extracting Features\n")
     # [every word in the text,
@@ -67,28 +67,12 @@ if __name__ == '__main__':
     #  isQuestion,
     #  isQuote,
     #  word variance]
-    # featureSetsToUse = [
-    #     # [True, False, False, False, False, False, False, False, False],
-    #     # [True, True, False, False, False, False, False, False, False],
-    #     # [False, False, True, False, False, False, False, False, False],
-    #     # [False, False, False, True, False, False, False, False, False],
-    #     # [False, False, False, False, True, False, False, False, False],
-    #     # [False, False, False, False, False, True, False, False, False],
-    #     # [False, False, False, False, False, False, True, False, False],
-    #     # [False, False, False, False, False, False, False, True, False],
-    #     # [False, False, False, False, False, False, False, False, True],
-    #     [True, True, True, True, True, True, True, True, True],
-    #     # [True, False, True, True, True, True, True, True, True],
-    #     # [False, False, False, False, False, True, True, True, False],
-    #     # [True, True, True, True, True, False, False, False, True],
-    # ]
-
     featureSetsToUse = [
-        [True, True, True, True, True, False, False, True, True, True, True, True],
+        [True, False, True, True, True, True, True, True, True, True, True, True],
     ]
 
     # [Naive Bayes, Decision Tree, Max Entropy, Support Vector machine, adaboost, random forest]
-    classifiersToUse = [True, False, False, False, False, False]
+    classifiersToUse = [False, False, False, False, True, False]
 
     jobs = []
 
@@ -97,13 +81,16 @@ if __name__ == '__main__':
     wf.writelines("  accuracy    pos precision    pos recall    pos f1    neg precision    neg recall    neg f1")
     wf.close
 
+    maxlen = max(len(positives), len(negatives))
+
+
     for feats in featureSetsToUse:
         for j in range(5):
-            for i in range(5):
+            for i in range(1):
                 random.shuffle(positives)
                 random.shuffle(negatives)
-                positives = positives[:3580]
-                negatives = negatives[:3580]
+                positives = positives[:maxlen]
+                negatives = negatives[:maxlen]
                 p = multiprocessing.Process(target=worker, args=(positives, negatives, classifiersToUse, feats, "blah.txt", j*5 + i,))
                 jobs.append(p)
                 p.start()
