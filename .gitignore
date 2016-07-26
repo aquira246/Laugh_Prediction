@@ -8,3 +8,5 @@ __pycache__/*
 *~
 blah.txt
 !*.sh
+
+word2vec/*

@@ -1,0 +1,57 @@
+// sentences
+
+// all with TfidfTransformer
+Words, Ngrams, Personal Pronouns and PN/N, POS percentages, Sentiment analysis, Laughs previous, Sentences since last laugh, Depth, Sentence Length, Is Question, Has Quote, Word Variance, Incongruity, 
+Classifier      accuracy    pos precision    pos recall    pos f1    neg precision    neg recall    neg f1
+------------  ----------  ---------------  ------------  --------  ---------------  ------------  --------
+AdaBoost(50)    0.687109         0.689341       0.68173  0.685318         0.685343      0.692489  0.688706
+
+Words, Ngrams, Personal Pronouns and PN/N, POS percentages, Sentiment analysis, Depth, Sentence Length, Is Question, Has Quote, Word Variance, Incongruity, 
+Classifier       accuracy    pos precision    pos recall    pos f1    neg precision    neg recall    neg f1
+-------------  ----------  ---------------  ------------  --------  ---------------  ------------  --------
+Random Forest    0.590381         0.608458      0.508963  0.553502         0.578052        0.6718  0.620974
+AdaBoost(50)     0.626743         0.628341      0.622638  0.624609         0.626416      0.630848  0.627866
+
+// 2000 with TfidTransformer
+Words, Ngrams, Personal Pronouns and PN/N, POS percentages, Sentiment analysis, Laughs previous, Sentences since last laugh, Depth, Sentence Length, Is Question, Has Quote, Word Variance, Incongruity, 
+Classifier      accuracy    pos precision    pos recall    pos f1    neg precision    neg recall    neg f1
+------------  ----------  ---------------  ------------  --------  ---------------  ------------  --------
+AdaBoost(50)    0.690697         0.699478      0.669711  0.683894         0.683372      0.711683   0.69691
+
+// all without TfidfTransformer
+Words, Ngrams, Personal Pronouns and PN/N, POS percentages, Sentiment analysis, Laughs previous, Sentences since last laugh, Depth, Sentence Length, Is Question, Has Quote, Word Variance, Incongruity, 
+Classifier      accuracy    pos precision    pos recall    pos f1    neg precision    neg recall    neg f1
+------------  ----------  ---------------  ------------  --------  ---------------  ------------  --------
+AdaBoost(50)    0.70238          0.71114       0.68171   0.696001         0.694544      0.723051  0.708413
+Random Forest   0.649235         0.680721      0.563469  0.616055         0.627609      0.735001  0.676794
+
+Words, Ngrams, Personal Pronouns and PN/N, POS percentages, Sentiment analysis, Depth, Sentence Length, Is Question, Has Quote, Word Variance, Incongruity, 
+Classifier       accuracy    pos precision    pos recall    pos f1    neg precision    neg recall    neg f1
+-------------  ----------  ---------------  ------------  --------  ---------------  ------------  --------
+Random Forest    0.612436         0.650133      0.487345  0.556862         0.590013      0.737527  0.655475
+AdaBoost(50)     0.630945         0.633994      0.62016   0.626796         0.628342      0.641729  0.634779
+
+// 2000 without TfidTransformer
+Words, Ngrams, Personal Pronouns and PN/N, POS percentages, Sentiment analysis, Laughs previous, Sentences since last laugh, Depth, Sentence Length, Is Question, Has Quote, Word Variance, Incongruity, 
+Classifier      accuracy    pos precision    pos recall    pos f1    neg precision    neg recall    neg f1
+------------  ----------  ---------------  ------------  --------  ---------------  ------------  --------
+AdaBoost(50)    0.69711         0.703189      0.682439  0.692514         0.691668       0.71178  0.701453
+
+Words, Ngrams, Personal Pronouns and PN/N, POS percentages, Sentiment analysis, Depth, Sentence Length, Is Question, Has Quote, Word Variance, Incongruity, 
+Classifier      accuracy    pos precision    pos recall    pos f1    neg precision    neg recall    neg f1
+------------  ----------  ---------------  ------------  --------  ---------------  ------------  --------
+AdaBoost(50)    0.606898         0.610938      0.590041  0.600064         0.603441      0.623755  0.613212
+Random Forest   0.615934         0.640566      0.528735  0.579087         0.598824      0.703133  0.646684
+
+
+// 200 without TfidTransformer
+Words, Ngrams, Personal Pronouns and PN/N, POS percentages, Sentiment analysis, Laughs previous, Sentences since last laugh, Depth, Sentence Length, Is Question, Has Quote, Word Variance, Incongruity, 
+Classifier      accuracy    pos precision    pos recall    pos f1    neg precision    neg recall    neg f1
+------------  ----------  ---------------  ------------  --------  ---------------  ------------  --------
+AdaBoost(50)    0.69779            0.702      0.687637  0.694657         0.693935      0.707943  0.700788
+
+// 50 without TfidfTransformer
+Words, Ngrams, Personal Pronouns and PN/N, POS percentages, Sentiment analysis, Laughs previous, Sentences since last laugh, Depth, Sentence Length, Is Question, Has Quote, Word Variance, Incongruity, 
+Classifier      accuracy    pos precision    pos recall    pos f1    neg precision    neg recall    neg f1
+------------  ----------  ---------------  ------------  --------  ---------------  ------------  --------
+AdaBoost(50)    0.698883          0.70045      0.694972  0.697701         0.697339      0.702793  0.700056

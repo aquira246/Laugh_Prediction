@@ -1,12 +1,14 @@
-import nltk
 import numpy
 import FeatureCollection
+import Word2VecHelper
+
+import nltk
 from nltk.tag import pos_tag, map_tag
 from nltk.util import ngrams
 from textblob import TextBlob
 
-TOTAL_FEATURES = 12
 
+model = Word2VecHelper.LoadModel()
 
 # First define a function that produces features from a given object
 # This function takes in a paragraph. It then breaks it up and uses it
@@ -22,29 +24,28 @@ TOTAL_FEATURES = 12
 # 6. Sentences since last laugh
 # 7. Depth
 # 8. Length of the sentence
-# 9. is question
+# 9A. is question
+# 9B. is exclamation point
 # 10. has quotation
+# 11. word variance
+# 12. incongruity approximation with word vectors
+# 13. swear words
 # Note that featuresets are lists. That's what the classifier takes as input
 def langFeatures(featsCollection, featuresToUse):
-
-    if (len(featuresToUse) < TOTAL_FEATURES):
-        for x in range(TOTAL_FEATURES - len(featuresToUse)):
-            featuresToUse.append(False)
-
     D = {}  # dictionary of keys
 
     # 1. every word in the text
-    if featuresToUse[0]:
+    if "words" in featuresToUse and featuresToUse["words"]:
         # featureset of just words
         for word in featsCollection.words:
             # the feature list is the words in the script
             D[word] = True
 
     # 2. ngram for words and characters
-    if featuresToUse[1]:
+    if "ngrams" in featuresToUse and featuresToUse["ngrams"]:
         # create char ngrams
         # text = featsCollection.prev3Words[-1][-1] + ". "\
-        #         + featsCollection.sentence
+        #         + featsCollection.chunk
 
         # cg = textToCharGrams(text)
 
@@ -59,10 +60,10 @@ def langFeatures(featsCollection, featuresToUse):
             D[gram] = True
 
     # 3. POS tag
-    if featuresToUse[2] or featuresToUse[3]:
+    if "pos_nouns" in featuresToUse or "pos_perc" in featuresToUse:
         # POS tag based feature set
         # 3A. Personal Pronouns and Proper Nouns per Noun
-        if featuresToUse[2]:
+        if "pos_nouns" in featuresToUse and featuresToUse["pos_nouns"]:
             D["Personal_Pronoun_Percentage"] = \
                 featsCollection.POS["Personal_Pronoun_Percentage"]
 
@@ -71,7 +72,7 @@ def langFeatures(featsCollection, featuresToUse):
 
 
         # 3B. Noun, adjective, and verb percentage
-        if featuresToUse[3]:
+        if "pos_perc" in featuresToUse and featuresToUse["pos_perc"]:
             D["noun_percentage"] = featsCollection.POS["noun_percentage"]
             D["adj_percentage"] = featsCollection.POS["adj_percentage"]
             D["verb_percentage"] = featsCollection.POS["verb_percentage"]
@@ -81,9 +82,9 @@ def langFeatures(featsCollection, featuresToUse):
             D["verbs"] = featsCollection.POS["verbs"]
 
     # 4. Sentiment Analysis
-    if featuresToUse[4]:
-        D["Subjectivity"] = featsCollection.subjectivity
-        D["Polarity"] = featsCollection.polarity
+    if "sentiment" in featuresToUse and featuresToUse["sentiment"]:
+        D["Subjectivity"] = featsCollection.sentimentFeats["Subjectivity"]
+        D["Polarity"] = featsCollection.sentimentFeats["Polarity"]
 
         D["Polarity_Diff"] = featsCollection.sentimentFeats["Polarity_Diff"]
 
@@ -92,84 +93,118 @@ def langFeatures(featsCollection, featuresToUse):
         D["Diff_Bin"] = featsCollection.sentimentFeats["Diff_Bin"]
 
     # 5. Laugh Count Before This
-    if featuresToUse[5]:
+    if "laugh_count" in featuresToUse and featuresToUse["laugh_count"]:
         D["Laugh Count"] = featsCollection.laughsUntilNow
 
     # 6. Sentences since last laugh
-    if featuresToUse[6]:
-        D["Last Laugh"] = featsCollection.sentsSinceLaugh
+    if "last_laugh" in featuresToUse and featuresToUse["last_laugh"]:
+        D["Last Laugh"] = featsCollection.chunksSinceLaugh
 
     # 7. Depth
-    if featuresToUse[7]:
+    if "depth" in featuresToUse and featuresToUse["depth"]:
         D["Depth"] = featsCollection.depth
 
     # 8. Length of the sentence
-    if featuresToUse[8]:
+    if "length" in featuresToUse and featuresToUse["length"]:
         D["Length"] = featsCollection.length
 
-    # 9. is question
-    if featuresToUse[9]:
-        if "?" in featsCollection.sentence and len(featsCollection.sentence) > 1:
+    # 9A. is question
+    if "question" in featuresToUse and featuresToUse["question"]:
+        if "?" in featsCollection.chunk and len(featsCollection.chunk) > 1:
             D["isQuestion"] = 1
         else:
             D["isQuestion"] = 0
 
+    # 9B. is question
+    if "exclamation" in featuresToUse and featuresToUse["exclamation"]:
+        if "!" in featsCollection.chunk and len(featsCollection.chunk) > 1:
+            D["isExclamation"] = 1
+        else:
+            D["isExclamation"] = 0
+
     # 10. has quotation
-    if featuresToUse[10]:
-        if "\"" in featsCollection.sentence:
+    if "quote" in featuresToUse and featuresToUse["quote"]:
+        if "\"" in featsCollection.chunk:
             D["hasQuote"] = 1
         else:
             D["hasQuote"] = 0
 
     # 11. word variance
-    if featuresToUse[11]:
+    if "variance" in featuresToUse and featuresToUse["variance"]:
         D["Word_Variance"] = featsCollection.wordVariance
+
+    # 12. incongruity approxmiation with Word Vectors.
+    if "incongruity" in featuresToUse and featuresToUse["incongruity"]:
+        # 1 is added to all results to remove the negative numbers
+        # if "last_laugh" in featuresToUse and featuresToUse["last_laugh"]:
+        (highest, lowest, avg) = getIncongruityFull(featsCollection.wordVector)
+        D["Repitition_Full"] = highest + 1
+        D["Disconnection_Full"] = lowest + 1
+        D["Average_Full"] = avg + 1
+        # else:
+        (highest, lowest, avg) = getIncongruityPairs(featsCollection.wordVector)
+        D["Repitition_Pairs"] = highest + 1
+        D["Disconnection_Pairs"] = lowest + 1
+        D["Average_Pairs"] = avg + 1
+
+    # 13. Swear words
+    if "swearing" in featuresToUse and featuresToUse["swearing"]:
+        D["Swearing"] = featsCollection.sentimentFeats["swearing"]
 
     return D
 
 
 def featuresToString(featuresToUse):
-    if (len(featuresToUse) < TOTAL_FEATURES):
-        for x in range(TOTAL_FEATURES - len(featuresToUse)):
-            featuresToUse.append(False)
-
     ret = ""
 
-    if featuresToUse[0]:
+    if "words" in featuresToUse and featuresToUse["words"]:
         ret = ret + "Words, "
 
-    if featuresToUse[1]:
+    if "ngrams" in featuresToUse and featuresToUse["ngrams"]:
         ret = ret + "Ngrams, "
 
-    if featuresToUse[2]:
+    if "pos_nouns" in featuresToUse and featuresToUse["pos_nouns"]:
         ret = ret + "Personal Pronouns and PN/N, "
 
-    if featuresToUse[3]:
+    if "pos_perc" in featuresToUse and featuresToUse["pos_perc"]:
         ret = ret + "POS percentages, "
 
-    if featuresToUse[4]:
+    if "sentiment" in featuresToUse and featuresToUse["sentiment"]:
         ret = ret + "Sentiment analysis, "
 
-    if featuresToUse[5]:
+    if "laugh_count" in featuresToUse and featuresToUse["laugh_count"]:
         ret = ret + "Laughs previous, "
 
-    if featuresToUse[6]:
+    if "last_laugh" in featuresToUse and featuresToUse["last_laugh"]:
         ret = ret + "Sentences since last laugh, "
 
-    if featuresToUse[7]:
+    if "depth" in featuresToUse and featuresToUse["depth"]:
         ret = ret + "Depth, "
 
-    if featuresToUse[8]:
+    if "length" in featuresToUse and featuresToUse["length"]:
         ret = ret + "Sentence Length, "
 
-    if featuresToUse[9]:
+    if "question" in featuresToUse and featuresToUse["question"]:
         ret = ret + "Is Question, "
 
-    if featuresToUse[10]:
+    if "exclamation" in featuresToUse and featuresToUse["exclamation"]:
+        ret = ret + "Is Exclamation, "
+
+    if "quote" in featuresToUse and featuresToUse["quote"]:
         ret = ret + "Has Quote, "
 
-    if featuresToUse[11]:
-        ret = ret + "Word Variance "
+    if "variance" in featuresToUse and featuresToUse["variance"]:
+        ret = ret + "Word Variance, "
+
+    if "incongruity" in featuresToUse and featuresToUse["incongruity"]:
+        ret = ret + "Incongruity, "
+
+    if "swearing" in featuresToUse and featuresToUse["swearing"]:
+        ret = ret + "Swearing, "
+
+    if "Dim Reduction" in featuresToUse and featuresToUse["Dim Reduction"]:
+        ret = ret + "Dim Reduction, "
+
 
     ret = ret + "\n"
 
@@ -218,27 +253,39 @@ def textToWordGrams(words):
 
 
 def sentimentBin(sent):
-    if sent < -.1:
-        return -1
-    elif sent > .1:
-        return 1
-    else:
+    if sent < .1:
         return 0
+    elif sent > 1.1:
+        return 2
+    else:
+        return 1
 
 
+# 1 is added to each value to remove the negatives
+# the polarity and subjectivity are initially -1 < x < 1
+# now they are 0 < x < 2
 def getSentiment(text, previousSentiment):
     D = {}
     testimonial = TextBlob(text)
-    polarity = testimonial.sentiment.polarity
-    D["Subjectivity"] = testimonial.sentiment.subjectivity
+    polarity = testimonial.sentiment.polarity + 1
+    subjectivity = testimonial.sentiment.subjectivity + 1
+    D["Subjectivity"] = subjectivity
     D["Polarity"] = polarity
 
-    diff = polarity - previousSentiment
-    D["Polarity_Diff"] = diff
+    diff = polarity - previousSentiment["Polarity"]
+
+    # 2 is add to prevent negatives
+    D["Polarity_Diff"] = diff + 2
 
     D["Subjectivity_Bin"] = sentimentBin(testimonial.sentiment.subjectivity)
     D["Polarity_Bin"] = sentimentBin(polarity)
-    D["Diff_Bin"] = sentimentBin(diff)
+
+    if diff < -.1:
+        D["Diff_Bin"] = 0
+    elif diff > .1:
+        D["Diff_Bin"] = 2
+    else:
+        D["Diff_Bin"] = 1
 
     return D
 
@@ -334,3 +381,57 @@ def getPOS(text):
     ret["word_count"] = wordCount
 
     return (word_list, ret)
+
+
+def getIncongruityFull(wordVectors):
+    highest = -1
+    lowest = 1
+    total = 0
+    count = 0
+
+    for curVec in wordVectors:
+        for j in range(len(curVec) - 1):
+            for k in range(j + 1, len(curVec)):
+                a = curVec[j]
+                b = curVec[k]
+
+                if a != b:
+                    try:
+                        rating = Word2VecHelper.Similarity(model, a, b)
+                    except KeyError:
+                        rating = 2
+
+                    if rating < 1:
+                        highest = max(rating, highest)
+                        lowest = min(rating, lowest)
+                        total += rating
+                        count += 1
+
+    avg = 0 if count == 0 else total/count
+    return (highest, lowest, avg)
+
+
+def getIncongruityPairs(wordVectors):
+    highest = -1
+    lowest = 1
+    total = 0
+    count = 0
+
+    for curVec in wordVectors:
+        for j in range(len(curVec) - 1):
+            a = curVec[j]
+            b = curVec[j + 1]
+
+            if a != b:
+                try:
+                    rating = Word2VecHelper.Similarity(model, a, b)
+                except KeyError:
+                    rating = 2
+
+                if rating < 1:
+                    highest = max(rating, highest)
+                    lowest = min(rating, lowest)
+                    total += rating
+                    count += 1
+    avg = 0 if count == 0 else total/count
+    return (highest, lowest, avg)

@@ -7,18 +7,17 @@ class FeatureCollection(object):
         self.length = 0
         self.depth = 0
         self.laughsUntilNow = 0
-        self.sentsSinceLaugh = 0
+        self.chunksSinceLaugh = 0
         self.positive = False
         # self.namedEntities = []
         # self.namedEntityCount = 0
         self.POS = {}
         self.sentimentFeats = {}
-        self.subjectivity = 0
-        self.polarity = 0
         self.words = []
-        self.sentence = ""
+        self.chunk = ""
         self.prev3Words = []
         self.wordVariance = 0
+        self.wordVector = []
 
     def infoToString(self):
         ret = "Name: " + self.name + " " \
@@ -26,7 +25,7 @@ class FeatureCollection(object):
             + "Length: " + str(self.length) + " " \
             + "Depth: " + str(self.depth) + " " \
             + "Laughs Until Now: " + str(self.laughsUntilNow) + " " \
-            + "Since Last Laugh: " + str(self.sentsSinceLaugh) + " " \
+            + "Since Last Laugh: " + str(self.chunksSinceLaugh) + " " \
             + "positive: " + str(self.positive) + " \n"
 
         return ret

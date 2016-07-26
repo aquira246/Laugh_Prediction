@@ -1,0 +1,93 @@
+// attempting to pipeline
+Words, 
+Classifier       accuracy    pos precision    pos recall    pos f1    neg precision    neg recall    neg f1
+-------------  ----------  ---------------  ------------  --------  ---------------  ------------  --------
+Random Forest    0.624061         0.694202      0.443672  0.541161         0.591237      0.804451  0.681504
+
+Ngrams, 
+Classifier       accuracy    pos precision    pos recall    pos f1    neg precision    neg recall    neg f1
+-------------  ----------  ---------------  ------------  --------  ---------------  ------------  --------
+Random Forest    0.611296         0.642317      0.504021  0.564044          0.59191       0.71857  0.648752
+
+/////////////////////////////////////////////////////////////////// Pipeline with k = 2000
+Words, Ngrams, Personal Pronouns and PN/N, POS percentages, Laughs previous, Sentences since last laugh, Depth, Sentence Length, Is Question, Has Quote, Word Variance, Incongruity, 
+Classifier       accuracy    pos precision    pos recall    pos f1    neg precision    neg recall    neg f1
+-------------  ----------  ---------------  ------------  --------  ---------------  ------------  --------
+Random Forest    0.693156         0.722208      0.628315  0.671763         0.671144      0.757997  0.711785
+Random Forest    0.693813           0.7258      0.623397  0.670546         0.669987       0.76423  0.713911
+AdaBoost(50)     0.718623         0.732396      0.689511  0.710122          0.70675      0.747734  0.726519
+
+Words, Ngrams, Personal Pronouns and PN/N, POS percentages, Sentiment analysis, Laughs previous, Sentences since last laugh, Depth, Sentence Length, Is Question, Has Quote, Word Variance, Incongruity, 
+Classifier      accuracy    pos precision    pos recall    pos f1    neg precision    neg recall    neg f1
+------------  ----------  ---------------  ------------  --------  ---------------  ------------  --------
+AdaBoost(50)    0.708649         0.721398      0.680008  0.699936         0.697579      0.737289  0.716759
+
+/////////////////////////////////////////////////////////////////// Pipeline with k = 200
+Words, Ngrams, Personal Pronouns and PN/N, POS percentages, Laughs previous, Sentences since last laugh, Depth, Sentence Length, Is Question, Has Quote, Word Variance, Incongruity, 
+Classifier      accuracy    pos precision    pos recall    pos f1    neg precision    neg recall    neg f1
+------------  ----------  ---------------  ------------  --------  ---------------  ------------  --------
+AdaBoost(50)    0.71295          0.71396      0.711276  0.712417         0.712413      0.714624  0.713323
+Random Forest   0.698939        0.723722      0.643847  0.681194         0.679491      0.754031   0.71465
+Naive Bayes     0.656596         0.638066      0.723999  0.678245         0.681123      0.589193  0.631707
+
+Words, Ngrams, Personal Pronouns and PN/N, POS percentages, Sentiment analysis, Laughs previous, Sentences since last laugh, Depth, Sentence Length, Is Question, Has Quote, Word Variance, Incongruity, 
+Classifier      accuracy    pos precision    pos recall    pos f1    neg precision    neg recall    neg f1
+------------  ----------  ---------------  ------------  --------  ---------------  ------------  --------
+AdaBoost(50)    0.717689         0.721412      0.710297  0.715474         0.714836      0.725081  0.719614
+
+/////////////////////////////////////////////////////////////////// Pipeline with k = 'all'
+Words, Ngrams, Personal Pronouns and PN/N, POS percentages, Laughs previous, Sentences since last laugh, Depth, Sentence Length, Is Question, Has Quote, Word Variance, Incongruity, 
+Classifier      accuracy    pos precision    pos recall    pos f1    neg precision    neg recall    neg f1
+------------  ----------  ---------------  ------------  --------  ---------------  ------------  --------
+AdaBoost(50)    0.715448         0.728048      0.687993  0.707258          0.70454      0.742904  0.723055
+Random Forest   0.683794         0.698664      0.646783  0.671371          0.67157      0.720806  0.695046
+
+
+
+/////////////////////////////////////////////////////////////////// Pipeline with k = 50
+Words, Ngrams, Personal Pronouns and PN/N, POS percentages, Laughs previous, Sentences since last laugh, Depth, Sentence Length, Is Question, Has Quote, Word Variance, Incongruity, 
+Classifier      accuracy    pos precision    pos recall    pos f1    neg precision    neg recall    neg f1
+------------  ----------  ---------------  ------------  --------  ---------------  ------------  --------
+AdaBoost(50)    0.720857         0.730899      0.699222  0.714565         0.711949      0.742492  0.726778
+Random Forest   0.677484         0.695019      0.633029  0.662193         0.663422      0.721939  0.691166
+
+/////////////////////////////////////////////////////////////////// Pipeline with k = 25
+Words, Ngrams, Personal Pronouns and PN/N, POS percentages, Laughs previous, Sentences since last laugh, Depth, Sentence Length, Is Question, Has Quote, Word Variance, Incongruity, 
+Classifier      accuracy    pos precision    pos recall    pos f1    neg precision    neg recall    neg f1
+------------  ----------  ---------------  ------------  --------  ---------------  ------------  --------
+AdaBoost(50)    0.713414         0.717057      0.705507  0.710926         0.710595      0.721321  0.715622
+
+
+
+
+//////////////////////////////////////////////////////////////// removed TfidfTransformer from pipeline
+// 200 not TfidfTransformer
+Words, Ngrams, Personal Pronouns and PN/N, POS percentages, Sentiment analysis, Laughs previous, Sentences since last laugh, Depth, Sentence Length, Is Question, Has Quote, Word Variance, Incongruity, 
+Classifier      accuracy    pos precision    pos recall    pos f1    neg precision    neg recall    neg f1
+------------  ----------  ---------------  ------------  --------  ---------------  ------------  --------
+AdaBoost(50)    0.721553         0.737845      0.688405  0.711976         0.707912        0.7547   0.73032
+
+// 2000 not TfidfTransformer
+Words, Ngrams, Personal Pronouns and PN/N, POS percentages, Sentiment analysis, Laughs previous, Sentences since last laugh, Depth, Sentence Length, Is Question, Has Quote, Word Variance, Incongruity, 
+Classifier      accuracy    pos precision    pos recall    pos f1    neg precision    neg recall    neg f1
+------------  ----------  ---------------  ------------  --------  ---------------  ------------  --------
+AdaBoost(50)    0.726755         0.737289      0.705043  0.720627          0.71749      0.748468  0.732504
+
+Words, Ngrams, Personal Pronouns and PN/N, POS percentages, Sentiment analysis, Depth, Sentence Length, Is Question, Has Quote, Word Variance, Incongruity, 
+Classifier      accuracy    pos precision    pos recall    pos f1    neg precision    neg recall    neg f1
+------------  ----------  ---------------  ------------  --------  ---------------  ------------  --------
+AdaBoost(50)    0.660307          0.70937      0.543388  0.615202         0.630027      0.777227  0.695849
+
+////////// all
+Words, Ngrams, Personal Pronouns and PN/N, POS percentages, Sentiment analysis, Laughs previous, Sentences since last laugh, Depth, Sentence Length, Is Question, Has Quote, Word Variance, Incongruity, 
+Classifier      accuracy    pos precision    pos recall    pos f1    neg precision    neg recall    neg f1
+------------  ----------  ---------------  ------------  --------  ---------------  ------------  --------
+AdaBoost(50)    0.735895         0.751414      0.706235  0.727802         0.722832      0.765556  0.743326
+Random Forest   0.697466         0.699058      0.693778  0.696224         0.696301      0.701155  0.698541
+
+Words, Ngrams, Personal Pronouns and PN/N, POS percentages, Sentiment analysis, Depth, Sentence Length, Is Question, Has Quote, Word Variance, Incongruity, 
+Classifier      accuracy    pos precision    pos recall    pos f1    neg precision    neg recall    neg f1
+------------  ----------  ---------------  ------------  --------  ---------------  ------------  --------
+AdaBoost(50)    0.665175         0.707457       0.56425  0.627523         0.637467        0.7661  0.695763
+Random Forest   0.651297         0.656989      0.633609  0.644919          0.64628      0.668985  0.657289
+Random Forest   0.649574         0.656796      0.627502  0.641504         0.643489      0.671645  0.656996

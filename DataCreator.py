@@ -5,12 +5,21 @@ import pickle
 from nltk import sent_tokenize
 from nltk import word_tokenize
 from nltk.stem.snowball import SnowballStemmer
+from nltk.corpus import stopwords
+
 import TedMeta
 import FeatureCollection
 import FeatureExtractor
 import loadingbar
 
 CUT_OUTLIER_PERCENTAGE = .05
+stop = stopwords.words('english')
+stemmer = SnowballStemmer("english")
+swears = ["ass", "fuck", "bitch", "shit", "butt", "dick", "clitoris", "cock",
+          "vagina", "pussy", "boner", "blowjob", "blow job", "bastard", "cunt",
+          "penis", "asshole", "shity", "shitty", "fucker", "motherfucker",
+          "bullshit"]
+
 
 def splitFile(md, splitBySentence):
     rf = open(md.filename, 'r')
@@ -23,6 +32,9 @@ def splitFile(md, splitBySentence):
     talk = talk.replace("(Audio: Laughing)", "")
     talk = talk.replace("-- (Laughter) --", " (Laughter) ")
     talk = talk.replace("-- (Laughter) ", " (Laughter) ")
+
+    # remove hyphens for clarity
+    talk = talk.replace("-", " ")
 
     chunks = []
     if splitBySentence:
@@ -38,7 +50,7 @@ def splitFile(md, splitBySentence):
     laughCount = 0                    # the laughs counted so far
     positives = []                    # all of the positives
     negatives = []                    # all of the negatives
-    previousSentiment = 0             # the polarity of the previous sentiment
+    previousSentiment = {"Polarity": 0}             # the previous chunk's sentiment
 
     for i in range(numChunks):
         # create a FeatureCollection for each chunk
@@ -59,23 +71,27 @@ def splitFile(md, splitBySentence):
         features.chunksSinceLaugh = chunksSinceLastLaugh  # Chunks since lastlaugh
 
         # remove the laughter from the chunk
-        curChunk = chunks[i].replace("(Laughter)", "")
-        features.sentence = curChunk
+        features.chunk = curChunk = chunks[i].replace("(Laughter)", "")
 
         # put this chunk at the end of the passed chunks list
         passedChunks.append(curChunk)
 
         # get sentiment
-        sentiment = FeatureExtractor.getSentiment(curChunk, previousSentiment)
-        features.subjectivity = sentiment["Subjectivity"]
-        previousSentiment = features.polarity = sentiment["Polarity"]
-        features.sentimentFeats = sentiment
-
-        # TODO named entities and named Entity count
+        features.sentimentFeats = FeatureExtractor.getSentiment(curChunk, previousSentiment)
+        previousSentiment = features.sentimentFeats
+        features.sentimentFeats["swearing"] = False
 
         words = word_tokenize(curChunk)
 
-        # get Parts of speech features and conviently tokenize string
+        # store the word vector
+        if splitBySentence:
+            features.wordVector = [[w.lower() for w in words if w.lower() not in stop and  w.isalpha()]]
+        else:
+            for s in sent_tokenize(curChunk):
+                wordlist = [w.lower() for w in word_tokenize(s) if w.lower() not in stop and  w.isalpha()]
+                features.wordVector.append(wordlist)
+
+        # get Parts of speech features
         (_, pos) = FeatureExtractor.getPOS(words)
         passedPOS.append(pos)
         features.POS = pos
@@ -86,15 +102,18 @@ def splitFile(md, splitBySentence):
         # set the last 3 words
         features.prev3Words = passedWords[-1][-3:]
 
-        # case collapse and stem words
-        stemmer = SnowballStemmer("english")
-
-        # stem words and get the variance
+        # case collapse and stem words and get the variance
         variousWords = {}
-        for i in range(features.length):
+        for j in range(features.length):
             # move following line below if variance by stemmed words
-            variousWords[words[i]] = True
-            words[i] = stemmer.stem(words[i].lower())
+            variousWords[words[j]] = True
+
+            for swear in swears:
+                if words[j].lower() == swear:
+                    features.sentimentFeats["swearing"] = True
+                    words[j] = "SWEARWORD"
+
+            words[j] = stemmer.stem(words[j].lower())
 
         # calculate word variance
         if (features.length > 0):

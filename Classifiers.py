@@ -1,22 +1,33 @@
 import random
 import time
 import collections
-import nltk
 import sys
+import DataCreator
+
+import nltk
 from nltk.metrics import precision, recall, f_measure
+from nltk.classify import SklearnClassifier
+
 from tabulate import tabulate
 
 import sklearn
-from nltk.classify import SklearnClassifier
 from sklearn.svm import SVC
+from sklearn.svm import LinearSVC
 from sklearn.ensemble import AdaBoostClassifier
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.tree import DecisionTreeClassifier
+from sklearn.naive_bayes import MultinomialNB
+from sklearn.linear_model import SGDClassifier
+from sklearn.feature_extraction.text import TfidfTransformer
+from sklearn.feature_selection import SelectKBest, chi2
+from sklearn.pipeline import Pipeline
+from sklearn.decomposition import TruncatedSVD
+from sklearn.decomposition import PCA
 
 import FeatureExtractor
 from loadingbar import printPercentage
 
-NUM_CLASSIFIERS = 6
+NUM_CLASSIFIERS = 7
 
 
 # helper function to run tests on the classifier passed in
@@ -110,6 +121,20 @@ def runClassifiers(positives, negatives, featuresToUse, outFile, verbose, classi
         # NLTK's built-in implementation of the Naive Bayes classifier is trained
         classifier = nltk.NaiveBayesClassifier.train(train_data)
 
+
+        # attempt to use sklearn naive bayes, not as good unfortunately
+        # clf = MultinomialNB()
+
+        # if featuresToUse["words"] or featuresToUse["ngrams"]:
+        #     pipeline = Pipeline([     # ('tfidf', TfidfTransformer()),
+        #                  ('chi2', SelectKBest(chi2, k='all')),
+        #                  ('NB', clf)])
+
+        #     classifier = SklearnClassifier(pipeline)
+        # else:
+        #     classifier = SklearnClassifier(clf)
+        # classifier.train(train_data)
+
         # get the time it takes to train Naive Bayes
         print ("\nTime to train in seconds: ", time.time() - timeStart)
 
@@ -148,6 +173,11 @@ def runClassifiers(positives, negatives, featuresToUse, outFile, verbose, classi
         # NLTK's built-in implementation of the Max Entropy classifier is trained
         classifier = nltk.MaxentClassifier.train(train_data)
 
+        if featuresToUse["laugh_count"]:
+            DataCreator.pickleData("pickled_data/MaxEnt_Full", classifier)
+        else:
+            DataCreator.pickleData("pickled_data/MaxEnt_Part", classifier)
+
         # get the time to train Maximum Entropy
         print ("\nTime to train in seconds: ", time.time() - timeStart)
 
@@ -165,7 +195,16 @@ def runClassifiers(positives, negatives, featuresToUse, outFile, verbose, classi
         timeStart = time.time()
 
         # Scikit-learn's SVC classifier, wrapped up in NLTK's wrapper class
-        classifier = SklearnClassifier(SVC(), sparse=False).train(train_data)
+        clf = SVC()
+
+        if featuresToUse["Dim Reduction"]:
+            # pipeline = Pipeline([   # ('tfidf', TfidfTransformer()),
+            #              ('chi2', SelectKBest(chi2, k='all')),
+            #              ('randomforest', clf)])
+            pipeline = Pipeline([('PCA', PCA()), ('classifier', clf)])
+            classifier = SklearnClassifier(pipeline)
+        else:
+            classifier = SklearnClassifier(clf)
 
         # get the time to train a Support Vector Machine
         print ("\nTime to train in seconds: ", time.time() - timeStart)
@@ -182,10 +221,16 @@ def runClassifiers(positives, negatives, featuresToUse, outFile, verbose, classi
         # The main parameters to tune to obtain good results are:
         # n_estimators and the complexity of the base estimators
 
-        # testclf = DecisionTreeClassifier(max_depth=1)
-        # clf = AdaBoostClassifier(base_estimator=testclf, n_estimators=60)
+        # testclf = RandomForestClassifier()
+        # clf = AdaBoostClassifier(base_estimator=testclf, n_estimators=numEstimators)
         clf = AdaBoostClassifier(n_estimators=numEstimators)
-        classifier = SklearnClassifier(clf).train(train_data)
+
+        if featuresToUse["Dim Reduction"]:
+            pipeline = Pipeline([('TruncatedSVD', TruncatedSVD()), ('classifier', clf)])
+            classifier = SklearnClassifier(pipeline)
+        else:
+            classifier = SklearnClassifier(clf)
+        classifier.train(train_data)
 
         # get the time to train
         print ("\nTime to train in seconds: ", time.time() - timeStart)
@@ -202,13 +247,36 @@ def runClassifiers(positives, negatives, featuresToUse, outFile, verbose, classi
         # The main parameters to tune to obtain good results are:
         # n_estimators
         clf = RandomForestClassifier()
-        classifier = SklearnClassifier(clf).train(train_data)
+
+        if featuresToUse["Dim Reduction"]:
+            # pipeline = Pipeline([   # ('tfidf', TfidfTransformer()),
+            #              ('chi2', SelectKBest(chi2, k='all')),
+            #              ('randomforest', clf)])
+            pipeline = Pipeline([('TruncatedSVD', TruncatedSVD()), ('classifier', clf)])
+            classifier = SklearnClassifier(pipeline)
+        else:
+            classifier = SklearnClassifier(clf)
+        classifier.train(train_data)
 
         # get the time to train
         print ("\nTime to train in seconds: ", time.time() - timeStart)
 
         # store the accuracy in the table
         table.append(assess_classifier(classifier, test_data, "Random Forest"))
+
+    if classifiersToUse[6]:
+        print("Running SGD classifier")
+        timeStart = time.time()
+
+        # Scikit-learn's SVC classifier, wrapped up in NLTK's wrapper class
+        clf = SGDClassifier(loss='hinge', penalty='l2', alpha=1e-3, n_iter=5, random_state=42)
+        classifier = SklearnClassifier(clf, sparse=False).train(train_data)
+
+        # get the time to train a Support Vector Machine
+        print ("\nTime to train in seconds: ", time.time() - timeStart)
+
+        # store the accuracy in the table
+        table.append(assess_classifier(classifier, test_data, "Linear (SGD)"))
 
 
     if (outFile == ""):

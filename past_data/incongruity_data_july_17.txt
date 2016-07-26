@@ -1,0 +1,93 @@
+////////////////////////////////////PARAGRAPHS Even Data///////////////////////////////////////////////////
+Incongruity, 
+Classifier      accuracy    pos precision    pos recall    pos f1    neg precision    neg recall    neg f1
+------------  ----------  ---------------  ------------  --------  ---------------  ------------  --------
+AdaBoost(50)    0.609005         0.621713      0.557023  0.586923         0.599338      0.660987  0.628210
+Random Forest   0.587448          0.63381      0.415508  0.501744         0.565027      0.759388  0.647881
+
+Words, POS percentages, Laughs previous, Sentences since last laugh, Is Question, Has Quote, Incongruity, 
+Classifier      accuracy    pos precision    pos recall    pos f1    neg precision    neg recall    neg f1
+------------  ----------  ---------------  ------------  --------  ---------------  ------------  --------
+AdaBoost(50)     0.71283         0.722619      0.692142  0.706726         0.704522      0.733519  0.718456
+
+Words, Ngrams, Personal Pronouns and PN/N, POS percentages, Sentiment analysis, Depth, Sentence Length, Is Question, Has Quote, Word Variance, Incongruity, 
+Classifier      accuracy    pos precision    pos recall    pos f1    neg precision    neg recall    neg f1
+------------  ----------  ---------------  ------------  --------  ---------------  ------------  --------
+AdaBoost(50)    0.658717         0.705811      0.544793  0.614768         0.629312      0.772642  0.693578
+
+Words, Ngrams, Personal Pronouns and PN/N, POS percentages, Sentiment analysis, Laughs previous, Sentences since last laugh, Depth, Sentence Length, Is Question, Has Quote, Word Variance, Incongruity, 
+Classifier       accuracy    pos precision    pos recall    pos f1    neg precision    neg recall    neg f1
+------------   ----------  ---------------  ------------  --------  ---------------  ------------  --------
+AdaBoost(50)     0.728442         0.737565      0.709458  0.723132         0.720227      0.747427  0.733481
+Random Forest    0.702183         0.706521      0.692387   0.69918         0.698459      0.711979  0.704958
+
+//////////////////////////////alternate in pairs
+Incongruity, 
+Classifier      accuracy    pos precision    pos recall    pos f1    neg precision    neg recall    neg f1
+------------  ----------  ---------------  ------------  --------  ---------------  ------------  --------
+AdaBoost(50)    0.622232         0.633286      0.581684  0.606081         0.613237       0.66278  0.636809
+
+Words, Ngrams, Personal Pronouns and PN/N, POS percentages, Sentiment analysis, Depth, Sentence Length, Is Question, Has Quote, Word Variance, Incongruity, 
+Classifier      accuracy    pos precision    pos recall    pos f1    neg precision    neg recall    neg f1
+------------  ----------  ---------------  ------------  --------  ---------------  ------------  --------
+AdaBoost(50)    0.664976         0.710357      0.557637  0.624594         0.635893      0.772314  0.697399
+Random Forest   0.650753          0.66378       0.61184  0.636581         0.639884      0.689666   0.66371
+
+Words, Ngrams, Personal Pronouns and PN/N, POS percentages, Sentiment analysis, Laughs previous, Sentences since last laugh, Depth, Sentence Length, Is Question, Has Quote, Word Variance, Incongruity, 
+Classifier      accuracy    pos precision    pos recall    pos f1    neg precision    neg recall    neg f1
+------------  ----------  ---------------  ------------  --------  ---------------  ------------  --------
+AdaBoost(50)    0.725206         0.739788      0.694982  0.716574         0.712519       0.75543  0.733255
+
+
+/////////////////////////////// combined!
+Incongruity, 
+Classifier      accuracy    pos precision    pos recall    pos f1    neg precision    neg recall    neg f1
+------------  ----------  ---------------  ------------  --------  ---------------  ------------  --------
+AdaBoost(50)    0.622024         0.635267      0.573509  0.602765         0.611193      0.670539   0.63946
+
+Words, Ngrams, Personal Pronouns and PN/N, POS percentages, Sentiment analysis, Depth, Sentence Length, Is Question, Has Quote, Word Variance, Incongruity, 
+Classifier      accuracy    pos precision    pos recall    pos f1    neg precision    neg recall    neg f1
+------------  ----------  ---------------  ------------  --------  ---------------  ------------  --------
+AdaBoost(50)    0.659044         0.703962      0.548965  0.616607         0.630579      0.769124  0.692873
+
+Words, Ngrams, Personal Pronouns and PN/N, POS percentages, Sentiment analysis, Laughs previous, Sentences since last laugh, Depth, Sentence Length, Is Question, Has Quote, Word Variance, Incongruity, 
+Classifier      accuracy    pos precision    pos recall    pos f1    neg precision    neg recall    neg f1
+------------  ----------  ---------------  ------------  --------  ---------------  ------------  --------
+AdaBoost(50)    0.726377         0.736484      0.705882  0.720624         0.717591      0.746871  0.731726
+
+///////////////////////////////////////////Paragraphs now with averages
+Words, Ngrams, Personal Pronouns and PN/N, POS percentages, Sentiment analysis, Laughs previous, Sentences since last laugh, Depth, Sentence Length, Is Question, Has Quote, Word Variance, Incongruity, 
+Classifier      accuracy    pos precision    pos recall    pos f1    neg precision    neg recall    neg f1
+------------  ----------  ---------------  ------------  --------  ---------------  ------------  --------
+AdaBoost(50)    0.729511         0.736095      0.715964  0.725743         0.723616      0.743059  0.733078
+
+Words, Ngrams, Personal Pronouns and PN/N, POS percentages, Sentiment analysis, Depth, Sentence Length, Is Question, Has Quote, Word Variance, Incongruity, 
+Classifier      accuracy    pos precision    pos recall    pos f1    neg precision    neg recall    neg f1
+------------  ----------  ---------------  ------------  --------  ---------------  ------------  --------
+AdaBoost(50)    0.663267         0.704171      0.563746  0.625942         0.636246      0.762788  0.693677
+
+Incongruity, 
+Classifier      accuracy    pos precision    pos recall    pos f1    neg precision    neg recall    neg f1
+------------  ----------  ---------------  ------------  --------  ---------------  ------------  --------
+AdaBoost(50)    0.615799         0.628936      0.565961  0.595539         0.605348      0.665636  0.633896
+
+/////////////////////////////////////////Sentences with averages
+Incongruity, // full
+Classifier      accuracy    pos precision    pos recall    pos f1    neg precision    neg recall    neg f1
+------------  ----------  ---------------  ------------  --------  ---------------  ------------  --------
+AdaBoost(50)    0.519243         0.520668      0.495303  0.506732         0.518262      0.543182  0.529635
+
+Incongruity, // mixed
+Classifier      accuracy    pos precision    pos recall    pos f1    neg precision    neg recall    neg f1
+------------  ----------  ---------------  ------------  --------  ---------------  ------------  --------
+AdaBoost(50)    0.52754         0.528166      0.520463  0.523895         0.527106      0.534616  0.530466
+
+Words, Ngrams, Personal Pronouns and PN/N, POS percentages, Sentiment analysis, Depth, Sentence Length, Is Question, Has Quote, Word Variance, Incongruity, 
+Classifier      accuracy    pos precision    pos recall    pos f1    neg precision    neg recall    neg f1
+------------  ----------  ---------------  ------------  --------  ---------------  ------------  --------
+AdaBoost(50)    0.632588         0.645082      0.590275  0.616237         0.622362      0.674902  0.647401
+
+Words, Ngrams, Personal Pronouns and PN/N, POS percentages, Sentiment analysis, Laughs previous, Sentences since last laugh, Depth, Sentence Length, Is Question, Has Quote, Word Variance, Incongruity, 
+Classifier      accuracy    pos precision    pos recall    pos f1    neg precision    neg recall    neg f1
+------------  ----------  ---------------  ------------  --------  ---------------  ------------  --------
+AdaBoost(50)    0.709332         0.712229      0.702835  0.707415         0.706705      0.715829  0.711155
