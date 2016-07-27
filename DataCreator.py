@@ -66,9 +66,9 @@ def splitFile(md, splitBySentence):
         # increase the distance since the last laugh
         chunksSinceLastLaugh += 1
 
-        features.depth = i/numChunks  # Depth
-        features.laughsUntilNow = laughCount  # Laugh Count Before This
-        features.chunksSinceLaugh = chunksSinceLastLaugh  # Chunks since lastlaugh
+        features.features["depth"] = i/numChunks  # Depth
+        features.features["laughsUntilNow"] = laughCount  # Laugh Count Before This
+        features.features["chunksSinceLaugh"] = chunksSinceLastLaugh  # Chunks since lastlaugh
 
         # remove the laughter from the chunk
         features.chunk = curChunk = chunks[i].replace("(Laughter)", "")
@@ -97,27 +97,26 @@ def splitFile(md, splitBySentence):
         features.POS = pos
 
         # get length of chunk
-        features.length = len(words)
+        talklen = features.features["length"] = len(words)
 
         # set the last 3 words
         features.prev3Words = passedWords[-1][-3:]
 
         # case collapse and stem words and get the variance
         variousWords = {}
-        for j in range(features.length):
+        for j in range(talklen):
             # move following line below if variance by stemmed words
             variousWords[words[j]] = True
 
-            for swear in swears:
-                if words[j].lower() == swear:
-                    features.sentimentFeats["swearing"] = True
-                    words[j] = "SWEARWORD"
+            if words[j].lower() in swears:
+                features.sentimentFeats["swearing"] = True
+                # words[j] = "SWEARWORD"     # seems to have lowered accuracy
 
             words[j] = stemmer.stem(words[j].lower())
 
         # calculate word variance
-        if (features.length > 0):
-            features.wordVariance = len(variousWords)/features.length
+        if (talklen > 0):
+            features.wordVariance = len(variousWords)/talklen
         else:
             features.wordVariance = 0
 

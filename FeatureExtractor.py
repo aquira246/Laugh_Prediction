@@ -94,19 +94,19 @@ def langFeatures(featsCollection, featuresToUse):
 
     # 5. Laugh Count Before This
     if "laugh_count" in featuresToUse and featuresToUse["laugh_count"]:
-        D["Laugh Count"] = featsCollection.laughsUntilNow
+        D["Laugh Count"] = featsCollection.features["laughsUntilNow"]
 
     # 6. Sentences since last laugh
     if "last_laugh" in featuresToUse and featuresToUse["last_laugh"]:
-        D["Last Laugh"] = featsCollection.chunksSinceLaugh
+        D["Last Laugh"] = featsCollection.features["chunksSinceLaugh"]
 
     # 7. Depth
     if "depth" in featuresToUse and featuresToUse["depth"]:
-        D["Depth"] = featsCollection.depth
+        D["Depth"] = featsCollection.features["depth"]
 
     # 8. Length of the sentence
     if "length" in featuresToUse and featuresToUse["length"]:
-        D["Length"] = featsCollection.length
+        D["Length"] = featsCollection.features["length"]
 
     # 9A. is question
     if "question" in featuresToUse and featuresToUse["question"]:

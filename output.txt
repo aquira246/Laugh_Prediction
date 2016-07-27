@@ -168,16 +168,6 @@ Classifier      accuracy    pos precision    pos recall    pos f1    neg precisi
 ------------  ----------  ---------------  ------------  --------  ---------------  ------------  --------
 Naive Bayes     0.663594         0.650855      0.706518  0.677362         0.679196       0.62067  0.648362
 
-Words, Ngrams, Personal Pronouns and PN/N, POS percentages, Sentiment analysis, Laughs previous, Sentences since last laugh, Depth, Sentence Length, Is Question, Has Quote, Word Variance, Incongruity, 
-Classifier         accuracy    pos precision    pos recall    pos f1    neg precision    neg recall    neg f1
----------------  ----------  ---------------  ------------  --------  ---------------  ------------  --------
-Maximum Entropy    0.477095         0.487508      0.893855  0.630915         0.362416     0.0603352  0.103448
-
-Words, Ngrams, Personal Pronouns and PN/N, POS percentages, Sentiment analysis, Depth, Sentence Length, Is Question, Has Quote, Word Variance, Incongruity, 
-Classifier         accuracy    pos precision    pos recall    pos f1    neg precision    neg recall     neg f1
----------------  ----------  ---------------  ------------  --------  ---------------  ------------  ---------
-Maximum Entropy    0.492179         0.495986       0.96648  0.655551         0.347826     0.0178771  0.0340064
-
 Words, Ngrams, Personal Pronouns and PN/N, POS percentages, Sentiment analysis, Laughs previous, Sentences since last laugh, Depth, Sentence Length, Is Question, Is Exclamation, Has Quote, Word Variance, Incongruity, Swearing, 
 Classifier      accuracy    pos precision    pos recall    pos f1    neg precision    neg recall    neg f1
 ------------  ----------  ---------------  ------------  --------  ---------------  ------------  --------
@@ -198,3 +188,31 @@ Classifier      accuracy    pos precision    pos recall    pos f1    neg precisi
 ------------  ----------  ---------------  ------------  --------  ---------------  ------------  --------
 Naive Bayes     0.660077         0.642987      0.720413  0.679412         0.682087      0.599742  0.638133
 
+
+////////////////////////////////////////////////////paras ////////////////////////////////
+Words, Ngrams, Personal Pronouns and PN/N, POS percentages, Sentiment analysis, Depth, Sentence Length, Is Question, Is Exclamation, Has Quote, Word Variance, Incongruity, Swearing, 
+Classifier      accuracy    pos precision    pos recall    pos f1    neg precision    neg recall    neg f1
+------------  ----------  ---------------  ------------  --------  ---------------  ------------  --------
+AdaBoost(50)    0.684979         0.750943      0.553547   0.63731         0.646476      0.816412  0.721573
+
+Words, Ngrams, Personal Pronouns and PN/N, POS percentages, Sentiment analysis, Laughs previous, Sentences since last laugh, Depth, Sentence Length, Is Question, Is Exclamation, Has Quote, Word Variance, Incongruity, Swearing, 
+Classifier      accuracy    pos precision    pos recall    pos f1    neg precision    neg recall    neg f1
+------------  ----------  ---------------  ------------  --------  ---------------  ------------  --------
+AdaBoost(50)    0.730292         0.739858      0.710654  0.724843         0.721719       0.74993  0.735451
+
+
+////////////////////////////////////////////////sents////////////////////////////////////////////////
+Words, Ngrams, Personal Pronouns and PN/N, POS percentages, Sentiment analysis, Laughs previous, Sentences since last laugh, Depth, Sentence Length, Is Question, Is Exclamation, Has Quote, Word Variance, Incongruity, Swearing, 
+Classifier      accuracy    pos precision    pos recall    pos f1    neg precision    neg recall    neg f1
+------------  ----------  ---------------  ------------  --------  ---------------  ------------  --------
+AdaBoost(50)    0.691777         0.693049       0.68867  0.690626            0.691      0.694883  0.692716
+
+Words, Ngrams, Personal Pronouns and PN/N, POS percentages, Sentiment analysis, Laughs previous, Sentences since last laugh, Depth, Sentence Length, Is Question, Has Quote, Word Variance, Incongruity, 
+Classifier         accuracy    pos precision    pos recall    pos f1    neg precision    neg recall    neg f1
+---------------  ----------  ---------------  ------------  --------  ---------------  ------------  --------
+Maximum Entropy    0.477095         0.487508      0.893855  0.630915         0.362416     0.0603352  0.103448
+
+Words, Ngrams, Personal Pronouns and PN/N, POS percentages, Sentiment analysis, Depth, Sentence Length, Is Question, Has Quote, Word Variance, Incongruity, 
+Classifier         accuracy    pos precision    pos recall    pos f1    neg precision    neg recall     neg f1
+---------------  ----------  ---------------  ------------  --------  ---------------  ------------  ---------
+Maximum Entropy    0.492179         0.495986       0.96648  0.655551         0.347826     0.0178771  0.0340064

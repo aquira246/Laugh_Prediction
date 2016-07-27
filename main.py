@@ -53,17 +53,17 @@ def worker(positives, negatives, classifiersToUse, feats, outFile, i):
 
 
 def main():
-    (positives, negatives) = getData(True, useSentences=True)
+    (positives, negatives) = getData(usePickled=False, useSentences=False)
 
     print("Extracting Features\n")
     featureSetsToUse = {}
     featureSetsToUse["words"] = True          # every word in the text
     featureSetsToUse["ngrams"] = True         # ngram for words and characters
-    featureSetsToUse["pos_nouns"] = False      # POS tag Personal Pronouns and Proper Nouns per Noun
+    featureSetsToUse["pos_nouns"] = True      # POS tag Personal Pronouns and Proper Nouns per Noun
     featureSetsToUse["pos_perc"] = True       # Noun+adjective+verb percentage
     featureSetsToUse["sentiment"] = True      # Sentiment Analysis
-    featureSetsToUse["laugh_count"] = False    # Laugh Count Before This
-    featureSetsToUse["last_laugh"] = False     # Chunks since last laugh
+    featureSetsToUse["laugh_count"] = True    # Laugh Count Before This
+    featureSetsToUse["last_laugh"] = True     # Chunks since last laugh
     featureSetsToUse["depth"] = True          # Depth
     featureSetsToUse["length"] = True         # length
     featureSetsToUse["question"] = True       # there is a question mark
@@ -71,14 +71,14 @@ def main():
     featureSetsToUse["quote"] = True          # isQuote
     featureSetsToUse["variance"] = True       # word variance
     featureSetsToUse["incongruity"] = True    # incongruity
-    featureSetsToUse["swearing"] = False       # swearing
+    featureSetsToUse["swearing"] = True       # swearing
     featureSetsToUse["Dim Reduction"] = False
 
-    classifiersToUse = [True,  # Naive Bayes
+    classifiersToUse = [False,  # Naive Bayes
                         False,  # Decision Tree
                         False,  # Max Entropy
                         False,  # Support Vector machine
-                        False,  # adaboost
+                        True,  # adaboost
                         False,  # random forest
                         False]  # SGD? NEVER USE WITH NGRAMS! Crashes machine
 
@@ -92,8 +92,8 @@ def main():
     dataCut = min(len(positives), len(negatives))
 
 
-    for j in range(9):
-        for i in range(3):
+    for j in range(0):
+        for i in range(0):
             random.shuffle(positives)
             random.shuffle(negatives)
             positives = positives[:dataCut]

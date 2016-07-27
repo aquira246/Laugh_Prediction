@@ -171,7 +171,7 @@ def runClassifiers(positives, negatives, featuresToUse, outFile, verbose, classi
         timeStart = time.time()
 
         # NLTK's built-in implementation of the Max Entropy classifier is trained
-        classifier = nltk.MaxentClassifier.train(train_data)
+        classifier = nltk.MaxentClassifier.train(train_data, max_iter=25)
 
         if featuresToUse["laugh_count"]:
             DataCreator.pickleData("pickled_data/MaxEnt_Full", classifier)
