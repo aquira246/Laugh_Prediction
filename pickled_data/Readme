@@ -1,0 +1,11 @@
+Readme
+"old_****_********.p" = data without complexity info. This was what the complexity info took in and then scanned through. However, that is why it is called old, because it was done before the complexity info.
+"todo" = when making the complexity info, these are all the ones that didn't go through well
+"para" = paragraph data
+"sent" = sentence data
+"positives" = laugh positive data
+"negatives" = laugh negative data
+MaxEnt_**** = extra classifier (originally max ent) that would support the current model
+_full = the classifier was trained on full feature set
+_part = the classifier was trained on part of the feature set (generally no cheating features about previous laughs)
+ent_ = has entity recognition put in it

@@ -1,3 +1,5 @@
 Number of files: 2 minus broken files
 
+parsed_websites/Depressed_dogs,_cats_with_OCD_—_what_animal_madness_means_for_us_humans_.txt    Depressed dogs, cats with OCD — what animal madness means for us humans     Laurel Braitman    ['Informative', 'Inspiring']    Word Count: 3649    Laugh Count: 8    First Laugh At: 23
+
 parsed_websites/A_one-woman_global_village_.txt    A one-woman global village     Sarah Jones    ['Funny', 'Beautiful']    Word Count: 3989    Laugh Count: 16    First Laugh At: 170

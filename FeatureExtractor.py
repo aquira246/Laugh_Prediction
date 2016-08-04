@@ -1,14 +1,36 @@
 import numpy
 import FeatureCollection
 import Word2VecHelper
+import os
+import pickle
 
 import nltk
 from nltk.tag import pos_tag, map_tag
 from nltk.util import ngrams
+from nltk.stem.snowball import SnowballStemmer
+from nltk.corpus import stopwords
+from nltk.corpus import brown
 from textblob import TextBlob
 
 
 model = Word2VecHelper.LoadModel()
+
+
+def generateFreqData():
+    stop = stopwords.words('english')
+    all_words = brown.words()   # categories=['news', 'editorial', 'reviews', 'government'])
+    brown_words = [w.lower() for w in all_words if w.lower() not in stop and w.isalpha()]
+    stemmed_words = [stemmer.stem(w) for w in brown_words]
+    fd = nltk.FreqDist(stemmed_words)
+    pickle.dump(fd, open("pickled_data/freq_data.p", "wb"), protocol=2)
+
+# check to see if the freq_distribution is made
+if not os.path.isfile("pickled_data/freq_data.p"):
+    print("Generating the Freq Data")
+    generateFreqData()
+
+stemmer = SnowballStemmer("english")
+freqData = pickle.load(open("pickled_data/freq_data.p", "rb"))
 
 # First define a function that produces features from a given object
 # This function takes in a paragraph. It then breaks it up and uses it
@@ -30,6 +52,9 @@ model = Word2VecHelper.LoadModel()
 # 11. word variance
 # 12. incongruity approximation with word vectors
 # 13. swear words
+# 14. complexity
+# 15. statistics count
+# 16. frequency
 # Note that featuresets are lists. That's what the classifier takes as input
 def langFeatures(featsCollection, featuresToUse):
     D = {}  # dictionary of keys
@@ -64,92 +89,114 @@ def langFeatures(featsCollection, featuresToUse):
         # POS tag based feature set
         # 3A. Personal Pronouns and Proper Nouns per Noun
         if "pos_nouns" in featuresToUse and featuresToUse["pos_nouns"]:
-            D["Personal_Pronoun_Percentage"] = \
+            D["__Personal_Pronoun_Percentage"] = \
                 featsCollection.POS["Personal_Pronoun_Percentage"]
 
-            D["Proper_Noun_Percentage"] = \
+            D["__Proper_Noun_Percentage"] = \
                 featsCollection.POS["Proper_Noun_Percentage"]
 
 
         # 3B. Noun, adjective, and verb percentage
         if "pos_perc" in featuresToUse and featuresToUse["pos_perc"]:
-            D["noun_percentage"] = featsCollection.POS["noun_percentage"]
-            D["adj_percentage"] = featsCollection.POS["adj_percentage"]
-            D["verb_percentage"] = featsCollection.POS["verb_percentage"]
+            D["__noun_percentage"] = featsCollection.POS["noun_percentage"]
+            D["__adj_percentage"] = featsCollection.POS["adj_percentage"]
+            D["__verb_percentage"] = featsCollection.POS["verb_percentage"]
 
-            D["nouns"] = featsCollection.POS["nouns"]
-            D["adjectives"] = featsCollection.POS["adjectives"]
-            D["verbs"] = featsCollection.POS["verbs"]
+            D["__nouns"] = featsCollection.POS["nouns"]
+            D["__adjectives"] = featsCollection.POS["adjectives"]
+            D["__verbs"] = featsCollection.POS["verbs"]
 
     # 4. Sentiment Analysis
     if "sentiment" in featuresToUse and featuresToUse["sentiment"]:
-        D["Subjectivity"] = featsCollection.sentimentFeats["Subjectivity"]
-        D["Polarity"] = featsCollection.sentimentFeats["Polarity"]
+        D["__Subjectivity"] = featsCollection.sentimentFeats["Subjectivity"]
+        D["__Polarity"] = featsCollection.sentimentFeats["Polarity"]
 
-        D["Polarity_Diff"] = featsCollection.sentimentFeats["Polarity_Diff"]
+        D["__Polarity_Diff"] = featsCollection.sentimentFeats["Polarity_Diff"]
 
-        D["Subjectivity_Bin"] = featsCollection.sentimentFeats["Subjectivity_Bin"]
-        D["Polarity_Bin"] = featsCollection.sentimentFeats["Polarity_Bin"]
-        D["Diff_Bin"] = featsCollection.sentimentFeats["Diff_Bin"]
+        D["__Subjectivity_Bin"] = featsCollection.sentimentFeats["Subjectivity_Bin"]
+        D["__Polarity_Bin"] = featsCollection.sentimentFeats["Polarity_Bin"]
+        D["__Diff_Bin"] = featsCollection.sentimentFeats["Diff_Bin"]
 
     # 5. Laugh Count Before This
     if "laugh_count" in featuresToUse and featuresToUse["laugh_count"]:
-        D["Laugh Count"] = featsCollection.features["laughsUntilNow"]
+        D["__Laugh Count"] = featsCollection.features["laughsUntilNow"]
 
     # 6. Sentences since last laugh
     if "last_laugh" in featuresToUse and featuresToUse["last_laugh"]:
-        D["Last Laugh"] = featsCollection.features["chunksSinceLaugh"]
+        D["__Last Laugh"] = featsCollection.features["chunksSinceLaugh"]
 
     # 7. Depth
     if "depth" in featuresToUse and featuresToUse["depth"]:
-        D["Depth"] = featsCollection.features["depth"]
+        D["__Depth"] = featsCollection.features["depth"]
 
     # 8. Length of the sentence
     if "length" in featuresToUse and featuresToUse["length"]:
-        D["Length"] = featsCollection.features["length"]
+        D["__Length"] = featsCollection.features["length"]
 
     # 9A. is question
     if "question" in featuresToUse and featuresToUse["question"]:
         if "?" in featsCollection.chunk and len(featsCollection.chunk) > 1:
-            D["isQuestion"] = 1
+            D["__isQuestion"] = 1
         else:
-            D["isQuestion"] = 0
+            D["__isQuestion"] = 0
 
     # 9B. is question
     if "exclamation" in featuresToUse and featuresToUse["exclamation"]:
         if "!" in featsCollection.chunk and len(featsCollection.chunk) > 1:
-            D["isExclamation"] = 1
+            D["__isExclamation"] = 1
         else:
-            D["isExclamation"] = 0
+            D["__isExclamation"] = 0
 
     # 10. has quotation
     if "quote" in featuresToUse and featuresToUse["quote"]:
         if "\"" in featsCollection.chunk:
-            D["hasQuote"] = 1
+            D["__hasQuote"] = 1
         else:
-            D["hasQuote"] = 0
+            D["__hasQuote"] = 0
 
     # 11. word variance
     if "variance" in featuresToUse and featuresToUse["variance"]:
-        D["Word_Variance"] = featsCollection.wordVariance
+        D["__Word_Variance"] = featsCollection.wordVariance
 
     # 12. incongruity approxmiation with Word Vectors.
     if "incongruity" in featuresToUse and featuresToUse["incongruity"]:
         # 1 is added to all results to remove the negative numbers
         # if "last_laugh" in featuresToUse and featuresToUse["last_laugh"]:
         (highest, lowest, avg) = getIncongruityFull(featsCollection.wordVector)
-        D["Repitition_Full"] = highest + 1
-        D["Disconnection_Full"] = lowest + 1
-        D["Average_Full"] = avg + 1
+        D["__Repitition_Full"] = round(highest + 1, 1)
+        D["__Disconnection_Full"] = round(lowest + 1, 1)
+        D["__Average_Full"] = round(avg + 1, 1)
         # else:
         (highest, lowest, avg) = getIncongruityPairs(featsCollection.wordVector)
-        D["Repitition_Pairs"] = highest + 1
-        D["Disconnection_Pairs"] = lowest + 1
-        D["Average_Pairs"] = avg + 1
+        D["__Repitition_Pairs"] = round(highest + 1, 1)
+        D["__Disconnection_Pairs"] = round(lowest + 1, 1)
+        D["__Average_Pairs"] = round(avg + 1, 1)
 
     # 13. Swear words
     if "swearing" in featuresToUse and featuresToUse["swearing"]:
-        D["Swearing"] = featsCollection.sentimentFeats["swearing"]
+        D["__Swearing"] = featsCollection.sentimentFeats["swearing"]
+
+    # 14. Complexity
+    if "complexity" in featuresToUse and featuresToUse["complexity"]:
+        D["__max_depth"] = featsCollection.features["max_depth"]
+        D["__max_subtree"] = featsCollection.features["max_subtree"]
+        D["__avg_depth"] = featsCollection.features["avg_depth"]
+        D["__avg_subtree"] = featsCollection.features["avg_subtree"]
+
+    # 15. Statistics count
+    if "statistics" in featuresToUse and featuresToUse["statistics"]:
+        D["__statistic_count"] = featsCollection.features["statistic_count"]
+
+    # 16. Frequency
+    if "frequency" in featuresToUse and featuresToUse["frequency"]:
+        allWords = []
+        for vect in featsCollection.wordVector:
+            allWords = allWords + vect
+
+        (maxFreq, minFreq, avgFreq) = getFrequency(allWords)
+        D["__maxFreq"] = maxFreq
+        D["__minFreq"] = minFreq
+        D["__avgFreq"] = avgFreq
 
     return D
 
@@ -202,6 +249,18 @@ def featuresToString(featuresToUse):
     if "swearing" in featuresToUse and featuresToUse["swearing"]:
         ret = ret + "Swearing, "
 
+    if "complexity" in featuresToUse and featuresToUse["complexity"]:
+        ret = ret + "Complexity, "
+
+    if "statistics" in featuresToUse and featuresToUse["statistics"]:
+        ret = ret + "Statistics, "
+
+    if "frequency" in featuresToUse and featuresToUse["frequency"]:
+        ret = ret + "Frequency, "
+
+    if "max_ent" in featuresToUse and featuresToUse["max_ent"]:
+        ret = ret + "Max Ent Support, "
+
     if "Dim Reduction" in featuresToUse and featuresToUse["Dim Reduction"]:
         ret = ret + "Dim Reduction, "
 
@@ -235,19 +294,15 @@ def textToCharGrams(text):
 def textToWordGrams(words):
     word_bigrams = ngrams(words, 2)
     word_trigrams = ngrams(words, 3)
-    # word_quadgrams = ngrams(words, 4)
 
     # combine the ngrams
     allgrams = []
 
     for gram in word_bigrams:
-        allgrams.append("".join(gram))
+        allgrams.append("__".join(gram))
 
     for gram in word_trigrams:
-        allgrams.append("".join(gram))
-
-    # for gram in word_quadgrams:
-    #     allgrams.append("".join(gram))
+        allgrams.append("__".join(gram))
 
     return allgrams
 
@@ -269,13 +324,13 @@ def getSentiment(text, previousSentiment):
     testimonial = TextBlob(text)
     polarity = testimonial.sentiment.polarity + 1
     subjectivity = testimonial.sentiment.subjectivity + 1
-    D["Subjectivity"] = subjectivity
-    D["Polarity"] = polarity
+    D["Subjectivity"] = round(subjectivity, 1)
+    D["Polarity"] = round(polarity, 1)
 
     diff = polarity - previousSentiment["Polarity"]
 
     # 2 is add to prevent negatives
-    D["Polarity_Diff"] = diff + 2
+    D["Polarity_Diff"] = round(diff + 2, 1)
 
     D["Subjectivity_Bin"] = sentimentBin(testimonial.sentiment.subjectivity)
     D["Polarity_Bin"] = sentimentBin(polarity)
@@ -435,3 +490,24 @@ def getIncongruityPairs(wordVectors):
                     count += 1
     avg = 0 if count == 0 else total/count
     return (highest, lowest, avg)
+
+
+def getFrequency(tokens):
+    numtok = 0
+    total = 0
+    maxFreq = 0
+    minFreq = 100000
+    for tok in tokens:
+        curTok = stemmer.stem(tok)
+        freq = freqData[curTok]
+        if freq > 0:
+            numtok += 1
+            maxFreq = max(maxFreq, freq)
+            minFreq = min(minFreq, freq)
+            total += freq
+
+    if numtok == 0:
+        return (0, 0, 0)
+
+    avgFreq = (total/numtok)//10
+    return (maxFreq, minFreq, avgFreq)

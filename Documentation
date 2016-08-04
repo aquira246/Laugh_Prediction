@@ -99,3 +99,17 @@ https://github.com/3Top/word2vec-api#where-to-get-a-pretrained-models
 The next thing I tried to do is remove the unimportant features using selectKBest. The results for paragraphs were that reducing the features helped, but, at best, it was just as good as when it wasn't there. 
 
 I have added swearing recognition, and having an exclamation mark has a feature. The results are still coming in, but it doesn't seem to have helped the Naive Bayes Classifier for sentences. 
+
+I tried putting in entity recognition roughly, but it made it worse since it wasn't perfect :/
+
+I have put in detecting when there is a statistic (roughly) and how many
+
+I have also tried to measure complexity by parsing it with the stanford parser and seeing how many parens there are and how many subtrees there are. It didn't do anything...
+
+BUT! Good news, I used frequency data to look for rare words! That turned out to be helpful. I am also in the process of checking for words that happen only once!
+
+As of August 3rd:
+Best with sentences without laughter feats is naive bayes
+Best with sentences with laughter feats is adaboost
+Best with paras without laughter feats is naive bayes
+Best with paras with laughter feats is adaboost

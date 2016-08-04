@@ -3,6 +3,7 @@ import time
 import collections
 import sys
 import DataCreator
+import numpy as np
 
 import nltk
 from nltk.metrics import precision, recall, f_measure
@@ -19,6 +20,7 @@ from sklearn.tree import DecisionTreeClassifier
 from sklearn.naive_bayes import MultinomialNB
 from sklearn.linear_model import SGDClassifier
 from sklearn.feature_extraction.text import TfidfTransformer
+from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.feature_selection import SelectKBest, chi2
 from sklearn.pipeline import Pipeline
 from sklearn.decomposition import TruncatedSVD
@@ -28,10 +30,11 @@ import FeatureExtractor
 from loadingbar import printPercentage
 
 NUM_CLASSIFIERS = 7
+maxEntClf = DataCreator.usePickledFile("pickled_data/MaxEnt_Full")
 
 
 # helper function to run tests on the classifier passed in
-def assess_classifier(classifier, test_data, text):
+def assess_classifier(classifier, test_data, text, max_ent_help=False):
     refsets = collections.defaultdict(set)
     testsets = collections.defaultdict(set)
 
@@ -45,7 +48,13 @@ def assess_classifier(classifier, test_data, text):
     # enumerate through the test data and classify them
     for i, (feats, label) in enumerate(test_data):
         refsets[label].add(i)
-        observed = classifier.classify(feats)
+        if max_ent_help:
+            if maxEntClf.classify(feats):
+                observed = classifier.classify(feats)
+            else:
+                observed = False
+        else:
+            observed = classifier.classify(feats)
         testsets[observed].add(i)
         onDataSet += 1
         # if label == observed:
@@ -114,6 +123,8 @@ def runClassifiers(positives, negatives, featuresToUse, outFile, verbose, classi
     train_data = pos[posCut:] + neg[negCut:]
     test_data = pos[:posCut] + neg[:negCut]
 
+    maxEntSupport = featuresToUse["max_ent"]
+
     if classifiersToUse[0]:
         print("Running Naive Bayes classifier")
         timeStart = time.time()
@@ -138,8 +149,13 @@ def runClassifiers(positives, negatives, featuresToUse, outFile, verbose, classi
         # get the time it takes to train Naive Bayes
         print ("\nTime to train in seconds: ", time.time() - timeStart)
 
+        # if featuresToUse["laugh_count"]:
+        #     DataCreator.pickleData("pickled_data/MaxEnt_Full", classifier)
+        # else:
+        #     DataCreator.pickleData("pickled_data/MaxEnt_Part", classifier)
+
         # store the accuracy in the table
-        table.append(assess_classifier(classifier, test_data, "Naive Bayes"))
+        table.append(assess_classifier(classifier, test_data, "Naive Bayes", maxEntSupport))
 
         if verbose:
             # this is a nice function that reports the top most impactful features the NB classifier found
@@ -236,7 +252,7 @@ def runClassifiers(positives, negatives, featuresToUse, outFile, verbose, classi
         print ("\nTime to train in seconds: ", time.time() - timeStart)
 
         # store the accuracy in the table
-        table.append(assess_classifier(classifier, test_data, "AdaBoost(" + str(numEstimators) + ")"))
+        table.append(assess_classifier(classifier, test_data, "AdaBoost(" + str(numEstimators) + ")", maxEntSupport))
 
     if classifiersToUse[5]:
         print("Running Random Forest Classifier classifier")
@@ -262,7 +278,7 @@ def runClassifiers(positives, negatives, featuresToUse, outFile, verbose, classi
         print ("\nTime to train in seconds: ", time.time() - timeStart)
 
         # store the accuracy in the table
-        table.append(assess_classifier(classifier, test_data, "Random Forest"))
+        table.append(assess_classifier(classifier, test_data, "Random Forest", maxEntSupport))
 
     if classifiersToUse[6]:
         print("Running SGD classifier")

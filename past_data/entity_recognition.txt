@@ -1,0 +1,41 @@
+FEATURE RESULTS: June 29th
+Note, these are all the averages of at least 25 runs
+
+------------------------------- Slight Entity Recognition ------------------------------
+///////////////////////////////////////Sentences////////////////////////////////////////
+Words, Ngrams, Personal Pronouns and PN/N, POS percentages, Sentiment analysis, Depth, Sentence Length, Is Question, Is Exclamation, Has Quote, Word Variance, Incongruity, Swearing, 
+Classifier      accuracy    pos precision    pos recall    pos f1    neg precision    neg recall    neg f1
+------------  ----------  ---------------  ------------  --------  ---------------  ------------  --------
+Naive Bayes     0.646783         0.636697      0.683921  0.659355         0.658737      0.609644  0.633094
+AdaBoost(50)    0.635021         0.648099      0.591518  0.618336         0.624287      0.678525  0.650145
+
+Words, Ngrams, Personal Pronouns and PN/N, POS percentages, Sentiment analysis, Laughs previous, Sentences since last laugh, Depth, Sentence Length, Is Question, Is Exclamation, Has Quote, Word Variance, Incongruity, Swearing, 
+Classifier      accuracy    pos precision    pos recall    pos f1    neg precision    neg recall    neg f1
+------------  ----------  ---------------  ------------  --------  ---------------  ------------  --------
+Naive Bayes     0.667488         0.653402      0.713593  0.682088         0.684661      0.621382  0.651373
+AdaBoost(50)    0.700451         0.708016      0.682571  0.694988         0.693564      0.718331  0.705667
+
+///////////////////////////////////////Paragraphs////////////////////////////////////////
+
+Words, Ngrams, Personal Pronouns and PN/N, POS percentages, Sentiment analysis, Laughs previous, Sentences since last laugh, Depth, Sentence Length, Is Question, Is Exclamation, Has Quote, Word Variance, Incongruity, Swearing, 
+Classifier      accuracy    pos precision    pos recall    pos f1    neg precision    neg recall    neg f1
+------------  ----------  ---------------  ------------  --------  ---------------  ------------  --------
+AdaBoost(50)    0.727079         0.728281      0.724858   0.72644         0.726195        0.7293   0.72762
+Naive Bayes     0.576759         0.543045      0.969083  0.696033          0.85634      0.184435  0.303256
+Naive Bayes     0.580179         0.545191      0.968461  0.697621         0.859219      0.191898  0.313243
+
+Words, Ngrams, Personal Pronouns and PN/N, POS percentages, Sentiment analysis, Depth, Sentence Length, Is Question, Is Exclamation, Has Quote, Word Variance, Incongruity, Swearing, 
+Classifier      accuracy    pos precision    pos recall    pos f1    neg precision    neg recall    neg f1
+------------  ----------  ---------------  ------------  --------  ---------------  ------------  --------
+Naive Bayes     0.577514          0.54353      0.968284  0.696229         0.855023      0.186745  0.306364
+AdaBoost(50)    0.666622         0.674725      0.644545  0.658982         0.659763      0.688699  0.673659
+
+Words, Ngrams, Personal Pronouns and PN/N, POS percentages, Sentiment analysis, Depth, Sentence Length, Is Question, Is Exclamation, Has Quote, Word Variance, Incongruity, Swearing, naive Support, 
+Classifier      accuracy    pos precision    pos recall    pos f1    neg precision    neg recall    neg f1
+------------  ----------  ---------------  ------------  --------  ---------------  ------------  --------
+AdaBoost(50)    0.672219         0.698631      0.650853  0.673802         0.673144      0.718994  0.695239
+
+Words, Ngrams, Personal Pronouns and PN/N, POS percentages, Sentiment analysis, Laughs previous, Sentences since last laugh, Depth, Sentence Length, Is Question, Is Exclamation, Has Quote, Word Variance, Incongruity, Swearing, naive Support, 
+Classifier      accuracy    pos precision    pos recall    pos f1    neg precision    neg recall    neg f1
+------------  ----------  ---------------  ------------  --------  ---------------  ------------  --------
+AdaBoost(50)    0.717751         0.742126      0.711176  0.726126         0.722874      0.752576  0.737264

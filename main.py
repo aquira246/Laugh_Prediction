@@ -5,6 +5,8 @@ import multiprocessing
 
 from tabulate import tabulate
 
+NUM_ITERATIONS = 13
+NUM_COPROCESSES = 2
 
 def getData(usePickled = True, useSentences = True):
     positives = []
@@ -53,32 +55,37 @@ def worker(positives, negatives, classifiersToUse, feats, outFile, i):
 
 
 def main():
-    (positives, negatives) = getData(usePickled=False, useSentences=False)
+    (positives, negatives) = getData(usePickled=True, useSentences=True)
 
     print("Extracting Features\n")
     featureSetsToUse = {}
-    featureSetsToUse["words"] = True          # every word in the text
-    featureSetsToUse["ngrams"] = True         # ngram for words and characters
-    featureSetsToUse["pos_nouns"] = True      # POS tag Personal Pronouns and Proper Nouns per Noun
-    featureSetsToUse["pos_perc"] = True       # Noun+adjective+verb percentage
-    featureSetsToUse["sentiment"] = True      # Sentiment Analysis
-    featureSetsToUse["laugh_count"] = True    # Laugh Count Before This
-    featureSetsToUse["last_laugh"] = True     # Chunks since last laugh
-    featureSetsToUse["depth"] = True          # Depth
-    featureSetsToUse["length"] = True         # length
-    featureSetsToUse["question"] = True       # there is a question mark
-    featureSetsToUse["exclamation"] = True    # there is a exclamation mark
-    featureSetsToUse["quote"] = True          # isQuote
-    featureSetsToUse["variance"] = True       # word variance
+    featureSetsToUse["words"] = False          # every word in the text
+    featureSetsToUse["ngrams"] = False         # ngram for words and characters
+    featureSetsToUse["pos_nouns"] = False      # POS tag Personal Pronouns and Proper Nouns per Noun
+    featureSetsToUse["pos_perc"] = False       # Noun+adjective+verb percentage
+    featureSetsToUse["sentiment"] = False      # Sentiment Analysis
+    featureSetsToUse["laugh_count"] = False    # Laugh Count Before This
+    featureSetsToUse["last_laugh"] = False     # Chunks since last laugh
+    featureSetsToUse["depth"] = False          # Depth
+    featureSetsToUse["length"] = False         # length
+    featureSetsToUse["question"] = False       # there is a question mark
+    featureSetsToUse["exclamation"] = False    # there is a exclamation mark
+    featureSetsToUse["quote"] = False          # isQuote
+    featureSetsToUse["variance"] = False       # word variance
     featureSetsToUse["incongruity"] = True    # incongruity
-    featureSetsToUse["swearing"] = True       # swearing
+    featureSetsToUse["swearing"] = False       # swearing
+    featureSetsToUse["statistics"] = False     # counting statistics
+    featureSetsToUse["frequency"] = False      # frequency statistics
+
+    featureSetsToUse["complexity"] = False     # complexity
+    featureSetsToUse["max_ent"] = False        # max ent support
     featureSetsToUse["Dim Reduction"] = False
 
-    classifiersToUse = [False,  # Naive Bayes
+    classifiersToUse = [True,  # Naive Bayes
                         False,  # Decision Tree
                         False,  # Max Entropy
                         False,  # Support Vector machine
-                        True,  # adaboost
+                        False,  # adaboost
                         False,  # random forest
                         False]  # SGD? NEVER USE WITH NGRAMS! Crashes machine
 
@@ -92,14 +99,14 @@ def main():
     dataCut = min(len(positives), len(negatives))
 
 
-    for j in range(0):
-        for i in range(0):
+    for j in range(NUM_ITERATIONS):
+        for i in range(NUM_COPROCESSES):
             random.shuffle(positives)
             random.shuffle(negatives)
             positives = positives[:dataCut]
             negatives = negatives[:dataCut]
             p = multiprocessing.Process(target=worker, \
-                args=(positives, negatives, classifiersToUse, featureSetsToUse, "blah.txt", j*5 + i,))
+                args=(positives, negatives, classifiersToUse, featureSetsToUse, "blah.txt", j*NUM_COPROCESSES + i,))
             jobs.append(p)
             p.start()
 
