@@ -8,15 +8,6 @@ from nltk import word_tokenize
 class tedMetaData(object):
     """docstring for metaData"""
 
-    name = ""
-    author = ""
-    wordCount = 0
-    numLaughs = 0
-    tags = []
-    firstLaughAt = -1
-    filename = ""
-    paraCount = 0
-
     def __init__(self, fname = "", name = "", aut = "", lc = 0, wc = 0, laughtAt = -1, newTags = []):
         self.name = name
         self.author = aut

@@ -5,8 +5,8 @@ import multiprocessing
 
 from tabulate import tabulate
 
-NUM_ITERATIONS = 13
-NUM_COPROCESSES = 2
+NUM_ITERATIONS = 25
+NUM_COPROCESSES = 1
 
 def getData(usePickled = True, useSentences = True):
     positives = []
@@ -55,27 +55,28 @@ def worker(positives, negatives, classifiersToUse, feats, outFile, i):
 
 
 def main():
-    (positives, negatives) = getData(usePickled=True, useSentences=True)
+    (positives, negatives) = getData(usePickled=True, useSentences=False)
 
     print("Extracting Features\n")
     featureSetsToUse = {}
-    featureSetsToUse["words"] = False          # every word in the text
-    featureSetsToUse["ngrams"] = False         # ngram for words and characters
-    featureSetsToUse["pos_nouns"] = False      # POS tag Personal Pronouns and Proper Nouns per Noun
-    featureSetsToUse["pos_perc"] = False       # Noun+adjective+verb percentage
-    featureSetsToUse["sentiment"] = False      # Sentiment Analysis
+    featureSetsToUse["words"] = True          # every word in the text
+    featureSetsToUse["ngrams"] = True         # ngram for words and characters
+    featureSetsToUse["pos_nouns"] = True      # POS tag Personal Pronouns and Proper Nouns per Noun
+    featureSetsToUse["pos_perc"] = True       # Noun+adjective+verb percentage
+    featureSetsToUse["sentiment"] = True      # Sentiment Analysis
     featureSetsToUse["laugh_count"] = False    # Laugh Count Before This
     featureSetsToUse["last_laugh"] = False     # Chunks since last laugh
-    featureSetsToUse["depth"] = False          # Depth
-    featureSetsToUse["length"] = False         # length
-    featureSetsToUse["question"] = False       # there is a question mark
-    featureSetsToUse["exclamation"] = False    # there is a exclamation mark
-    featureSetsToUse["quote"] = False          # isQuote
-    featureSetsToUse["variance"] = False       # word variance
+    featureSetsToUse["depth"] = True          # Depth
+    featureSetsToUse["length"] = True         # length
+    featureSetsToUse["question"] = True       # there is a question mark
+    featureSetsToUse["exclamation"] = True    # there is a exclamation mark
+    featureSetsToUse["quote"] = True          # isQuote
+    featureSetsToUse["variance"] = True       # word variance
     featureSetsToUse["incongruity"] = True    # incongruity
-    featureSetsToUse["swearing"] = False       # swearing
-    featureSetsToUse["statistics"] = False     # counting statistics
-    featureSetsToUse["frequency"] = False      # frequency statistics
+    featureSetsToUse["swearing"] = True       # swearing
+    featureSetsToUse["statistics"] = True     # counting statistics
+    featureSetsToUse["frequency"] = True      # frequency statistics
+    featureSetsToUse["hapax"] = True          # hapax count
 
     featureSetsToUse["complexity"] = False     # complexity
     featureSetsToUse["max_ent"] = False        # max ent support
@@ -85,7 +86,7 @@ def main():
                         False,  # Decision Tree
                         False,  # Max Entropy
                         False,  # Support Vector machine
-                        False,  # adaboost
+                        True,  # adaboost
                         False,  # random forest
                         False]  # SGD? NEVER USE WITH NGRAMS! Crashes machine
 
@@ -98,60 +99,64 @@ def main():
 
     dataCut = min(len(positives), len(negatives))
 
+    n = len(classifiersToUse)
+    for clf in range(n):
+        clfrs = [False] * n
+        clfrs[clf] = classifiersToUse[clf]
 
-    for j in range(NUM_ITERATIONS):
-        for i in range(NUM_COPROCESSES):
-            random.shuffle(positives)
-            random.shuffle(negatives)
-            positives = positives[:dataCut]
-            negatives = negatives[:dataCut]
-            p = multiprocessing.Process(target=worker, \
-                args=(positives, negatives, classifiersToUse, featureSetsToUse, "blah.txt", j*NUM_COPROCESSES + i,))
-            jobs.append(p)
-            p.start()
+        for j in range(NUM_ITERATIONS):
+            for i in range(NUM_COPROCESSES):
+                random.shuffle(positives)
+                random.shuffle(negatives)
+                positives = positives[:dataCut]
+                negatives = negatives[:dataCut]
+                p = multiprocessing.Process(target=worker, \
+                    args=(positives, negatives, clfrs, featureSetsToUse, "blah.txt", j*NUM_COPROCESSES + i,))
+                jobs.append(p)
+                p.start()
 
-        for p in jobs:
-            p.join()
+            for p in jobs:
+                p.join()
 
-    rf = open("blah.txt", 'r')
-    out = open("output.txt", 'a')
+        rf = open("blah.txt", 'r')
+        out = open("output.txt", 'a')
 
-    accuracy = 0
-    posPrecision = 0
-    posRecall = 0
-    posf1 = 0
-    negPrecision = 0
-    negRecall = 0
-    negf1 = 0
-    i = 0
-    for line in rf.readlines()[1:]:
-        info = line.strip().split("   ")
-        i += 1
-        accuracy += float(info[0])
-        posPrecision += float(info[1])
-        posRecall += float(info[2])
-        posf1 += float(info[3])
-        negPrecision += float(info[4])
-        negRecall += float(info[5])
-        negf1 += float(info[6])
+        accuracy = 0
+        posPrecision = 0
+        posRecall = 0
+        posf1 = 0
+        negPrecision = 0
+        negRecall = 0
+        negf1 = 0
+        i = 0
+        for line in rf.readlines()[1:]:
+            info = line.strip().split("   ")
+            i += 1
+            accuracy += float(info[0])
+            posPrecision += float(info[1])
+            posRecall += float(info[2])
+            posf1 += float(info[3])
+            negPrecision += float(info[4])
+            negRecall += float(info[5])
+            negf1 += float(info[6])
 
-    if i > 0:
-        accuracy = accuracy/i
-        posPrecision = posPrecision/i
-        posRecall = posRecall/i
-        posf1 = posf1/i
-        negPrecision = negPrecision/i
-        negRecall = negRecall/i
-        negf1 = negf1/i
+        if i > 0:
+            accuracy = accuracy/i
+            posPrecision = posPrecision/i
+            posRecall = posRecall/i
+            posf1 = posf1/i
+            negPrecision = negPrecision/i
+            negRecall = negRecall/i
+            negf1 = negf1/i
 
-        table = [["Fill in", accuracy, posPrecision, posRecall, posf1, negPrecision, negRecall, negf1]]
-        headers=["Classifier", "accuracy", "pos precision", "pos recall", "pos f1", "neg precision", "neg recall", "neg f1"]
-        out.write(tabulate(table, headers))
-    else:
-        print("i is 0")
+            table = [["Fill in", accuracy, posPrecision, posRecall, posf1, negPrecision, negRecall, negf1]]
+            headers=["Classifier", "accuracy", "pos precision", "pos recall", "pos f1", "neg precision", "neg recall", "neg f1"]
+            out.write(tabulate(table, headers))
+        else:
+            print("i is 0")
 
-    rf.close
-    out.close
+        rf.close
+        out.close
 
 """MAIN"""
 if __name__ == '__main__':

@@ -116,8 +116,8 @@ def runClassifiers(positives, negatives, featuresToUse, outFile, verbose, classi
     random.shuffle(neg)
 
     # Testing is 1/4 of the data set, so we will cut it off there
-    posCut = len(pos)//4
-    negCut = len(neg)//4
+    minLen = min(len(pos), len(neg))
+    negCut = posCut = minLen//4
 
     # splits training and test sets
     train_data = pos[posCut:] + neg[negCut:]

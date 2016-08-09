@@ -55,6 +55,7 @@ freqData = pickle.load(open("pickled_data/freq_data.p", "rb"))
 # 14. complexity
 # 15. statistics count
 # 16. frequency
+# 17. hapax count
 # Note that featuresets are lists. That's what the classifier takes as input
 def langFeatures(featsCollection, featuresToUse):
     D = {}  # dictionary of keys
@@ -198,6 +199,10 @@ def langFeatures(featsCollection, featuresToUse):
         D["__minFreq"] = minFreq
         D["__avgFreq"] = avgFreq
 
+    # 17. Hapax count
+    if "hapax" in featuresToUse and featuresToUse["hapax"]:
+        D["__hapax_count"] = featsCollection.features["hapax_count"]
+
     return D
 
 
@@ -258,16 +263,16 @@ def featuresToString(featuresToUse):
     if "frequency" in featuresToUse and featuresToUse["frequency"]:
         ret = ret + "Frequency, "
 
+    if "hapax" in featuresToUse and featuresToUse["hapax"]:
+        ret = ret + "Hapax count, "
+
     if "max_ent" in featuresToUse and featuresToUse["max_ent"]:
         ret = ret + "Max Ent Support, "
 
     if "Dim Reduction" in featuresToUse and featuresToUse["Dim Reduction"]:
         ret = ret + "Dim Reduction, "
 
-
-    ret = ret + "\n"
-
-    return ret
+    return ret + "\n"
 
 
 def textToCharGrams(text):
@@ -345,10 +350,10 @@ def getSentiment(text, previousSentiment):
     return D
 
 
-def getPOS(text):
+def getPOS(words):
     # POS tag based feature set
     # get the parts of speech tags
-    parts_of_speech = nltk.pos_tag(text)
+    parts_of_speech = nltk.pos_tag(words)
 
     ret = {}
     verbCount = 0

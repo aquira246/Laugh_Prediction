@@ -83,7 +83,7 @@ def grabSearchPages(rangeStart, rangeEnd):
     wf.writelines("#!/bin/bash\n\n")
 
     for num in range(rangeStart,rangeEnd):
-        wf.writelines("wget https://www.ted.com/talks?page=" + str(num) + "&sort=funny\n")
+        wf.writelines("wget https://www.ted.com/talks?page=" + str(num) + "&sort=newest\n")
 
     wf.close
 
@@ -97,10 +97,11 @@ def grabTalksFromSearchPages(searchPath, writePath):
 
     for filename in os.listdir(searchPath):
         if not ".sh" in filename:
+            print(filename)
             rf = open(searchPath + filename, 'r')
 
             for line in rf:
-                for toWrite in re.findall(r'^<a href=\'/(talks/.+)\'>$', line):
+                for toWrite in re.findall(r'^<a class=\'\' href=\'/(talks/.+)\'>$', line):
                     if previous != toWrite:
                         previous = toWrite
                         wf.writelines("wget "+ "https://www.ted.com/" + toWrite + "/transcript?language=en\n")
@@ -114,7 +115,7 @@ def grabTalksFromSearchPages(searchPath, writePath):
 fileToParse = "websites/transcript?language=en"
 writePathForParsedFiles = "parsed_websites/"
 
-grabSearchPages(1, 25)
+grabSearchPages(1, 15)
 #run the bash script in the search_pages folder
 grabTalksFromSearchPages("search_pages/", "websites/TedTalkGrabber2.sh")
 #run the bash script

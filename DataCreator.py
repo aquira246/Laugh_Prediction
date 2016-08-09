@@ -75,7 +75,7 @@ def splitFile(md, splitBySentence):
     laughCount = 0                      # the laughs counted so far
     positives = []                      # all of the positives
     negatives = []                      # all of the negatives
-    previousSentiment = {"Polarity": 0}             # the previous chunk's sentiment
+    previousSentiment = {"Polarity": 0}     # the previous chunk's sentiment
 
     for i in range(numChunks):
         # create a FeatureCollection for each chunk
@@ -126,35 +126,41 @@ def splitFile(md, splitBySentence):
             features.features["length"] = len(words)
 
             # replace quantites and years and some person names
-            curChunk = entity_recognition(curChunk)
-            features.features["statistic_count"] = curChunk.count("__Statistic__")
+            entity_chunk = entity_recognition(curChunk)
+            features.features["statistic_count"] = entity_chunk.count("__Statistic__")
 
             # tokenize the words
+            curChunk = curChunk.lower()
             words = word_tokenize(curChunk)
             talklen = len(words)
 
             # store the word vector
             if splitBySentence:
-                features.wordVector = [[w.lower() for w in words if w.lower() not in stop and  w.isalpha()]]
+                features.wordVector = [[w for w in words if w not in stop and  w.isalpha()]]
             else:
                 for s in sent_tokenize(curChunk):
-                    wordlist = [w.lower() for w in word_tokenize(s) if w.lower() not in stop and  w.isalpha()]
+                    wordlist = [w for w in word_tokenize(s) if w not in stop and  w.isalpha()]
                     features.wordVector.append(wordlist)
 
             # set the last 3 words
             features.prev3Words = passedWords[-1][-3:]
 
-            # case collapse and stem words and get the variance
+            # case collapse and stem words, get the variance, and hapax count
             variousWords = {}
+            numHapax = 0
             for j in range(talklen):
                 # move following line below if variance by stemmed words
                 variousWords[words[j]] = True
+                if words[j] in hapaxes:
+                    numHapax += 1
 
-                if words[j].lower() in swears:
+                if words[j] in swears:
                     features.sentimentFeats["swearing"] = True
                     # words[j] = "SWEARWORD"     # seems to have lowered accuracy
 
-                words[j] = stemmer.stem(words[j].lower())
+                words[j] = stemmer.stem(words[j])
+
+            features.features["hapax_count"] = numHapax
 
             # calculate word variance
             if (talklen > 0):
