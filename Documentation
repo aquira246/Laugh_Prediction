@@ -113,3 +113,5 @@ Best with sentences without laughter feats is naive bayes
 Best with sentences with laughter feats is adaboost
 Best with paras without laughter feats is naive bayes
 Best with paras with laughter feats is adaboost
+
+Hapax is successful for paragraphs! Not really for sentences though. Oh well. Also, I added more data (more talks).
