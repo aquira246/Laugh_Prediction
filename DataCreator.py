@@ -170,7 +170,7 @@ def splitFile(md, splitBySentence):
 
             # get words as features
             passedWords.append((words + ["EOS"]))
-            features.words = word_tokenize(curChunk)
+            features.words = [w for w in words if w not in stop]   # word_tokenize(curChunk)
 
             # if the chunk was positive thenwe need to:
             # reset the distance since last laugh and increment laugh count

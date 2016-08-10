@@ -12,13 +12,12 @@ from nltk.classify import SklearnClassifier
 from tabulate import tabulate
 
 import sklearn
-from sklearn.svm import SVC
 from sklearn.svm import LinearSVC
+from sklearn.svm import SVC
 from sklearn.ensemble import AdaBoostClassifier
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.tree import DecisionTreeClassifier
 from sklearn.naive_bayes import MultinomialNB
-from sklearn.linear_model import SGDClassifier
 from sklearn.feature_extraction.text import TfidfTransformer
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.feature_selection import SelectKBest, chi2
@@ -210,8 +209,8 @@ def runClassifiers(positives, negatives, featuresToUse, outFile, verbose, classi
         print("Running SVM classifier")
         timeStart = time.time()
 
-        # Scikit-learn's SVC classifier, wrapped up in NLTK's wrapper class
-        clf = SVC()
+        # Scikit-learn's LinearSVC classifier, wrapped up in NLTK's wrapper class
+        clf = LinearSVC()
 
         if featuresToUse["Dim Reduction"]:
             # pipeline = Pipeline([   # ('tfidf', TfidfTransformer()),
@@ -222,11 +221,13 @@ def runClassifiers(positives, negatives, featuresToUse, outFile, verbose, classi
         else:
             classifier = SklearnClassifier(clf)
 
+        classifier.train(train_data)
+
         # get the time to train a Support Vector Machine
         print ("\nTime to train in seconds: ", time.time() - timeStart)
 
         # store the accuracy in the table
-        table.append(assess_classifier(classifier, test_data, "Support Vector Machine"))
+        table.append(assess_classifier(classifier, test_data, "Linear SVC"))
 
     if classifiersToUse[4]:
         numEstimators = 50
@@ -281,18 +282,42 @@ def runClassifiers(positives, negatives, featuresToUse, outFile, verbose, classi
         table.append(assess_classifier(classifier, test_data, "Random Forest", maxEntSupport))
 
     if classifiersToUse[6]:
-        print("Running SGD classifier")
+        numEstimators = 50
+        print("Running Combo classifier")
         timeStart = time.time()
 
-        # Scikit-learn's SVC classifier, wrapped up in NLTK's wrapper class
-        clf = SGDClassifier(loss='hinge', penalty='l2', alpha=1e-3, n_iter=5, random_state=42)
-        classifier = SklearnClassifier(clf, sparse=False).train(train_data)
+        adaclf = SklearnClassifier(AdaBoostClassifier(n_estimators=numEstimators))
+        adaclf.train(train_data)
+        naive = nltk.NaiveBayesClassifier.train(train_data)
 
-        # get the time to train a Support Vector Machine
+        # get the time to train
         print ("\nTime to train in seconds: ", time.time() - timeStart)
 
         # store the accuracy in the table
-        table.append(assess_classifier(classifier, test_data, "Linear (SGD)"))
+        TP = TN = FP = FN = 0
+        for i, (feats, label) in enumerate(test_data):
+            observed = False
+            if naive.classify(feats) and adaclf.classify(feats):
+                observed = True
+            if label == observed:
+                if observed:
+                    TP += 1
+                else:
+                    TN += 1
+            else:
+                if observed:
+                    FP += 1
+                else:
+                    FN += 1
+
+        accuracy = (TP+TN)/(TP+FP+TN+FN)
+        p_prec = TP/(TP+FP)
+        p_rec = TP/(TP+FN)
+        f1Pos = 2*((p_prec*p_rec)/(p_prec + p_rec))
+        n_prec = TN/(TN+FN)
+        n_rec = TN/(TN+FP)
+        f1Neg = 2*((n_prec*n_rec)/(n_prec + n_rec))
+        table.append(["COMBO", accuracy, p_prec, p_rec, f1Pos, n_prec, n_rec, f1Neg])
 
 
     if (outFile == ""):

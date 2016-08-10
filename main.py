@@ -2,6 +2,7 @@ import Classifiers
 import DataCreator
 import random
 import multiprocessing
+from multiprocessing import Manager
 
 from tabulate import tabulate
 
@@ -36,20 +37,20 @@ def getData(usePickled = True, useSentences = True):
     return(positives, negatives)
 
 
-def worker(positives, negatives, classifiersToUse, feats, outFile, i):
+def worker(positives, negatives, classifiersToUse, feats, outFile, i, return_dict):
     """thread worker function"""
     # positives, negatives, featuresToUse, whereToPrint, verbose, classifiersToUse
     results = Classifiers.runClassifiers(positives, negatives, feats, "output.txt", False, classifiersToUse)
     print("done ", i)
 
     for r in results:
-        s = str(r[1]) + "   ", str(r[2]) + "   ",\
-            str(r[3]) + "   ", str(r[4]) + "   ",\
-            str(r[5]) + "   ", str(r[6]) + "   ",\
-            str(r[7]) + "\n"
-        wf = open(outFile, 'a')
-        wf.writelines(s)
-        wf.close()
+        return_dict["accuracy"] += r[1]
+        return_dict["pos_precision"] += r[2]
+        return_dict["pos_recall"] += r[3]
+        return_dict["pos_f1"] += r[4]
+        return_dict["neg_precision"] += r[5]
+        return_dict["neg_recall"] += r[6]
+        return_dict["neg_f1"] += r[7]
 
     return
 
@@ -64,8 +65,8 @@ def main():
     featureSetsToUse["pos_nouns"] = True      # POS tag Personal Pronouns and Proper Nouns per Noun
     featureSetsToUse["pos_perc"] = True       # Noun+adjective+verb percentage
     featureSetsToUse["sentiment"] = True      # Sentiment Analysis
-    featureSetsToUse["laugh_count"] = False    # Laugh Count Before This
-    featureSetsToUse["last_laugh"] = False     # Chunks since last laugh
+    featureSetsToUse["laugh_count"] = True    # Laugh Count Before This
+    featureSetsToUse["last_laugh"] = True     # Chunks since last laugh
     featureSetsToUse["depth"] = True          # Depth
     featureSetsToUse["length"] = True         # length
     featureSetsToUse["question"] = True       # there is a question mark
@@ -85,78 +86,63 @@ def main():
     classifiersToUse = [True,  # Naive Bayes
                         False,  # Decision Tree
                         False,  # Max Entropy
-                        False,  # Support Vector machine
+                        True,  # Support Vector machine
                         True,  # adaboost
                         False,  # random forest
-                        False]  # SGD? NEVER USE WITH NGRAMS! Crashes machine
+                        False]  # COMBO
 
     jobs = []
-
-    # clear file
-    wf = open("blah.txt", 'w')
-    wf.writelines("  accuracy    pos precision    pos recall    pos f1    neg precision    neg recall    neg f1")
-    wf.close
-
     dataCut = min(len(positives), len(negatives))
 
     n = len(classifiersToUse)
     for clf in range(n):
-        clfrs = [False] * n
-        clfrs[clf] = classifiersToUse[clf]
+        if classifiersToUse[clf]:
+            clfrs = [False] * n
+            clfrs[clf] = classifiersToUse[clf]
 
-        for j in range(NUM_ITERATIONS):
-            for i in range(NUM_COPROCESSES):
-                random.shuffle(positives)
-                random.shuffle(negatives)
-                positives = positives[:dataCut]
-                negatives = negatives[:dataCut]
-                p = multiprocessing.Process(target=worker, \
-                    args=(positives, negatives, clfrs, featureSetsToUse, "blah.txt", j*NUM_COPROCESSES + i,))
-                jobs.append(p)
-                p.start()
+            manager = Manager()
+            return_dict = manager.dict()
+            return_dict["accuracy"] = 0
+            return_dict["pos_precision"] = 0
+            return_dict["pos_recall"] = 0
+            return_dict["pos_f1"] = 0
+            return_dict["neg_precision"] = 0
+            return_dict["neg_recall"] = 0
+            return_dict["neg_f1"] = 0
 
-            for p in jobs:
-                p.join()
+            for j in range(NUM_ITERATIONS):
+                for i in range(NUM_COPROCESSES):
+                    random.shuffle(positives)
+                    random.shuffle(negatives)
+                    positives = positives[:dataCut]
+                    negatives = negatives[:dataCut]
+                    p = multiprocessing.Process(target=worker,
+                        args=(positives, negatives, clfrs, featureSetsToUse,
+                        "blah.txt", j*NUM_COPROCESSES + i, return_dict))
+                    jobs.append(p)
+                    p.start()
 
-        rf = open("blah.txt", 'r')
-        out = open("output.txt", 'a')
+                for p in jobs:
+                    p.join()
 
-        accuracy = 0
-        posPrecision = 0
-        posRecall = 0
-        posf1 = 0
-        negPrecision = 0
-        negRecall = 0
-        negf1 = 0
-        i = 0
-        for line in rf.readlines()[1:]:
-            info = line.strip().split("   ")
-            i += 1
-            accuracy += float(info[0])
-            posPrecision += float(info[1])
-            posRecall += float(info[2])
-            posf1 += float(info[3])
-            negPrecision += float(info[4])
-            negRecall += float(info[5])
-            negf1 += float(info[6])
+            testing_length = NUM_ITERATIONS*NUM_COPROCESSES
+            if testing_length > 0:
+                accuracy = return_dict["accuracy"] / (testing_length)
+                posPrecision = return_dict["pos_precision"] / (testing_length)
+                posRecall = return_dict["pos_recall"] / (testing_length)
+                posf1 = return_dict["pos_f1"] / (testing_length)
+                negPrecision = return_dict["neg_precision"] / (testing_length)
+                negRecall = return_dict["neg_recall"] / (testing_length)
+                negf1 = return_dict["neg_f1"] / (testing_length)
 
-        if i > 0:
-            accuracy = accuracy/i
-            posPrecision = posPrecision/i
-            posRecall = posRecall/i
-            posf1 = posf1/i
-            negPrecision = negPrecision/i
-            negRecall = negRecall/i
-            negf1 = negf1/i
+                table = [["Fill in", accuracy, posPrecision, posRecall, posf1, negPrecision, negRecall, negf1]]
+                headers=["Classifier", "accuracy", "pos precision", "pos recall", "pos f1", "neg precision", "neg recall", "neg f1"]
+                out = open("output.txt", 'a')
+                out.write(tabulate(table, headers))
+                out.close
+            else:
+                print("i is 0")
 
-            table = [["Fill in", accuracy, posPrecision, posRecall, posf1, negPrecision, negRecall, negf1]]
-            headers=["Classifier", "accuracy", "pos precision", "pos recall", "pos f1", "neg precision", "neg recall", "neg f1"]
-            out.write(tabulate(table, headers))
-        else:
-            print("i is 0")
-
-        rf.close
-        out.close
 
 """MAIN"""
 if __name__ == '__main__':
