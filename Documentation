@@ -115,3 +115,15 @@ Best with paras without laughter feats is naive bayes
 Best with paras with laughter feats is adaboost
 
 Hapax is successful for paragraphs! Not really for sentences though. Oh well. Also, I added more data (more talks).
+1787 talks are in the database. practically double the original amount (2 of the original 1789 are broken, thus 1787)
+
+Final Data break down:
+Sentences: 
+Number of Positive Data:  3236 
+Number of Negative Data:  98774
+ratio of positive to negative: 1618/49387
+
+Paragraphs:
+Number of Positive Data:  1509 
+Number of Negative Data:  18087
+

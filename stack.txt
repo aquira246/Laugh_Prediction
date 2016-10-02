@@ -17,3 +17,4 @@ import numpy +
 from textblob import TextBlob +
 scikit
 scipy
+word2vec (gensim package)

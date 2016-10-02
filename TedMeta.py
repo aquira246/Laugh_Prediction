@@ -199,15 +199,15 @@ def createTedMetaFile(path, metaDataLocation, laughDataLocation):
 
 
 def getMetaDataFromString(line):
-    #return a metadata if the string is good, else return None
-    #attempt to grab the sections of the string
+    # return a metadata if the string is good, else return None
+    # attempt to grab the sections of the string
     res = re.findall("^(.+)    (.+)\s+   (.+)    .(.*).    Word Count: ([0-9]+)    Laugh Count: ([0-9]+)    First Laugh At: (\S+)", line)
 
-    #if we don't find anything, return None
+    # if we don't find anything, return None
     if len(res) is 0:
         return None
     else:
-        #if we find the sections, we make a new metadata
+        # if we find the sections, we make a new metadata
         filename, name, author, tags, wordCount, laughCount, firstLaughAt = res[0]
 
         if len(tags) == 0:
@@ -216,10 +216,10 @@ def getMetaDataFromString(line):
             tag1, tag2 = re.findall(".(\S+)., .(\S+).", tags)[0]
             tags = [tag1, tag2]
 
-            #create metadata with the info
+            # create metadata with the info
             md = tedMetaData(filename, name, author, int(laughCount), int(wordCount), int(firstLaughAt), tags)
 
-            #return the metadata
+            # return the metadata
             return md
 
 
@@ -229,7 +229,7 @@ def useTedMetaFiles(path, metaDataLocation):
 
     lineNum = 0
 
-    #the file that stores all the meta data for the files
+    # the file that stores all the meta data for the files
     mf = open(metaDataLocation, "r")
 
     for line in mf:

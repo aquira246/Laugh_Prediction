@@ -37,7 +37,7 @@ if __name__ == '__main__':
     (positives, negatives) = getData(False, False)
 
     featureSetsToUse = {}
-    featureSetsToUse["words"] = False          # every word in the text
+    featureSetsToUse["words"] = True          # every word in the text
     featureSetsToUse["ngrams"] = False         # ngram for words and characters
     featureSetsToUse["pos_nouns"] = False      # POS tag Personal Pronouns and Proper Nouns per Noun
     featureSetsToUse["pos_perc"] = False       # Noun+adjective+verb percentage

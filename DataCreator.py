@@ -189,30 +189,27 @@ def splitFile(md, splitBySentence):
 def creatingData(metadata, lengths, useSentences):
     # cut out talks that are too long or short
     cutPoint = int(math.floor(len(metadata)*CUT_OUTLIER_PERCENTAGE))
-    trimmedLengths = lengths[cutPoint:-cutPoint]
+    shortCut = lengths[cutPoint]
+    longCut = lengths[-cutPoint]
 
     if (len(metadata) < 40):
+        shortCut = 1
+        longCut = lengths[-1]
         trimmedLengths = lengths
 
     posData = []
     negData = []
 
     i = 0
-
-    random.shuffle(trimmedLengths)
-    for wordCount in trimmedLengths:
-        for md in metadata:
-            if md.wordCount == wordCount:
-                matchedFile = md
-                break
-
-        metadata.remove(matchedFile)
-        pieces = splitFile(matchedFile, useSentences)
-        posData = posData + pieces[0]
-        negData = negData + pieces[1]
-
-        i += 1
-        loadingbar.printPercentage(i/len(trimmedLengths) * 100, "Creating Data: ", False)
+    metaLength = len(metadata)
+    for md in metadata:
+        if md.wordCount >= shortCut and md.wordCount <= longCut:
+            metadata.remove(md)
+            pieces = splitFile(md, useSentences)
+            posData = posData + pieces[0]
+            negData = negData + pieces[1]
+            i += 1
+            loadingbar.printPercentage(i/metaLength * 100, "Creating Data: ", False)
 
     print("Number of Positive Data: ", len(posData), "\n")
     print("Number of Negative Data: ", len(negData), "\n")

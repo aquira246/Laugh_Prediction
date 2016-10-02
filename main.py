@@ -9,7 +9,10 @@ from tabulate import tabulate
 NUM_ITERATIONS = 25
 NUM_COPROCESSES = 1
 
-def getData(usePickled = True, useSentences = True):
+
+# function for creating or unpickling the data. Will pickle the data it created.
+# returns a tuple of (positive data, negative data)
+def getData(usePickled=True, useSentences=True):
     positives = []
     negatives = []
 
@@ -37,6 +40,7 @@ def getData(usePickled = True, useSentences = True):
     return(positives, negatives)
 
 
+# the function that is called by the multiprocessing. Look up python multiprocessing.
 def worker(positives, negatives, classifiersToUse, feats, outFile, i, return_dict):
     """thread worker function"""
     # positives, negatives, featuresToUse, whereToPrint, verbose, classifiersToUse
@@ -55,9 +59,30 @@ def worker(positives, negatives, classifiersToUse, feats, outFile, i, return_dic
     return
 
 
+# convert the index in the classifiers to use array to a string
+def idxToClfName(idx):
+        if idx == 0:
+            return "Naive Bayes"
+        elif idx == 1:
+            return "Decision Tree"
+        elif idx == 2:
+            return "Max Entropy"
+        elif idx == 3:
+            return "SVM"
+        elif idx == 4:
+            return "AdaBoost(50)"
+        elif idx == 5:
+            return "Random Forest"
+        elif idx == 6:
+            return "COMBO"
+        else:
+            return "BAD!"
+
+
 def main():
     (positives, negatives) = getData(usePickled=True, useSentences=False)
 
+    # Set these dictionary inputs to true if you want to use them
     print("Extracting Features\n")
     featureSetsToUse = {}
     featureSetsToUse["words"] = True          # every word in the text
@@ -65,36 +90,39 @@ def main():
     featureSetsToUse["pos_nouns"] = True      # POS tag Personal Pronouns and Proper Nouns per Noun
     featureSetsToUse["pos_perc"] = True       # Noun+adjective+verb percentage
     featureSetsToUse["sentiment"] = True      # Sentiment Analysis
-    featureSetsToUse["laugh_count"] = True    # Laugh Count Before This
-    featureSetsToUse["last_laugh"] = True     # Chunks since last laugh
-    featureSetsToUse["depth"] = True          # Depth
+    featureSetsToUse["laugh_count"] = False    # Laugh Count Before This
+    featureSetsToUse["last_laugh"] = False     # Chunks since last laugh
+    featureSetsToUse["depth"] = False          # Depth
     featureSetsToUse["length"] = True         # length
-    featureSetsToUse["question"] = True       # there is a question mark
+    featureSetsToUse["question"] = False       # there is a question mark
     featureSetsToUse["exclamation"] = True    # there is a exclamation mark
     featureSetsToUse["quote"] = True          # isQuote
-    featureSetsToUse["variance"] = True       # word variance
+    featureSetsToUse["variance"] = False       # word variance
     featureSetsToUse["incongruity"] = True    # incongruity
     featureSetsToUse["swearing"] = True       # swearing
-    featureSetsToUse["statistics"] = True     # counting statistics
-    featureSetsToUse["frequency"] = True      # frequency statistics
+    featureSetsToUse["statistics"] = False     # counting statistics
+    featureSetsToUse["frequency"] = False      # frequency statistics
     featureSetsToUse["hapax"] = True          # hapax count
 
     featureSetsToUse["complexity"] = False     # complexity
     featureSetsToUse["max_ent"] = False        # max ent support
     featureSetsToUse["Dim Reduction"] = False
 
+    # set these input in the array to true to use that classifier
     classifiersToUse = [True,  # Naive Bayes
                         False,  # Decision Tree
-                        False,  # Max Entropy
+                        False,  # Max Entropy (Warning, can kill all the RAM)
                         True,  # Support Vector machine
                         True,  # adaboost
-                        False,  # random forest
-                        False]  # COMBO
+                        True,  # random forest
+                        True]  # COMBO
 
     jobs = []
     dataCut = min(len(positives), len(negatives))
 
     n = len(classifiersToUse)
+    table = []
+    headers=["Classifier", "accuracy", "pos precision", "pos recall", "pos f1", "neg precision", "neg recall", "neg f1"]
     for clf in range(n):
         if classifiersToUse[clf]:
             clfrs = [False] * n
@@ -127,21 +155,22 @@ def main():
 
             testing_length = NUM_ITERATIONS*NUM_COPROCESSES
             if testing_length > 0:
-                accuracy = return_dict["accuracy"] / (testing_length)
-                posPrecision = return_dict["pos_precision"] / (testing_length)
-                posRecall = return_dict["pos_recall"] / (testing_length)
-                posf1 = return_dict["pos_f1"] / (testing_length)
-                negPrecision = return_dict["neg_precision"] / (testing_length)
-                negRecall = return_dict["neg_recall"] / (testing_length)
-                negf1 = return_dict["neg_f1"] / (testing_length)
+                accuracy = round(return_dict["accuracy"] / (testing_length), 2)
+                posPrecision = round(return_dict["pos_precision"] / (testing_length), 2)
+                posRecall = round(return_dict["pos_recall"] / (testing_length), 2)
+                posf1 = round(return_dict["pos_f1"] / (testing_length), 2)
+                negPrecision = round(return_dict["neg_precision"] / (testing_length), 2)
+                negRecall = round(return_dict["neg_recall"] / (testing_length), 2)
+                negf1 = round(return_dict["neg_f1"] / (testing_length), 2)
 
-                table = [["Fill in", accuracy, posPrecision, posRecall, posf1, negPrecision, negRecall, negf1]]
-                headers=["Classifier", "accuracy", "pos precision", "pos recall", "pos f1", "neg precision", "neg recall", "neg f1"]
-                out = open("output.txt", 'a')
-                out.write(tabulate(table, headers))
-                out.close
+                table.append([idxToClfName(clf), accuracy, posPrecision, posRecall, posf1, negPrecision, negRecall, negf1])
             else:
                 print("i is 0")
+
+    out = open("output.txt", 'a')
+    out.write("\n" + tabulate(table, headers) + "\n")
+    out.close
+
 
 
 """MAIN"""

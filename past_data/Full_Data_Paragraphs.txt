@@ -1,0 +1,477 @@
+FEATURE RESULTS: August 15th
+Note, these are all the averages of at least 25 runs
+
+/////////////////////////COMBO IS CURRENTLY ONLY NAIVE BAYES AND ADABOOST(50) AND ITS AN "AND" RELATIONSHIP
+/////////////////////////FINAL ADDITION OF DATA! These are the final results for the thesis
+/////////////////////////paras
+Words, Ngrams, Personal Pronouns and PN/N, POS percentages, Sentiment analysis, Depth, Sentence Length, Is Question, Is Exclamation, Has Quote, Word Variance, Incongruity, Swearing, Statistics, Frequency, Hapax count, 
+Classifier      accuracy    pos precision    pos recall    pos f1    neg precision    neg recall    neg f1
+------------  ----------  ---------------  ------------  --------  ---------------  ------------  --------
+Naive Bayes     0.597613         0.557005      0.954695  0.70351          0.841849      0.240531  0.373751
+Linear SVC      0.561061         0.626763      0.511512  0.445033         0.621858      0.61061   0.537138
+AdaBoost(50)    0.664509         0.676281      0.632149  0.653148         0.65472       0.69687   0.674882
+Random Forest   0.662918         0.690527      0.592467  0.636916         0.643317      0.733369  0.684851
+COMBO           0.662228         0.678031      0.618674  0.646619         0.649543      0.705782  0.676217
+
+Words, Ngrams, Personal Pronouns and PN/N, POS percentages, Sentiment analysis, Laughs previous, Sentences since last laugh, Depth, Sentence Length, Is Question, Is Exclamation, Has Quote, Word Variance, Incongruity, Swearing, Statistics, Frequency, Hapax count, 
+Classifier      accuracy    pos precision    pos recall    pos f1    neg precision    neg recall    neg f1
+------------  ----------  ---------------  ------------  --------  ---------------  ------------  --------
+Naive Bayes     0.607374         0.563172      0.958196  0.709368           0.8602      0.256552  0.394788
+Linear SVC      0.569867         0.714979      0.384509  0.367742         0.620281      0.755225   0.60431
+AdaBoost(50)    0.753316         0.750656      0.758621  0.754617         0.756032      0.748011     0.752
+Random Forest   0.680743         0.708106      0.617188  0.658661         0.660904      0.744297  0.699553
+COMBO           0.741379          0.73822      0.748011  0.743083         0.744624      0.734748  0.739653
+
+Words, 
+Classifier      accuracy    pos precision    pos recall    pos f1    neg precision    neg recall    neg f1
+------------  ----------  ---------------  ------------  --------  ---------------  ------------  --------
+Naive Bayes     0.532573         0.516916      0.997454  0.680932         0.9608        0.067692  0.126063
+Linear SVC      0.660849         0.669997      0.634589  0.65154          0.653067      0.687109  0.669433
+AdaBoost(50)    0.670186         0.683368      0.634377  0.657449         0.659547      0.705995  0.681595
+Random Forest   0.646684         0.66526       0.59183   0.626005         0.632348      0.701538  0.664868
+COMBO           0.666578         0.684167      0.619735  0.649891         0.652739      0.713422  0.681393
+
+Ngrams, 
+Classifier      accuracy    pos precision    pos recall    pos f1    neg precision    neg recall    neg f1
+------------  ----------  ---------------  ------------  --------  ---------------  ------------  --------
+Naive Bayes     0.579629         0.544153      0.982281  0.700322         0.909355      0.176976  0.295926
+Linear SVC      0.666154         0.698491      0.585676  0.636727         0.643327      0.746631  0.690919
+AdaBoost(50)    0.632149         0.657316      0.55374   0.600534         0.614431      0.710557  0.658695
+Random Forest   0.644509         0.71307       0.484138  0.57572          0.609955      0.804881  0.693662
+COMBO           0.639363         0.668705      0.556393  0.606171         0.619936      0.722334  0.666472
+
+Personal Pronouns and PN/N, 
+Classifier      accuracy    pos precision    pos recall    pos f1    neg precision    neg recall    neg f1
+------------  ----------  ---------------  ------------  --------  ---------------  ------------  --------
+Naive Bayes     0.605146         0.614768      0.564244  0.588192         0.597264      0.646048  0.620524
+Linear SVC      0.552361         0.556372      0.519682  0.537065         0.549083      0.58504   0.566226
+AdaBoost(50)    0.635119         0.630469      0.656552  0.642173         0.642225      0.613687  0.626396
+Random Forest   0.586366         0.59505       0.540796  0.566437         0.5793        0.631936  0.604332
+COMBO           0.614164         0.668981      0.453793  0.540087         0.586554      0.774536  0.667344
+
+POS percentages, 
+Classifier      accuracy    pos precision    pos recall    pos f1    neg precision    neg recall    neg f1
+------------  ----------  ---------------  ------------  --------  ---------------  ------------  --------
+Naive Bayes     0.577188         0.581782      0.550133  0.565342         0.573233      0.604244  0.588185
+Linear SVC      0.563501         0.563198      0.565305  0.563718         0.564303      0.561698  0.562455
+AdaBoost(50)    0.593475         0.577053      0.70069   0.632655         0.619516      0.48626   0.544367
+Random Forest   0.548329         0.553777      0.498568  0.524589         0.543946      0.59809   0.569637
+COMBO           0.578886         0.600679      0.472785  0.528554         0.565147      0.684987  0.619041
+
+Personal Pronouns and PN/N, POS percentages, 
+Classifier       accuracy    pos precision    pos recall    pos f1    neg precision    neg recall    neg f1
+-------------  ----------  ---------------  ------------  --------  ---------------  ------------  --------
+Naive Bayes     0.584881         0.591825      0.54748   0.568645       0.579051      0.622281     0.599775
+Linear SVC      0.557507         0.553035      0.600212  0.575516       0.562982      0.514801     0.537624
+AdaBoost(50)    0.63183          0.619709      0.683714  0.649953       0.64714       0.579947     0.611438
+Random Forest   0.584934         0.593448      0.539523  0.565102       0.577924      0.630345     0.602924
+COMBO           0.60122          0.64663       0.447003  0.528183       0.577496      0.755438     0.654444
+
+Sentiment analysis, 
+Classifier       accuracy    pos precision    pos recall    pos f1    neg precision    neg recall    neg f1
+-------------  ----------  ---------------  ------------  --------  ---------------  ------------  --------
+Naive Bayes      0.570345         0.551186      0.757347  0.637908         0.613127      0.383342  0.471295
+SVM              0.57443          0.547386      0.86069   0.668754         0.681903      0.28817   0.401812
+AdaBoost(50)     0.575862         0.555064      0.766366  0.643345         0.624598      0.385358  0.47493
+Random Forest    0.547586         0.544591      0.583448  0.563016         0.551322      0.511724  0.530353
+COMBO            0.565305         0.554453      0.665782  0.604739         0.582146      0.464828  0.516359
+
+Laughs previous, 
+Classifier       accuracy    pos precision    pos recall    pos f1    neg precision    neg recall    neg f1
+-------------  ----------  ---------------  ------------  --------  ---------------  ------------  --------
+Naive Bayes      0.667056         0.65434       0.708753  0.680364         0.682324      0.625358  0.65247
+SVM              0.649072         0.702888      0.516499  0.595302         0.617934      0.781645  0.690156
+AdaBoost(50)     0.671459         0.661645      0.702599  0.681402         0.682811      0.640318  0.660753
+Random Forest    0.669602         0.658974      0.703767  0.680362         0.682457      0.635438  0.657764
+COMBO            0.67496          0.665461      0.703873  0.683986         0.685984      0.646048  0.665245
+
+Sentences since last laugh, 
+Classifier       accuracy    pos precision    pos recall    pos f1    neg precision    neg recall    neg f1
+-------------  ----------  ---------------  ------------  --------  ---------------  ------------  --------
+Naive Bayes      0.659947         0.644067      0.72      0.679107         0.682366      0.599894  0.637045
+SVM              0.670928         0.630027      0.82939   0.715909         0.750878      0.512467  0.6086
+AdaBoost(50)     0.671565         0.659267      0.715332  0.684745         0.690393      0.627798  0.655293
+Random Forest    0.675225         0.662295      0.716923  0.6881           0.691601      0.633528  0.660719
+COMBO            0.674589         0.659588      0.725305  0.689963         0.695657      0.623873  0.656378
+
+Laughs previous, Sentences since last laugh, 
+Classifier       accuracy    pos precision    pos recall    pos f1    neg precision    neg recall    neg f1
+-------------  ----------  ---------------  ------------  --------  ---------------  ------------  --------
+Naive Bayes      0.719629         0.705202      0.754907  0.729003         0.73691       0.68435   0.709391
+SVM              0.712042         0.674494      0.827056  0.741907         0.780195      0.597029  0.671299
+AdaBoost(50)     0.713156         0.693408      0.766366  0.727625         0.738969      0.659947  0.696598
+Random Forest    0.702759         0.692086      0.731883  0.710918         0.716205      0.673634  0.693624
+COMBO            0.715544         0.707621      0.736552  0.721282         0.725537      0.694536  0.709131
+
+Depth, 
+Classifier       accuracy    pos precision    pos recall    pos f1    neg precision    neg recall    neg f1
+-------------  ----------  ---------------  ------------  --------  ---------------  ------------  --------
+Naive Bayes      0.502069         0.501392      0.743448  0.598812         0.504113      0.26069   0.343325
+SVM              0.55756          0.558032      0.555225  0.55633          0.55733       0.559894  0.558317
+AdaBoost(50)     0.541379         0.542263      0.544297  0.540795         0.541715      0.538462  0.537335
+Random Forest    0.52748          0.525118      0.574111  0.548271         0.530492      0.480849  0.504118
+COMBO            0.527905         0.534404      0.445729  0.484657         0.523813      0.61008   0.562767
+
+Sentence Length, 
+Classifier       accuracy    pos precision    pos recall    pos f1    neg precision    neg recall    neg f1
+-------------  ----------  ---------------  ------------  --------  ---------------  ------------  --------
+Naive Bayes      0.574589         0.566077      0.638621  0.599865         0.586101      0.510557  0.545294
+SVM              0.588223         0.447474      0.607321  0.509234         0.537661      0.329125  0.396244
+AdaBoost(50)     0.614218         0.590422      0.750133  0.659935         0.659152      0.478302  0.552026
+Random Forest    0.565252         0.564002      0.575597  0.569291         0.566996      0.554907  0.560416
+COMBO            0.595385         0.602166      0.562016  0.580706         0.590204      0.628753  0.608261
+
+Is Question, 
+Classifier      accuracy    pos precision    pos recall    pos f1    neg precision    neg recall    neg f1
+-------------  ----------  ---------------  ------------  --------  ---------------  ------------  --------
+Naive Bayes      0.583873         0.625929      0.416658  0.500035         0.562972      0.751088  0.643478
+SVM              0.583236         0.627328      0.410186  0.495854         0.561897      0.756286  0.644702
+AdaBoost(50)     0.582281         0.621498      0.421114  0.501881         0.562269      0.743448  0.640231
+Random Forest    0.576552         0.615013      0.409761  0.491605         0.557447      0.743342  0.637036
+COMBO            0.579894         0.619173      0.415385  0.496994         0.560166      0.744403  0.639204
+
+Is Exclamation, 
+Classifier      accuracy    pos precision    pos recall    pos f1    neg precision    neg recall    neg f1
+-------------  ----------  ---------------  ------------  --------  ---------------  ------------  --------
+Naive Bayes      0.523554         0.746215     0.0718302  0.130784         0.512386      0.975279  0.671808
+SVM              0.518249         0.698337     0.0645093  0.117917         0.509574      0.971989  0.668611
+AdaBoost(50)     0.523289         0.750176     0.0702387  0.128312         0.512222      0.97634   0.671922
+Random Forest    0.522069         0.742061     0.0672679  0.123013         0.511583      0.97687   0.67149
+COMBO            0.520796         0.722702     0.0680106  0.124091         0.510919      0.973581  0.670144
+
+Has Quote, 
+Classifier       accuracy    pos precision    pos recall    pos f1    neg precision    neg recall    neg f1
+-------------  ----------  ---------------  ------------  --------  ---------------  ------------  --------
+Naive Bayes      0.619841         0.695502      0.426525  0.528572         0.586491      0.813156  0.681418
+SVM              0.613475         0.686293      0.417719  0.518998         0.581731      0.809231  0.67679
+AdaBoost(50)     0.616552         0.694535      0.41634   0.520359         0.5833        0.816764  0.680507
+Random Forest    0.616552         0.692111      0.419735  0.52228          0.583764      0.813369  0.67963
+COMBO            0.612997         0.687886      0.414536  0.517047         0.580911      0.811459  0.677028
+
+Is Question, Is Exclamation, Has Quote, 
+Classifier       accuracy    pos precision    pos recall    pos f1    neg precision    neg recall    neg f1
+-------------  ----------  ---------------  ------------  --------  ---------------  ------------  --------
+Naive Bayes      0.6287           0.629421      0.626313  0.627661         0.628296      0.631088  0.629499
+SVM              0.620106         0.622059      0.612414  0.616998         0.618508      0.627798  0.622928
+AdaBoost(50)     0.624191         0.625489      0.619523  0.622357         0.623126      0.628859  0.625849
+Random Forest    0.619841         0.623111      0.606366  0.614518         0.616893      0.633316  0.624897
+COMBO            0.625517         0.627144      0.619416  0.623057         0.624258      0.631618  0.627717
+
+Word Variance, 
+Classifier       accuracy    pos precision    pos recall    pos f1    neg precision    neg recall    neg f1
+-------------  ----------  ---------------  ------------  --------  ---------------  ------------  --------
+Naive Bayes      0.586048         0.562121      0.77931   0.653026         0.640702      0.392785  0.486592
+SVM              0.633156         0.614266      0.716286  0.661243         0.659918      0.550027  0.599769
+AdaBoost(50)     0.617135         0.602171      0.695172  0.644391         0.639856      0.539098  0.58354
+Random Forest    0.577666         0.582104      0.552361  0.56661          0.573889      0.602971  0.587877
+COMBO            0.620424         0.623788      0.609655  0.615857         0.61837       0.631194  0.623948
+
+Incongruity, 
+Classifier       accuracy    pos precision    pos recall    pos f1    neg precision    neg recall    neg f1
+-------------  ----------  ---------------  ------------  --------  ---------------  ------------  --------
+Naive Bayes      0.603236         0.570933      0.831512  0.676918         0.690617      0.37496   0.485573
+SVM              0.581963         0.569598      0.671406  0.616129         0.600126      0.49252   0.540653
+AdaBoost(50)     0.600477         0.57383       0.781326  0.661441         0.658716      0.419629  0.511865
+Random Forest    0.56557          0.558593      0.625358  0.589965         0.574642      0.505782  0.537821
+COMBO            0.599469         0.574609      0.766897  0.656774         0.650291      0.432042  0.518556
+
+Swearing, 
+Classifier       accuracy    pos precision    pos recall     pos f1    neg precision    neg recall    neg f1
+-------------  ----------  ---------------  ------------  ---------  ---------------  ------------  --------
+Naive Bayes      0.512838         0.765757     0.0372414  0.0709181         0.506584      0.988435  0.669855
+SVM              0.511777         0.736824     0.0362865  0.0690111         0.506046      0.987268  0.669115
+AdaBoost(50)     0.511618         0.725814     0.0364987  0.06939           0.505968      0.986737  0.668926
+Random Forest    0.512785         0.7554       0.0383024  0.0728049         0.506562      0.987268  0.669568
+COMBO            0.511671         0.740607     0.0361804  0.0689054         0.505984      0.987162  0.669039
+
+Statistics, 
+Classifier       accuracy    pos precision    pos recall    pos f1    neg precision    neg recall     neg f1
+-------------  ----------  ---------------  ------------  --------  ---------------  ------------  ---------
+Naive Bayes      0.495809         0.478074      0.369337  0.275346         0.448345     0.622281   0.43266
+SVM              0.498302         0.494184      0.299629  0.241357         0.466775     0.696976   0.489797
+AdaBoost(50)     0.496764         0.497749      0.327109  0.248534         0.452271     0.666419   0.463395
+Random Forest    0.497029         0.495242      0.946101  0.637355         0.419658     0.0479576  0.0442231
+COMBO            0.495915         0.449318      0.141114  0.129015         0.480793     0.850716   0.584575
+
+Frequency, 
+Classifier       accuracy    pos precision    pos recall    pos f1    neg precision    neg recall    neg f1
+-------------  ----------  ---------------  ------------  --------  ---------------  ------------  --------
+Naive Bayes      0.593899         0.570202      0.763501  0.652682         0.642613      0.424297  0.510599
+SVM              0.530928         0.296598      0.407533  0.312235         0.458942      0.334324  0.301868
+AdaBoost(50)     0.604191         0.585296      0.716499  0.643475         0.636952      0.491883  0.5532
+Random Forest    0.565146         0.566318      0.555968  0.560711         0.564367      0.574324  0.568931
+COMBO            0.613156         0.602607      0.667798  0.633038         0.62722       0.558515  0.59016
+
+Hapax count, 
+Classifier       accuracy    pos precision    pos recall    pos f1    neg precision    neg recall    neg f1
+-------------  ----------  ---------------  ------------  --------  ---------------  ------------  --------
+Naive Bayes      0.608541         0.590961      0.708966  0.644017         0.636408      0.508117  0.563928
+SVM              0.601326         0.588275      0.519151  0.524844         0.564877      0.603501  0.571657
+AdaBoost(50)     0.610875         0.591024      0.723607  0.649521         0.645915      0.498143  0.559949
+Random Forest    0.606048         0.594699      0.666207  0.627755         0.622029      0.545889  0.580442
+COMBO            0.611459         0.605095      0.646472  0.623895         0.620817      0.576446  0.596378
+
+Frequency, Hapax count, 
+Classifier       accuracy    pos precision    pos recall    pos f1    neg precision    neg recall    neg f1
+-------------  ----------  ---------------  ------------  --------  ---------------  ------------  --------
+Naive Bayes      0.602016         0.57849       0.752361  0.653908         0.646473      0.451671  0.531338
+SVM              0.542971         0.50789       0.572944  0.420453         0.597476      0.352997  0.342347
+AdaBoost(50)     0.607533         0.596346      0.666525  0.629241         0.622201      0.548541  0.582686
+Random Forest    0.56817          0.577346      0.509708  0.54114          0.561119      0.626631  0.591871
+COMBO            0.606525         0.603952      0.619204  0.611166         0.609714      0.593846  0.601336
+
+Words, Ngrams, Personal Pronouns and PN/N, Sentiment analysis, Laughs previous, Sentences since last laugh, Is Exclamation, Has Quote, Word Variance, Incongruity, Swearing, 
+Classifier       accuracy    pos precision    pos recall    pos f1    neg precision    neg recall    neg f1
+-------------  ----------  ---------------  ------------  --------  ---------------  ------------  --------
+Naive Bayes      0.597719         0.556751      0.959363  0.704583         0.852945      0.236074  0.369551
+SVM              0.719363         0.729776      0.697188  0.71289          0.710306      0.741538  0.725407
+AdaBoost(50)     0.72817          0.729314      0.726366  0.727615         0.727589      0.729973  0.728556
+Random Forest    0.671618         0.696017      0.610398  0.649334         0.654015      0.732838  0.690496
+COMBO            0.722387         0.726825      0.713846  0.719882         0.719027      0.730928  0.724558
+
+Words, Ngrams, Personal Pronouns and PN/N, Laughs previous, Sentences since last laugh, Sentence Length, Is Exclamation, Has Quote, Word Variance, Swearing, Hapax count, 
+Classifier       accuracy    pos precision    pos recall    pos f1    neg precision    neg recall    neg f1
+-------------  ----------  ---------------  ------------  --------  ---------------  ------------  --------
+Naive Bayes      0.601379         0.558258      0.972414  0.709282         0.893189      0.230345  0.36583
+SVM              0.722865         0.731346      0.705889  0.718053         0.715732      0.739841  0.727276
+AdaBoost(50)     0.718568         0.719263      0.71756   0.718222         0.718334      0.719576  0.71876
+Random Forest    0.684032         0.715349      0.61305   0.659132         0.662091      0.755013  0.704817
+COMBO            0.72504          0.732413      0.710133  0.720795         0.718796      0.739947  0.728945
+
+Words, Ngrams, Laughs previous, Sentences since last laugh, Sentence Length, Word Variance, Swearing, Hapax count, 
+Classifier       accuracy    pos precision    pos recall    pos f1    neg precision    neg recall    neg f1
+-------------  ----------  ---------------  ------------  --------  ---------------  ------------  --------
+Naive Bayes      0.58382          0.546778      0.980265  0.701975         0.90658       0.187374  0.310177
+SVM              0.73618          0.743859      0.720743  0.731907         0.729471      0.751618  0.740181
+AdaBoost(50)     0.737029         0.740202      0.731459  0.735423         0.734867      0.742599  0.738356
+Random Forest    0.677984         0.712674      0.59756   0.649144         0.65413       0.758408  0.701887
+COMBO            0.731724         0.734446      0.72626   0.730196         0.729387      0.737188  0.733137
+
+Words, Ngrams, Laughs previous, Sentences since last laugh, Sentence Length, Is Question, Is Exclamation, Has Quote, Word Variance, Swearing, Hapax count, 
+Classifier       accuracy    pos precision    pos recall    pos f1    neg precision    neg recall    neg f1
+-------------  ----------  ---------------  ------------  --------  ---------------  ------------  --------
+Naive Bayes      0.588806         0.549709      0.98313   0.705121         0.920502      0.194483  0.320661
+SVM              0.731353         0.737748      0.718833  0.727868         0.725986      0.743873  0.734538
+AdaBoost(50)     0.726737         0.728201      0.72435   0.725982         0.726001      0.729125  0.72728
+Random Forest    0.683183         0.707241      0.626207  0.663555         0.665159      0.740159  0.700164
+COMBO            0.725411         0.733227      0.709178  0.720831         0.718473      0.741645  0.729724
+
+Words, Ngrams, Laughs previous, Sentences since last laugh, Sentence Length, Is Exclamation, Has Quote, Word Variance, Swearing, Hapax count, 
+Classifier      accuracy    pos precision    pos recall    pos f1    neg precision    neg recall    neg f1
+------------  ----------  ---------------  ------------  --------  ---------------  ------------  --------
+SVM             0.720584         0.729157      0.702281  0.715117         0.713392      0.738886  0.725596
+AdaBoost(50)    0.713793         0.717621      0.706101  0.711527         0.710741      0.721485  0.715803
+COMBO           0.716658         0.718852      0.712573  0.715308         0.715401      0.720743  0.717693
+
+Words, Ngrams, Laughs previous, Sentences since last laugh, Sentence Length, Is Question, Has Quote, Word Variance, Swearing, Hapax count, 
+Classifier      accuracy    pos precision    pos recall    pos f1    neg precision    neg recall    neg f1
+------------  ----------  ---------------  ------------  --------  ---------------  ------------  --------
+SVM             0.732414         0.74006       0.717135  0.728064         0.72601       0.747692  0.736393
+AdaBoost(50)    0.732732         0.735262      0.727533  0.731141         0.730838      0.737931  0.734125
+COMBO           0.729125         0.732618      0.722653  0.727372         0.726302      0.735597  0.730692
+
+Words, Ngrams, Laughs previous, Sentences since last laugh, Sentence Length, Is Question, Is Exclamation, Word Variance, Swearing, Hapax 
+Classifier      accuracy    pos precision    pos recall    pos f1    neg precision    neg recall    neg f1
+------------  ----------  ---------------  ------------  --------  ---------------  ------------  --------
+SVM             0.731989         0.739614      0.717135  0.727834         0.725645      0.746844  0.735765
+AdaBoost(50)    0.72504          0.729349      0.715968  0.722275         0.721621      0.734111  0.727516
+COMBO           0.719363         0.724682      0.707905  0.716047         0.71462       0.730822  0.722495
+
+Words, Ngrams, Laughs previous, Sentences since last laugh, Sentence Length, Is Question, Word Variance, Swearing, Hapax count, 
+Classifier      accuracy    pos precision    pos recall    pos f1    neg precision    neg recall    neg f1
+------------  ----------  ---------------  ------------  --------  ---------------  ------------  --------
+SVM             0.716711         0.724919      0.698674  0.711362         0.709494      0.734748  0.721729
+AdaBoost(50)    0.727374         0.722773      0.738037  0.730086         0.732834      0.716711  0.724419
+COMBO           0.720212         0.721789      0.717347  0.719277         0.719329      0.723077  0.720917
+
+Words, Ngrams, Laughs previous, Sentences since last laugh, Sentence Length, Has Quote, Word Variance, Swearing, Hapax count, 
+Classifier      accuracy    pos precision    pos recall    pos f1    neg precision    neg recall    neg f1
+------------  ----------  ---------------  ------------  --------  ---------------  ------------  --------
+SVM             0.733846         0.74314       0.715756  0.728798         0.726104      0.751936  0.73845
+AdaBoost(50)    0.727003         0.730337      0.720743  0.725217         0.724458      0.733263  0.728554
+COMBO           0.729443         0.731013      0.726366  0.728549         0.728228      0.73252   0.730233
+
+Words, Ngrams, POS percentages, Laughs previous, Sentences since last laugh, Sentence Length, Has Quote, Word Variance, Swearing, Hapax count, 
+Classifier      accuracy    pos precision    pos recall    pos f1    neg precision    neg recall    neg f1
+------------  ----------  ---------------  ------------  --------  ---------------  ------------  --------
+SVM             0.723767         0.733878      0.702706  0.717679         0.715068      0.744828  0.729404
+AdaBoost(50)    0.733634         0.736379      0.728806  0.73217          0.731952      0.738462  0.734808
+COMBO           0.73305          0.735518      0.728488  0.731762         0.731179      0.737613  0.734166
+
+==================================================================================
+Words, Ngrams, Personal Pronouns and PN/N=, Laughs previous, Sentences since last laugh, Sentence Length, Has Quote=, Word Variance, Swearing, Hapax count, 
+Classifier      accuracy    pos precision    pos recall    pos f1    neg precision    neg recall    neg f1
+------------  ----------  ---------------  ------------  --------  ---------------  ------------  --------
+SVM             0.73496          0.73962       0.725623  0.732424         0.73078       0.744297  0.737356
+AdaBoost(50)    0.73634          0.734968      0.739416  0.73712          0.7379        0.733263  0.735505
+COMBO           0.741592         0.742874      0.73931   0.740912         0.740772      0.743873  0.742146
+==================================================================================
+
+Words, Ngrams, Personal Pronouns and PN/N, Laughs previous, Sentences since last laugh, Sentence Length, Has Quote, Word Variance, Incongruity, Swearing, Hapax count, 
+Classifier      accuracy    pos precision    pos recall    pos f1    neg precision    neg recall    neg f1
+------------  ----------  ---------------  ------------  --------  ---------------  ------------  --------
+SVM             0.729602         0.74073       0.706737  0.723133         0.719881      0.752467  0.735642
+AdaBoost(50)    0.722016         0.724414      0.717241  0.720554         0.720266      0.72679   0.723266
+COMBO           0.724032         0.727416      0.717029  0.72199          0.721194      0.731034  0.725897
+
+Words, Ngrams, Personal Pronouns and PN/N, Sentiment analysis, Laughs previous, Sentences since last laugh, Sentence Length, Has Quote, Word Variance, Swearing, Hapax count, 
+Classifier      accuracy    pos precision    pos recall    pos f1    neg precision    neg recall    neg f1
+------------  ----------  ---------------  ------------  --------  ---------------  ------------  --------
+SVM             0.727109         0.733456      0.714271  0.723396         0.721871      0.739947  0.730484
+AdaBoost(50)    0.734642         0.733763      0.736658  0.735058         0.735928      0.732626  0.734114
+COMBO           0.736286         0.7381        0.732944  0.735375         0.734849      0.739629  0.737094
+
+Words, Ngrams, Personal Pronouns and PN/N, Laughs previous, Sentences since last laugh, Sentence Length, Has Quote, Word Variance, Swearing, Frequency, Hapax count, 
+Classifier      accuracy    pos precision    pos recall    pos f1    neg precision    neg recall    neg f1
+------------  ----------  ---------------  ------------  --------  ---------------  ------------  --------
+SVM             0.580318         0.685118      0.536552  0.454584         0.701772      0.624085  0.540581 (MESSED UP)
+AdaBoost(50)    0.727321         0.72642       0.729973  0.727867         0.72904       0.724668  0.726528
+COMBO           0.714589         0.71454       0.715119  0.714633         0.71511       0.714058  0.714391
+
+//////////////////////////////optimizing no cheat data
+Words, Ngrams, Personal Pronouns and PN/N, Sentiment analysis, Is Exclamation, Has Quote, Word Variance, Incongruity, Swearing, 
+Classifier       accuracy    pos precision    pos recall    pos f1    neg precision    neg recall    neg f1
+-------------  ----------  ---------------  ------------  --------  ---------------  ------------  --------
+Naive Bayes      0.579788         0.545231      0.963289  0.696302         0.842066      0.196286  0.317847
+SVM              0.691353         0.710695      0.64626   0.676737         0.675596      0.736446  0.704559
+AdaBoost(50)     0.676021         0.688899      0.642546  0.66463          0.665226      0.709496  0.68643
+Random Forest    0.661061         0.699102      0.566366  0.625037         0.635949      0.755756  0.690319
+COMBO            0.675438         0.687954      0.642546  0.664157         0.664989      0.708329  0.685725
+
+Words, Ngrams, Personal Pronouns and PN/N, Sentence Length, Has Quote, Word Variance, Swearing, Hapax count, 
+Classifier      accuracy    pos precision    pos recall    pos f1    neg precision    neg recall    neg f1
+------------  ----------  ---------------  ------------  --------  ---------------  ------------  --------
+SVM             0.673793         0.681946      0.651777  0.666254         0.666802      0.695809  0.680777
+AdaBoost(50)    0.656923         0.667863      0.625464  0.645496         0.648009      0.688382  0.667231
+COMBO           0.645782         0.656184      0.612838  0.633455         0.637128      0.678727  0.657024
+
+Words, Ngrams, Sentence Length, Word Variance, Swearing, Hapax count, 
+Classifier       accuracy    pos precision    pos recall    pos f1    neg precision    neg recall    neg f1
+-------------  ----------  ---------------  ------------  --------  ---------------  ------------  --------
+Naive Bayes      0.584562         0.547152      0.982281  0.7028           0.913153      0.186844  0.309828
+SVM              0.695119         0.707477      0.665995  0.685899         0.684527      0.724244  0.703655
+AdaBoost(50)     0.660637         0.668933      0.636286  0.651783         0.65382       0.684987  0.668667
+Random Forest    0.654589         0.689162      0.564138  0.619658         0.631471      0.74504   0.683169
+COMBO            0.660796         0.670381      0.633316  0.650904         0.652912      0.688276  0.66978
+
+=================================================================
+Words, Ngrams, Personal Pronouns and PN/N, Sentiment analysis, Is Exclamation, Has Quote, Word Variance, Incongruity, Swearing, Hapax count, 
+Classifier      accuracy    pos precision    pos recall    pos f1    neg precision    neg recall    neg f1
+------------  ----------  ---------------  ------------  --------  ---------------  ------------  --------
+Naive Bayes     0.590557         0.552108      0.96      0.701022         0.847386      0.221114  0.350439
+SVM             0.694854         0.707193      0.665358  0.685415         0.684307      0.72435   0.703577
+AdaBoost(50)    0.682865         0.699219      0.643183  0.669616         0.669666      0.722546  0.69479
+COMBO           0.678515         0.690112      0.648488  0.668345         0.668776      0.708541  0.687838
+
+Words, Ngrams, Personal Pronouns and PN/N, Sentiment analysis, Sentence Length, Is Exclamation, Has Quote, Word Variance, Incongruity, Swearing, Hapax count, 
+Classifier      accuracy    pos precision    pos recall    pos f1    neg precision    neg recall    neg f1
+------------  ----------  ---------------  ------------  --------  ---------------  ------------  --------
+Naive Bayes     0.594324         0.554811      0.95565   0.70201          0.841163      0.232997  0.364404
+SVM             0.701432         0.714875      0.670345  0.691744         0.689834      0.73252   0.710419
+AdaBoost(50)    0.676499         0.685043      0.654111  0.668931         0.669232      0.698886  0.683479
+COMBO           0.673156         0.683773      0.646472  0.664009         0.664719      0.699841  0.681329
+=================================================================
+
+Words, Ngrams, Personal Pronouns and PN/N, Sentiment analysis, Sentence Length, Is Exclamation, Has Quote, Word Variance, Swearing, Hapax count, 
+Classifier      accuracy    pos precision    pos recall    pos f1    neg precision    neg recall    neg f1
+------------  ----------  ---------------  ------------  --------  ---------------  ------------  --------
+Naive Bayes     0.592095         0.55289       0.96382   0.702661         0.859021      0.220371  0.350325
+SVM             0.686684         0.701956      0.649231  0.674335         0.673947      0.724138  0.697961
+AdaBoost(50)    0.661592         0.672902      0.629496  0.650167         0.652141      0.693687  0.672025
+COMBO           0.668859         0.684354      0.629602  0.655061         0.656948      0.708117  0.680966
+
+Words, Ngrams, Personal Pronouns and PN/N, POS percentages, Sentiment analysis, Sentence Length, Is Exclamation, Has Quote, Word Variance, Incongruity, Swearing, Hapax count, 
+Classifier      accuracy    pos precision    pos recall    pos f1    neg precision    neg recall    neg f1
+------------  ----------  ---------------  ------------  --------  ---------------  ------------  --------
+Naive Bayes     0.607905         0.563708      0.955968  0.709185         0.854503      0.259841  0.398128
+SVM             0.690504         0.701419      0.663767  0.68193          0.680977      0.717241  0.698516
+AdaBoost(50)    0.663342         0.674159      0.633316  0.65267          0.654454      0.693369  0.673007
+COMBO           0.669814         0.682957      0.635438  0.658026         0.658943      0.704191  0.680563
+
+Words, Ngrams, Personal Pronouns and PN/N, POS percentages, Sentiment analysis, Sentence Length, Is Exclamation, Has Quote, Word Variance, Swearing, Hapax count, 
+Classifier      accuracy    pos precision    pos recall    pos f1    neg precision    neg recall    neg f1
+------------  ----------  ---------------  ------------  --------  ---------------  ------------  --------
+Naive Bayes     0.589602         0.551726      0.956393  0.699752         0.836356      0.222812  0.351622
+SVM             0.682599         0.693937      0.654324  0.673277         0.672976      0.710875  0.691195
+AdaBoost(50)    0.658408         0.665673      0.637347  0.650852         0.652344      0.679469  0.665334
+COMBO           0.665889         0.678386      0.631512  0.65367          0.655684      0.700265  0.676908
+
+Words, Ngrams, Personal Pronouns and PN/N, Sentiment analysis, Is Exclamation, Has Quote, Word Variance, Incongruity, Swearing, Hapax count, 
+Classifier      accuracy    pos precision    pos recall    pos f1    neg precision    neg recall    neg f1
+------------  ----------  ---------------  ------------  --------  ---------------  ------------  --------
+Naive Bayes     0.597507         0.556685      0.958302  0.704242         0.850068      0.236711  0.370047
+SVM             0.69008          0.699336      0.667374  0.68285          0.681893      0.712785  0.696885
+AdaBoost(50)    0.674536         0.679747      0.660796  0.669846         0.670157      0.688276  0.678835
+COMBO           0.677772         0.685515      0.657613  0.671015         0.671108      0.697931  0.684035
+
+Words, Ngrams, Personal Pronouns and PN/N, Sentiment analysis, Depth, Sentence Length, Is Exclamation, Has Quote, Word Variance, Incongruity, Swearing, Hapax count, 
+Classifier      accuracy    pos precision    pos recall    pos f1    neg precision    neg recall    neg f1
+------------  ----------  ---------------  ------------  --------  ---------------  ------------  --------
+Naive Bayes     0.5887           0.551223      0.955119  0.699013         0.831464      0.222281  0.350641
+SVM             0.682334         0.6996        0.639576  0.668026         0.668159      0.725093  0.695303
+AdaBoost(50)    0.670345         0.68339       0.634907  0.65813          0.659229      0.705782  0.681612
+COMBO           0.671088         0.686232      0.631512  0.657314         0.65888       0.710663  0.683476
+
+Words, Ngrams, Personal Pronouns and PN/N, Sentiment analysis, Sentence Length, Is Exclamation, Has Quote, Incongruity, Swearing, Hapax count, 
+Classifier      accuracy    pos precision    pos recall    pos f1    neg precision    neg recall    neg f1
+------------  ----------  ---------------  ------------  --------  ---------------  ------------  --------
+Naive Bayes     0.590027         0.551755      0.960743  0.700921         0.849053      0.21931   0.348083
+SVM             0.690769         0.70518       0.655915  0.679358         0.678754      0.725623  0.701177
+AdaBoost(50)    0.680318         0.689709      0.656446  0.672397         0.672297      0.704191  0.687645
+COMBO           0.677878         0.688962      0.648806  0.668051         0.668407      0.70695   0.686952
+
+Words, Ngrams, Personal Pronouns and PN/N, Sentiment analysis, Sentence Length, Is Exclamation, Word Variance, Incongruity, Swearing, Hapax count, 
+Classifier      accuracy    pos precision    pos recall    pos f1    neg precision    neg recall    neg f1
+------------  ----------  ---------------  ------------  --------  ---------------  ------------  --------
+Naive Bayes     0.588753         0.55121       0.956393  0.699327         0.835138      0.221114  0.349258
+SVM             0.694271         0.708021      0.661538  0.683766         0.682616      0.727003  0.703935
+AdaBoost(50)    0.667798         0.674966      0.647533  0.660496         0.662018      0.688064  0.674386
+COMBO           0.676552         0.688924      0.644456  0.665752         0.666022      0.708647  0.686518
+
+Words, Ngrams, Personal Pronouns and PN/N, Sentiment analysis, Sentence Length, Has Quote, Word Variance, Incongruity, Swearing, Hapax count, 
+Classifier      accuracy    pos precision    pos recall    pos f1    neg precision    neg recall    neg f1
+------------  ----------  ---------------  ------------  --------  ---------------  ------------  --------
+Naive Bayes     0.597825         0.556904      0.958621  0.704481         0.852071      0.237029  0.370302
+SVM             0.692732         0.704626      0.664403  0.683664         0.682605      0.721061  0.701091
+AdaBoost(50)    0.681432         0.691392      0.657613  0.673297         0.67389       0.705252  0.688508
+COMBO           0.680584         0.694662      0.646154  0.669124         0.669086      0.715013  0.690942
+
+
+///////////////////////////////////no stop word removal
+Words, Ngrams, Personal Pronouns and PN/N, Sentiment analysis, Sentence Length, Is Exclamation, Has Quote, Word Variance, Incongruity, Swearing, Hapax count, 
+Classifier      accuracy    pos precision    pos recall    pos f1    neg precision    neg recall    neg f1
+------------  ----------  ---------------  ------------  --------  ---------------  ------------  --------
+SVM             0.691724         0.702884      0.664828  0.683025         0.68228       0.718621  0.699728
+AdaBoost(50)    0.673369         0.682206      0.65061   0.665638         0.666032      0.696127  0.680406
+
+Words, Ngrams, Personal Pronouns and PN/N, Sentiment analysis, Is Exclamation, Has Quote, Word Variance, Incongruity, Swearing, Hapax count, 
+Classifier      accuracy    pos precision    pos recall    pos f1    neg precision    neg recall    neg f1
+------------  ----------  ---------------  ------------  --------  ---------------  ------------  --------
+SVM             0.686207         0.694016      0.666525  0.679745         0.679459      0.705889  0.692211
+AdaBoost(50)    0.660053         0.671639      0.627056  0.64823          0.650513      0.69305   0.670809
+ 
+/////////////////////////////////////// no stop word removal or stemming
+Words, Ngrams, Personal Pronouns and PN/N, Sentiment analysis, Sentence Length, Is Exclamation, Has Quote, Word Variance, Incongruity, Swearing, Hapax count, 
+Classifier      accuracy    pos precision    pos recall    pos f1    neg precision    neg recall    neg f1
+------------  ----------  ---------------  ------------  --------  ---------------  ------------  --------
+SVM             0.696499         0.707374      0.670875  0.688427         0.6871        0.722122  0.704001
+AdaBoost(50)    0.660053         0.669059      0.634801  0.65115          0.652504      0.685305  0.668219
+
+Words, Ngrams, Personal Pronouns and PN/N, Sentiment analysis, Laughs previous, Sentences since last laugh, Sentence Length, Is Exclamation, Has Quote, Word Variance, Incongruity, Swearing, Hapax count, 
+Classifier      accuracy    pos precision    pos recall    pos f1    neg precision    neg recall    neg f1
+------------  ----------  ---------------  ------------  --------  ---------------  ------------  --------
+SVM             0.744138         0.753496      0.72626   0.739377         0.736026      0.762016  0.748575
+AdaBoost(50)    0.72679          0.731057      0.718196  0.724315         0.723277      0.735385  0.729034
+
+Words, Ngrams, Personal Pronouns and PN/N, Sentiment analysis, Laughs previous, Sentences since last laugh, Sentence Length, Is Exclamation, Has Quote, Word Variance, Incongruity, Swearing, Hapax count, 
+Classifier      accuracy    pos precision    pos recall    pos f1    neg precision    neg recall    neg f1
+------------  ----------  ---------------  ------------  --------  ---------------  ------------  --------
+SVM             0.719257         0.722807      0.711724  0.717046         0.71623        0.72679  0.721305
+AdaBoost(50)    0.720159         0.725017      0.710239  0.717166         0.716378       0.73008  0.722805
+COMBO           0.716393         0.724173      0.699735  0.711551         0.709537       0.73305  0.72094
+
+Words, Ngrams, Personal Pronouns and PN/N, POS percentages, Sentiment analysis, Laughs previous, Sentences since last laugh, Depth, Sentence Length, Is Question, Is Exclamation, Has Quote, Word Variance, Incongruity, Swearing, Statistics, Frequency, Hapax count, 
+Classifier      accuracy    pos precision    pos recall    pos f1    neg precision    neg recall    neg f1
+------------  ----------  ---------------  ------------  --------  ---------------  ------------  --------
+AdaBoost(50)    0.722069         0.724469      0.717029  0.720607         0.720014      0.727109  0.723425
+COMBO           0.712573         0.720058      0.696233  0.707659         0.706196      0.728912  0.717109

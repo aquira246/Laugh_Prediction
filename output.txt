@@ -1,169 +1,670 @@
-FEATURE RESULTS: June 29th
-Note, these are all the averages of at least 25 runs
+///////////////////////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////// 3 times as many negative as positive data in training
+////////////////////////////////////////////////paras
+Words, Ngrams, Personal Pronouns and PN/N, POS percentages, Sentiment analysis, Laughs previous, Sentences since last laugh, Sentence Length, Is Exclamation, Has Quote, Incongruity, Swearing, Hapax count, 
+Classifier       accuracy    pos precision    pos recall    pos f1    neg precision    neg recall    neg f1
+-------------  ----------  ---------------  ------------  --------  ---------------  ------------  --------
+Naive Bayes          0.61             0.57          0.94      0.71             0.84          0.28      0.42
+SVM                  0.67             0.62          0.92      0.74             0.85          0.42      0.56
+AdaBoost(50)         0.69             0.63          0.9       0.74             0.82          0.48      0.6
+Random Forest        0.58             0.54          0.97      0.7              0.87          0.19      0.31
+COMBO                0.7              0.65          0.86      0.74             0.8           0.54      0.64
 
-//////////////////////////////////////sent //////////////////////////////
-Complexity, 
+Words, Ngrams, Personal Pronouns and PN/N, POS percentages, Sentiment analysis, Sentence Length, Is Exclamation, Has Quote, Incongruity, Swearing, Hapax count, 
+Classifier       accuracy    pos precision    pos recall    pos f1    neg precision    neg recall    neg f1
+-------------  ----------  ---------------  ------------  --------  ---------------  ------------  --------
+SVM                  0.61             0.57          0.91      0.7              0.78          0.32      0.45
+AdaBoost(50)         0.6              0.56          0.87      0.68             0.71          0.33      0.45
+Random Forest        0.56             0.53          0.97      0.69             0.85          0.15      0.25
+
+////////////sents
+Words, Ngrams, Personal Pronouns and PN/N, POS percentages, Sentiment analysis, Laughs previous, Sentences since last laugh, Sentence Length, Is Exclamation, Has Quote, Incongruity, Swearing, Hapax count, 
+Classifier      accuracy    pos precision    pos recall    pos f1    neg precision    neg recall    neg f1
+-------------  ----------  ---------------  ------------  --------  ---------------  ------------  --------
+Naive Bayes          0.66             0.64          0.72      0.68             0.68          0.59      0.63
+SVM                  0.61             0.57          0.91      0.7              0.78          0.31      0.44
+AdaBoost(50)         0.61             0.57          0.91      0.7              0.77          0.3       0.43
+Random Forest        0.52             0.51          0.99      0.67             0.78          0.04      0.08
+COMBO                0.67             0.66          0.68      0.67             0.67          0.65      0.66
+
+Words, Ngrams, Personal Pronouns and PN/N, POS percentages, Sentiment analysis, Sentence Length, Is Exclamation, Has Quote, Incongruity, Swearing, Hapax count, 
+Classifier       accuracy    pos precision    pos recall    pos f1    neg precision    neg recall    neg f1
+-------------  ----------  ---------------  ------------  --------  ---------------  ------------  --------
+Naive Bayes          0.63             0.62          0.7       0.66             0.66          0.56      0.6
+SVM                  0.57             0.54          0.91      0.68             0.71          0.22      0.34
+AdaBoost(50)         0.54             0.52          0.95      0.67             0.72          0.12      0.2
+Random Forest        0.51             0.5           0.99      0.67             0.71          0.02      0.04
+COMBO                0.63             0.62          0.69      0.65             0.65          0.57      0.61
+
+Words, Ngrams, Personal Pronouns and PN/N, POS percentages, Sentiment analysis, Sentence Length, Is Exclamation, Has Quote, Incongruity, Swearing, Hapax count, 
 Classifier      accuracy    pos precision    pos recall    pos f1    neg precision    neg recall    neg f1
 ------------  ----------  ---------------  ------------  --------  ---------------  ------------  --------
-Naive Bayes     0.489883         0.490439      0.517261  0.503285         0.489208      0.462505   0.47523
-AdaBoost(50)    0.503548         0.504817      0.465813  0.481809         0.502807      0.541283  0.519228
+Naive Bayes     0.600796         0.558824       0.95756  0.705767         0.851852      0.244032  0.379381
 
-Words, Personal Pronouns and PN/N, Sentence Length, Is Question, Is Exclamation, Has Quote, Word Variance, Incongruity, Swearing, Complexity, 
+Words, Ngrams, Personal Pronouns and PN/N, POS percentages, Sentiment analysis, Sentence Length, Is Exclamation, Has Quote, Incongruity, Swearing, Hapax count, 
 Classifier      accuracy    pos precision    pos recall    pos f1    neg precision    neg recall    neg f1
 ------------  ----------  ---------------  ------------  --------  ---------------  ------------  --------
-Naive Bayes     0.646543         0.635741      0.687041  0.660279         0.659512      0.606046  0.631491
+Naive Bayes     0.604775         0.561622      0.954907  0.707269         0.849558      0.254642  0.391837
 
-Words, Personal Pronouns and PN/N, Sentence Length, Is Question, Is Exclamation, Has Quote, Word Variance, Incongruity, Swearing, 
+Words, Ngrams, Personal Pronouns and PN/N, POS percentages, Sentiment analysis, Sentence Length, Is Exclamation, Has Quote, Incongruity, Swearing, Hapax count, 
 Classifier      accuracy    pos precision    pos recall    pos f1    neg precision    neg recall    neg f1
 ------------  ----------  ---------------  ------------  --------  ---------------  ------------  --------
-Naive Bayes     0.651434         0.643443      0.679827  0.660971         0.660748      0.623042  0.641139
+Naive Bayes     0.592838         0.554348       0.94695  0.699314         0.818182      0.238727   0.36961
 
-////////////////////////////////////// paras //////////////////////////////////////
-Words, Personal Pronouns and PN/N, Sentence Length, Is Question, Is Exclamation, Has Quote, Word Variance, Incongruity, Swearing, Complexity, 
+Words, Ngrams, Personal Pronouns and PN/N, POS percentages, Sentiment analysis, Sentence Length, Is Exclamation, Has Quote, Incongruity, Swearing, Hapax count, 
 Classifier      accuracy    pos precision    pos recall    pos f1    neg precision    neg recall    neg f1
 ------------  ----------  ---------------  ------------  --------  ---------------  ------------  --------
-Naive Bayes     0.577497         0.543776      0.963261  0.695111         0.841075      0.191734   0.31182
-AdaBoost(50)    0.677095         0.678717      0.673364  0.675813         0.675952      0.680827  0.678169
+Naive Bayes     0.600796         0.558642      0.960212  0.706341         0.858491      0.241379  0.376812
 
-Words, Personal Pronouns and PN/N, Laughs previous, Sentences since last laugh, Sentence Length, Is Question, Is Exclamation, Has Quote, Word Variance, Incongruity, Swearing, Complexity, 
+Words, Ngrams, Personal Pronouns and PN/N, POS percentages, Sentiment analysis, Sentence Length, Is Exclamation, Has Quote, Incongruity, Swearing, Hapax count, 
 Classifier      accuracy    pos precision    pos recall    pos f1    neg precision    neg recall    neg f1
 ------------  ----------  ---------------  ------------  --------  ---------------  ------------  --------
-AdaBoost(50)     0.69895         0.698296      0.700918   0.69952         0.699804      0.696982  0.698305
-Naive Bayes     0.571757         0.540255      0.963753  0.692362          0.83271      0.179761   0.29537
+Naive Bayes     0.607427         0.563183       0.95756  0.709234         0.858407      0.257294  0.395918
 
-Words, Personal Pronouns and PN/N, Laughs previous, Sentences since last laugh, Sentence Length, Is Question, Is Exclamation, Has Quote, Word Variance, Incongruity, Swearing, 
+Words, Ngrams, Personal Pronouns and PN/N, POS percentages, Sentiment analysis, Sentence Length, Is Exclamation, Has Quote, Incongruity, Swearing, Hapax count, 
 Classifier      accuracy    pos precision    pos recall    pos f1    neg precision    neg recall    neg f1
 ------------  ----------  ---------------  ------------  --------  ---------------  ------------  --------
-Naive Bayes     0.572413         0.540374      0.970067  0.694086          0.85367      0.174758  0.289829
-AdaBoost(50)    0.699524         0.702876      0.691898   0.69723         0.696528      0.707151   0.70169
+Naive Bayes     0.583554         0.548387       0.94695  0.694553         0.805825      0.220159  0.345833
 
-Words, Ngrams, Personal Pronouns and PN/N, POS percentages, Sentiment analysis, Laughs previous, Sentences since last laugh, Depth, Sentence Length, Is Question, Is Exclamation, Has Quote, Word Variance, Incongruity, Swearing, Complexity, 
+Words, Ngrams, Personal Pronouns and PN/N, POS percentages, Sentiment analysis, Sentence Length, Is Exclamation, Has Quote, Incongruity, Swearing, Hapax count, 
 Classifier      accuracy    pos precision    pos recall    pos f1    neg precision    neg recall    neg f1
 ------------  ----------  ---------------  ------------  --------  ---------------  ------------  --------
-AdaBoost(50)    0.684989         0.688199      0.676674  0.682174         0.682315      0.693305  0.687566
+Naive Bayes     0.598143         0.556923      0.960212  0.704966         0.855769      0.236074  0.370062
 
-Words, Ngrams, Personal Pronouns and PN/N, POS percentages, Sentiment analysis, Laughs previous, Sentences since last laugh, Depth, Sentence Length, Is Question, Is Exclamation, Has Quote, Word Variance, Incongruity, Swearing, 
+Words, Ngrams, Personal Pronouns and PN/N, POS percentages, Sentiment analysis, Sentence Length, Is Exclamation, Has Quote, Incongruity, Swearing, Hapax count, 
 Classifier      accuracy    pos precision    pos recall    pos f1    neg precision    neg recall    neg f1
 ------------  ----------  ---------------  ------------  --------  ---------------  ------------  --------
-AdaBoost(50)    0.705288           0.7075      0.700299  0.703749          0.70342      0.710277    0.7067
+Naive Bayes      0.61008         0.566188      0.941645  0.707171         0.826772      0.278515  0.416667
 
-////////////////////////////Rearranged order and add in entity detection/////////////////////////////
-/////////////////////////////////////////SENTS////////////////////////////////////////////////////////
-Words, Ngrams, Personal Pronouns and PN/N, POS percentages, Sentiment analysis, Laughs previous, Sentences since last laugh, Depth, Sentence Length, Is Question, Is Exclamation, Has Quote, Word Variance, Incongruity, Swearing, 
+Words, Ngrams, Personal Pronouns and PN/N, POS percentages, Sentiment analysis, Sentence Length, Is Exclamation, Has Quote, Incongruity, Swearing, Hapax count, 
 Classifier      accuracy    pos precision    pos recall    pos f1    neg precision    neg recall    neg f1
 ------------  ----------  ---------------  ------------  --------  ---------------  ------------  --------
-Naive Bayes     0.668527         0.655138      0.711875  0.682224         0.684737      0.625179  0.653461
-AdaBoost(50)    0.694152         0.700556      0.678795  0.689368         0.688417      0.709509   0.69868
+Naive Bayes     0.582228         0.547546       0.94695  0.693878         0.803922      0.217507   0.34238
 
-Words, Ngrams, Personal Pronouns and PN/N, POS percentages, Sentiment analysis, Depth, Sentence Length, Is Question, Is Exclamation, Has Quote, Word Variance, Incongruity, Swearing, 
+Words, Ngrams, Personal Pronouns and PN/N, POS percentages, Sentiment analysis, Sentence Length, Is Exclamation, Has Quote, Incongruity, Swearing, Hapax count, 
 Classifier      accuracy    pos precision    pos recall    pos f1    neg precision    neg recall    neg f1
 ------------  ----------  ---------------  ------------  --------  ---------------  ------------  --------
-Naive Bayes     0.648884         0.635854      0.697187  0.664998         0.664982       0.60058  0.630983
-AdaBoost(50)    0.631027          0.64698      0.576964  0.609831         0.618355      0.685089  0.649919
+Naive Bayes     0.595491         0.556075       0.94695  0.700687         0.821429      0.244032  0.376278
 
-
-Words, Ngrams, Personal Pronouns and PN/N, POS percentages, Sentiment analysis, Laughs previous, Sentences since last laugh, Depth, Sentence Length, Is Question, Is Exclamation, Has Quote, Word Variance, Incongruity, Swearing, Statistics,
+Words, Ngrams, Personal Pronouns and PN/N, POS percentages, Sentiment analysis, Sentence Length, Is Exclamation, Has Quote, Incongruity, Swearing, Hapax count, 
 Classifier      accuracy    pos precision    pos recall    pos f1    neg precision    neg recall    neg f1
 ------------  ----------  ---------------  ------------  --------  ---------------  ------------  --------
-Naive Bayes     0.675848         0.658826      0.729955  0.692452         0.697332      0.621741  0.657199
-AdaBoost(50)    0.697031         0.698038      0.694784  0.696326         0.696211      0.699277  0.697663
+Naive Bayes     0.568966         0.539634      0.938992  0.685382         0.765306      0.198939  0.315789
 
-Words, Ngrams, Personal Pronouns and PN/N, POS percentages, Sentiment analysis, Depth, Sentence Length, Is Question, Is Exclamation, Has Quote, Word Variance, Incongruity, Swearing, Statistics, 
+Words, Ngrams, Personal Pronouns and PN/N, POS percentages, Sentiment analysis, Sentence Length, Is Exclamation, Has Quote, Incongruity, Swearing, Hapax count, 
 Classifier      accuracy    pos precision    pos recall    pos f1    neg precision    neg recall    neg f1
 ------------  ----------  ---------------  ------------  --------  ---------------  ------------  --------
-Naive Bayes     0.647254         0.631499      0.707857  0.667398         0.667598      0.586652  0.624358
-AdaBoost(50)    0.634821         0.651073      0.581473  0.614164         0.621891       0.68817  0.653256
+Naive Bayes     0.607427         0.563981       0.94695  0.706931         0.834711      0.267905  0.405622
 
-Statistics, 
-Classifier      accuracy    pos precision    pos recall    pos f1    neg precision    neg recall     neg f1
-------------  ----------  ---------------  ------------  --------  ---------------  ------------  ---------
-Naive Bayes     0.500135         0.488136      0.958051  0.642391         0.509414     0.0422183  0.0392122
-AdaBoost(50)    0.500827         0.487143      0.959475  0.642952         0.579499     0.0421798  0.0390918
-
-Words, Ngrams, POS percentages, Sentiment analysis, Depth, Sentence Length, Is Question, Has Quote, Word Variance, Incongruity, Statistics, 
+Words, Ngrams, Personal Pronouns and PN/N, POS percentages, Sentiment analysis, Sentence Length, Is Exclamation, Has Quote, Incongruity, Swearing, Hapax count, 
 Classifier      accuracy    pos precision    pos recall    pos f1    neg precision    neg recall    neg f1
 ------------  ----------  ---------------  ------------  --------  ---------------  ------------  --------
-Naive Bayes     0.641272         0.627716      0.694643  0.659408         0.658255      0.587902   0.62098
+Naive Bayes     0.619363         0.572347      0.944297  0.712713         0.840909       0.29443  0.436149
 
-Words, Ngrams, POS percentages, Sentiment analysis, Depth, Sentence Length, Is Question, Has Quote, Word Variance, Incongruity, Swearing, Statistics, 
+Words, Ngrams, Personal Pronouns and PN/N, POS percentages, Sentiment analysis, Sentence Length, Is Exclamation, Has Quote, Incongruity, Swearing, Hapax count, 
 Classifier      accuracy    pos precision    pos recall    pos f1    neg precision    neg recall    neg f1
 ------------  ----------  ---------------  ------------  --------  ---------------  ------------  --------
-Naive Bayes     0.638683         0.626739      0.686339  0.655082         0.653369      0.591027  0.620491
+Naive Bayes     0.588859         0.552262      0.938992  0.695481          0.79646      0.238727  0.367347
 
-Words, Ngrams, POS percentages, Sentiment analysis, Depth, Sentence Length, Is Question, Has Quote, Word Variance, Incongruity, Swearing, 
+Words, Ngrams, Personal Pronouns and PN/N, POS percentages, Sentiment analysis, Sentence Length, Is Exclamation, Has Quote, Incongruity, Swearing, Hapax count, 
 Classifier      accuracy    pos precision    pos recall    pos f1    neg precision    neg recall    neg f1
 ------------  ----------  ---------------  ------------  --------  ---------------  ------------  --------
-Naive Bayes     0.648594         0.639859      0.680223   0.65932         0.658743      0.616964  0.637038
+Naive Bayes     0.592838         0.554688      0.941645  0.698132         0.807018      0.244032  0.374745
 
-/////////////////////////////////////////PARAS////////////////////////////////////////////////////////
-Words, Ngrams, Personal Pronouns and PN/N, POS percentages, Sentiment analysis, Laughs previous, Sentences since last laugh, Depth, Sentence Length, Is Question, Is Exclamation, Has Quote, Word Variance, Incongruity, Swearing, Statistics, 
+Words, Ngrams, Personal Pronouns and PN/N, POS percentages, Sentiment analysis, Sentence Length, Is Exclamation, Has Quote, Incongruity, Swearing, Hapax count, 
 Classifier      accuracy    pos precision    pos recall    pos f1    neg precision    neg recall    neg f1
 ------------  ----------  ---------------  ------------  --------  ---------------  ------------  --------
-AdaBoost(50)    0.728965         0.731033      0.724947  0.727827         0.727301      0.732983   0.72998
+Naive Bayes     0.611406         0.567524       0.93634  0.706707         0.818182      0.286472  0.424361
 
-Words, Ngrams, Personal Pronouns and PN/N, POS percentages, Sentiment analysis, Depth, Sentence Length, Is Question, Is Exclamation, Has Quote, Word Variance, Incongruity, Swearing, Statistics, 
+Words, Ngrams, Personal Pronouns and PN/N, POS percentages, Sentiment analysis, Sentence Length, Is Exclamation, Has Quote, Incongruity, Swearing, Hapax count, 
 Classifier      accuracy    pos precision    pos recall    pos f1    neg precision    neg recall    neg f1
 ------------  ----------  ---------------  ------------  --------  ---------------  ------------  --------
-AdaBoost(50)    0.674293         0.681968      0.654147  0.667412         0.667875       0.69444  0.680594
+Naive Bayes     0.604775         0.562205       0.94695  0.705534         0.831933      0.262599  0.399194
 
-Statistics, 
-Classifier      accuracy    pos precision    pos recall     pos f1    neg precision    neg recall    neg f1
-------------  ----------  ---------------  ------------  ---------  ---------------  ------------  --------
-AdaBoost(50)      0.49631         0.463263      0.368323  0.271599         0.474003      0.624296  0.434014
-
-Words, Ngrams, Personal Pronouns and PN/N, Sentiment analysis, Incongruity, Swearing, Statistics, 
+Words, Ngrams, Personal Pronouns and PN/N, POS percentages, Sentiment analysis, Sentence Length, Is Exclamation, Has Quote, Incongruity, Swearing, Hapax count, 
 Classifier      accuracy    pos precision    pos recall    pos f1    neg precision    neg recall    neg f1
 ------------  ----------  ---------------  ------------  --------  ---------------  ------------  --------
-AdaBoost(50)    0.669783         0.678777      0.644853  0.661131          0.66207      0.694713  0.677791
+Naive Bayes     0.608753         0.564263      0.954907   0.70936         0.853448      0.262599  0.401623
 
-Frequency,
+Words, Ngrams, Personal Pronouns and PN/N, POS percentages, Sentiment analysis, Sentence Length, Is Exclamation, Has Quote, Incongruity, Swearing, Hapax count, 
 Classifier      accuracy    pos precision    pos recall    pos f1    neg precision    neg recall    neg f1
 ------------  ----------  ---------------  ------------  --------  ---------------  ------------  --------
-AdaBoost(50)    0.615175         0.594992      0.722079  0.652107         0.647319      0.508271  0.568799
+Naive Bayes      0.62069          0.57188      0.960212  0.716832         0.876033      0.281167  0.425703
 
-Words, Ngrams, Personal Pronouns and PN/N, POS percentages, Sentences since last laugh, Depth, Sentence Length, Is Question, Is Exclamation, Has Quote, Word Variance, Incongruity, Statistics, Frequency, 
+Words, Ngrams, Personal Pronouns and PN/N, POS percentages, Sentiment analysis, Sentence Length, Is Exclamation, Has Quote, Incongruity, Swearing, Hapax count, 
 Classifier      accuracy    pos precision    pos recall    pos f1    neg precision    neg recall    neg f1
 ------------  ----------  ---------------  ------------  --------  ---------------  ------------  --------
-AdaBoost(50)    0.707376         0.707944       0.70702   0.70723         0.707409      0.707731  0.707319
+Naive Bayes     0.596817         0.556589      0.952255  0.702544         0.834862      0.241379  0.374486
 
-Words, Ngrams, Personal Pronouns and PN/N, POS percentages, Sentiment analysis, Laughs previous, Sentences since last laugh, Depth, Sentence Length, Is Question, Is Exclamation, Has Quote, Word Variance, Incongruity, Statistics, Frequency, 
+Words, Ngrams, Personal Pronouns and PN/N, POS percentages, Sentiment analysis, Sentence Length, Is Exclamation, Has Quote, Incongruity, Swearing, Hapax count, 
 Classifier      accuracy    pos precision    pos recall    pos f1    neg precision    neg recall    neg f1
 ------------  ----------  ---------------  ------------  --------  ---------------  ------------  --------
-AdaBoost(50)    0.727355         0.727575      0.727316  0.727305          0.72748      0.727395  0.727298
+Naive Bayes     0.602122         0.559505      0.960212  0.707031         0.859813      0.244032  0.380165
 
-Words, Ngrams, Personal Pronouns and PN/N, POS percentages, Sentiment analysis, Laughs previous, Sentences since last laugh, Depth, Sentence Length, Is Question, Is Exclamation, Has Quote, Word Variance, Incongruity, Swearing, Statistics, Frequency, 
+Words, Ngrams, Personal Pronouns and PN/N, POS percentages, Sentiment analysis, Sentence Length, Is Exclamation, Has Quote, Incongruity, Swearing, Hapax count, 
 Classifier      accuracy    pos precision    pos recall    pos f1    neg precision    neg recall    neg f1
 ------------  ----------  ---------------  ------------  --------  ---------------  ------------  --------
-AdaBoost(50)    0.714917         0.716712      0.711443  0.713886         0.713586      0.718392  0.715797
+Naive Bayes     0.587533         0.549849      0.965517  0.700674         0.858696      0.209549  0.336887
 
-
-/////////////////////////////////////////////////////SENTS//////////////////////////////////////////////////
-Frequency, 
+Words, Ngrams, Personal Pronouns and PN/N, POS percentages, Sentiment analysis, Sentence Length, Is Exclamation, Has Quote, Incongruity, Swearing, Hapax count, 
 Classifier      accuracy    pos precision    pos recall    pos f1    neg precision    neg recall    neg f1
 ------------  ----------  ---------------  ------------  --------  ---------------  ------------  --------
-Naive Bayes     0.522969         0.52261       0.530268  0.526268         0.523392       0.51567  0.519349
-AdaBoost(50)    0.533817         0.537865      0.483571  0.508967         0.530662      0.584063  0.555852
+Naive Bayes     0.591512          0.55416       0.93634  0.696252         0.794872      0.246684  0.376518
 
-Words, Ngrams, POS percentages, Sentiment analysis, Depth, Sentence Length, Is Question, Has Quote, Word Variance, Incongruity, Statistics, Frequency, 
+Words, Ngrams, Personal Pronouns and PN/N, POS percentages, Sentiment analysis, Sentence Length, Is Exclamation, Has Quote, Incongruity, Swearing, Hapax count, 
 Classifier      accuracy    pos precision    pos recall    pos f1    neg precision    neg recall    neg f1
 ------------  ----------  ---------------  ------------  --------  ---------------  ------------  --------
-Naive Bayes     0.649754          0.637734     0.693482  0.664366         0.664266      0.606027  0.633712
-AdaBoost(50)    0.618996          0.63709      0.554063  0.592414         0.605382      0.683929  0.642086
+Naive Bayes     0.616711         0.568536       0.96817  0.716389         0.892857      0.265252  0.408998
 
-Words, Ngrams, Personal Pronouns and PN/N, POS percentages, Sentiment analysis, Laughs previous, Sentences since last laugh, Depth, Sentence Length, Is Question, Is Exclamation, Has Quote, Word Variance, Incongruity, Swearing, Statistics, Frequency, 
+Words, Ngrams, Personal Pronouns and PN/N, POS percentages, Sentiment analysis, Sentence Length, Is Exclamation, Has Quote, Incongruity, Swearing, Hapax count, 
 Classifier      accuracy    pos precision    pos recall    pos f1    neg precision    neg recall    neg f1
 ------------  ----------  ---------------  ------------  --------  ---------------  ------------  --------
-Naive Bayes     0.670246          0.65785      0.709777  0.682764         0.684921      0.630714  0.656619
-AdaBoost(50)    0.693616          0.69668      0.686116  0.6912           0.690971      0.701116   0.69586
+Naive Bayes      0.62069         0.571429      0.965517  0.717949         0.888889      0.275862  0.421053
 
-Words, Ngrams, Personal Pronouns and PN/N, POS percentages, Sentiment analysis, Depth, Sentence Length, Is Question, Is Exclamation, Has Quote, Word Variance, Incongruity, Swearing, Statistics, Frequency, 
+Words, Ngrams, Personal Pronouns and PN/N, POS percentages, Sentiment analysis, Sentence Length, Is Exclamation, Has Quote, Incongruity, Swearing, Hapax count, 
 Classifier      accuracy    pos precision    pos recall    pos f1    neg precision    neg recall    neg f1
 ------------  ----------  ---------------  ------------  --------  ---------------  ------------  --------
-Naive Bayes     0.659219         0.648312      0.696786  0.671538         0.672207      0.621652  0.645763
-AdaBoost(50)    0.620313         0.637611      0.557679  0.594846         0.607002      0.682946  0.642655
+Linear SVC      0.668435         0.646651      0.742706  0.691358         0.697819      0.594164  0.641834
 
-Incongruity, 
+Words, Ngrams, Personal Pronouns and PN/N, POS percentages, Sentiment analysis, Sentence Length, Is Exclamation, Has Quote, Incongruity, Swearing, Hapax count, 
 Classifier      accuracy    pos precision    pos recall    pos f1    neg precision    neg recall    neg f1
 ------------  ----------  ---------------  ------------  --------  ---------------  ------------  --------
-Naive Bayes     0.522813          0.52809      0.427232  0.471759         0.519313      0.618393  0.564209
+Linear SVC      0.712202         0.684332      0.787798  0.732429             0.75      0.636605  0.688666
 
+Words, Ngrams, Personal Pronouns and PN/N, POS percentages, Sentiment analysis, Sentence Length, Is Exclamation, Has Quote, Incongruity, Swearing, Hapax count, 
+Classifier      accuracy    pos precision    pos recall    pos f1    neg precision    neg recall    neg f1
+------------  ----------  ---------------  ------------  --------  ---------------  ------------  --------
+Linear SVC      0.675066         0.651376      0.753316  0.698647         0.707547      0.596817  0.647482
+
+Words, Ngrams, Personal Pronouns and PN/N, POS percentages, Sentiment analysis, Sentence Length, Is Exclamation, Has Quote, Incongruity, Swearing, Hapax count, 
+Classifier      accuracy    pos precision    pos recall    pos f1    neg precision    neg recall    neg f1
+------------  ----------  ---------------  ------------  --------  ---------------  ------------  --------
+Linear SVC       0.69496         0.663697      0.790451   0.72155         0.740984      0.599469  0.662757
+
+Words, Ngrams, Personal Pronouns and PN/N, POS percentages, Sentiment analysis, Sentence Length, Is Exclamation, Has Quote, Incongruity, Swearing, Hapax count, 
+Classifier      accuracy    pos precision    pos recall    pos f1    neg precision    neg recall    neg f1
+------------  ----------  ---------------  ------------  --------  ---------------  ------------  --------
+Linear SVC      0.685676         0.657658      0.774536  0.711328         0.725806      0.596817  0.655022
+
+Words, Ngrams, Personal Pronouns and PN/N, POS percentages, Sentiment analysis, Sentence Length, Is Exclamation, Has Quote, Incongruity, Swearing, Hapax count, 
+Classifier      accuracy    pos precision    pos recall    pos f1    neg precision    neg recall    neg f1
+------------  ----------  ---------------  ------------  --------  ---------------  ------------  --------
+Linear SVC      0.698939         0.666667      0.795756  0.725514         0.746711      0.602122  0.666667
+
+Words, Ngrams, Personal Pronouns and PN/N, POS percentages, Sentiment analysis, Sentence Length, Is Exclamation, Has Quote, Incongruity, Swearing, Hapax count, 
+Classifier      accuracy    pos precision    pos recall    pos f1    neg precision    neg recall    neg f1
+------------  ----------  ---------------  ------------  --------  ---------------  ------------  --------
+Linear SVC      0.668435         0.642058      0.761273  0.696602          0.70684      0.575597  0.634503
+
+Words, Ngrams, Personal Pronouns and PN/N, POS percentages, Sentiment analysis, Sentence Length, Is Exclamation, Has Quote, Incongruity, Swearing, Hapax count, 
+Classifier      accuracy    pos precision    pos recall    pos f1    neg precision    neg recall    neg f1
+------------  ----------  ---------------  ------------  --------  ---------------  ------------  --------
+Linear SVC       0.68435         0.654788      0.779841  0.711864         0.727869      0.588859  0.651026
+
+Words, Ngrams, Personal Pronouns and PN/N, POS percentages, Sentiment analysis, Sentence Length, Is Exclamation, Has Quote, Incongruity, Swearing, Hapax count, 
+Classifier      accuracy    pos precision    pos recall    pos f1    neg precision    neg recall    neg f1
+------------  ----------  ---------------  ------------  --------  ---------------  ------------  --------
+Linear SVC      0.669761         0.642222      0.766578  0.698912         0.710526      0.572944  0.634361
+
+Words, Ngrams, Personal Pronouns and PN/N, POS percentages, Sentiment analysis, Sentence Length, Is Exclamation, Has Quote, Incongruity, Swearing, Hapax count, 
+Classifier      accuracy    pos precision    pos recall    pos f1    neg precision    neg recall    neg f1
+------------  ----------  ---------------  ------------  --------  ---------------  ------------  --------
+Linear SVC      0.661804         0.634361      0.763926  0.693141         0.703333      0.559682  0.623338
+
+Words, Ngrams, Personal Pronouns and PN/N, POS percentages, Sentiment analysis, Sentence Length, Is Exclamation, Has Quote, Incongruity, Swearing, Hapax count, 
+Classifier      accuracy    pos precision    pos recall    pos f1    neg precision    neg recall    neg f1
+------------  ----------  ---------------  ------------  --------  ---------------  ------------  --------
+Linear SVC      0.661804         0.635556      0.758621  0.691657         0.700658      0.564987  0.625551
+
+Words, Ngrams, Personal Pronouns and PN/N, POS percentages, Sentiment analysis, Sentence Length, Is Exclamation, Has Quote, Incongruity, Swearing, Hapax count, 
+Classifier      accuracy    pos precision    pos recall    pos f1    neg precision    neg recall    neg f1
+------------  ----------  ---------------  ------------  --------  ---------------  ------------  --------
+Linear SVC      0.676393         0.652874      0.753316  0.699507         0.708464      0.599469  0.649425
+
+Words, Ngrams, Personal Pronouns and PN/N, POS percentages, Sentiment analysis, Sentence Length, Is Exclamation, Has Quote, Incongruity, Swearing, Hapax count, 
+Classifier      accuracy    pos precision    pos recall    pos f1    neg precision    neg recall    neg f1
+------------  ----------  ---------------  ------------  --------  ---------------  ------------  --------
+Linear SVC      0.664456         0.638393      0.758621  0.693333         0.702614      0.570292  0.629575
+
+Words, Ngrams, Personal Pronouns and PN/N, POS percentages, Sentiment analysis, Sentence Length, Is Exclamation, Has Quote, Incongruity, Swearing, Hapax count, 
+Classifier      accuracy    pos precision    pos recall    pos f1    neg precision    neg recall    neg f1
+------------  ----------  ---------------  ------------  --------  ---------------  ------------  --------
+Linear SVC      0.687003         0.668258      0.742706  0.703518         0.710448        0.6313  0.668539
+
+Words, Ngrams, Personal Pronouns and PN/N, POS percentages, Sentiment analysis, Sentence Length, Is Exclamation, Has Quote, Incongruity, Swearing, Hapax count, 
+Classifier      accuracy    pos precision    pos recall    pos f1    neg precision    neg recall    neg f1
+------------  ----------  ---------------  ------------  --------  ---------------  ------------  --------
+Linear SVC      0.689655         0.659955      0.782493  0.716019         0.732899      0.596817  0.657895
+
+Words, Ngrams, Personal Pronouns and PN/N, POS percentages, Sentiment analysis, Sentence Length, Is Exclamation, Has Quote, Incongruity, Swearing, Hapax count, 
+Classifier      accuracy    pos precision    pos recall    pos f1    neg precision    neg recall    neg f1
+------------  ----------  ---------------  ------------  --------  ---------------  ------------  --------
+Linear SVC      0.708223         0.682135      0.779841  0.727723         0.743034      0.636605  0.685714
+
+Words, Ngrams, Personal Pronouns and PN/N, POS percentages, Sentiment analysis, Sentence Length, Is Exclamation, Has Quote, Incongruity, Swearing, Hapax count, 
+Classifier      accuracy    pos precision    pos recall    pos f1    neg precision    neg recall    neg f1
+------------  ----------  ---------------  ------------  --------  ---------------  ------------  --------
+Linear SVC      0.657825         0.636782      0.734748  0.682266          0.68652      0.580902   0.62931
+
+Words, Ngrams, Personal Pronouns and PN/N, POS percentages, Sentiment analysis, Sentence Length, Is Exclamation, Has Quote, Incongruity, Swearing, Hapax count, 
+Classifier      accuracy    pos precision    pos recall    pos f1    neg precision    neg recall    neg f1
+------------  ----------  ---------------  ------------  --------  ---------------  ------------  --------
+Linear SVC       0.68435         0.664303      0.745358    0.7025          0.70997      0.623342  0.663842
+
+Words, Ngrams, Personal Pronouns and PN/N, POS percentages, Sentiment analysis, Sentence Length, Is Exclamation, Has Quote, Incongruity, Swearing, Hapax count, 
+Classifier      accuracy    pos precision    pos recall    pos f1    neg precision    neg recall    neg f1
+------------  ----------  ---------------  ------------  --------  ---------------  ------------  --------
+Linear SVC      0.659151         0.643541      0.713528   0.67673         0.678571      0.604775  0.639551
+
+Words, Ngrams, Personal Pronouns and PN/N, POS percentages, Sentiment analysis, Sentence Length, Is Exclamation, Has Quote, Incongruity, Swearing, Hapax count, 
+Classifier      accuracy    pos precision    pos recall    pos f1    neg precision    neg recall    neg f1
+------------  ----------  ---------------  ------------  --------  ---------------  ------------  --------
+Linear SVC      0.697613         0.664459      0.798408  0.725301         0.747508      0.596817  0.663717
+
+Words, Ngrams, Personal Pronouns and PN/N, POS percentages, Sentiment analysis, Sentence Length, Is Exclamation, Has Quote, Incongruity, Swearing, Hapax count, 
+Classifier      accuracy    pos precision    pos recall    pos f1    neg precision    neg recall    neg f1
+------------  ----------  ---------------  ------------  --------  ---------------  ------------  --------
+Linear SVC      0.692308         0.662192      0.785146  0.718447         0.736156      0.599469  0.660819
+
+Words, Ngrams, Personal Pronouns and PN/N, POS percentages, Sentiment analysis, Sentence Length, Is Exclamation, Has Quote, Incongruity, Swearing, Hapax count, 
+Classifier      accuracy    pos precision    pos recall    pos f1    neg precision    neg recall    neg f1
+------------  ----------  ---------------  ------------  --------  ---------------  ------------  --------
+Linear SVC      0.671088         0.641138      0.777188  0.702638         0.717172      0.564987  0.632047
+
+Words, Ngrams, Personal Pronouns and PN/N, POS percentages, Sentiment analysis, Sentence Length, Is Exclamation, Has Quote, Incongruity, Swearing, Hapax count, 
+Classifier      accuracy    pos precision    pos recall    pos f1    neg precision    neg recall    neg f1
+------------  ----------  ---------------  ------------  --------  ---------------  ------------  --------
+Linear SVC      0.689655         0.665127      0.763926  0.711111         0.722741      0.615385  0.664756
+
+Words, Ngrams, Personal Pronouns and PN/N, POS percentages, Sentiment analysis, Sentence Length, Is Exclamation, Has Quote, Incongruity, Swearing, Hapax count, 
+Classifier      accuracy    pos precision    pos recall    pos f1    neg precision    neg recall    neg f1
+------------  ----------  ---------------  ------------  --------  ---------------  ------------  --------
+Linear SVC       0.66313         0.642032      0.737401   0.68642         0.691589      0.588859  0.636103
+
+Words, Ngrams, Personal Pronouns and PN/N, POS percentages, Sentiment analysis, Sentence Length, Is Exclamation, Has Quote, Incongruity, Swearing, Hapax count, 
+Classifier      accuracy    pos precision    pos recall    pos f1    neg precision    neg recall    neg f1
+------------  ----------  ---------------  ------------  --------  ---------------  ------------  --------
+Linear SVC      0.692308         0.673861      0.745358  0.707809         0.715134      0.639257   0.67507
+
+Words, Ngrams, Personal Pronouns and PN/N, POS percentages, Sentiment analysis, Sentence Length, Is Exclamation, Has Quote, Incongruity, Swearing, Hapax count, 
+Classifier      accuracy    pos precision    pos recall    pos f1    neg precision    neg recall    neg f1
+------------  ----------  ---------------  ------------  --------  ---------------  ------------  --------
+AdaBoost(50)    0.661804         0.634956      0.761273    0.6924         0.701987      0.562334  0.624448
+
+Words, Ngrams, Personal Pronouns and PN/N, POS percentages, Sentiment analysis, Sentence Length, Is Exclamation, Has Quote, Incongruity, Swearing, Hapax count, 
+Classifier      accuracy    pos precision    pos recall    pos f1    neg precision    neg recall    neg f1
+------------  ----------  ---------------  ------------  --------  ---------------  ------------  --------
+AdaBoost(50)    0.668435         0.648712      0.734748  0.689055          0.69419      0.602122  0.644886
+
+Words, Ngrams, Personal Pronouns and PN/N, POS percentages, Sentiment analysis, Sentence Length, Is Exclamation, Has Quote, Incongruity, Swearing, Hapax count, 
+Classifier      accuracy    pos precision    pos recall    pos f1    neg precision    neg recall    neg f1
+------------  ----------  ---------------  ------------  --------  ---------------  ------------  --------
+AdaBoost(50)    0.669761         0.639738      0.777188  0.701796         0.716216      0.562334  0.630015
+
+Words, Ngrams, Personal Pronouns and PN/N, POS percentages, Sentiment analysis, Sentence Length, Is Exclamation, Has Quote, Incongruity, Swearing, Hapax count, 
+Classifier      accuracy    pos precision    pos recall    pos f1    neg precision    neg recall    neg f1
+------------  ----------  ---------------  ------------  --------  ---------------  ------------  --------
+AdaBoost(50)    0.659151         0.630435      0.769231  0.692951         0.704082      0.549072   0.61699
+
+Words, Ngrams, Personal Pronouns and PN/N, POS percentages, Sentiment analysis, Sentence Length, Is Exclamation, Has Quote, Incongruity, Swearing, Hapax count, 
+Classifier      accuracy    pos precision    pos recall    pos f1    neg precision    neg recall    neg f1
+------------  ----------  ---------------  ------------  --------  ---------------  ------------  --------
+AdaBoost(50)    0.632626         0.613122      0.718833  0.661783         0.660256      0.546419  0.597968
+
+Words, Ngrams, Personal Pronouns and PN/N, POS percentages, Sentiment analysis, Sentence Length, Is Exclamation, Has Quote, Incongruity, Swearing, Hapax count, 
+Classifier      accuracy    pos precision    pos recall    pos f1    neg precision    neg recall    neg f1
+------------  ----------  ---------------  ------------  --------  ---------------  ------------  --------
+AdaBoost(50)    0.653846         0.633028      0.732095  0.678967          0.68239      0.575597   0.62446
+
+Words, Ngrams, Personal Pronouns and PN/N, POS percentages, Sentiment analysis, Sentence Length, Is Exclamation, Has Quote, Incongruity, Swearing, Hapax count, 
+Classifier      accuracy    pos precision    pos recall    pos f1    neg precision    neg recall    neg f1
+------------  ----------  ---------------  ------------  --------  ---------------  ------------  --------
+AdaBoost(50)     0.68435         0.659039      0.763926  0.707617         0.719243      0.604775  0.657061
+
+Words, Ngrams, Personal Pronouns and PN/N, POS percentages, Sentiment analysis, Sentence Length, Is Exclamation, Has Quote, Incongruity, Swearing, Hapax count, 
+Classifier      accuracy    pos precision    pos recall    pos f1    neg precision    neg recall    neg f1
+------------  ----------  ---------------  ------------  --------  ---------------  ------------  --------
+AdaBoost(50)    0.661804         0.633772      0.766578  0.693878         0.704698      0.557029  0.622222
+
+Words, Ngrams, Personal Pronouns and PN/N, POS percentages, Sentiment analysis, Sentence Length, Is Exclamation, Has Quote, Incongruity, Swearing, Hapax count, 
+Classifier      accuracy    pos precision    pos recall    pos f1    neg precision    neg recall    neg f1
+------------  ----------  ---------------  ------------  --------  ---------------  ------------  --------
+AdaBoost(50)    0.660477         0.646489      0.708223  0.675949         0.677419      0.612732  0.643454
+
+Words, Ngrams, Personal Pronouns and PN/N, POS percentages, Sentiment analysis, Sentence Length, Is Exclamation, Has Quote, Incongruity, Swearing, Hapax count, 
+Classifier      accuracy    pos precision    pos recall    pos f1    neg precision    neg recall    neg f1
+------------  ----------  ---------------  ------------  --------  ---------------  ------------  --------
+AdaBoost(50)    0.645889         0.611336      0.801061  0.693456         0.711538      0.490716  0.580848
+
+Words, Ngrams, Personal Pronouns and PN/N, POS percentages, Sentiment analysis, Sentence Length, Is Exclamation, Has Quote, Incongruity, Swearing, Hapax count, 
+Classifier      accuracy    pos precision    pos recall    pos f1    neg precision    neg recall    neg f1
+------------  ----------  ---------------  ------------  --------  ---------------  ------------  --------
+AdaBoost(50)    0.661804         0.638636      0.745358  0.687882         0.694268      0.578249   0.63097
+
+Words, Ngrams, Personal Pronouns and PN/N, POS percentages, Sentiment analysis, Sentence Length, Is Exclamation, Has Quote, Incongruity, Swearing, Hapax count, 
+Classifier      accuracy    pos precision    pos recall    pos f1    neg precision    neg recall    neg f1
+------------  ----------  ---------------  ------------  --------  ---------------  ------------  --------
+AdaBoost(50)     0.67374          0.64086      0.790451  0.707838         0.726644      0.557029  0.630631
+
+Words, Ngrams, Personal Pronouns and PN/N, POS percentages, Sentiment analysis, Sentence Length, Is Exclamation, Has Quote, Incongruity, Swearing, Hapax count, 
+Classifier      accuracy    pos precision    pos recall    pos f1    neg precision    neg recall    neg f1
+------------  ----------  ---------------  ------------  --------  ---------------  ------------  --------
+AdaBoost(50)    0.656499         0.631111      0.753316   0.68682         0.694079      0.559682  0.619677
+
+Words, Ngrams, Personal Pronouns and PN/N, POS percentages, Sentiment analysis, Sentence Length, Is Exclamation, Has Quote, Incongruity, Swearing, Hapax count, 
+Classifier      accuracy    pos precision    pos recall    pos f1    neg precision    neg recall    neg f1
+------------  ----------  ---------------  ------------  --------  ---------------  ------------  --------
+AdaBoost(50)    0.659151         0.634529      0.750663  0.687728         0.694805      0.567639  0.624818
+
+Words, Ngrams, Personal Pronouns and PN/N, POS percentages, Sentiment analysis, Sentence Length, Is Exclamation, Has Quote, Incongruity, Swearing, Hapax count, 
+Classifier      accuracy    pos precision    pos recall    pos f1    neg precision    neg recall    neg f1
+------------  ----------  ---------------  ------------  --------  ---------------  ------------  --------
+AdaBoost(50)    0.671088          0.65035      0.740053  0.692308         0.698462      0.602122  0.646724
+
+Words, Ngrams, Personal Pronouns and PN/N, POS percentages, Sentiment analysis, Sentence Length, Is Exclamation, Has Quote, Incongruity, Swearing, Hapax count, 
+Classifier      accuracy    pos precision    pos recall    pos f1    neg precision    neg recall    neg f1
+------------  ----------  ---------------  ------------  --------  ---------------  ------------  --------
+AdaBoost(50)    0.681698         0.653933      0.771883  0.708029         0.721683      0.591512  0.650146
+
+Words, Ngrams, Personal Pronouns and PN/N, POS percentages, Sentiment analysis, Sentence Length, Is Exclamation, Has Quote, Incongruity, Swearing, Hapax count, 
+Classifier      accuracy    pos precision    pos recall    pos f1    neg precision    neg recall    neg f1
+------------  ----------  ---------------  ------------  --------  ---------------  ------------  --------
+AdaBoost(50)     0.66313         0.635165      0.766578  0.694712         0.705686      0.559682   0.62426
+
+Words, Ngrams, Personal Pronouns and PN/N, POS percentages, Sentiment analysis, Sentence Length, Is Exclamation, Has Quote, Incongruity, Swearing, Hapax count, 
+Classifier      accuracy    pos precision    pos recall    pos f1    neg precision    neg recall    neg f1
+------------  ----------  ---------------  ------------  --------  ---------------  ------------  --------
+AdaBoost(50)    0.680371         0.659624      0.745358  0.699875         0.707317      0.615385  0.658156
+
+Words, Ngrams, Personal Pronouns and PN/N, POS percentages, Sentiment analysis, Sentence Length, Is Exclamation, Has Quote, Incongruity, Swearing, Hapax count, 
+Classifier      accuracy    pos precision    pos recall    pos f1    neg precision    neg recall    neg f1
+------------  ----------  ---------------  ------------  --------  ---------------  ------------  --------
+AdaBoost(50)    0.629973         0.607456      0.734748  0.665066          0.66443      0.525199  0.586667
+
+Words, Ngrams, Personal Pronouns and PN/N, POS percentages, Sentiment analysis, Sentence Length, Is Exclamation, Has Quote, Incongruity, Swearing, Hapax count, 
+Classifier      accuracy    pos precision    pos recall    pos f1    neg precision    neg recall    neg f1
+------------  ----------  ---------------  ------------  --------  ---------------  ------------  --------
+AdaBoost(50)    0.640584         0.613734      0.758621  0.678529         0.684028      0.522546  0.592481
+
+Words, Ngrams, Personal Pronouns and PN/N, POS percentages, Sentiment analysis, Sentence Length, Is Exclamation, Has Quote, Incongruity, Swearing, Hapax count, 
+Classifier      accuracy    pos precision    pos recall    pos f1    neg precision    neg recall    neg f1
+------------  ----------  ---------------  ------------  --------  ---------------  ------------  --------
+AdaBoost(50)    0.655172         0.636364      0.724138  0.677419             0.68      0.586207   0.62963
+
+Words, Ngrams, Personal Pronouns and PN/N, POS percentages, Sentiment analysis, Sentence Length, Is Exclamation, Has Quote, Incongruity, Swearing, Hapax count, 
+Classifier      accuracy    pos precision    pos recall    pos f1    neg precision    neg recall    neg f1
+------------  ----------  ---------------  ------------  --------  ---------------  ------------  --------
+AdaBoost(50)    0.648541         0.624444      0.745358  0.679565         0.684211      0.551724  0.610866
+
+Words, Ngrams, Personal Pronouns and PN/N, POS percentages, Sentiment analysis, Sentence Length, Is Exclamation, Has Quote, Incongruity, Swearing, Hapax count, 
+Classifier      accuracy    pos precision    pos recall    pos f1    neg precision    neg recall    neg f1
+------------  ----------  ---------------  ------------  --------  ---------------  ------------  --------
+AdaBoost(50)    0.644562         0.621381      0.740053  0.675545         0.678689      0.549072  0.607038
+
+Words, Ngrams, Personal Pronouns and PN/N, POS percentages, Sentiment analysis, Sentence Length, Is Exclamation, Has Quote, Incongruity, Swearing, Hapax count, 
+Classifier      accuracy    pos precision    pos recall    pos f1    neg precision    neg recall    neg f1
+------------  ----------  ---------------  ------------  --------  ---------------  ------------  --------
+AdaBoost(50)    0.671088          0.63522      0.803714  0.709602         0.732852      0.538462  0.620795
+
+Words, Ngrams, Personal Pronouns and PN/N, POS percentages, Sentiment analysis, Sentence Length, Is Exclamation, Has Quote, Incongruity, Swearing, Hapax count, 
+Classifier      accuracy    pos precision    pos recall    pos f1    neg precision    neg recall    neg f1
+------------  ----------  ---------------  ------------  --------  ---------------  ------------  --------
+AdaBoost(50)     0.67374         0.651972      0.745358  0.695545         0.702786      0.602122  0.648571
+
+Words, Ngrams, Personal Pronouns and PN/N, POS percentages, Sentiment analysis, Sentence Length, Is Exclamation, Has Quote, Incongruity, Swearing, Hapax count, 
+Classifier       accuracy    pos precision    pos recall    pos f1    neg precision    neg recall    neg f1
+-------------  ----------  ---------------  ------------  --------  ---------------  ------------  --------
+Random Forest    0.645889         0.612705      0.793103  0.691329         0.706767      0.498674  0.584759
+
+Words, Ngrams, Personal Pronouns and PN/N, POS percentages, Sentiment analysis, Sentence Length, Is Exclamation, Has Quote, Incongruity, Swearing, Hapax count, 
+Classifier       accuracy    pos precision    pos recall    pos f1    neg precision    neg recall    neg f1
+-------------  ----------  ---------------  ------------  --------  ---------------  ------------  --------
+Random Forest    0.665782         0.621359      0.848806  0.717489         0.761506      0.482759  0.590909
+
+Words, Ngrams, Personal Pronouns and PN/N, POS percentages, Sentiment analysis, Sentence Length, Is Exclamation, Has Quote, Incongruity, Swearing, Hapax count, 
+Classifier       accuracy    pos precision    pos recall    pos f1    neg precision    neg recall    neg f1
+-------------  ----------  ---------------  ------------  --------  ---------------  ------------  --------
+Random Forest    0.645889         0.612705      0.793103  0.691329         0.706767      0.498674  0.584759
+
+Words, Ngrams, Personal Pronouns and PN/N, POS percentages, Sentiment analysis, Sentence Length, Is Exclamation, Has Quote, Incongruity, Swearing, Hapax count, 
+Classifier       accuracy    pos precision    pos recall    pos f1    neg precision    neg recall    neg f1
+-------------  ----------  ---------------  ------------  --------  ---------------  ------------  --------
+Random Forest     0.65252         0.619543      0.790451  0.694639         0.710623      0.514589  0.596923
+
+Words, Ngrams, Personal Pronouns and PN/N, POS percentages, Sentiment analysis, Sentence Length, Is Exclamation, Has Quote, Incongruity, Swearing, Hapax count, 
+Classifier       accuracy    pos precision    pos recall    pos f1    neg precision    neg recall    neg f1
+-------------  ----------  ---------------  ------------  --------  ---------------  ------------  --------
+Random Forest    0.667109         0.640625      0.761273  0.695758         0.705882      0.572944  0.632504
+
+Words, Ngrams, Personal Pronouns and PN/N, POS percentages, Sentiment analysis, Sentence Length, Is Exclamation, Has Quote, Incongruity, Swearing, Hapax count, 
+Classifier       accuracy    pos precision    pos recall    pos f1    neg precision    neg recall    neg f1
+-------------  ----------  ---------------  ------------  --------  ---------------  ------------  --------
+Random Forest    0.669761         0.622605      0.862069  0.723026         0.775862      0.477454  0.591133
+
+Words, Ngrams, Personal Pronouns and PN/N, POS percentages, Sentiment analysis, Sentence Length, Is Exclamation, Has Quote, Incongruity, Swearing, Hapax count, 
+Classifier       accuracy    pos precision    pos recall    pos f1    neg precision    neg recall    neg f1
+-------------  ----------  ---------------  ------------  --------  ---------------  ------------  --------
+Random Forest    0.644562         0.610998      0.795756  0.691244         0.707224      0.493369   0.58125
+
+Words, Ngrams, Personal Pronouns and PN/N, POS percentages, Sentiment analysis, Sentence Length, Is Exclamation, Has Quote, Incongruity, Swearing, Hapax count, 
+Classifier       accuracy    pos precision    pos recall    pos f1    neg precision    neg recall    neg f1
+-------------  ----------  ---------------  ------------  --------  ---------------  ------------  --------
+Random Forest    0.606101         0.584034      0.737401  0.651817         0.643885      0.474801  0.546565
+
+Words, Ngrams, Personal Pronouns and PN/N, POS percentages, Sentiment analysis, Sentence Length, Is Exclamation, Has Quote, Incongruity, Swearing, Hapax count, 
+Classifier       accuracy    pos precision    pos recall    pos f1    neg precision    neg recall    neg f1
+-------------  ----------  ---------------  ------------  --------  ---------------  ------------  --------
+Random Forest    0.639257         0.602339      0.819629  0.694382         0.717842      0.458886  0.559871
+
+Words, Ngrams, Personal Pronouns and PN/N, POS percentages, Sentiment analysis, Sentence Length, Is Exclamation, Has Quote, Incongruity, Swearing, Hapax count, 
+Classifier       accuracy    pos precision    pos recall    pos f1    neg precision    neg recall    neg f1
+-------------  ----------  ---------------  ------------  --------  ---------------  ------------  --------
+Random Forest    0.657825          0.64133       0.71618  0.676692         0.678679      0.599469   0.63662
+
+Words, Ngrams, Personal Pronouns and PN/N, POS percentages, Sentiment analysis, Sentence Length, Is Exclamation, Has Quote, Incongruity, Swearing, Hapax count, 
+Classifier       accuracy    pos precision    pos recall    pos f1    neg precision    neg recall    neg f1
+-------------  ----------  ---------------  ------------  --------  ---------------  ------------  --------
+Random Forest    0.644562         0.603416      0.843501   0.70354         0.740088      0.445623  0.556291
+
+Words, Ngrams, Personal Pronouns and PN/N, POS percentages, Sentiment analysis, Sentence Length, Is Exclamation, Has Quote, Incongruity, Swearing, Hapax count, 
+Classifier       accuracy    pos precision    pos recall    pos f1    neg precision    neg recall    neg f1
+-------------  ----------  ---------------  ------------  --------  ---------------  ------------  --------
+Random Forest    0.651194         0.616803      0.798408  0.695954         0.714286      0.503979   0.59098
+
+Words, Ngrams, Personal Pronouns and PN/N, POS percentages, Sentiment analysis, Sentence Length, Is Exclamation, Has Quote, Incongruity, Swearing, Hapax count, 
+Classifier       accuracy    pos precision    pos recall    pos f1    neg precision    neg recall    neg f1
+-------------  ----------  ---------------  ------------  --------  ---------------  ------------  --------
+Random Forest    0.639257         0.601156      0.827586  0.696429         0.723404      0.450928  0.555556
+
+Words, Ngrams, Personal Pronouns and PN/N, POS percentages, Sentiment analysis, Sentence Length, Is Exclamation, Has Quote, Incongruity, Swearing, Hapax count, 
+Classifier       accuracy    pos precision    pos recall    pos f1    neg precision    neg recall    neg f1
+-------------  ----------  ---------------  ------------  --------  ---------------  ------------  --------
+Random Forest    0.615385         0.579817      0.838196  0.685466         0.708134      0.392573  0.505119
+
+Words, Ngrams, Personal Pronouns and PN/N, POS percentages, Sentiment analysis, Sentence Length, Is Exclamation, Has Quote, Incongruity, Swearing, Hapax count, 
+Classifier       accuracy    pos precision    pos recall    pos f1    neg precision    neg recall    neg f1
+-------------  ----------  ---------------  ------------  --------  ---------------  ------------  --------
+Random Forest     0.65252         0.613861      0.822281  0.702948         0.730924      0.482759   0.58147
+
+Words, Ngrams, Personal Pronouns and PN/N, POS percentages, Sentiment analysis, Sentence Length, Is Exclamation, Has Quote, Incongruity, Swearing, Hapax count, 
+Classifier       accuracy    pos precision    pos recall    pos f1    neg precision    neg recall    neg f1
+-------------  ----------  ---------------  ------------  --------  ---------------  ------------  --------
+Random Forest     0.65252         0.622081      0.777188  0.691038          0.70318      0.527851   0.60303
+
+Words, Ngrams, Personal Pronouns and PN/N, POS percentages, Sentiment analysis, Sentence Length, Is Exclamation, Has Quote, Incongruity, Swearing, Hapax count, 
+Classifier       accuracy    pos precision    pos recall    pos f1    neg precision    neg recall    neg f1
+-------------  ----------  ---------------  ------------  --------  ---------------  ------------  --------
+Random Forest    0.656499         0.615686      0.832891  0.708005         0.741803      0.480106  0.582931
+
+Words, Ngrams, Personal Pronouns and PN/N, POS percentages, Sentiment analysis, Sentence Length, Is Exclamation, Has Quote, Incongruity, Swearing, Hapax count, 
+Classifier       accuracy    pos precision    pos recall    pos f1    neg precision    neg recall    neg f1
+-------------  ----------  ---------------  ------------  --------  ---------------  ------------  --------
+Random Forest    0.651194         0.612205      0.824934  0.702825         0.731707      0.477454  0.577849
+
+Words, Ngrams, Personal Pronouns and PN/N, POS percentages, Sentiment analysis, Sentence Length, Is Exclamation, Has Quote, Incongruity, Swearing, Hapax count, 
+Classifier       accuracy    pos precision    pos recall    pos f1    neg precision    neg recall    neg f1
+-------------  ----------  ---------------  ------------  --------  ---------------  ------------  --------
+Random Forest    0.623342         0.593186      0.785146  0.675799         0.682353      0.461538  0.550633
+
+Words, Ngrams, Personal Pronouns and PN/N, POS percentages, Sentiment analysis, Sentence Length, Is Exclamation, Has Quote, Incongruity, Swearing, Hapax count, 
+Classifier       accuracy    pos precision    pos recall    pos f1    neg precision    neg recall    neg f1
+-------------  ----------  ---------------  ------------  --------  ---------------  ------------  --------
+Random Forest    0.635279         0.594096      0.854111  0.700762         0.740566      0.416446  0.533107
+
+Words, Ngrams, Personal Pronouns and PN/N, POS percentages, Sentiment analysis, Sentence Length, Is Exclamation, Has Quote, Incongruity, Swearing, Hapax count, 
+Classifier       accuracy    pos precision    pos recall    pos f1    neg precision    neg recall    neg f1
+-------------  ----------  ---------------  ------------  --------  ---------------  ------------  --------
+Random Forest    0.628647         0.602105      0.758621  0.671362         0.673835      0.498674  0.573171
+
+Words, Ngrams, Personal Pronouns and PN/N, POS percentages, Sentiment analysis, Sentence Length, Is Exclamation, Has Quote, Incongruity, Swearing, Hapax count, 
+Classifier       accuracy    pos precision    pos recall    pos f1    neg precision    neg recall    neg f1
+-------------  ----------  ---------------  ------------  --------  ---------------  ------------  --------
+Random Forest    0.683024         0.646186      0.809019  0.718492         0.744681      0.557029  0.637329
+
+Words, Ngrams, Personal Pronouns and PN/N, POS percentages, Sentiment analysis, Sentence Length, Is Exclamation, Has Quote, Incongruity, Swearing, Hapax count, 
+Classifier       accuracy    pos precision    pos recall    pos f1    neg precision    neg recall    neg f1
+-------------  ----------  ---------------  ------------  --------  ---------------  ------------  --------
+Random Forest     0.67374         0.629703      0.843501  0.721088         0.763052      0.503979  0.607029
+
+Words, Ngrams, Personal Pronouns and PN/N, POS percentages, Sentiment analysis, Sentence Length, Is Exclamation, Has Quote, Incongruity, Swearing, Hapax count, 
+Classifier       accuracy    pos precision    pos recall    pos f1    neg precision    neg recall    neg f1
+-------------  ----------  ---------------  ------------  --------  ---------------  ------------  --------
+Random Forest     0.64191         0.613588      0.766578  0.681604         0.689046      0.517241  0.590909
+
+Words, Ngrams, Personal Pronouns and PN/N, POS percentages, Sentiment analysis, Sentence Length, Is Exclamation, Has Quote, Incongruity, Swearing, Hapax count, 
+Classifier       accuracy    pos precision    pos recall    pos f1    neg precision    neg recall    neg f1
+-------------  ----------  ---------------  ------------  --------  ---------------  ------------  --------
+Random Forest     0.65252         0.622081      0.777188  0.691038          0.70318      0.527851   0.60303
+
+Words, Ngrams, Personal Pronouns and PN/N, POS percentages, Sentiment analysis, Sentence Length, Is Exclamation, Has Quote, Incongruity, Swearing, Hapax count, 
+Classifier      accuracy    pos precision    pos recall    pos f1    neg precision    neg recall    neg f1
+------------  ----------  ---------------  ------------  --------  ---------------  ------------  --------
+COMBO           0.667109         0.637555      0.774536  0.699401         0.712838      0.559682  0.627043
+
+Words, Ngrams, Personal Pronouns and PN/N, POS percentages, Sentiment analysis, Sentence Length, Is Exclamation, Has Quote, Incongruity, Swearing, Hapax count, 
+Classifier      accuracy    pos precision    pos recall    pos f1    neg precision    neg recall    neg f1
+------------  ----------  ---------------  ------------  --------  ---------------  ------------  --------
+COMBO           0.648541          0.62069      0.763926  0.684899         0.693103      0.533156  0.602699
+
+Words, Ngrams, Personal Pronouns and PN/N, POS percentages, Sentiment analysis, Sentence Length, Is Exclamation, Has Quote, Incongruity, Swearing, Hapax count, 
+Classifier      accuracy    pos precision    pos recall    pos f1    neg precision    neg recall    neg f1
+------------  ----------  ---------------  ------------  --------  ---------------  ------------  --------
+COMBO            0.67374         0.665823      0.697613  0.681347         0.682451      0.649867  0.665761
+
+Words, Ngrams, Personal Pronouns and PN/N, POS percentages, Sentiment analysis, Sentence Length, Is Exclamation, Has Quote, Incongruity, Swearing, Hapax count, 
+Classifier      accuracy    pos precision    pos recall    pos f1    neg precision    neg recall    neg f1
+------------  ----------  ---------------  ------------  --------  ---------------  ------------  --------
+COMBO           0.657825          0.62851      0.771883  0.692857         0.704467      0.543767  0.613772
+
+Words, Ngrams, Personal Pronouns and PN/N, POS percentages, Sentiment analysis, Sentence Length, Is Exclamation, Has Quote, Incongruity, Swearing, Hapax count, 
+Classifier      accuracy    pos precision    pos recall    pos f1    neg precision    neg recall    neg f1
+------------  ----------  ---------------  ------------  --------  ---------------  ------------  --------
+COMBO           0.648541         0.623348      0.750663  0.681107         0.686667      0.546419  0.608567
+
+Words, Ngrams, Personal Pronouns and PN/N, POS percentages, Sentiment analysis, Sentence Length, Is Exclamation, Has Quote, Incongruity, Swearing, Hapax count, 
+Classifier      accuracy    pos precision    pos recall    pos f1    neg precision    neg recall    neg f1
+------------  ----------  ---------------  ------------  --------  ---------------  ------------  --------
+COMBO           0.637931          0.62037      0.710875  0.662546         0.661491      0.564987  0.609442
+
+Words, Ngrams, Personal Pronouns and PN/N, POS percentages, Sentiment analysis, Sentence Length, Is Exclamation, Has Quote, Incongruity, Swearing, Hapax count, 
+Classifier      accuracy    pos precision    pos recall    pos f1    neg precision    neg recall    neg f1
+------------  ----------  ---------------  ------------  --------  ---------------  ------------  --------
+COMBO           0.671088         0.648961      0.745358  0.693827         0.700935      0.596817  0.644699
+
+Words, Ngrams, Personal Pronouns and PN/N, POS percentages, Sentiment analysis, Sentence Length, Is Exclamation, Has Quote, Incongruity, Swearing, Hapax count, 
+Classifier      accuracy    pos precision    pos recall    pos f1    neg precision    neg recall    neg f1
+------------  ----------  ---------------  ------------  --------  ---------------  ------------  --------
+COMBO            0.68435         0.652747      0.787798  0.713942         0.732441      0.580902  0.647929
+
+Words, Ngrams, Personal Pronouns and PN/N, POS percentages, Sentiment analysis, Sentence Length, Is Exclamation, Has Quote, Incongruity, Swearing, Hapax count, 
+Classifier      accuracy    pos precision    pos recall    pos f1    neg precision    neg recall    neg f1
+------------  ----------  ---------------  ------------  --------  ---------------  ------------  --------
+COMBO           0.665782         0.648456      0.724138  0.684211         0.687688      0.607427   0.64507
+
+Words, Ngrams, Personal Pronouns and PN/N, POS percentages, Sentiment analysis, Sentence Length, Is Exclamation, Has Quote, Incongruity, Swearing, Hapax count, 
+Classifier      accuracy    pos precision    pos recall    pos f1    neg precision    neg recall    neg f1
+------------  ----------  ---------------  ------------  --------  ---------------  ------------  --------
+COMBO           0.690981             0.66      0.787798  0.718259         0.736842      0.594164  0.657856
+
+Words, Ngrams, Personal Pronouns and PN/N, POS percentages, Sentiment analysis, Sentence Length, Is Exclamation, Has Quote, Incongruity, Swearing, Hapax count, 
+Classifier      accuracy    pos precision    pos recall    pos f1    neg precision    neg recall    neg f1
+------------  ----------  ---------------  ------------  --------  ---------------  ------------  --------
+COMBO           0.669761         0.650943      0.732095  0.689139         0.693939      0.607427  0.647808
+
+Words, Ngrams, Personal Pronouns and PN/N, POS percentages, Sentiment analysis, Sentence Length, Is Exclamation, Has Quote, Incongruity, Swearing, Hapax count, 
+Classifier      accuracy    pos precision    pos recall    pos f1    neg precision    neg recall    neg f1
+------------  ----------  ---------------  ------------  --------  ---------------  ------------  --------
+COMBO           0.665782         0.649165      0.721485  0.683417         0.686567       0.61008  0.646067
+
+Words, Ngrams, Personal Pronouns and PN/N, POS percentages, Sentiment analysis, Sentence Length, Is Exclamation, Has Quote, Incongruity, Swearing, Hapax count, 
+Classifier      accuracy    pos precision    pos recall    pos f1    neg precision    neg recall    neg f1
+------------  ----------  ---------------  ------------  --------  ---------------  ------------  --------
+COMBO           0.653846         0.630045      0.745358  0.682868         0.688312      0.562334  0.618978
+
+Words, Ngrams, Personal Pronouns and PN/N, POS percentages, Sentiment analysis, Sentence Length, Is Exclamation, Has Quote, Incongruity, Swearing, Hapax count, 
+Classifier      accuracy    pos precision    pos recall    pos f1    neg precision    neg recall    neg f1
+------------  ----------  ---------------  ------------  --------  ---------------  ------------  --------
+COMBO           0.671088         0.637527      0.793103  0.706856         0.726316      0.549072  0.625378
+
+Words, Ngrams, Personal Pronouns and PN/N, POS percentages, Sentiment analysis, Sentence Length, Is Exclamation, Has Quote, Incongruity, Swearing, Hapax count, 
+Classifier      accuracy    pos precision    pos recall    pos f1    neg precision    neg recall    neg f1
+------------  ----------  ---------------  ------------  --------  ---------------  ------------  --------
+COMBO           0.688329         0.653017      0.803714  0.720571         0.744828      0.572944  0.647676
+
+Words, Ngrams, Personal Pronouns and PN/N, POS percentages, Sentiment analysis, Sentence Length, Is Exclamation, Has Quote, Incongruity, Swearing, Hapax count, 
+Classifier      accuracy    pos precision    pos recall    pos f1    neg precision    neg recall    neg f1
+------------  ----------  ---------------  ------------  --------  ---------------  ------------  --------
+COMBO           0.649867         0.636804      0.697613  0.665823         0.665689      0.602122  0.632312
+
+Words, Ngrams, Personal Pronouns and PN/N, POS percentages, Sentiment analysis, Sentence Length, Is Exclamation, Has Quote, Incongruity, Swearing, Hapax count, 
+Classifier      accuracy    pos precision    pos recall    pos f1    neg precision    neg recall    neg f1
+------------  ----------  ---------------  ------------  --------  ---------------  ------------  --------
+COMBO           0.681698         0.661939      0.742706       0.7         0.706949       0.62069  0.661017
+
+Words, Ngrams, Personal Pronouns and PN/N, POS percentages, Sentiment analysis, Sentence Length, Is Exclamation, Has Quote, Incongruity, Swearing, Hapax count, 
+Classifier      accuracy    pos precision    pos recall    pos f1    neg precision    neg recall    neg f1
+------------  ----------  ---------------  ------------  --------  ---------------  ------------  --------
+COMBO           0.665782         0.652068      0.710875  0.680203         0.682216       0.62069      0.65
+
+Words, Ngrams, Personal Pronouns and PN/N, POS percentages, Sentiment analysis, Sentence Length, Is Exclamation, Has Quote, Incongruity, Swearing, Hapax count, 
+Classifier      accuracy    pos precision    pos recall    pos f1    neg precision    neg recall    neg f1
+------------  ----------  ---------------  ------------  --------  ---------------  ------------  --------
+COMBO           0.675066         0.652074      0.750663  0.697904          0.70625      0.599469  0.648494
+
+Words, Ngrams, Personal Pronouns and PN/N, POS percentages, Sentiment analysis, Sentence Length, Is Exclamation, Has Quote, Incongruity, Swearing, Hapax count, 
+Classifier      accuracy    pos precision    pos recall    pos f1    neg precision    neg recall    neg f1
+------------  ----------  ---------------  ------------  --------  ---------------  ------------  --------
+COMBO           0.677719         0.652273      0.761273   0.70257         0.713376      0.594164  0.648336
+
+Words, Ngrams, Personal Pronouns and PN/N, POS percentages, Sentiment analysis, Sentence Length, Is Exclamation, Has Quote, Incongruity, Swearing, Hapax count, 
+Classifier      accuracy    pos precision    pos recall    pos f1    neg precision    neg recall    neg f1
+------------  ----------  ---------------  ------------  --------  ---------------  ------------  --------
+COMBO            0.65252         0.630385      0.737401  0.679707         0.683706      0.567639   0.62029
+
+Words, Ngrams, Personal Pronouns and PN/N, POS percentages, Sentiment analysis, Sentence Length, Is Exclamation, Has Quote, Incongruity, Swearing, Hapax count, 
+Classifier      accuracy    pos precision    pos recall    pos f1    neg precision    neg recall    neg f1
+------------  ----------  ---------------  ------------  --------  ---------------  ------------  --------
+COMBO            0.67374          0.64588      0.769231  0.702179         0.714754      0.578249  0.639296
+
+Words, Ngrams, Personal Pronouns and PN/N, POS percentages, Sentiment analysis, Sentence Length, Is Exclamation, Has Quote, Incongruity, Swearing, Hapax count, 
+Classifier      accuracy    pos precision    pos recall    pos f1    neg precision    neg recall    neg f1
+------------  ----------  ---------------  ------------  --------  ---------------  ------------  --------
+COMBO           0.676393         0.648107      0.771883    0.7046         0.718033      0.580902  0.642229
+
+Words, Ngrams, Personal Pronouns and PN/N, POS percentages, Sentiment analysis, Sentence Length, Is Exclamation, Has Quote, Incongruity, Swearing, Hapax count, 
+Classifier      accuracy    pos precision    pos recall    pos f1    neg precision    neg recall    neg f1
+------------  ----------  ---------------  ------------  --------  ---------------  ------------  --------
+COMBO           0.655172         0.623679      0.782493  0.694118         0.708185      0.527851  0.604863
+
+Words, Ngrams, Personal Pronouns and PN/N, POS percentages, Sentiment analysis, Sentence Length, Is Exclamation, Has Quote, Incongruity, Swearing, Hapax count, 
+Classifier      accuracy    pos precision    pos recall    pos f1    neg precision    neg recall    neg f1
+------------  ----------  ---------------  ------------  --------  ---------------  ------------  --------
+COMBO           0.701592         0.674312      0.779841  0.723247         0.738994      0.623342  0.676259
+
+Classifier       accuracy    pos precision    pos recall    pos f1    neg precision    neg recall    neg f1
+-------------  ----------  ---------------  ------------  --------  ---------------  ------------  --------
+Naive Bayes          0.6              0.56          0.95      0.7              0.84          0.25      0.38
+SVM                  0.68             0.65          0.76      0.71             0.72          0.6       0.65
+AdaBoost(50)         0.66             0.64          0.75      0.69             0.7           0.57      0.62
+Random Forest        0.65             0.61          0.8       0.69             0.72          0.49      0.58
+COMBO                0.67             0.64          0.75      0.69             0.7           0.58      0.64

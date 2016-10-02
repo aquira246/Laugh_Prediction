@@ -104,23 +104,22 @@ def runClassifiers(positives, negatives, featuresToUse, outFile, verbose, classi
     for data in positives:
         pos.append((FeatureExtractor.langFeatures(data, featuresToUse), True))
         onDataSet += 1
-        # printPercentage(onDataSet/numDataSets * 100, "Extracting Features: ", False)
 
     for data in negatives:
         neg.append((FeatureExtractor.langFeatures(data, featuresToUse), False))
         onDataSet += 1
-        # printPercentage(onDataSet/numDataSets * 100, "Extracting Features: ", False)
 
     random.shuffle(pos)
     random.shuffle(neg)
 
     # Testing is 1/4 of the data set, so we will cut it off there
     minLen = min(len(pos), len(neg))
-    negCut = posCut = minLen//4
+    posCut = minLen//4
+    negCut = posCut*2
 
     # splits training and test sets
     train_data = pos[posCut:] + neg[negCut:]
-    test_data = pos[:posCut] + neg[:negCut]
+    test_data = pos[:posCut] + neg[:posCut]
 
     maxEntSupport = featuresToUse["max_ent"]
 
